@@ -1,0 +1,408 @@
+@charset "utf-8";
+
+@import "mixins";
+// @import url(//cdn.jsdelivr.net/font-notosans-kr/1.0.0-v1004/NotoSansKR-2350.css);
+
+@font-face {
+  font-family: 'NotoSansKR'; font-style: normal; font-weight: 300;
+  src: url(/kcp/fonts/NotoSans-Light.eot) format('eot');
+	src: local('※'), url(/kcp/fonts/NotoSans-Light.eot?#iefix) format('embedded-opentype');
+  src: url(/kcp/fonts/NotoSans-Light.woff) format("woff");
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format("woff2");
+}
+@font-face {
+  font-family: 'NotoSansKR'; font-style: normal; font-weight: 350;
+  src: url(/kcp/fonts/NotoSans-DemiLight.eot) format('eot');
+	src: local('※'), url(/kcp/fonts/NotoSans-DemiLight.eot?#iefix) format('embedded-opentype');
+  src: url(/kcp/fonts/NotoSans-DemiLight.woff) format("woff");
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-DemiLight.woff2) format("woff2");
+}
+@font-face {
+  font-family: 'NotoSansKR'; font-style: normal; font-weight: 400;
+  src: url(/kcp/fonts/NotoSans-Regular.eot) format('eot');
+	src: local('※'), url(/kcp/fonts/NotoSans-Regular.eot?#iefix) format('embedded-opentype');
+  src: url(/kcp/fonts/NotoSans-Regular.woff) format("woff");
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format("woff2");
+}
+@font-face {
+  font-family: 'NotoSansKR'; font-style: normal; font-weight: 500;
+  src: url(/kcp/fonts/NotoSans-Medium.eot) format('eot');
+	src: local('※'), url(/kcp/fonts/NotoSans-Medium.eot?#iefix) format('embedded-opentype');
+  src: url(/kcp/fonts/NotoSans-Medium.woff) format("woff");
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff2) format("woff2");
+}
+@font-face {
+  font-family: 'NotoSansKR'; font-style: normal; font-weight: 700;
+  src: url(/kcp/fonts/NotoSans-Bold.eot) format('eot');
+	src: local('※'), url(/kcp/fonts/NotoSans-Bold.eot?#iefix) format('embedded-opentype');
+  src: url(/kcp/fonts/NotoSans-Bold.woff) format("woff");
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff2) format("woff2");
+}
+@font-face {
+  font-family: 'GothamNarrow'; font-style: normal; font-weight: 300;
+  src: url(/kcp/fonts/GothamNarrow-Book.eot) format('eot');
+	src: local('※'), url(/kcp/fonts/GothamNarrow-Book.eot?#iefix) format('embedded-opentype');
+  src: url(/kcp/fonts/GothamNarrow-Book.woff) format("woff");
+  src: url(/kcp/fonts/GothamNarrow-Book.woff2) format("woff2");
+}
+@font-face {
+  font-family: 'GothamNarrow'; font-style: normal; font-weight: 700;
+  src: url(/kcp/fonts/GothamNarrow-Black.eot) format('eot');
+	src: local('※'), url(/kcp/fonts/GothamNarrow-Black.eot?#iefix) format('embedded-opentype');
+  src: url(/kcp/fonts/GothamNarrow-Black.woff) format("woff");
+  src: url(/kcp/fonts/GothamNarrow-Black.woff2) format("woff2");
+}
+
+/** RESET **/
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {margin: 0;padding: 0; vertical-align: top; letter-spacing: 0; font-size: 13px;word-break:keep-all}
+fieldset,img, textarea {border: 0;outline: 0;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main {display: block;}
+img {max-width:100%;}
+button,input { border-radius: 0; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; padding: 0; margin: 0; outline: none;border:0; }
+body {-webkit-text-size-adjust:none;}
+ol, ul {list-style: none;}
+address,em {font-style: normal}
+h1,h2,h3,h4,h5,h6 {font-weight: 400;}
+div {word-break: keep-all;}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width:100%;
+}
+iframe {overflow: hidden; border: 0;}
+input[type=text], input[type=password], input[type=number], input[type=tel], input[type=email] {
+	padding:0 10px;font-size: 11px;
+	border:1px solid #a1a1a1;background-color:#fff;
+  -webkit-appearance: none;
+}
+textarea {
+	width:100%;min-height:100px;padding:10px;border:1px solid #a1a1a1;
+	background-color:#fff; -webkit-appearance: none;
+}
+input::-ms-clear {
+  display: none;
+}
+::-webkit-input-placeholder {
+	font-size: 11px;
+  color: rgba(153,153,153, .7);
+}
+::-moz-placeholder {
+	font-size: 11px;
+  color: rgba(153,153,153, .7);
+}
+::-moz-placeholder {
+	font-size: 11px;
+  color: rgba(153,153,153, .7);
+}
+.clearfix:after {content: ''; display: block; clear: both;}
+button {cursor:pointer; border:none; margin:0; padding:0;background-color: rgba(255,255,255, 0);}
+input,button,select {vertical-align:middle;}
+* {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	text-decoration:none; -webkit-tap-highlight-color:transparent;
+	font-family: 'GothamNarrow', 'NotoSansKR', 'Helvetica', 'Malgun Gothic', sans-serif;
+	color: #000000;
+  font-size: 13px;
+}
+select{
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	appearance:none;
+	width:100%;
+	padding:17px 25px 17px 0;
+	border:1px solid #a1a1a1;
+	border-radius: 0;
+	font-size: 12px;
+	// background: {
+	// 	image: url('');
+	// 	repeat:no-repeat;
+	// 	size:11px;
+	// 	position: right 10px center;
+	// }
+	outline: none;
+	background-color:transparent;
+}
+select::-ms-expand{
+	display:none;
+}
+button {
+	text-align: center;
+  cursor: pointer;
+  border: none;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+  background: transparent;
+  line-height: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/****** Accessibility ******/
+.a11y {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+.skipnavigation {
+	position: relative;
+	a {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 0;
+		z-index: 1;
+		display: block;
+		font-size: 0;
+		background-color: #FFF;
+		text-align: center;
+		&:focus {
+			height: 30px;
+			padding: 4px 0;
+			visibility: visible;
+			font-size: 1em;
+		}
+	}
+}
+.noscroll {
+  overflow: hidden !important;
+	height: 100%;
+	.wrap {
+    overflow:hidden;
+	}
+}
+h1.logo {
+	display: block;
+	width:81px;
+	height:30px;
+	background: {
+		image:url(/kcp/mo/assets/images/common/logo.png);
+		size:81px;
+		repeat:no-repeat;
+		position: 0 0;
+	}
+}
+.btn {
+	display: inline-block;
+	&._small {
+		font-size: 11px;
+		min-width:70px;
+		height:25px;
+		line-height: 25px;
+		text-align: center;
+	}
+}
+
+/** layout **/
+.header {
+	min-height:66px;
+	.row {
+		position: relative;
+		padding:17px 30px;
+	}
+	.btn-navi {
+		position: absolute;
+		right:30px;
+		top:16.5px;
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+		i {
+			display: block;
+	    position: absolute;
+	    right: 0;
+	    width: 100%;
+	    height: 5.00%;
+	    background-color: #000000;
+			&:nth-child(1) {
+				top:5px;
+			}
+			&:nth-child(2), &:nth-child(3) {
+				width:80%;
+				top:14px;
+			}
+			&:nth-child(4) {
+				top:23px;
+			}
+		}
+	}
+}
+.footer {
+	background-color: #222222;
+	.row {
+		position: relative;
+		padding:42px 55px 20px;
+		* {
+			color:#eeeeee;
+		}
+	}
+	select {
+		border:0;
+		border-bottom:1px solid #ffffff;
+		font-family: 'GothamNarrow';
+		background: {
+			image: url(/kcp/mo/assets/images/icon/ico_down.png);
+			size:6px;
+			repeat:no-repeat;
+			position: right 5px center;
+		}
+	}
+	.util {
+		padding-bottom:30px;
+		> li {
+			float:left;
+			padding-right:15px;
+			&:last-child {
+				padding-right:0;
+			}
+		}
+		a {
+			&.point {
+				font-weight: 700;
+			}
+		}
+		&:after {
+			content: '';
+			display: block;
+			clear:both;
+		}
+	}
+	.cs {
+		clear:both;
+		display: flex;
+		padding-bottom:30px;
+		> div {
+			flex:1;
+			&:last-child {
+				text-align: right;
+			}
+		}
+		p {
+			font-size: 12px;
+			font-weight: 350;
+		}
+		.tel {
+			font-size: 25px;
+			font-weight: 700;
+			font-family: 'GothamNarrow';
+		}
+		.btn-cust {
+			display: inline-block;
+			width:100%;
+			max-width:210px;
+			padding:11px 0 12px;
+			border:2.5px solid #eee;
+			font-size: 12px;
+			text-align: center;
+		}
+	}
+	.familysite {
+		padding-bottom:30px;
+	}
+	.addr {
+		> p {
+			padding-bottom:10px;
+			span {
+				position: relative;
+				display: inline-block;
+				margin-left:10px;
+				padding-left:10px;
+				font-size: 12px;
+				font-weight: 350;
+				&:before {
+					content: '';
+					position: absolute;
+					display: block;
+					left:0;
+					top:2px;
+					width:1px;
+					height:9px;
+					background-color: #eee;
+				}
+				&:first-child{
+					margin-left:0;
+					padding-left:0;
+					&:before {display: none;}
+				}
+			}
+		}
+	}
+	.copyr {
+		padding: 20px 55px 50px;
+		border-top:1px solid #4b4b4b;
+		p {
+			font-size: 12px;
+			line-height:24px;
+			color:#eee;
+		}
+		.btm {
+			position: relative;
+			padding:15px 0 10px;
+			> span {
+				display: block;
+				font-size: 12px;
+				color:#888888;
+			}
+			.sns {
+				position: absolute;
+				right:0;
+				bottom:0;
+				a {
+					display: inline-block;
+					width:25px;
+					height:25px;
+					margin-left:5px;
+					i {
+						display: block;
+						width:100%;
+						height:100%;
+						background: {
+							repeat:no-repeat;
+							position: center center;
+						}
+					}
+					&.btn-insta > i{
+						background: {
+							image: url(/kcp/mo/assets/images/icon/fico_insta.png);
+							size:20px;
+						}
+					}
+					&.btn-fb > i{
+						background: {
+							image: url(/kcp/mo/assets/images/icon/fico_fb.png);
+							size:10px;
+						}
+					}
+					&.btn-yt > i{
+						background: {
+							image: url(/kcp/mo/assets/images/icon/fico_yt.png);
+							size:20px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
