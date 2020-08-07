@@ -15,15 +15,24 @@
 <div class="wrap">
 
 	<div class="keyvisual">
-		<figure><img src="/kcp/mo/assets/images/dummy/@kv.jpg" alt=""></figure>
+		<section id="mainswipe" class="swiper-container">
+			<div class="swiper-pagination"></div>
+			<div class="swiper-wrapper">
+				<!-- slide -->
+				<div class="swiper-slide">
+					<div class="figure" style="background-image:url()">
+
+					</div>
+				</div>
+				<!--// slide -->
+			</div>
+		</section>
+
+		<!-- <figure><img src="/kcp/mo/assets/images/dummy/@kv.jpg" alt=""></figure>
 		<div class="desc">
 			<p>허니콤 점보롤 디스펜서</p>
 			<span>허니콤 family look의 심미적이고 세련된 디자인의 전용용기</span>
-		</div>
-	</div>
-
-	<div class="btn-util">
-		<a href="#">구매상담</a>
+		</div> -->
 	</div>
 
 	<section class="section">
@@ -44,11 +53,33 @@
 		<h2>프로페셔널 소셜</h2>
 
 	</section>
+
 </div>
 
 <!-- footer -->
 @@include('../inc/footer.inc')
 <!-- //footer -->
+
+<script>
+$(document).ready(function() {
+});
+if($('#mainswipe').length > 0){
+	var main_swipe = new Swiper('#mainswipe', {
+		loop: true,
+    speed: 1500,
+    parallax: true,
+    observer: true,
+    observeParents: true,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+	});
+	$(window).resize(function (){
+		main_swipe.update();
+	})
+}
+
+</script>
 
 </body>
 </html>

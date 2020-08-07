@@ -197,6 +197,7 @@ h1.logo {
 	display: block;
 	width:81px;
 	height:30px;
+  margin:0 auto;
 	background: {
 		image:url(/kcp/mo/assets/images/common/logo.png);
 		size:81px;
@@ -217,10 +218,10 @@ h1.logo {
 
 /** layout **/
 .header {
-	min-height:66px;
+	min-height:60px;
 	.row {
 		position: relative;
-		padding:17px 30px;
+		padding:14px 30px;
 	}
 	.btn-navi {
 		position: absolute;
