@@ -1,4 +1,44 @@
 
+<!-- search layer -->
+<div class="search_layer">
+	<div class="dim"></div>
+	<div class="search_wrap">
+		<div class="row">
+			<div class="search_frm-input">
+				<input type="text" value="" placeholder="제품명을 입력하세요.">
+				<button class="btn btn_search" onclick="location.href='/kcp/mo/html/professional/search.html'"><span class="a11y">search</span></button>
+			</div>
+			<div class="recom_tag">
+				<p>추천 검색어</p>
+				<ul>
+					<li><a href="#"><p class="num">1</p><p>크리넥스<span>드라이셀 R170</span></p></a></li>
+					<li><a href="#"><p class="num">2</p><p>스카트<span>스카트폴드 타올</span></p></a></li>
+					<li><a href="#"><p class="num">3</p><p>크리넥스<span>미용티슈</span></p></a></li>
+					<li><a href="#"><p class="num">4</p><p>크리넥스<span>미용티슈</span></p></a></li>
+					<li><a href="#"><p class="num">5</p><p>크리넥스<span>미용티슈</span></p></a></li>
+					<li><a href="#"><p class="num">6</p><p>크리넥스<span>미용티슈</span></p></a></li>
+					<li><a href="#"><p class="num">7</p><p>크리넥스<span>미용티슈</span></p></a></li>
+					<li><a href="#"><p class="num">8</p><p>크리넥스<span>미용티슈</span></p></a></li>
+					<li><a href="#"><p class="num">9</p><p>크리넥스<span>미용티슈</span></p></a></li>
+					<li><a href="#"><p class="num">10</p><p>와이프올<span>다목적 흡착제</span></p></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!--// search layer -->
+
+<!-- fixed menu -->
+<div class="fixed_menu">
+  <div class="row">
+    <p class="menu mn01"><a href="#"><span>홈</span></a></p>
+    <p class="menu mn02"><a href="#"><span>카테고리</span></a></p>
+    <p class="menu mn03"><a href="#" onclick="searchlayer();"><span>검색</span></a></p>
+    <p class="menu mn04"><a href="#"><span>고객문의</span></a></p>
+  </div>
+</div>
+<!--// fixed menu -->
+
 <footer class="footer">
 	<div class="row">
 		<ul class="util">
@@ -39,17 +79,9 @@
 		</div>
 	</div>
 	<div class="copyr">
-		<p>표는 미국 킴벌리-크라크 월드와이드의 세계적인<br>등록상표 및 상표입니다.</p>
+		<p>ⓡ/* 표는 미국 킴벌리-크라크 월드와이드의 세계적인 등록상표 및 상표입니다.</p>
 		<p>ⓡ/* Trademarks of Limberly-Clark Worldwide, Inc.</p>
-		<p>ⓡ/* 2020 Kimberly-Clark Worldwide Inc.</p>
-		<div class="btm">
-			<span>All Right Reserved.</span>
-			<div class="sns">
-				<a href="#" class="btn-insta"><i></i><span class="a11y">instagram</span></a>
-				<a href="#" class="btn-fb"><i></i><span class="a11y">facebook</span></a>
-				<a href="#" class="btn-yt"><i></i><span class="a11y">youtube</span></a>
-			</div>
-		</div>
+		<p>©2013 Kimberly-Clark Worldwide Inc.<br>All Right Reserved.</p>
 	</div>
 </footer>
-<script src="../assets/js/ui.js"></script>
+<script src="/kcp/mo/assets/js/ui.js"></script>

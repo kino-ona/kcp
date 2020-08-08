@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	@@include('../../inc/pagehead.inc')
+	<link rel="stylesheet" href="/kcp/mo/assets/css/main.css" />
+</head>
+<body>
+<div class="skipnavigation"><a href="#container">본문 바로가기</a></div>
+<!-- header -->
+@@include('../../inc/header.inc',{
+	"headtype":"subhead",
+	"pagetitle":"검색결과"
+})
+<!-- //header -->
+
+<div class="wrap">
+	<!-- container -->
+	<div class="container search_cont">
+		<!-- search_frm-input -->
+		<div class="search_frm-input">
+			<input type="text" value="" placeholder="제품명을 입력하세요.">
+			<button class="btn btn_search" onclick="location.href='/kcp/mo/html/professional/search.html'"><span class="a11y">search</span></button>
+			<p class="txt">총 <span>125개</span> 제품이 검색되었습니다.</p>
+		</div>
+		<!--// search_frm-input -->
+
+		<!-- search_result -->
+		<div class="search_result">
+			<div class="row">
+				<!-- sort -->
+				<div class="sort">
+					<a href="#" class="btn btn_filter">필터</a>
+
+					<select class="dropdown">
+						<option>전체</option>
+						<option>제품코드순</option>
+						<option>최신순</option>
+						<option>가나다순</option>
+						<option>가나다 역순</option>
+					</select>
+				</div>
+				<!--// sort -->
+
+				<!-- product_list -->
+				<div class="product_list">
+					<ul class="col_2">
+						<li>
+							<a href="#">
+								<div class="img"><img src="/kcp/mo/assets/images/dummy/@product290_01.jpg" alt=""></div>
+								<div class="info">
+									<p class="pname">[뽀삐] 슈퍼 점보롤 화장지 600m</p>
+									<ul class="desc">
+										<li><span class="code">코드: 45386</span></li>
+										<li>98mmx300m</li>
+										<li>1겹, 에어셀 원단</li>
+										<li>4롤/백, 4백/케이스</li>
+									</ul>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="img"><img src="/kcp/mo/assets/images/dummy/@product290_02.jpg" alt=""></div>
+								<div class="info">
+									<p class="pname">[크리넥스] 에어셀 두루마리 화장지 50m 에어셀 두루마리 화장지 50m</p>
+									<ul class="desc">
+										<li><span class="code">코드: 45386</span></li>
+										<li>262mm(H) X 236mm(W) X 166mm(D)</li>
+										<li>1겹, 에어셀 원단</li>
+										<li>300매/밴드, 30밴드/케이스</li>
+									</ul>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="img"><img src="/kcp/mo/assets/images/dummy/@product290_03.jpg" alt=""></div>
+								<div class="info">
+									<p class="pname">[뽀삐] 슈퍼 점보롤 화장지 600m</p>
+									<ul class="desc">
+										<li><span class="code">코드: 45386</span></li>
+										<li>98mmx300m</li>
+										<li>1겹, 에어셀 원단</li>
+										<li>4롤/백, 4백/케이스</li>
+									</ul>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="img"><img src="/kcp/mo/assets/images/dummy/@product290_01.jpg" alt=""></div>
+								<div class="info">
+									<p class="pname">[뽀삐] 슈퍼 점보롤 화장지 600m</p>
+									<ul class="desc">
+										<li><span class="code">코드: 45386</span></li>
+										<li>98mmx300m</li>
+										<li>1겹, 에어셀 원단</li>
+										<li>4롤/백, 4백/케이스</li>
+									</ul>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!--// product_list -->
+
+			</div>
+		</div>
+		<!--// search_result -->
+
+	</div>
+	<!--// container -->
+</div>
+<!--// wrap -->
+
+<!-- footer -->
+@@include('../../inc/footer.inc')
+<!-- //footer -->
+
+</body>
+</html>
