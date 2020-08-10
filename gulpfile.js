@@ -17,6 +17,7 @@ var sass = require('gulp-sass');
 var imagemin = require('gulp-imagemin');
 var watch = require('gulp-watch');
 var livereload = require('gulp-livereload');
+var autoprefixer = require('gulp-autoprefixer');
 
 var scssOptions = { // Sass compile option
 	outputStyle: "compact", // CSS의 컴파일 결과 코드스타일 지정
@@ -48,6 +49,7 @@ gulp.task('server', function() {
 gulp.task('compile-sass', function() {
 	return gulp.src(src + paths.scss)
 		.pipe(plumber()).pipe(sass(scssOptions).on('error', sass.logError))
+		.pipe(autoprefixer())
 		// .pipe(changing(dist))
 		.pipe(gulp.dest(dist));
 });
