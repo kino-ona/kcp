@@ -70,3 +70,36 @@
 .search_result {
 	border-top:1px solid #eeeeee;
 } // .search_result
+
+.filter_layer {
+	position: fixed;
+	top:0;
+	right:-100%;
+	width:calc(100% - 60px);
+	height:100%;
+	background-color: #fff;
+	z-index: 10;
+  @include transition(.4s, ease-in-out);
+	&.active {
+		right:0;
+	}
+	.filter_wrap {
+		position: relative;
+		height:100%;
+		background-color: #fff;
+		z-index: 9;
+	}
+	.layer_cont {
+		padding:3rem;
+	}
+	.accord_wrap {
+		.acco_panel {
+			clear:both;overflow: hidden;
+		}
+		.chkwrap {
+			float:left;
+			width:calc(100% / 2);
+			margin-bottom:2rem;
+		}
+	}
+}

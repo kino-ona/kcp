@@ -29,7 +29,7 @@
 			<div class="row">
 				<!-- sort -->
 				<div class="sort">
-					<a href="#" class="btn btn_filter">필터</a>
+					<a href="#" onclick="filterShow();return false;" class="btn btn_filter">필터</a>
 
 					<select class="dropdown">
 						<option>전체</option>
@@ -101,12 +101,53 @@
 							</a>
 						</li>
 					</ul>
+
+					<div class="nodata">
+						<p><span>블라블라블라</span> 검색결과가 없습니다.</p>
+					</div>
 				</div>
 				<!--// product_list -->
 
 			</div>
 		</div>
 		<!--// search_result -->
+
+		<div class="filter_layer">
+			<div class="dim"></div>
+			<div class="filter_wrap">
+				<div class="layer_head">
+					필터
+					<a href="#" onclick="filterClose();return false;" class="btn btn_close"><span class="a11y">close</span></a>
+				</div>
+
+				<div class="layer_cont">
+
+					<div class="accord_wrap _filter" id="filters" role="filter">
+						<div class="item" data-status="expanded">
+							<div class="acco_head">
+								<a href="#" class="acco_target" tabindex="0">카테고리</a>
+							</div>
+							<div class="acco_panel">
+								<p class="chkwrap"><input type="checkbox" id="ck01"><label for="ck01">평판형<span>(111)</span></label></p>
+								<p class="chkwrap"><input type="checkbox" id="ck02"><label for="ck02">롤타입<span>(20)</span></label></p>
+								<p class="chkwrap"><input type="checkbox" id="ck03"><label for="ck03">프리미엄<span>(4)</span></label></p>
+							</div>
+						</div>
+						<div class="item" data-status="hidden">
+							<div class="acco_head">
+								<a href="#" class="acco_target" tabindex="0">브랜드</a>
+							</div>
+							<div class="acco_panel">
+								<p class="chkwrap"><input type="checkbox" id="ck01_1"><label for="ck01_1">크리넥스<span>(111)</span></label></p>
+								<p class="chkwrap"><input type="checkbox" id="ck01_2"><label for="ck01_2">스카티<span>(20)</span></label></p>
+								<p class="chkwrap"><input type="checkbox" id="ck01_3"><label for="ck01_3">뽀삐 <span>(4)</span></label></p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
 
 	</div>
 	<!--// container -->

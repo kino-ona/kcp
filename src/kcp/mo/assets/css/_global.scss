@@ -31,7 +31,7 @@
 }
 
 /** RESET **/
-html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {margin: 0;padding: 0; vertical-align: top; letter-spacing: 0; font-size: 13px;word-break:keep-all}
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {margin: 0;padding: 0; vertical-align: top; letter-spacing: 0; font-size: 13px;line-height:1.8;word-break:keep-all}
 fieldset,img, textarea {border: 0;outline: 0;}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main {display: block;}
@@ -212,8 +212,44 @@ button {
   background-color: rgba(0,0,0, .5);
   z-index: 9;
 }
+.chkwrap {
+  min-height:2rem;
+  input[type=checkbox] {
+    display:none;
+    & + label {
+      display: inline-block;
+      cursor: pointer;
+      min-width:100px;
+      height:2rem;
+      line-height: 2rem;
+      padding-left:30px;
+      margin-right:5px;
+      background: {
+        image: url(/kcp/mo/assets/images/common/uncheck.png);
+        repeat: no-repeat;
+        size:1.75rem;
+        position: left center;
+      }
+      vertical-align: middle;
+    }
+    &:checked + label {
+      background-image: url(/kcp/mo/assets/images/common/check.png);
+    }
+  }
+}
 
 /** layout **/
+@media all and (max-width:960px) {
+	html {
+		font-size: 10px;
+	}
+}
+
+html, body {height:100%;min-height:100%;}
+.wrap {
+	// min-height:100%;
+	min-height:calc(100% - 130px);
+}
 h1.logo {
 	display: block;
 	width:81px;
@@ -434,6 +470,7 @@ h1.logo {
   border-top:1px solid #e5e5e5;
   background-color: #fff;
   z-index: 101;
+	z-index: 9;
   .row {
     display: flex;
     height:100%;
@@ -505,24 +542,18 @@ h1.logo {
   left:0;
   right:0;
   width:100%;
-  height:calc(100vh - 60px);
-  z-index: 10;
-  @include transition(.5s, ease-in-out);
-  .dim {
-    display: none;
-    bottom:-100%;
-  }
-  &.active {
-    bottom:0;
-    .dim {
-      bottom:0;
-      display: block;
-    }
-  }
+  height:calc(100vh - 112px);
+  @include transition(.4s, ease-in-out);
+	.dim {
+		height:calc(100% - 51px);
+	}
+	&.active {
+		bottom:52px !important;
+	}
   .search_wrap {
     position: relative;
     width:100%;
-    height:calc(100vh - 60px);
+    height:calc(100vh - 111px);
     padding-bottom:50px;
     background-color: #fff;
     z-index: 11;
@@ -538,7 +569,7 @@ h1.logo {
       }
       > ul {
         li {
-          padding-top:19px;
+          padding-top:15px;
           p {
             display: inline-block;
             font-weight: 300;
@@ -558,3 +589,91 @@ h1.logo {
     } // .recom_tag
   }
 } // .search_layer
+
+[class*='_layer'] {
+	z-index: 9;
+	.dim {
+    display: none;
+    bottom:-100%;
+  }
+  &.active {
+    bottom:0;
+    .dim {
+      bottom:0;
+      display: block;
+    }
+  }
+	.layer_head {
+		position: relative;
+		padding:3rem 3rem 3.8rem;
+		font-size: 2rem;
+		border-bottom:1px solid #000;
+		.btn_close {
+			position: absolute;
+			right:3rem;
+			top:4rem;
+			width:16px;
+			height:16px;
+			background: {
+				image: url(/kcp/mo/assets/images/icon/icon_close32x32.png);
+				size:16px;
+				repeat:no-repeat;
+				position: center center;
+			}
+		}
+	}
+}
+// [class*='_layer']
+
+.accord_wrap {
+	.item {
+		box-sizing: content-box;
+		overflow: hidden;
+	}
+	.acco_head {
+		display: block;
+		padding-bottom:2.5rem;
+		color: #000;
+		text-decoration: none;
+		outline: 0;
+		cursor: pointer;
+		.acco_target {
+			display:block;
+			position:relative;
+			font-size:14px;
+			font-weight: 700;
+			outline: none;
+			i {
+				display: inline-block;
+				margin-top:0;
+				margin-left:2px;
+				line-height: inherit;
+				vertical-align: middle;
+				width: 0;
+			  height: 0;
+			  border-left: 4px solid transparent;
+			  border-right: 4px solid transparent;
+			  border-top: 7px solid #333333;
+			}
+		}
+		&[aria-expanded="true"] {
+			.acco_target i {
+				width: 0;
+				height: 0;
+				border-left: 4px solid transparent;
+				border-right: 4px solid transparent;
+				border-bottom: 7px solid #333333;
+				border-top:0;
+			}
+		}
+	}
+	[data-status="disabled"] .acco_panel{
+		display: none;
+	}
+	.acco_panel {
+		outline: 0;
+		&[aria-hidden="true"] {
+			display: none;
+		}
+	}
+}

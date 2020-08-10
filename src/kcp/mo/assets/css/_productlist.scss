@@ -1,6 +1,18 @@
 @charset "utf-8";
 @import "mixins";
 
+.nodata {
+	height:100%;
+	padding:7.25rem 0;
+	text-align: center;
+	> p {
+		font-size: 14px;
+		> span {
+			font-size: inherit;
+			color:#00a8e2;
+		}
+	}
+}
 .sort {
 	position: relative;
 	padding:20px 0;
@@ -14,14 +26,32 @@
 	}
 }
 .product_list {
+	height:100%;
+	min-height:100%;
+	.img {
+		position: relative;
+		width:100%;
+		padding-top:100%;
+		overflow: hidden;
+		img {
+			position: absolute;
+			top:50%;
+			left:50%;
+			width:100%;
+			@include transform(translate(-50%, -50%));
+		}
+	}
 	.pname {
-		font-size: 13px;
 		font-weight: 700;
 		@include ellipse(2);
 	}
+	.info {
+		padding-top:20px;
+	}
 	.desc {
+		padding-top:15px;
 		li {
-			padding-top:5px;
+			padding-top:2px;
 			font-size: 12px;
 			color:#666666;
 		}
@@ -42,7 +72,7 @@
 				float:left;
 				width:calc((100% / 2) - 5px);
 				margin-right:10px;
-				margin-bottom:25px;
+				margin-bottom:50px;
 				&:nth-child(2n) {
 					margin-right:0;
 				}
