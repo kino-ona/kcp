@@ -3,22 +3,18 @@
 @import "productlist";
 
 .header {
-	height:80px;
+	height:70px;
 	&.subhead {
 		position: relative;
 	  @include transition(.1s, ease);
 		h1.logo {display: none;}
 		.head {
 	    display: block;
-			position: absolute;
-			width:calc(100% - 60px);
-			top:50%;
-			left:50%;
-			@include transform(translate(-50%, -50%));
+
 			.btn_back {
 				display: inline-block;
 				width:30px;
-				height:30px;
+				height:28px;
 				background: {
 					image: url(/kcp/mo/assets/images/icon/ico_pageback.png);
 					size:17px;
@@ -28,7 +24,7 @@
 			}
 			h2 {
 				display: inline-block;
-				font-size: 20px;
+				font-size: 15px;
 			}
 	  }
 	}
@@ -38,8 +34,15 @@
 		top:0;
 		left:0;
 		right:0;
-		z-index: 10;
+		z-index: 9;
 		height: 50px;
+		.head {
+			position: absolute;
+			width:calc(100% - 60px);
+			top:50%;
+			left:50%;
+			@include transform(translate(-50%, -50%));
+		}
 	}
 } // .header
 
@@ -54,7 +57,7 @@
 /** container > search container **/
 .search_cont {
 	.search_frm-input {
-		padding-left:60px;
+		margin-left:60px;
 		padding-bottom:30px;
 		.txt {
 			padding-top:15px;

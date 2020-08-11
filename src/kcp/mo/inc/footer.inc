@@ -4,9 +4,14 @@
 	<div class="dim"></div>
 	<div class="search_wrap">
 		<div class="row">
+			<button class="btn btn_down" onclick="searchlayer();"><span class="a11y">close</span></button>
 			<div class="search_frm-input">
-				<input type="text" value="" placeholder="제품명을 입력하세요.">
-				<button class="btn btn_search" onclick="location.href='/kcp/mo/html/professional/search.html'"><span class="a11y">search</span></button>
+				<div>
+					<input type="text" value="" placeholder="제품명을 입력하세요.">
+					<button class="btn btn_search" onclick="location.href='/kcp/mo/html/professional/search.html'"><span class="a11y">search</span></button>
+
+					<a href="#" class="btn btn_reset"><span class="a11y">reset</span></a>
+				</div>
 			</div>
 			<div class="recom_tag">
 				<p>추천 검색어</p>
@@ -33,7 +38,7 @@
   <div class="row">
     <p class="menu mn01"><a href="#"><span>홈</span></a></p>
     <p class="menu mn02"><a href="#"><span>카테고리</span></a></p>
-    <p class="menu mn03"><a href="#" onclick="searchlayer();"><span>검색</span></a></p>
+    <p class="menu mn03"><a href="#" onclick="searchlayer();return false;"><span>검색</span></a></p>
     <p class="menu mn04"><a href="#"><span>고객문의</span></a></p>
   </div>
 </div>

@@ -18,8 +18,13 @@
 	<div class="container search_cont">
 		<!-- search_frm-input -->
 		<div class="search_frm-input">
-			<input type="text" value="" placeholder="제품명을 입력하세요.">
-			<button class="btn btn_search" onclick="location.href='/kcp/mo/html/professional/search.html'"><span class="a11y">search</span></button>
+			<div>
+				<button class="btn btn_search" onclick="location.href='/kcp/mo/html/professional/search.html'"><span class="a11y">search</span></button>
+				<input type="text" value="" placeholder="제품명을 입력하세요.">
+
+				<a href="#" class="btn btn_reset"><span class="a11y">reset</span></a>
+			</div>
+
 			<p class="txt">총 <span>125개</span> 제품이 검색되었습니다.</p>
 		</div>
 		<!--// search_frm-input -->
@@ -74,6 +79,7 @@
 						</li>
 						<li>
 							<a href="#">
+								<span class="tag _new"></span>
 								<div class="img"><img src="/kcp/mo/assets/images/dummy/@product290_03.jpg" alt=""></div>
 								<div class="info">
 									<p class="pname">[뽀삐] 슈퍼 점보롤 화장지 600m</p>
@@ -125,7 +131,7 @@
 					<div class="accord_wrap _filter" id="filters" role="filter">
 						<div class="item" data-status="expanded">
 							<div class="acco_head">
-								<a href="#" class="acco_target" tabindex="0">카테고리</a>
+								<a href="#" class="acco_target" tabindex="0">카테고리 <i></i></a>
 							</div>
 							<div class="acco_panel">
 								<p class="chkwrap"><input type="checkbox" id="ck01"><label for="ck01">평판형<span>(111)</span></label></p>
@@ -135,7 +141,7 @@
 						</div>
 						<div class="item" data-status="hidden">
 							<div class="acco_head">
-								<a href="#" class="acco_target" tabindex="0">브랜드</a>
+								<a href="#" class="acco_target" tabindex="0">브랜드 <i></i></a>
 							</div>
 							<div class="acco_panel">
 								<p class="chkwrap"><input type="checkbox" id="ck01_1"><label for="ck01_1">크리넥스<span>(111)</span></label></p>
