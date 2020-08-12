@@ -282,7 +282,7 @@ button {
       min-width:100px;
       height:2rem;
       line-height: 2rem;
-      padding-left:30px;
+      padding-left:23px;
       margin-right:5px;
       background: {
         image: url(/kcp/mo/assets/images/common/uncheck.png);
@@ -290,7 +290,15 @@ button {
         size:1.75rem;
         position: left center;
       }
-      vertical-align: middle;
+			vertical-align: middle;
+			span {
+				display: inline-block;
+				margin-left:3px;
+				font: {
+					size:12px;
+					weight:300;
+				};
+			}
     }
     &:checked + label {
       background-image: url(/kcp/mo/assets/images/common/check.png);
@@ -574,8 +582,11 @@ h1.logo {
   height:calc(env(safe-area-inset-bottom) + 51px);
   border-top:1px solid #e5e5e5;
   background-color: #fff;
-  z-index: 101;
 	z-index: 9;
+	@include transition(.6s, ease-in-out);
+	&.hide {
+		bottom:-100%;
+	}
   .row {
     display: flex;
     height:100%;
@@ -623,7 +634,7 @@ h1.logo {
 		.btn_reset {
 			position: absolute;
 			right:3rem;
-			top:20px;
+			top:18px;
 		}
 	}
   input {
@@ -651,7 +662,7 @@ h1.logo {
   .btn_search {
     position: absolute;
     left:0px;
-    top:20px;
+    top:18px;
   }
 } //.search_frm-input
 .search_layer {
