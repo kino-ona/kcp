@@ -2,15 +2,21 @@
 
 .main {
 	.keyvisual {
-		.desc {
-			padding:27px 30px 75px;
-			> p {
-				font-size: 20px;
+		.figure {
+			padding-top:82%;
+			background: {
+				size:cover;
+				position: center 0;
+				repeat:no-repeat;				
+			};
+		}
+		.info {
+			padding:25px 30px;
+			.title {
+				font-size: 15px;
 				font-weight: 700;
 			}
-			> span {
-				display: block;
-				padding-top:13px;
+			.desc {
 				font-weight: 300;
 			}
 		}

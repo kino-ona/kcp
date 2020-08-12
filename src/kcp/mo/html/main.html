@@ -16,24 +16,22 @@
 <div class="wrap">
 
 	<div class="keyvisual">
-		<section id="mainswipe" class="swiper-container">
+		<section id="kvswipe" class="swiper-container">
 			<div class="swiper-pagination"></div>
 			<div class="swiper-wrapper">
 				<!-- slide -->
 				<div class="swiper-slide">
-					<div class="figure" style="background-image:url()">
-
+					<div class="figure" style="background-image:url(/kcp/mo/assets/images/dummy/@kv.jpg)"></div>
+					<div class="info">
+						<p class="title">허니콤 점보롤 디스펜서</p>
+						<p class="desc">허니콤 family look의 심미적이고 세련된 디자인의 전용용기</p>
 					</div>
 				</div>
 				<!--// slide -->
 			</div>
-		</section>
 
-		<!-- <figure><img src="/kcp/mo/assets/images/dummy/@kv.jpg" alt=""></figure>
-		<div class="desc">
-			<p>허니콤 점보롤 디스펜서</p>
-			<span>허니콤 family look의 심미적이고 세련된 디자인의 전용용기</span>
-		</div> -->
+			<div class="fraction"></div>
+		</section>
 	</div>
 
 	<section class="section">
@@ -61,27 +59,7 @@
 <!-- footer -->
 @@include('../inc/footer.inc')
 <!-- //footer -->
-
-<script>
-$(document).ready(function() {
-});
-if($('#mainswipe').length > 0){
-	var main_swipe = new Swiper('#mainswipe', {
-		loop: true,
-    speed: 1500,
-    parallax: true,
-    observer: true,
-    observeParents: true,
-    pagination: {
-      el: '.swiper-pagination',
-    },
-	});
-	$(window).resize(function (){
-		main_swipe.update();
-	})
-}
-
-</script>
+<script type="text/javascript" src="/kcp/mo/assets/js/main.js"></script>
 
 </body>
 </html>
