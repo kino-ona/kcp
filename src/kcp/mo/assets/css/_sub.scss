@@ -113,14 +113,15 @@
 	}
 }
 
-/** store > login **/
-.login {
+/** member > login **/
+.member {
 	.desc {
 		margin-top:-10px;
 		font-size:12px;
 		font-weight:300;
 	}
 	.pw {
+		display:none;
 		.frm_group {
 			margin-top:40px;
 			padding-top:40px;

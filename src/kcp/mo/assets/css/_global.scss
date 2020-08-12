@@ -224,12 +224,8 @@ button {
       position: center center;
     }
 	}
-	&.small {
-		min-width:100px;
-		height:40px;
-	}
 	&.primary {
-		background-image:linear-gradient(to right, #17aded, #0053a7);
+		background-image:linear-gradient(to right, #00a8e2, #0053a7);
 		color:#fff;
 	}
 	&.default {
@@ -259,6 +255,12 @@ button {
 			font-size:15px;
 			line-height:40px;
 			text-align:center;
+			&.big {
+				height:50px;
+				font-size:14px;
+				font-weight:700;
+				line-height:50px;
+			}
 		}
 	}
 }
@@ -306,7 +308,6 @@ button {
   }
 }
 .inpwrap {
-	font-size:0;
 	.inp_txt {
 		margin-top:6px;
 		font-size:12px;
@@ -316,18 +317,6 @@ button {
 	}
 	.warn {
 		color:#e70707;
-	}
-	.certify {
-		position:relative;
-		display:inline-block;
-		width:calc(100% - 100px);
-		.cnt {
-			position:absolute;
-			top:0;
-			right:10px;
-			color:#00abe4;
-			line-height:40px;
-		}
 	}
 }
 .frm_group {
@@ -346,6 +335,25 @@ button {
 	label {
 		font-size:13px;
 		color:#666;
+	}
+}
+.certify {
+	font-size:0;
+	.inpwrap {
+		position:relative;
+		display:inline-block;
+		width:calc(100% - 100px);
+		.cnt {
+			position:absolute;
+			top:0;
+			right:10px;
+			color:#00abe4;
+			line-height:40px;
+		}
+	}
+	.btn_confirm {
+		min-width:100px;
+		height:40px;
 	}
 }
 
