@@ -146,4 +146,49 @@
 			top:0;
 		}
 	}
+
+	.board_list.type2 {
+		.img {
+			position:relative;
+			width:80px;
+			padding-top:80px;
+			overflow:hidden;
+			background-color:#000;
+			img {
+				position:absolute;
+				top:50%;
+				left:50%;
+				width:auto;
+				height:100%;
+				transform:translate(-50%,-50%);
+			}
+		}
+		.info {
+			flex:1;
+			padding:0 40px 0 20px;
+			.title {
+				font-size:14px;
+				line-height:23px;
+				font-weight:500;
+				@include ellipse(2);
+			}
+			.date {
+				margin-top:4px;
+				font-size:12px;
+				color:#999;
+			}
+		}
+		.item {
+			padding:15px 0;
+			border-bottom:1px solid #eee;
+			&:last-of-type {
+				padding-bottom:10px;
+				border-bottom-width:0;
+			}
+			a {
+				display:flex;
+				align-items:center;
+			}
+		}
+	}
 }
