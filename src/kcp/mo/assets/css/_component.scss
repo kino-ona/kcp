@@ -232,6 +232,9 @@
 				margin-bottom:0;
 				padding:15px 0;
 				border-bottom:1px solid #eee;
+				&:first-of-type {
+					padding-top:0;
+				}
 				&:last-of-type {
 					padding-bottom:10px;
 					border-bottom-width:0;

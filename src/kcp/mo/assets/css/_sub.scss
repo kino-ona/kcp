@@ -153,8 +153,16 @@
 		font-size:12px;
 		font-weight:300;
 	}
+	.login {
+		.frm_group {
+			margin-bottom:30px;
+		}
+	}
 	.pw {
 		display:none;
+		&.active {
+			display:block;
+		}
 		.frm_group {
 			margin-top:40px;
 			padding-top:40px;
