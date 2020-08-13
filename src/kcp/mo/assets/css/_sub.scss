@@ -25,7 +25,19 @@
 				display: inline-block;
 				font-size: 15px;
 			}
-	  }
+		}
+		&._view {
+			background-image:linear-gradient(to bottom, #008dcf, #006fba);
+			@include transition(.2s, ease-in);
+			h2 { color:#fff; }
+			.head {
+				.btn_back {
+					background: {
+						image: url(/kcp/mo/assets/images/icon/ico_pageback-w.png);
+					}
+				}
+			}
+		}
 	}
 	// &.subhead
 	&.fixed {
@@ -41,6 +53,9 @@
 			top:50%;
 			left:50%;
 			@include transform(translate(-50%, -50%));
+		}
+		&._view {
+			background-image:linear-gradient(to right, #17aded, #0950aa);
 		}
 	}
 } // .header
@@ -58,6 +73,21 @@
 	font-size: 14px;
 	font-weight: 300;
 	border-bottom:1px solid #000;
+}
+.page_title {
+	padding:0 30px 28px 60px;
+	background-image:linear-gradient(to bottom, #006fba, #0053a7);
+	p {
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 1.6;
+		color:#fff;
+		&.date {
+			padding-top:13px;
+			font-size:12px;
+			font-weight: 300;
+		}
+	}
 }
 
 /** container > search container **/
@@ -115,6 +145,9 @@
 
 /** member > login **/
 .member {
+	.row {
+		margin-top:40px;
+	}
 	.desc {
 		margin-top:-10px;
 		font-size:12px;
