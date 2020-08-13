@@ -11,7 +11,7 @@ $(window).scroll(function(e) {
   	winH = $(window).height();
   	docH = $(document).height();
 
-    if (st > 1){
+    if (st > 0){
       $('.subhead').addClass('fixed')
     } else {
       $('.subhead').removeClass('fixed')
