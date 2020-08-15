@@ -100,7 +100,5 @@ var filterClose = function () {
 var changePw = $('.member .btn_confirm');
 var pwBox = $('.member .pw');
 changePw.on('click', function () {
-  if (!pwBox.hasClass('active')) {
-    pwBox.addClass('active');
-  }
+  pwBox.slideDown();
 });
