@@ -32,3 +32,23 @@ if($('#kvswipe').length > 0){
 		mainswipe.update();
 	})
 }
+
+if($('#solutionswipe').length > 0){ // 솔루션
+	var soluswipe = new Swiper('#solutionswipe', {
+		slidesPerView: 1.2,
+    centeredSlides: true,
+    navigation: {
+      nextEl: '#solutionswipe .swiper-button-next',
+      prevEl: '#solutionswipe .swiper-button-prev',
+    },
+  });
+}
+
+if($('#recommswipe').length > 0){ // 추천제품
+	var soluswipe = new Swiper('#recommswipe', {
+		slidesPerView: 1.2,
+    centeredSlides: true,
+   
+  });
+}
+

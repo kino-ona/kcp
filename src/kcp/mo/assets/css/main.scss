@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import "mixins";
 
 .main {
 	.keyvisual {
@@ -40,7 +41,7 @@
 		}
 	}
 	.section {
-		padding:62px 0 100px;
+		padding:65px 0 0;
 		> h2 {
 			font-size: 20px;
 			text-align: center;
@@ -72,4 +73,112 @@
 		background:#000;
 	}
 
+	.section {
+		h3 {
+			display: block;
+			padding-bottom:20px;
+			font-size:23px;
+			text-align:center;
+		}
+	}
+	.solution_sec {	
+		position: relative;
+		&:before {
+			content:'';
+			position: absolute;
+			top:42px;
+			left:0;
+			display: block;
+			width:115px;
+			padding-top:100%;
+			background: {
+				image:url(/kcp/mo/assets/images/common/bar.png);
+				size:cover;		
+				position: center center;
+				repeat:no-repeat;				
+			};
+		}
+		.swiper-slide {
+			margin-right:13px;
+			.figure {
+				padding-top:75%;
+				margin-bottom:38px;
+				background: {
+					size:100% calc(100% - 32px);		
+					position: center center;
+					repeat:no-repeat;				
+				};
+				@include transition(.3s, ease);
+			}
+			.info {
+				padding:0 25px;
+				> h4 {
+					font-size:25px;
+					font-weight: 300;	
+				}
+				.title {
+					padding-top:1.75rem;
+					font-weight: 700;
+				}
+				.desc {
+					padding-top:1.0rem;
+					font-weight: 300;	
+				}
+				.btn_more {
+					display: inline-block;
+					margin-top:20px;
+					i {
+						display: inline-block;
+						width:7px;
+						height:7px;
+						margin-top:-2px;
+						border-top:1px solid #333;
+						border-right:1px solid #333;
+						-webkit-transform: rotate(45deg);
+						transform: rotate(45deg);
+						vertical-align: middle;
+					}
+				}
+			}
+			&.swiper-slide-active {
+				.figure {
+					background: {
+						size:cover;
+					};
+				}
+			}
+		}
+		.swipe_navi {
+			position: absolute;
+			top:53%;
+			right:30px;
+			width:60px;
+			z-index: 11;
+			> div {
+				position: relative;
+			}
+			.swiper-button-next {
+				right:0;
+				width:15px;
+				height:10px;
+				background: {
+					image:url(/kcp/mo/assets/images/common/slide_next.png);
+					size:15px;
+					repeat:no-repeat;
+					position:0 center;
+				}
+			}
+			.swiper-button-prev {
+				left:0;
+				width:15px;
+				height:10px;
+				background: {
+					image:url(/kcp/mo/assets/images/common/slide_prev.png);
+					size:15px;
+					repeat:no-repeat;
+					position:0 center;
+				}
+			}
+		}
+	} // .solution_sec 
 }
