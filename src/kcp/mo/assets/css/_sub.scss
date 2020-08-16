@@ -126,10 +126,11 @@
 		position: relative;
 		height:100%;
 		background-color: #fff;
+		overflow-y:auto;
 		z-index: 9;
 	}
 	.layer_cont {
-		padding:3rem;
+		padding:3rem 0;
 	}
 	.accord_wrap {
 		.acco_panel {
@@ -139,6 +140,80 @@
 			float:left;
 			width:calc(100% / 2);
 			margin-bottom:2rem;
+		}
+		.item {
+			padding:0 3rem;
+		}
+	}
+
+	// introduction
+	.category {
+		li {
+			> ul { display:none; }
+			&.active {
+				> ul { display:block; }
+				&:after {
+					content:'';
+					position:absolute;
+					top:.7rem;
+					right:0;
+					width:11px;
+					height:8px;
+					background: {
+						image:url(/kcp/mo/assets/images/icon/ico_check.png);
+						size:100% auto;
+						position:0 0;
+					}
+				}
+			}
+		}
+		.depth1 {
+			position:relative;
+			margin-bottom:3rem;
+			&.active {
+				.depth2 {
+					position:relative;
+					display:block;
+					margin-top:1.4rem;
+					padding-top:1.4rem;
+					border-top:1px solid #eee;
+				}
+			}
+		}
+		.depth2 {
+			> li {
+				position:relative;
+				padding-left:2rem;
+				margin-bottom:3rem;
+				&:last-of-type {
+					margin-bottom:2rem;
+				}
+				span {
+					font-size:12px;
+					font-weight:300;
+				}
+				&:before {
+					content:'';
+					position:absolute;
+					top:7px;
+					left:5px;
+					width:5px;
+					height:7px;
+					border-left:1px solid #c3c3c3;
+					border-bottom:1px solid #c3c3c3;
+				}
+			}
+		}
+		.depth3 {
+			margin-top:1rem;
+			padding-left:1rem;
+		}
+		.chkwrap {
+			float:none;
+			width:100%;
+			input[type=checkbox] + label {
+				font-weight:300;
+			}
 		}
 	}
 }
@@ -164,9 +239,79 @@
 			display:block;
 		}
 		.frm_group {
-			margin-top:40px;
 			padding-top:40px;
 			border-top:1px solid #eee;
+		}
+	}
+}
+
+/** introduction **/
+.introduction {
+	.item_link {
+		display:flex;
+		flex-wrap:wrap;
+		margin:4px 0 40px;
+		li {
+			width:130px;
+			height:30px;
+			margin:8px 15px 0 0;
+		}
+		a {
+			display:block;
+			border:1px solid #0053a7;
+			color:#0053a7;
+			line-height:28px;
+			text-align:center;
+			&:after {
+				content:'';
+				display:inline-block;
+				width:6px;
+				height:9px;
+				margin:-4px 0 0 5px;
+				vertical-align:middle;
+				background: {
+					image:url(/kcp/mo/assets/images/icon/ico_arr_link.png);
+					position:0 0;
+					size:cover;
+				}
+			}
+		}
+	}
+	.sort {
+		.util {
+			float:right;
+			vertical-align:middle;
+		}
+		.cnt {
+			display:inline-block;
+			line-height:29px;
+			em {
+				line-height:inherit;
+			}
+			&:after {
+				content:'';
+				display:inline-block;
+				width:1px;
+				height:10px;
+				margin:0 10px;
+				background-color:#eee;
+			}
+		}
+		.dropdown {
+			position:relative;
+			top:auto;
+			right:auto;
+		}
+	}
+	.product_list {
+		.desc {
+			padding-top:0;
+		}
+	}
+	.accord_wrap .item {
+		&[data-status=expanded] {
+			margin-bottom:2rem;
+			border-bottom:10px solid #f2f4f6;
 		}
 	}
 }
