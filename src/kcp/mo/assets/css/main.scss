@@ -46,4 +46,30 @@
 			text-align: center;
 		}
 	}
+	.kvpage {
+		position: absolute;
+		right:30px;
+		padding-top:2.5rem;
+		width:7.5rem;
+		text-align:right;
+		.swiper-counter {
+			span {
+				display: inline-block;
+				font-size: 11px;
+				color:#888888;
+				&.cur {
+					color:#000;
+				}
+			}
+		}
+	}
+	.swiper-pagination-progressbar {
+		width:100%;
+		height:1px;
+		margin-top:-2px;
+	}
+	.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+		background:#000;
+	}
+
 }

@@ -3,41 +3,30 @@ $(document).ready(function() {
 if($('#kvswipe').length > 0){
 	var mainswipe = new Swiper('#kvswipe', {
 		loop: true,
-    // speed: 600,
     parallax: true,
     observer: true,
     observeParents: true,
     pagination: {
-      el: '#kvswipe .swiper-pagination',
+      el: '.kvpage .swiper-pagination',
       type: 'progressbar',
-	    // renderCustom: function (swiper, current, total) {
-	    //   return '<div class=row>' + ('' + current).slice(-2) + ' / <span class=pagination-total>' + ('' + total).slice(-2) + '</span></div>';
-	    // }
     },
-    on: {
-      init: function () {
-        /* do something */
-      },
-    }
   });
-  // var counter = $('.fraction');
-  // var currentCount = $('<span class="count">1<span/>');
-  // counter.append(currentCount);
 
-  // mainswipe.on('transitionStart', function () {
-  //   var index = this.activeIndex + 1,
-  //       $current = $("#kvswipe .swiper-slide").eq(index),
-  //       $c_cur = $("#count_cur"),
-  //       $c_next = $("#count_next"),
-  //       dur = 0.6;
+  var cur = mainswipe.realIndex + 1,
+      total = mainswipe.slides.length - 2;
+  var cur = (cur < 10) ? '0' + cur : cur;
+  var total = (total < 10) ? '0' + total : total;
+  $('#kvswipe').find('.swiper-counter').append('<span class=cur>' + cur + '</span> <span class=total> / ' + total + '</span>')
+  mainswipe.on('slideChange', function () {
+    var cur = mainswipe.realIndex + 1,
+        cur = (cur < 10) ? '0' + cur : cur;
+    $('#kvswipe').find('.swiper-counter .cur').html(cur)
+  });
 
-  //   console.log(this.total)
-
-  //   var prevCount = $('.count');
-  //   currentCount = $('<span class="count next">' + index + '<span/>');
-  //   counter.html(currentCount);
-  // });
-
+  var kvh = $('#kvswipe .figure').css('padding-top');
+  $('#kvswipe .kvpage').css({
+    'top': kvh
+  })
 
 	$(window).resize(function (){
 		mainswipe.update();
