@@ -35,6 +35,19 @@
 			<p class="desc">아이디를 분실하신 파트너께서는 유한킴벌리<br> 프로페셔널 담당자에게 문의 바랍니다.</p>
 		</div>
 
+		<!-- layer popup -->
+		<!-- 아이디/비밀번호 불일치, 미입력 시 -->
+		<div class="layer_body popup" id="popup1" aria-hidden="true" role="dialog">
+			<div class="layer_wrap">
+				<div class="layer_cont alert">
+					<p>아이디 또는 비밀번호를<br>확인 후 다시 시도해주세요.</p>
+				</div>
+				<div class="btn_wrap">
+					<button onclick="layerClose('popup1')" class="btn btn_confirm">확인</button>
+				</div>
+			</div>
+		</div>
+
 	</div>
 	<!--// container -->
 </div>
