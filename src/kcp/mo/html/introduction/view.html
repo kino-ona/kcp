@@ -36,6 +36,7 @@
 						</a>
 					</div>
 				</div>
+				<div class="swiper-pagination"></div>
 			</div>
 		</div>
 		<!--// 제품 이미지 -->
@@ -77,7 +78,7 @@
 				<dl class="option">
 					<dt>색상</dt>
 					<dd>
-						<ul>
+						<ul class="opt_color">
 							<li><input type="radio" id="color1" name="opt_color" checked><label for="color1">흰색</label></li>
 							<li><input type="radio" id="color2" name="opt_color"><label for="color2">검정</label></li>
 							<li><input type="radio" id="color3" name="opt_color"><label for="color3">회색</label></li>
@@ -85,17 +86,17 @@
 					</dd>
 					<dt>사이즈</dt>
 					<dd>
-						<ul>
+						<ul class="opt_size">
 							<li><input type="radio" id="size1" name="opt_size" checked><label for="size1">196mmX240mm</label></li>
 							<li><input type="radio" id="size2" name="opt_size"><label for="size2">196mmX200mm</label></li>
 						</ul>
 					</dd>
 					<dt>향</dt>
 					<dd>
-						<ul>
-							<li><input type="radio" id="frag1" name="opt_frag" checked><label for="frag1">플로럴향</label></li>
+						<ul class="opt_frag">
+							<li><input type="radio" id="frag1" name="opt_frag" checked><label for="frag1">시트러스향(감귤)</label></li>
 							<li><input type="radio" id="frag2" name="opt_frag"><label for="frag2">그린플로럴향</label></li>
-							<li><input type="radio" id="frag3" name="opt_frag"><label for="frag3">스위파우더향</label></li>
+							<li><input type="radio" id="frag3" name="opt_frag"><label for="frag3">멜란지색상(회색계열)</label></li>
 						</ul>
 					</dd>
 				</dl>
@@ -246,9 +247,9 @@
 				</div>
 				<div class="acco_panel">
 					<ul>
-						<li><a href="#">크리넥스® 드라이셀* 핸드타올 관련자료</a></li>
-						<li><a href="#">크리넥스® 드라이셀* 핸드타올 관련자료</a></li>
-						<li><a href="#">크리넥스® 드라이셀* 핸드타올 관련자료</a></li>
+						<li><a href="#"><i class="ico_pdf"></i>크리넥스® 드라이셀* 핸드타올 관련자료</a></li> <!-- pdf 일 경우 ico_pdf 클래스 추가 -->
+						<li><a href="#"><i class="ico_jpg"></i>크리넥스® 드라이셀* 핸드타올 관련자료</a></li> <!-- jpg 일 경우 ico_jpg 클래스 추가 -->
+						<li><a href="#"><i class="ico_gif"></i>크리넥스® 드라이셀* 핸드타올 관련자료</a></li> <!-- gif 일 경우 ico_gif 클래스 추가 -->
 					</ul>
 				</div>
 			</div>
@@ -258,9 +259,9 @@
 				</div>
 				<div class="acco_panel">
 					<ul>
-						<li><a href="#">크리넥스® 드라이셀* 핸드타올 기술인증자료</a></li>
-						<li><a href="#">크리넥스® 드라이셀* 핸드타올 기술인증자료</a></li>
-						<li><a href="#">크리넥스® 드라이셀* 핸드타올 기술인증자료</a></li>
+						<li><a href="#"><i class="ico_pdf"></i>크리넥스® 드라이셀* 핸드타올 관련자료</a></li>
+						<li><a href="#"><i class="ico_jpg"></i>크리넥스® 드라이셀* 핸드타올 관련자료</a></li>
+						<li><a href="#"><i class="ico_gif"></i>크리넥스® 드라이셀* 핸드타올 관련자료</a></li>
 					</ul>
 				</div>
 			</div>
@@ -272,9 +273,9 @@
 				</div>
 				<div class="acco_panel">
 					<ul>
-						<li><a href="#">크리넥스® 드라이셀* 핸드타올 성적서/인증서</a></li>
-						<li><a href="#">크리넥스® 드라이셀* 핸드타올 성적서/인증서</a></li>
-						<li><a href="#">크리넥스® 드라이셀* 핸드타올 성적서/인증서</a></li>
+						<li><a href="#"><i class="ico_pdf"></i>크리넥스® 드라이셀* 핸드타올 관련자료</a></li>
+						<li><a href="#"><i class="ico_jpg"></i>크리넥스® 드라이셀* 핸드타올 관련자료</a></li>
+						<li><a href="#"><i class="ico_gif"></i>크리넥스® 드라이셀* 핸드타올 관련자료</a></li>
 					</ul>
 				</div>
 			</div>
@@ -298,6 +299,13 @@
 	// 제품 이미지 swipe
 	if($('#prd_swipe').length > 0){
 		var rtsolutionswipe = new Swiper('#prd_swipe', {
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'fraction',
+				renderFraction: function (currentClass, totalClass) {
+					return '<span class="' + currentClass + '"></span>' + '/' + '<span class="' + totalClass + '"></span>';
+				}
+			},
 			loop: false,
 			slidesPerView: 1,
 			parallax: true,

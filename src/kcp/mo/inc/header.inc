@@ -8,7 +8,10 @@
 				<h2>@@pagetitle</h2>
 			}
 			@@if (headtype === 'subhead _logo') {
-				<h2><span class="a11y">@@pagetitle</span></h2>
+				<!-- 브랜드 로고에 따른 클래스명 정의
+					* 크리넥스: kleenex
+				-->
+				<h2 class="kleenex"><span class="a11y">@@pagetitle</span></h2>
 			} 
 		</div>
 	</div>
