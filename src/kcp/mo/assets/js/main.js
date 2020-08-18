@@ -37,6 +37,8 @@ if($('#solutionswipe').length > 0){ // 솔루션
 	var soluswipe = new Swiper('#solutionswipe', {
 		slidesPerView: 1.2,
     centeredSlides: true,
+    observer: true,
+    observeParents: true,
     navigation: {
       nextEl: '#solutionswipe .swiper-button-next',
       prevEl: '#solutionswipe .swiper-button-prev',
@@ -45,10 +47,42 @@ if($('#solutionswipe').length > 0){ // 솔루션
 }
 
 if($('#recommswipe').length > 0){ // 추천제품
-	var soluswipe = new Swiper('#recommswipe', {
-		slidesPerView: 1.2,
+	var recommswipe = new Swiper('#recommswipe', {
+    initialSlide: 1,
+		slidesPerView: 1.44,
     centeredSlides: true,
-   
+    // spaceBetween: 20,
+    breakpoints: {
+      768: {
+        slidesPerView: 3,
+      },
+      740: {
+        slidesPerView: 1.44,
+      }
+    }
+  });
+  if($('#recommswipe .swiper-slide').length > 0){
+    $('.recommand_sec .swiper-container').css({
+      'background-size': $('#recommswipe .swiper-slide').width()
+    });
+  }
+  $(window).resize(function (){
+    var resW = setTimeout(function(){
+      $('.recommand_sec .swiper-container').css({
+        'background-size': $('#recommswipe .swiper-slide').width()
+      });
+      clearTimeout(resW);
+    }, 300);
+  })
+}
+
+if($('#innovswipe').length > 0){ // 현장 혁신정보
+  var innovswipe = new Swiper('#innovswipe', {
+    slidesPerView: 1.945,
   });
 }
+
+
+
+
 

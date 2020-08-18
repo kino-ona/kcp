@@ -41,7 +41,7 @@
 		}
 	}
 	.section {
-		padding:65px 0 0;
+		padding:60px 0 0;
 		> h2 {
 			font-size: 20px;
 			text-align: center;
@@ -181,4 +181,171 @@
 			}
 		}
 	} // .solution_sec 
+	.recommand_sec {
+		.swiper-container {
+			background: {
+				image:url(/kcp/mo/assets/images/common/mproduct_bg.png);
+				size:calc(100% - 110px);
+				repeat:no-repeat;
+				position:center 0;
+			}
+			@include transition(.3s, ease);
+		}
+		.swiper-slide {
+			text-align: center;
+			> a {
+				display: block;
+			}
+		} 
+		.figure {
+			position: relative;
+			padding-top:100%;
+			img {
+				position: absolute;
+				top:50%;
+				left:75%;
+				@include transform(translate(-50%, -50%));
+				max-width:50%;
+				@include transition(.4s, ease-in);
+			}
+		}
+		.info {
+			opacity: 0;
+			padding-top:40px;
+			@include transition(.3s, ease);
+			.desc {
+				padding-top:1.15rem;
+				font-size:14px;
+			}
+		}
+		.tags {
+			opacity: 0;
+			margin-top:18px;
+			margin-left:-20px;
+			margin-right:-20px;
+			.tag {
+				display: inline-block;
+				min-width:50px;
+				padding:0.5rem 1.0rem 0.6rem;
+				margin-bottom:5px;
+				border:1px solid #c2c2c2;
+				border-radius: 20px;
+				-webkit-border-radius: 20px;
+				-moz-border-radius: 20px;
+				-ms-border-radius: 20px;
+				-o-border-radius: 20px;
+				font-size:12px;
+				font-weight: 300;
+				color:#888888;
+			}
+		}
+		.logo {
+			opacity: 0;
+			height:20px;
+			background: {
+				repeat:no-repeat;
+				position:center 0;
+				size:auto 20px;
+			}
+			&.logo_kleenex {
+				background: {
+					image: url(/kcp/mo/assets/images/common/logo_kleenex.png);
+				}
+			}
+		}
+		.swiper-slide-active {
+			.figure {
+				img {
+					top:inherit;
+					bottom:-25px;
+					left:50%;
+					max-width:100%;
+					@include transform(translate(-50%, 0));
+				}
+			}
+			.info, .tags, .logo {
+				opacity: 1;
+			}
+		}
+		.swiper-slide-next {
+			.figure {
+				img {
+					left:23%;
+				}
+			}
+		}
+	} //.recommand_sec 
+	.innov_sec {
+		margin-top:60px;
+		padding-bottom:45px;
+		background-color:#f2f4f6;
+		.swiper-container {
+			padding-left:3rem;
+			padding-right:2.5rem;
+		}
+		.swiper-slide {
+			margin-right:2.20rem;
+		}
+		.figure {
+			position: relative;
+			padding-top:100%;
+			img {
+				position: absolute;
+				top:50%;
+				left:50%;
+				@include transform(translate(-50%, -50%));
+			}
+		}
+		.info {
+			margin-top:20px;
+			.desc {
+				font-weight: 300;
+			}
+		}
+	} //.innov_sec
+
+	.mailling_sec {
+		> h3 {
+			padding-top:26px;
+			padding-bottom:20px;
+			background: {
+				image:url(/kcp/mo/assets/images/icon/ico_email.png);
+				size:36px;
+				repeat:no-repeat;
+				position:center 0;
+			}
+		}
+		.row {
+			padding:0 30px;
+			text-align:center;
+		}
+		.frm {
+			margin-top:3rem;
+			input[type=text] {
+				width:calc((100% / 2) - 13px);
+			}
+			span {
+				display: inline-block;
+				width:20px;
+				vertical-align: middle;
+			}
+			p {
+				margin-top:10px;
+			}
+			select {
+				padding:1.3rem 25px 1.35rem 10px;
+				border:1px solid #000000;
+				background: {
+					position: right 10px center;
+				};
+			}
+		}
+		.btn_wrap {
+			margin-top:20px;
+			.btn {
+				font-size:15px;
+				font-weight: 700;
+			}
+		}
+	} //.mailling_sec
 }

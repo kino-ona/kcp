@@ -472,7 +472,8 @@
 		left:0;
 		right:0;
 		z-index:9;
-		transition:.3s ease;
+		// transition:.3s ease;
+		@include transition(.5s, ease-in-out);
 		a {
 			display:block;
 			padding:17px 0 18px;
@@ -482,7 +483,7 @@
 		}
 		&.up {
 			bottom:51px;
-			transition-delay:.4s;
+			// transition-delay:.4s;
 		}
 	}
 }

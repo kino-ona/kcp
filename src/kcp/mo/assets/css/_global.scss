@@ -420,6 +420,7 @@ h1.logo {
 	}
 } // .header
 .footer {
+	margin-top:70px;
 	background-color: #222222;
 	.row {
 		position: relative;
@@ -593,7 +594,8 @@ h1.logo {
 	z-index: 9;
 	@include transition(.6s, ease-in-out);
 	&.hide {
-		bottom:-100%;
+		// bottom:-100%;
+		bottom:-52px;
 	}
   .row {
     display: flex;
