@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	@@include('./inc/pagehead.inc',{
+		"webroot":"."
+	})
+</head>
+<body>
+<div class="skipnavigation"><a href="#container">본문 바로가기</a></div>
+<!-- header -->
+@@include('./inc/header.inc',{
+	"headtype":"",
+	"pagetitle":""
+})
+<!-- //header -->
+
+<div class="wrap">
+<style>
+	.guides {padding:0 20px;margin:50px 0;}
+	/* .guides * {font-size:14px;} */
+	.guides div:after {content: '';display: block;clear: both;}
+	.guides h1 {padding-bottom:20px;font-size: 20px;font-weight: bold;}
+	.guides h2 {margin:30px 0 10px;font-weight:bold;}
+	.guides h3 {margin:10px 0 10px;}
+	.guides h3:before {content:'* ';}
+	.guides pre {display: block;padding:15px;margin-bottom:40px;background-color: #000;color:#fff;line-height:1.7;}
+	.guides .half {float:left;width:calc(100%/2 - 30px);margin-right:30px;}
+	.guides .half.right {width:calc(100%/2);margin-right:0;}
+	/* .btn {color:#fff;border:1px solid #fff;padding:5px 10px 10px;} */
+</style>
+<div class="guides">
+	<h1>Guide</h1>
+
+	<div>
+	<p>폴더구조</p>
+	<pre>
+	/kcp/mo/html
+	../assets/css
+	../assets/js
+	../assets/images
+	</pre>
+	</div>
+
+	<div>
+	<h2>Button</h2>
+	<div class="btn_wrap">
+		<button class="btn default">Default</button>
+	</div>
+	<div class="btn_wrap">
+		<button class="btn primary">Primary</button>
+	</div>
+	<a href="#" class="btn_link">link button</a>
+	</div>
+
+	<div>
+	<h2>Form</h2>
+	<h3>input</h3>
+	<div class="inpwrap">
+		<input type="password" placeholder="비밀번호를 입력해주세요">
+	</div>
+	<dl class="frm_group">
+		<dt><label for="frm1">아이디</label></dt>
+		<dd><input type="text" id="frm1" placeholder="아이디를 입력해주세요"></dd>
+
+		<dt><label for="frm2">새 비밀번호입력</label></dt>
+		<dd class="inpwrap">
+			<input type="password" id="frm2" placeholder="영문+숫자 조합 6~12자리">
+			<p class="inp_txt warn">비밀번호가 일치하지 않습니다.</p>
+		</dd>
+		
+		<dt><label for="frm3">인증번호</label></dt>
+		<dd class="certify">
+			<div class="inpwrap">
+				<input type="tel" id="frm3" placeholder="인증번호를 입력해주세요">
+				<span class="cnt">00:00</span>
+			</div>
+			<button class="btn default btn_confirm">확인</button>
+		</dd>
+	</dl>
+	<h3>checkbox</h3>
+	<p class="chkwrap"><input type="checkbox" id="ck01"><label for="ck01">평판형<span>(111)</span></label></p>
+	<p class="chkwrap"><input type="checkbox" id="ck02"><label for="ck02">롤타입<span>(20)</span></label></p>
+	<p class="chkwrap"><input type="checkbox" id="ck03"><label for="ck03">프리미엄<span>(4)</span></label></p>
+	</div>
+<br>
+	<div>
+	<h3>기본이미지 : <br><strong style="font-size:12px;">./assets/images/common/default_image.png</strong></h3>
+	<p style="width:200px;height:200px;"><img src="./assets/images/common/default_image.png" alt=""></p>
+	</div>
+<br>
+	<div>
+	<h3>레이어팝업</h3>
+
+		<div class="layer_body popup" id="popup1" aria-hidden="true" role="dialog">
+			<div class="layer_wrap">
+				<div class="layer_cont alert">
+					<p>아이디 또는 비밀번호를<br>확인 후  다시 시도해주세요.</p>
+				</div>
+				<div class="btn_wrap">
+					<button onclick="layerClose('popup1')" class="btn btn_confirm">확인</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- <div class="layer_body popup" id="popup2" aria-hidden="true" role="dialog">
+			<div class="layer_wrap">
+				<div class="layer_head">
+					<button onclick="layerClose('popup2')" class="layer_close manualfn">닫기</button>
+					<h2 class="layer_title">layer_title</h2>
+				</div>
+				<div class="layer_cont">
+				</div>
+			</div>
+		</div> -->
+
+		<button onclick="layerOpen('popup1')">레이어 열기(타이틀 없는 팝업)</button>
+		<br>
+		<!-- <button onclick="layerOpen('popup2')">레이어 열기(타이틀 있는 팝업)</button> -->
+		
+
+	</div>
+
+</div>
+</div>
+
+<!-- footer -->
+@@include('./inc/footer.inc',{
+	"webroot2":"."
+})
+<!-- //footer -->
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	@@include('../inc/pagehead.inc',{
+		"webroot":".."
+	})
+</head>
+<body>
+<div class="skipnavigation"><a href="#container">본문 바로가기</a></div>
+<!-- header -->
+@@include('../inc/header.inc',{
+	"headtype":"subhead",
+	"pagetitle":"비밀번호 찾기"
+})
+<!-- //header -->
+
+<div class="wrap">
+	<!-- container -->
+	<div class="container member">
+		<div class="page_summary">
+			유한킴벌리 프로페셔널에 등록된 파트너사 휴대폰 번호를 통해 비밀번호 찾기가 가능합니다.
+		</div>
+		
+		<div class="row">
+			<!-- form group -->
+			<dl class="frm_group">
+				<dt><label for="frm1">아이디</label></dt>
+				<dd><input type="text" id="frm1" placeholder="아이디를 입력해주세요"></dd>
+				<dt><label for="frm2">휴대폰 번호</label></dt>
+				<dd class="inpwrap">
+					<input type="tel" id="frm2" placeholder="- 를 제외한 숫자만 입력해주세요">
+					<p class="inp_txt">해당 주/부계정에 등록된 휴대폰 번호를 입력하셔야 인증번호가 발송됩니다.</p>
+				</dd>
+			</dl>
+			<!--// form group -->
+
+			<div class="btn_wrap">
+				<button class="btn default">인증번호 전송</button>
+			</div>
+		</div>
+
+		<div class="row">
+			<dl class="frm_group">
+				<dt><label for="frm3">인증번호</label></dt>
+				<dd class="certify">
+					<div class="inpwrap">
+						<input type="tel" id="frm3" placeholder="인증번호를 입력해주세요">
+						<span class="cnt">00:00</span>
+					</div>
+					<button class="btn default btn_confirm">확인</button>
+				</dd>
+			</dl>
+		</div>
+
+		<!-- 휴대폰 인증 후 노출되는 영역 -->
+		<div class="row pw">
+			<dl class="frm_group">
+				<dt><label for="frm4">새 비밀번호입력</label></dt>
+				<dd class="inpwrap">
+					<input type="password" id="frm4" placeholder="영문+숫자 조합 6~12자리">
+					<p class="inp_txt warn">띄어쓰기 없는 영문, 숫자 6~12자로 입력해 주세요</p> <!-- 입력 형식이 맞지 않을 경우 노출 -->
+				</dd>
+
+				<dt><label for="frm5">새 비밀번호확인</label></dt>
+				<dd class="inpwrap">
+					<input type="password" id="frm5" placeholder="영문+숫자 조합 6~12자리">
+					<p class="inp_txt warn">비밀번호가 일치하지 않습니다.</p> <!-- 비밀번호가 맞지 않을 경우 노출 -->
+				</dd>
+			</dl>
+
+			<div class="btn_wrap">
+				<button class="btn primary">비밀번호 변경</button>
+			</div>
+		</div>
+		<!--// 휴대폰 인증 후 노출되는 영역 -->
+
+		<!-- layer popup -->
+		<!-- 주/부계정에 등록된 휴대폰 번호가 일치할 경우 -->
+		<div class="layer_body popup" id="popup1" aria-hidden="true" role="dialog">
+			<div class="layer_wrap">
+				<div class="layer_cont alert">
+					<p>인증번호를 발송했습니다.<br>확인 후 인증번호를 입력해주세요.</p>
+				</div>
+				<div class="btn_wrap">
+					<button onclick="layerClose('popup1')" class="btn btn_confirm">확인</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- 주/부계정에 등록된 휴대폰 번호가 불일치할 경우 -->
+		<div class="layer_body popup" id="popup2" aria-hidden="true" role="dialog">
+			<div class="layer_wrap">
+				<div class="layer_cont alert">
+					<p>휴대폰 번호가 일치하지 않습니다.<br>확인 후 다시 시도해주세요.</p>
+				</div>
+				<div class="btn_wrap">
+					<button onclick="layerClose('popup2')" class="btn btn_confirm">확인</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- 인증번호가 일치하지 않을 경우 -->
+		<div class="layer_body popup" id="popup3" aria-hidden="true" role="dialog">
+			<div class="layer_wrap">
+				<div class="layer_cont alert">
+					<p>인증 번호가 일치하지 않습니다.<br>확인 후 다시 시도해주세요.</p>
+				</div>
+				<div class="btn_wrap">
+					<button onclick="layerClose('popup3')" class="btn btn_confirm">확인</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- 비밀번호 변경 버튼 클릭 시 -->
+		<div class="layer_body popup" id="popup4" aria-hidden="true" role="dialog">
+			<div class="layer_wrap">
+				<div class="layer_cont alert">
+					<p>비밀번호가 정상적으로 변경되었습니다.<br>확인을 누르시면 로그인 페이지로 이동합니다.</p>
+				</div>
+				<div class="btn_wrap">
+					<button onclick="layerClose('popup4')" class="btn btn_confirm">확인</button>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!--// container -->
+</div>
+<!--// wrap -->
+
+<!-- footer -->
+@@include('../inc/footer.inc',{
+	"webroot2":".."
+})
+<!-- //footer -->
+
+<script>
+	layerOpen('popup1') //ui 확인용
+</script>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	@@include('../inc/pagehead.inc',{
+		"webroot":".."
+	})
+</head>
+<body>
+<div class="skipnavigation"><a href="#container">본문 바로가기</a></div>
+<!-- header -->
+@@include('../inc/header.inc',{
+	"headtype":"subhead",
+	"pagetitle":"파트너사 로그인"
+})
+<!-- //header -->
+
+<div class="wrap">
+	<!-- container -->
+	<div class="container member">
+		<div class="page_summary">
+			유한킴벌리 프로페셔널에 등록된 파트너사만 로그인하실 수 있습니다.
+		</div>
+
+		<div class="row login">
+			<!-- form group -->
+			<ul class="frm_group">
+				<li><input type="text" id="frm1" placeholder="아이디를 입력해주세요"></li>
+				<li><input type="password" id="frm2" placeholder="비밀번호를 입력해주세요"></li>
+			</ul>
+			<!--// form group -->
+
+			<div class="btn_wrap unset">
+				<a href="#" class="btn primary big">로그인</a>
+				<a href="#" class="btn_link">비밀번호 찾기</a>
+			</div>
+			
+			<p class="desc">아이디를 분실하신 파트너께서는 유한킴벌리<br> 프로페셔널 담당자에게 문의 바랍니다.</p>
+		</div>
+
+		<!-- layer popup -->
+		<!-- 아이디/비밀번호 불일치, 미입력 시 -->
+		<div class="layer_body popup" id="popup1" aria-hidden="true" role="dialog">
+			<div class="layer_wrap">
+				<div class="layer_cont alert">
+					<p>아이디 또는 비밀번호를<br>확인 후 다시 시도해주세요.</p>
+				</div>
+				<div class="btn_wrap">
+					<button onclick="layerClose('popup1')" class="btn btn_confirm">확인</button>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!--// container -->
+</div>
+<!--// wrap -->
+
+<!-- footer -->
+@@include('../inc/footer.inc',{
+	"webroot2":".."
+})
+<!-- //footer -->
+
+</body>
+</html>
