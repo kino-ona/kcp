@@ -390,6 +390,28 @@
 				}
 			}
 		}
+		.swiper-pagination {
+			display:flex;
+			overflow:hidden;
+			position:static;
+			&-bullet {
+				width:auto;
+				height:auto;
+				margin:0;
+				padding:1.1rem 1.5rem;
+				border-radius:0;
+				background-color:#fff;
+				opacity:1;
+				white-space:nowrap;
+				&-active {
+					background-image:linear-gradient(to right, #008dcf, #006fba);
+					color:#fff;
+					span {
+						color:inherit;
+					}
+				}
+			}
+		}
 		.container-top {
 			padding-bottom:55px;
 			.swiper-slide {

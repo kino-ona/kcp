@@ -83,18 +83,58 @@ if($('#innovswipe').length > 0){ // 현장 혁신정보
 	});
 }
 
+// if($('#brandswipe').length > 0){ // 브랜드 소개
+// 	var brandswipeNavi = new Swiper('#brandswipeNavi', {
+// 		slidesPerView: 4,
+// 		spaceBetween: 0,
+// 		watchSlidesVisibility: true,
+// 		watchSlidesProgress: true,
+// 	});
+// 	var brandswipe = new Swiper('#brandswipe', {
+// 		thumbs: {
+// 			swiper: brandswipeNavi
+// 		}
+// 	});
+// }
+
 if($('#brandswipe').length > 0){ // 브랜드 소개
-	var brandswipeNavi = new Swiper('#brandswipeNavi', {
-		slidesPerView: 'auto',
-		spaceBetween: 0,
-		watchSlidesVisibility: true,
-		watchSlidesProgress: true,
+	var bulletNames = [];
+	$('#brandswipe').find('.swiper-slide').each(function(i){
+		bulletNames.push( this.getAttribute('data-name') );
 	});
 	var brandswipe = new Swiper('#brandswipe', {
-		thumbs: {
-			swiper: brandswipeNavi
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+			renderBullet: function( index, className ){
+				return '<span class="' + className + '"><span>' + bulletNames[ index ] + '</span></span>';
+			},
+		},
+		on: {
+			slideChange: function(){
+				if( this.pagination.$el ){
+					var active_dot = this.pagination.bullets[ this.activeIndex ];
+					var $active_dot = $( active_dot );
+
+					var leftPosition = $active_dot.position().left + $active_dot.parent().scrollLeft() + ( $active_dot.width() / 2 );
+					leftPosition -= $( this.pagination.$el[0] ).innerWidth() / 2;
+
+					$active_dot.parent().animate({ scrollLeft: leftPosition }, 200);
+				}
+			},
+			init: function(){
+				this.pagination.update();
+				this.snapGrid = this.slidesGrid.slice(0);
+			},
+			resize: function(){
+				this.pagination.update();
+				this.snapGrid = this.slidesGrid.slice(0);
+			},
+			transitionStart: function (){
+				brandswipe.update();
+			}
 		}
-	});
+	})
 }
 
 
