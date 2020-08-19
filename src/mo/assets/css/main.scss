@@ -49,10 +49,12 @@
 	}
 	.kvpage {
 		position: absolute;
-		right:30px;
-		padding-top:2.5rem;
+		right:0;
 		width:7.5rem;
+		padding:10px;
 		text-align:right;
+		background-color:#fff;
+		z-index:1;
 		.swiper-counter {
 			span {
 				display: inline-block;
@@ -65,9 +67,8 @@
 		}
 	}
 	.swiper-pagination-progressbar {
-		width:100%;
+		width:calc(100% - 20px);
 		height:1px;
-		margin-top:-2px;
 	}
 	.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
 		background:#000;
@@ -183,9 +184,10 @@
 	} // .solution_sec 
 	.recommand_sec {
 		.swiper-container {
+			padding:0 35px;
 			background: {
 				image:url(../images/common/mproduct_bg.png);
-				size:calc(100% - 110px);
+				size:cover;
 				repeat:no-repeat;
 				position:center 0;
 			}
@@ -202,11 +204,11 @@
 			padding-top:100%;
 			img {
 				position: absolute;
-				top:50%;
-				left:75%;
-				@include transform(translate(-50%, -50%));
-				max-width:50%;
+				bottom:5px;
+				left:50%;
+				@include transform(translateX(-50%));
 				@include transition(.4s, ease-in);
+				max-width:calc(100% - 40px);
 			}
 		}
 		.info {
@@ -221,8 +223,6 @@
 		.tags {
 			opacity: 0;
 			margin-top:18px;
-			margin-left:-20px;
-			margin-right:-20px;
 			.tag {
 				display: inline-block;
 				min-width:50px;
@@ -256,21 +256,44 @@
 		.swiper-slide-active {
 			.figure {
 				img {
-					top:inherit;
-					bottom:-25px;
-					left:50%;
-					max-width:100%;
-					@include transform(translate(-50%, 0));
+					bottom:0;
 				}
 			}
 			.info, .tags, .logo {
 				opacity: 1;
 			}
 		}
-		.swiper-slide-next {
-			.figure {
-				img {
-					left:23%;
+		.swipe_navi {
+			position: absolute;
+			top:calc(50% / 1.65);
+			width:calc(100% - 70px);
+			z-index: 11;
+			@include transform(translate(0, -50%));
+			> div {
+				position: relative;
+				width:100%;
+				z-index: 11;
+			}
+			.swiper-button-next {
+				right:-18px;
+				width:20px;
+				height:20px;
+				background: {
+					image:url(../images/common/slide_next2.png);
+					size:12px;
+					repeat:no-repeat;
+					position:0 center;
+				}
+			}
+			.swiper-button-prev {
+				left:-13px;
+				width:20px;
+				height:20px;
+				background: {
+					image:url(../images/common/slide_prev2.png);
+					size:12px;
+					repeat:no-repeat;
+					position:0 center;
 				}
 			}
 		}
@@ -282,9 +305,6 @@
 		.swiper-container {
 			padding-left:3rem;
 			padding-right:2.5rem;
-		}
-		.swiper-slide {
-			margin-right:2.20rem;
 		}
 		.figure {
 			position: relative;
@@ -348,4 +368,86 @@
 			}
 		}
 	} //.mailling_sec
+	.brand_sec {
+		.container-navi {
+			padding-right:3rem;
+			.swiper-slide {
+				width:auto !important;
+				max-height:45px;
+				padding:1.6rem 1.5rem;
+				text-align:center;
+				background-color:#fff;
+				p {
+					line-height: 1;
+					word-break: break-all;
+				}
+				&.swiper-slide-thumb-active {
+					background-image:linear-gradient(to right, #008dcf, #006fba);
+					color:#fff;
+					p {
+						color:#fff;
+					}
+				}
+			}
+		}
+		.container-top {
+			padding-bottom:55px;
+			.swiper-slide {
+				background: {
+					size:cover;
+					position:center 0;
+				}
+				&:before {
+					content: '';
+					display: block;
+					position: absolute;
+					top:0;
+					left:0;
+					width:100%;
+					height:100%;
+					background-color:rgba(0,0,0, .6);
+				}
+			}
+		}
+		.row {
+			position: relative;
+			padding:9.5rem 0 0;
+			margin-top:-5px;
+			z-index:1;
+			p {
+				padding-left: 8.0rem;
+				padding-right:5rem;
+				color:#fff;
+			}
+			.name {
+				position: relative;
+				font-size:30px;
+				font-weight: 300;
+				&:before {
+					content: '';
+					display: block;
+					position: absolute;
+					left:0;
+					top:17px;
+					width:5.5rem;
+					height:.4rem;
+					background-color:#fff;
+				}
+			}
+			.eng {
+				padding-top:15px;
+				font-weight: 700;
+			}
+			.desc {
+				padding-top:10px;
+			}
+			.img {
+				padding-left:8.0rem;
+				padding-top:15px;
+				img {
+					margin-bottom:-55px;
+				}
+			}
+		}
+	} //.brand_sec 
 }

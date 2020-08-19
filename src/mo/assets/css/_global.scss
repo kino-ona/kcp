@@ -449,6 +449,7 @@ h1.logo {
 			}
 		}
 		a {
+			letter-spacing: -.4px;
 			&.point {
 				font-weight: 700;
 			}
@@ -475,7 +476,7 @@ h1.logo {
 		}
 		.tel {
       display: block;
-      margin-top:-2px;
+      margin-top:-5px;
 			font-size: 25px;
 			font-weight: 700;
       letter-spacing: -.8px;
@@ -594,7 +595,6 @@ h1.logo {
 	z-index: 9;
 	@include transition(.6s, ease-in-out);
 	&.hide {
-		// bottom:-100%;
 		bottom:-52px;
 	}
   .row {
@@ -726,7 +726,8 @@ h1.logo {
           padding-top:13px;
           p {
             display: inline-block;
-            font-weight: 300;
+						font-weight: 300;
+						vertical-align: middle;
             &.num {
               padding-right:15px;
               font-weight: 700;
@@ -745,7 +746,7 @@ h1.logo {
 } // .search_layer
 
 [class*='_layer'] {
-	z-index: 9;
+	z-index: 11;
 	.dim {
     display: none;
     bottom:-100%;
@@ -942,5 +943,10 @@ h1.logo {
 		&[aria-hidden="true"] {
 			display: none;
 		}
+	}
+}
+.swiper-slide {
+	background: {
+		repeat:no-repeat;
 	}
 }
