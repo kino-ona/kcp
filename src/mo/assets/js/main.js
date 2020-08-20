@@ -103,6 +103,7 @@ if($('#brandswipe').length > 0){ // 브랜드 소개
 		bulletNames.push( this.getAttribute('data-name') );
 	});
 	var brandswipe = new Swiper('#brandswipe', {
+		allowTouchMove: true,
 		pagination: {
 			el: '.swiper-pagination',
 			clickable: true,

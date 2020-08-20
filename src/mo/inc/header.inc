@@ -7,6 +7,9 @@
 			@@if (headtype === 'subhead') {
 				<h2>@@pagetitle</h2>
 			}
+			@@if (headtype === 'subhead _view') {
+				<h2>@@pagetitle</h2>
+			} 
 			@@if (headtype === 'subhead _logo') {
 				<!-- 브랜드 로고에 따른 클래스명 정의
 					* 크리넥스: kleenex
