@@ -338,6 +338,11 @@ button {
     }
   }
 }
+.warn {
+	font-size:12px;
+	font-weight:300;
+	color:#e70707;
+}
 .inpwrap {
 	.inp_txt {
 		margin-top:6px;
@@ -345,9 +350,6 @@ button {
 		font-weight:300;
 		line-height:1.5;
 		color:#666;
-	}
-	.warn {
-		color:#e70707;
 	}
 }
 .frm_group {

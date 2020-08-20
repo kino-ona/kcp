@@ -621,6 +621,63 @@
 			&.write {
 				.frm_group {
 					margin-bottom: 20px;
+					dd {
+						position:relative;
+					}
+				}
+				.btn_plus {
+					position:absolute;
+					left:0;
+					top:0;
+					width:70px;
+					height:70px;
+					border:1px solid #0053a7;
+					background:{
+						image: url(../images/common/btn_plus.png);
+						size:15px;
+						repeat:no-repeat;
+						position: center center;
+					}
+				}
+				.addphoto {
+					margin-left:80px;
+					margin-bottom:10px;
+					.item {
+						width:70px;
+						height:70px;
+						margin-right:.65rem;
+						background:{
+							image: url(../images/common/photo_bg.png);
+							size:cover;
+							repeat:no-repeat;
+							position: center center;
+						}
+						.btn_del {
+							position: absolute;
+							right:.75rem;
+							top:.75rem;
+							width:15px;
+							height:15px;
+							background:{
+								image: url(../images/common/btn_wdel.png);
+								size:15px;
+								repeat:no-repeat;
+								position: center center;
+							}
+							z-index: 9;
+						}
+						.img {
+							position: relative;
+							width:100%;
+							padding-top:100%;
+							img {
+								position: absolute;
+								top:50%;
+								left:50%;
+								@include transform(translate(-50%, -50%));
+							}
+						}
+					}
 				}
 			}
 		}
