@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	@@include('../inc/pagehead.inc',{
+		"webroot":".."
+	})
+</head>
+<body>
+<div class="skipnavigation"><a href="#container">본문 바로가기</a></div>
+<!-- header -->
+@@include('../inc/header.inc',{
+	"headtype":"subhead",
+	"pagetitle":"전용용기 대여신청"
+})
+<!-- //header -->
+
+<div class="wrap">
+	<!-- container -->
+	<div class="container rental">
+		<div class="rent_write">
+			<div class="row write">
+				<h2 class="title">고객정보 입력</h2>
+
+				<dl class="frm_group">
+					<dt><label for="frm1">업체명</label></dt>
+					<dd><input type="text" id="frm1" placeholder="업체명을 입력해주세요"></dd>
+			
+					<dt><label for="frm2">주소</label></dt>
+					<dd class="inpwrap">
+						<input type="text" id="frm2" placeholder="주소를 입력해주세요">
+					</dd>
+				</dl>
+
+				<div class="frm_half">
+					<dl class="frm_group">
+						<dt><label for="frm3">담당자</label></dt>
+						<dd><input type="text" id="frm3" placeholder="담당자명 입력"></dd>
+					</dl>
+					<dl class="frm_group">
+						<dt><label for="frm4">부서</label></dt>
+						<dd><input type="text" id="frm4" placeholder="부서입력"></dd>
+					</dl>
+				</div>
+
+				<dl class="frm_group mix">
+					<dt><label for="frm5">전화번호</label></dt>
+					<dd>
+						<select>
+							<option>02</option>
+							<option>02</option>
+						</select>
+						<input type="text" id="frm5" placeholder="전화번호를 입력하세요">
+					</dd>
+				</dl>
+
+				<dl class="frm_group mix">
+					<dt><label for="frm6">시장구분</label></dt>
+					<dd>
+						<select>
+							<option>산업체</option>
+							<option>교육시설</option>
+							<option>의료기관</option>
+							<option>다중이용시설</option>
+							<option>빌딩</option>
+							<option>요식업소</option>
+							<option>숙박없소</option>
+							<option>기타</option>
+						</select>
+						<input type="text" id="frm6" placeholder="기타">
+					</dd>
+				</dl>
+
+				<dl class="frm_group">
+					<dt><label>담당영업대표</label></dt>
+					<dd><input type="text" id="frm7" value="담당영업대표이름" placeholder="" readonly></dd>
+				</dl>
+
+				<dl class="frm_group">
+					<dt><label>설치장소</label></dt>
+					<dd>
+						
+					</dd>
+				</dl>
+
+			</div>
+		</div>
+	</div>
+	<!--// container -->
+</div>
+<!--// wrap -->
+
+<!-- footer -->
+@@include('../inc/footer.inc',{
+	"webroot2":".."
+})
+<!-- //footer -->
+
+</body>
+</html>

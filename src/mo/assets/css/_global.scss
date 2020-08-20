@@ -65,9 +65,11 @@ input[type=text], input[type=password], input[type=number], input[type=tel], inp
 	font-size:14px;
 	line-height:20px;
 	-webkit-appearance: none;
-	&:focus {
-		background-color:#fff;
-		border-color:#00a8e2;
+	&:not([readonly]) {
+		&:focus {
+			background-color:#fff;
+			border-color:#00a8e2;
+		}
 	}
 }
 textarea {
@@ -232,6 +234,10 @@ button {
 		background-color:#0053a7;
 		color:#fff;
 	}
+	&.cancel {
+		background-color:#888888;
+		color:#fff;
+	}
 	&_link {
 		display:inline-block;
 		font-size:13px;
@@ -262,6 +268,31 @@ button {
 				line-height:50px;
 			}
 		}
+		&._fixed {
+			position:fixed;
+			bottom:0;
+			left:0;
+			right:0;
+			z-index:9;
+		}
+	}
+}
+.btn_sticky {
+	position:fixed;
+	bottom:0;
+	left:0;
+	right:0;
+	z-index:9;
+	@include transition(.5s, ease-in-out);
+	a {
+		display:block;
+		padding:17px 0 18px;
+		font-size:14px;
+		font-weight:700;
+		text-align:center;
+	}
+	&.up {
+		bottom:51px;
 	}
 }
 .dim {
@@ -336,6 +367,25 @@ button {
 		font-size:13px;
 		color:#666;
 	}
+	select {
+		padding: 9px 10px;
+		border:1px solid #000;
+		background-position:right 10px center;
+	}
+	&.mix {
+		dd {
+			display:flex;
+		}
+		select {
+			width:auto;
+			flex:.4;
+			margin-right:10px;
+		}
+		input {
+			width:auto;
+			flex:.6;
+		}
+	}
 }
 .certify {
 	font-size:0;
@@ -354,6 +404,16 @@ button {
 	.btn_confirm {
 		min-width:100px;
 		height:40px;
+	}
+}
+.frm_half {
+	display:flex;
+	.frm_group {
+		flex:1;
+		margin-right:10px;
+		&:last-child {
+			margin-right:0;
+		}
 	}
 }
 
@@ -593,7 +653,7 @@ h1.logo {
   border-top:1px solid #e5e5e5;
   background-color: #fff;
 	z-index: 9;
-	@include transition(.6s, ease-in-out);
+	@include transition(.5s, ease-in-out);
 	&.hide {
 		bottom:-52px;
 	}
@@ -872,11 +932,14 @@ h1.logo {
 		text-align: center;
 	}
 	&.alert {
-		padding:32px 8px;
+		padding:32px 20px;
 		text-align:center;
 		p {
 			font-size:14px;
 			font-weight:300;
+		}
+		strong {
+			font-weight: 500;
 		}
 	}
 }

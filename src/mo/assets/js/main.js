@@ -83,20 +83,6 @@ if($('#innovswipe').length > 0){ // 현장 혁신정보
 	});
 }
 
-// if($('#brandswipe').length > 0){ // 브랜드 소개
-// 	var brandswipeNavi = new Swiper('#brandswipeNavi', {
-// 		slidesPerView: 4,
-// 		spaceBetween: 0,
-// 		watchSlidesVisibility: true,
-// 		watchSlidesProgress: true,
-// 	});
-// 	var brandswipe = new Swiper('#brandswipe', {
-// 		thumbs: {
-// 			swiper: brandswipeNavi
-// 		}
-// 	});
-// }
-
 if($('#brandswipe').length > 0){ // 브랜드 소개
 	var bulletNames = [];
 	$('#brandswipe').find('.swiper-slide').each(function(i){
