@@ -234,6 +234,10 @@ button {
 		background-color:#0053a7;
 		color:#fff;
 	}
+	&.secondary {
+		background-color:#00a8e2;
+		color:#fff;
+	}
 	&.cancel {
 		background-color:#888888;
 		color:#fff;
@@ -392,10 +396,8 @@ button {
 			vertical-align:middle;
 		}
 	}
-	&.mix {
-		dd {
-			display:flex;
-		}
+	.mix {
+		display:flex;
 		select {
 			width:auto;
 			flex:.4;
