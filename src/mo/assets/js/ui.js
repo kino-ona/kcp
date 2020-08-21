@@ -1,4 +1,5 @@
 $(document).ready(function () {
+	if($('.datepicker').length > 0) datepickerControl();
 });
 
 ////// global common 
