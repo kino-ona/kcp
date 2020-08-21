@@ -238,6 +238,14 @@ button {
 		background-color:#888888;
 		color:#fff;
 	}
+	&_line {
+		display:inline-block;
+		width:100%;
+		border:1px solid #0053a7;
+		color:#0053a7;
+		line-height:40px;
+		text-align:center;
+	}
 	&_link {
 		display:inline-block;
 		font-size:13px;
