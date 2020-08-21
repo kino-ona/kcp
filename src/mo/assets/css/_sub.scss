@@ -381,12 +381,6 @@
 	} 
 
 	// view
-	hr {
-		height:10px;
-		margin:0;
-		border:none;
-		background-color:#f2f4f6;
-	}
 	.details {
 		margin-top:30px;
 
@@ -553,12 +547,6 @@
 /** rental **/
 .rental {
 	padding-top:10px;
-	hr {
-		height:10px;
-		margin:0;
-		border:none;
-		background-color:#f2f4f6;
-	}
 	h2.title {
 		margin-bottom:15px;
 		font-size:17px;
@@ -790,9 +778,31 @@
 
 /** partner **/
 .partner {
-	.title {
-		font-size:17px;
-		font-weight:500;
+	hr + .row {
+		margin-top:40px;
+	}
+	.tit_wrap {
+		margin-bottom:15px;
+		.title {
+			font-size:17px;
+			font-weight:500;
+		}
+	}
+	.info {
+		&_default {
+			.frm_group {
+				margin-bottom:50px;
+			}
+		}
+		&_sub {
+			.frm_group {
+				margin-bottom:30px;
+				& + .frm_group {
+					padding-top:30px;
+					border-top:1px solid #eee;
+				}
+			}
+		}
 	}
 	.with_btn {
 		font-size:0;
@@ -805,26 +815,18 @@
 			height:40px;
 		}
 	}
-	.mix {
+	.mail {
 		display:flex;
 		align-items:center;
-		select {
-			width:auto;
-			flex:.4;
-			margin-right:10px;
-		}
 		input {
-			width:auto;
-			flex:.6;
+			width:calc(50% - 10px);
 		}
-		&.type2 {
-			input {
-				width:46%;
-			}
-			span {
-				width:8%;
-				text-align:center;
-			}
+		span {
+			width:20px;
+			text-align:center;
+		}
+		& + .mail {
+			margin-top:10px;
 		}
 	}
 }

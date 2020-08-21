@@ -915,6 +915,14 @@ h1.logo {
 	-ms-transition: visibility 0.2s 0.1s, opacity 0.2;
 	-o-transition: visibility 0.2s 0.1s, opacity 0.2;
 	transition: visibility 0.2s 0.1s, opacity 0.2;
+	.layer_head {
+		.layer_title {
+			padding:34px 0 0;
+			border-bottom-width:0;
+			font-size:17px;
+			font-weight:500;
+		}
+	}
 	.btn_wrap {
 		margin-bottom:0;
 	}
