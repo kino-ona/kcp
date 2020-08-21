@@ -153,6 +153,12 @@ button {
   -moz-appearance: none;
   appearance: none;
 }
+hr {
+	height:10px;
+	margin:0;
+	border:none;
+	background-color:#f2f4f6;
+}
 
 /****** Accessibility ******/
 .a11y {
@@ -239,7 +245,7 @@ button {
 		color:#fff;
 	}
 	&.cancel {
-		background-color:#888888;
+		background-color:#d1d1d1;
 		color:#fff;
 	}
 	&_line {
@@ -275,6 +281,12 @@ button {
 			text-align:center;
 			&.big {
 				height:50px;
+				font-size:14px;
+				font-weight:700;
+				line-height:50px;
+			}
+			&.max {
+				height:60px;
 				font-size:14px;
 				font-weight:700;
 				line-height:50px;
@@ -370,7 +382,7 @@ button {
 	dt {
 		margin-bottom:6px;
 		&:nth-of-type(n+2) {
-			margin-top:20px;
+			margin-top:14px;
 		}
 	}
 	li {
@@ -908,6 +920,10 @@ h1.logo {
 	}
 	.btn_confirm {
 		background-color:#0053a7;
+		color:#fff;
+	}
+	.btn_cancel {
+		background-color:#888;
 		color:#fff;
 	}
 }
