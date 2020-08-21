@@ -343,13 +343,14 @@ button {
 	font-weight:300;
 	color:#e70707;
 }
-.inpwrap {
-	.inp_txt {
-		margin-top:6px;
-		font-size:12px;
-		font-weight:300;
-		line-height:1.5;
-		color:#666;
+.inp_txt {
+	margin-top:6px;
+	font-size:12px;
+	font-weight:300;
+	line-height:1.5;
+	color:#666;
+	&.warn {
+		color:#e70707;
 	}
 }
 .frm_group {
@@ -373,6 +374,15 @@ button {
 		padding: 9px 10px;
 		border:1px solid #000;
 		background-position:right 10px center;
+	}
+	.required {
+		&::before {
+			content:'*';
+			display:inline-block;
+			color:#00abe4;
+			line-height:1;
+			vertical-align:middle;
+		}
 	}
 	&.mix {
 		dd {
