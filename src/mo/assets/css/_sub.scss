@@ -553,7 +553,14 @@
 /** rental **/
 .rental {
 	padding-top:10px;
+	hr {
+		height:10px;
+		margin:0;
+		border:none;
+		background-color:#f2f4f6;
+	}
 	h2.title {
+		margin-bottom:15px;
 		font-size:17px;
 		font-weight:500;
 	}
@@ -624,12 +631,20 @@
 						display: block;
 					}
 				}
-			}
+			} //&.intro {
 			&.write {
+				margin-top:40px;
+				margin-bottom:40px;
+				&:first-child {
+					margin-top:0;
+				}
 				.frm_group {
 					margin-bottom: 20px;
 					dd {
 						position:relative;
+					}
+					&:last-child {
+						margin-bottom:0;
 					}
 				}
 				.btn_plus {
@@ -686,9 +701,91 @@
 						}
 					}
 				}
+			} // &.write {
+			.item_list {
+				margin-top:3.3rem;
+				.item {
+					position: relative;
+					padding-bottom:1.35rem;
+					margin-bottom:1.35rem;
+					border-bottom:1px solid #eeeeee;
+					.btn_del {
+						position:absolute;
+						display: block;
+						right:0;
+						top:2rem;
+						width:20px;
+						height:20px;
+						background:{
+							image:url(../images/common/btn_gdel.png);
+							size:12px;
+							repeat:no-repeat;
+							position:center center;
+						}
+						z-index:9;
+					}
+					.code {
+						font-weight: 300;
+					}
+					.name {
+						font-weight: 500;
+					}
+					.inpwrap {
+						position:relative;
+						margin-top:7px;
+						input {
+							padding-right:50px;
+						}
+						.unit {
+							position:absolute;
+							display: block;
+							right:20px;
+							top:10px;
+						}
+					}
+					.desc {
+						margin-top:10px;
+						color:#666666;
+						font-weight: 300;
+						span {
+							color:#0053a7;
+							font-weight: 500;
+						}
+					}
+				}
+			} //.item_list 
+			.sel_wrap {
+				clear:both;
+				overflow: hidden;
+			}
+			.sel {
+				position: relative;
+				cursor: pointer;
+				float:left;
+				width:calc((100% / 4) - 5px);
+				margin-right:6px;
+				&:nth-child(4n) {
+					margin-right:0;
+				}
+				input[type=radio], input[type=checkbox] {
+					position: absolute;
+					left:0;
+					top:0;
+					visibility: hidden;
+					&:checked + p {
+						background-color:#0053a7;
+					}
+				}
+				p {
+					width:100%;
+					padding: 0.85rem 0;
+					text-align: center;
+					background-color:#d1d1d1;
+					color:#fff;
+				}
 			}
 		}
-	}
+	} //.rent_write {
 }
 
 /** partner **/

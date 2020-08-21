@@ -3,9 +3,7 @@ $(document).ready(function () {
 
 ////// global common 
 var lastSt = 0;
-// var didScroll;
 $(window).scroll(function (e) {
-	// didScroll = true;
 	var st = $(this).scrollTop();
 	winH = $(window).height();
 	docH = $(document).height();
