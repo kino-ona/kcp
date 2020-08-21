@@ -26,35 +26,43 @@
 			<!-- form group -->
 			<dl class="frm_group">
 				<dt><label for="frm1">대리점명</label></dt>
-				<dd><input type="text" id="frm1"></dd>
+				<dd><input type="text" id="frm1" value="대리점명" placeholder="" readonly></dd>
+
 				<dt><label for="frm2">대리점 코드</label></dt>
-				<dd><input type="text" id="frm2"></dd>
+				<dd><input type="text" id="frm2" value="대리점 코드" placeholder="" readonly></dd>
+
 				<dt><label for="frm3">아이디</label></dt>
-				<dd><input type="text" id="frm3"></dd>
+				<dd><input type="text" id="frm3" value="아이디" placeholder="" readonly></dd>
+
 				<dt><label for="frm4">비밀번호 <span class="required"><span class="a11y">필수</span></span></label></dt>
 				<dd class="with_btn">
-					<input type="password" id="frm4">
+					<input type="password" id="frm4" value="1234!@#" placeholder="" readonly required>
 					<button class="btn default btn_confirm" onclick="layerOpen('popup1');return false;">변경</button>
 				</dd>
+
 				<dt><label for="frm5">담당자 <span class="required"><span class="a11y">필수</span></span></label></dt>
-				<dd><input type="text" id="frm5"></dd>
+				<dd><input type="text" id="frm5" placeholder="담당자 이름을 입력해주세요." required></dd>
+
 				<dt><label for="frm6">휴대폰 <span class="required"><span class="a11y">필수</span></span></label></dt>
-				<dd><input type="tel" id="frm6"></dd>
+				<dd><input type="tel" id="frm6" placeholder="대표 휴대폰 번호를 입력해주세요." required></dd>
+
 				<dt><label for="frm7">주소 <span class="required"><span class="a11y">필수</span></span></label></dt>
-				<dd><input type="text" id="frm7"></dd>
+				<dd><input type="text" id="frm7" placeholder="파트너사 주소를 입력해주세요." required></dd>
+
 				<dt><label for="frm8">전화번호 <span class="required"><span class="a11y">필수</span></span></label></dt>
 				<dd class="mix mobile">
 					<select>
 						<option>02</option>
 						<option>02</option>
 					</select>
-					<input type="text" id="frm8">
+					<input type="text" id="frm8" placeholder="전화번호를 입력해주세요." required>
 				</dd>
+
 				<dt><label for="frm9">이메일 <span class="required"><span class="a11y">필수</span></span></label></dt>
 				<dd class="mail">
-					<input type="text" id="frm9">
+					<input type="text" id="frm9" placeholder="이메일입력" required>
 					<span>@</span>
-					<input type="text">
+					<input type="text" placeholder="" required>
 				</dd>
 				<dd class="mail">
 					<select>
@@ -77,17 +85,20 @@
 			<!-- form group -->
 			<dl class="frm_group">
 				<dt><label for="frm10">부계정1 아이디</label></dt>
-				<dd><input type="text" id="frm10"></dd>
+				<dd><input type="text" id="frm10" value="12345678_a" placeholder="" readonly></dd>
+
 				<dt><label for="frm11">비밀번호</label></dt>
 				<dd class="with_btn">
-					<input type="password" id="frm11">
+					<input type="password" id="frm11" value="1234!@#" placeholder="" readonly>
 					<button class="btn default btn_confirm">변경</button>
 				</dd>
+
 				<dt><label for="frm12">담당자</label></dt>
-				<dd><input type="text" id="frm12"></dd>
-				<dt><label for="frm13">휴대폰 <span class="required"><span class="a11y">필수</span></span></label></dt>
+				<dd><input type="text" id="frm12" placeholder="담당자 이름을 입력해주세요."></dd>
+
+				<dt><label for="frm13">휴대폰</label></dt>
 				<dd>
-					<input type="tel" id="frm13">
+					<input type="tel" id="frm13" placeholder="담당자 휴대폰 번호를 입력해주세요.">
 					<p class="inp_txt warn">휴대폰번호는 비밀번호 찾기 시 필요하므로, 정확하게 입력해주세요.</p>
 				</dd>
 			</dl>
@@ -95,17 +106,20 @@
 
 			<dl class="frm_group">
 				<dt><label for="frm14">부계정2 아이디</label></dt>
-				<dd><input type="text" id="frm14"></dd>
+				<dd><input type="text" id="frm14" value="12345678_b" placeholder="" readonly></dd>
+
 				<dt><label for="frm15">비밀번호</label></dt>
 				<dd class="with_btn">
-					<input type="password" id="frm15">
+					<input type="password" id="frm15" value="1234!@#" placeholder="" readonly>
 					<button class="btn default btn_confirm">변경</button>
 				</dd>
+
 				<dt><label for="frm16">담당자</label></dt>
-				<dd><input type="text" id="frm16"></dd>
-				<dt><label for="frm17">휴대폰 <span class="required"><span class="a11y">필수</span></span></label></dt>
+				<dd><input type="text" id="frm16" placeholder="담당자 이름을 입력해주세요."></dd>
+
+				<dt><label for="frm17">휴대폰</label></dt>
 				<dd>
-					<input type="tel" id="frm17">
+					<input type="tel" id="frm17" placeholder="담당자 휴대폰 번호를 입력해주세요.">
 					<p class="inp_txt warn">휴대폰번호는 비밀번호 찾기 시 필요하므로, 정확하게 입력해주세요.</p>
 				</dd>
 			</dl>
@@ -126,12 +140,12 @@
 					<dl class="frm_group">
 						<dt><label for="frm_pop1">새 비밀번호 <span class="required"><span class="a11y">필수</span></span></label></dt>
 						<dd>
-							<input type="password" id="frm_pop1" placeholder="영문+숫자 조합 6~12자리">
+							<input type="password" id="frm_pop1" placeholder="영문+숫자 조합 6~12자리" required>
 							<p class="inp_txt warn">띄어쓰기 없는 영문, 숫자 6~12자로 입력해 주세요</p>
 						</dd>
 						<dt><label for="frm_pop2">새 비밀번호 확인 <span class="required"><span class="a11y">필수</span></span></label></dt>
 						<dd>
-							<input type="password" id="frm_pop2" placeholder="영문+숫자 조합 6~12자리">
+							<input type="password" id="frm_pop2" placeholder="영문+숫자 조합 6~12자리" required>
 							<p class="inp_txt warn">비밀번호가 일치하지 않습니다.</p>
 						</dd>
 					</dl>
@@ -139,6 +153,44 @@
 				<div class="btn_wrap">
 					<button onclick="layerClose('popup1')" class="btn btn_cancel">취소</button>
 					<button class="btn btn_confirm">확인</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- 최초 비밀번호 변경 없을 경우 -->
+		<div class="layer_body popup" id="popup2" aria-hidden="true" role="dialog">
+			<div class="layer_wrap">
+				<div class="layer_cont alert">
+					<p>최초 임의로 설정된<br>비밀번호를 변경 후 이용 바랍니다.</p>
+				</div>
+				<div class="btn_wrap">
+					<button onclick="layerClose('popup2')" class="btn btn_cancel">취소</button>
+					<button class="btn btn_confirm">확인</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- 인증번호가 일치하지 않을 경우 -->
+		<div class="layer_body popup" id="popup3" aria-hidden="true" role="dialog">
+			<div class="layer_wrap">
+				<div class="layer_cont alert">
+					<p>정보수정을 취소하시겠습니까?</p>
+				</div>
+				<div class="btn_wrap">
+					<button onclick="layerClose('popup3')" class="btn btn_cancel">취소</button>
+					<button class="btn btn_confirm">확인</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- 필수 항목 중 미입력 항목이 있을 경우 -->
+		<div class="layer_body popup" id="popup4" aria-hidden="true" role="dialog">
+			<div class="layer_wrap">
+				<div class="layer_cont alert">
+					<p>필수 항목을 빠짐없이<br>입력해 주세요</p>
+				</div>
+				<div class="btn_wrap">
+					<button onclick="layerClose('popup4')" class="btn btn_confirm">확인</button>
 				</div>
 			</div>
 		</div>
