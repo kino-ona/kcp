@@ -145,15 +145,59 @@
 			</div>
 		</div>
 
+		<div class="layer_body layer_full" id="popup3" aria-hidden="true" role="dialog">
+			<div class="layer_wrap">
+				<div class="layer_head">
+					<button onclick="layerClose('popup3')" class="layer_close manualfn">닫기</button>
+					<h2 class="layer_title">대여용품 선택</h2>
+				</div>
+				<div class="layer_cont">
+					layer contents
+				</div>
+			</div>
+		</div>
+
 		<button onclick="layerOpen('popup1')">레이어 열기(타이틀 없는 팝업)</button>
 		<br>
 		<button onclick="layerOpen('popup2')">레이어 열기(타이틀 있는 팝업)</button>
+		<br>
+		<button onclick="layerOpen('popup3')">레이어 열기(Full 팝업)</button>
 	</div>
 
 	<br>
 	<div>
 		<h3>달력(datepicker)</h3>
 		<input type="text" id="" class="datepicker" value="" placeholder="달력(datepicker)" readonly="" />
+	</div>
+
+	<div>
+		<h3>테이블</h3>
+		<h4>type list</h4>
+		<div class="tbl_list">
+			<table>
+				<colgroup>
+					<col>
+					<col style="width:25%;">
+					<col style="width:25%;">
+				</colgroup>
+				<thead>
+					<tr>
+						<th>[제품코드]제품명</th>
+						<th>박스당입수</th>
+						<th>신청단위</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="left">
+							<p class="chkwrap"><input type="checkbox" id="ck01"><label for="ck01">[57157] 크리넥스 셀 방향제 전용용기</label></p>
+						</td>
+						<td>5EA</td>
+						<td>CS</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 	</div>
 
 </div>

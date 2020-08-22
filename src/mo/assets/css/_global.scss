@@ -888,6 +888,23 @@ h1.logo {
 		top:inherit;
 		bottom:0;
 		background-color: transparent;
+		.layer_wrap {
+			width:100%;
+			height:100%;
+		}
+		.layer_head .layer_title {
+			height:70px;
+			padding:23px 30px;
+			text-align:left;
+		}
+		.layer_cont {
+			height:calc(100% - 70px);
+			padding:20px 30px;
+		}
+		.layer_close {
+			top:27px;
+			right:32px;
+		}
 	}
 	&.layer_wide {
 		.layer_wrap {
@@ -1268,4 +1285,37 @@ input.datepicker {
 	background-repeat: no-repeat;
 	left: 5px;
 	top: 3px;
+}
+
+/* table */
+.tbl_list {
+	th, td {
+		vertical-align:middle;
+	}
+	th {
+		position:relative;
+		padding:7px 0;
+		border-top:1px solid #e5e5e5;
+		border-bottom:1px solid #e5e5e5;
+		background-color:#f2f4f6;
+		font-weight:400;
+		&:before {
+			content:'';
+			position:absolute;
+			top:50%;
+			left:0;
+			width:1px;
+			height:10px;
+			background-color:#e5e5e5;
+			transform:translateY(-50%);
+		}
+	}
+	td {
+		padding:13px 0;
+		text-align:center;
+		border-bottom:1px solid #eee;
+		&.left {
+			text-align:left;
+		}
+	}
 }
