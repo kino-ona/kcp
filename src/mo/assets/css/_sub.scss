@@ -279,11 +279,31 @@
 		ul {
 			li {
 				display:inline-block;
+				padding-left:18px;
 				font-size:12px;
 				font-weight:300;
 				color:#666;
+				background: {
+					image:url(../images/icon/ico_bread.png);
+					repeat:no-repeat;
+					position:6px 50%;
+					size:6px auto;
+				}
 				&:first-of-type {
+					padding-left:0;
+					margin-left:0;
 					color:#000;
+					background:none;
+					&:before {
+						content:'';
+						display:inline-block;
+						width:.2rem;
+						height:.2rem;
+						margin-right:.75rem;
+						background-color:#666;
+						border-radius:100%;
+						vertical-align:middle;
+					}
 				}
 			}
 		}
