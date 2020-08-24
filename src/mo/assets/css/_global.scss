@@ -298,6 +298,11 @@ hr {
 			left:0;
 			right:0;
 			z-index:9;
+			margin-bottom:0;
+			@include transition(.5s, ease-in-out);
+			&.up {
+				bottom:51px;
+			}
 		}
 	}
 }
@@ -317,6 +322,20 @@ hr {
 	}
 	&.up {
 		bottom:51px;
+	}
+	&.half {
+		display: flex;
+		a, button {
+			flex:1
+		}
+	}
+	.btn_confirm {
+		background-color:#0053a7;
+		color:#fff;
+	}
+	.btn_cancel {
+		background-color:#888;
+		color:#fff;
 	}
 }
 .dim {
@@ -355,6 +374,12 @@ hr {
 					size:12px;
 					weight:300;
 				};
+				&.code {
+					font: {
+						size:13px;
+					};
+					vertical-align: inherit;
+				}
 			}
     }
     &:checked + label {
@@ -380,6 +405,7 @@ hr {
 .frm_group {
 	margin-bottom:40px;
 	dt {
+		position: relative;
 		margin-bottom:6px;
 		&:nth-of-type(n+2) {
 			margin-top:14px;
@@ -1015,6 +1041,11 @@ h1.logo {
 		display: block;
 	}
 }
+.layer_foo.btn_wrap {
+	&._fixed {
+		z-index:101;
+	}
+} 
 
 .accord_wrap {
 	.item {
@@ -1294,7 +1325,7 @@ input.datepicker {
 	}
 	th {
 		position:relative;
-		padding:7px 0;
+		padding:10px 0;
 		border-top:1px solid #e5e5e5;
 		border-bottom:1px solid #e5e5e5;
 		background-color:#f2f4f6;
@@ -1315,6 +1346,7 @@ input.datepicker {
 		text-align:center;
 		border-bottom:1px solid #eee;
 		&.left {
+			padding-left:2.5rem;
 			text-align:left;
 		}
 	}

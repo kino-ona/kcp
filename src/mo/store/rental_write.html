@@ -71,7 +71,7 @@
 				</dl>
 
 				<dl class="frm_group">
-					<dt><label>담당영업대표</label></dt>
+					<dt><label for="frm7">담당영업대표</label></dt>
 					<dd><input type="text" id="frm7" value="담당영업대표이름" placeholder="" readonly></dd>
 				</dl>
 
@@ -115,7 +115,7 @@
 				<dl class="frm_group">
 					<dt><label>대여품목</label></dt>
 					<dd>
-						<button class="btn_line">선택</button>
+						<button onclick="layerOpen('rentpopup');" class="btn_line">선택</button>
 						<div class="item_list">
 							<ul>
 								<li class="item">
@@ -170,16 +170,228 @@
 				</dl>
 
 				<dl class="frm_group">
-					<dt><label>발주예정일</label></dt>
+					<dt><label for="">발주예정일</label></dt>
 					<dd>
-						<dd>
-							<input type="text" id="" class="datepicker" value="" placeholder="발주예정일을 선택해주세요." readonly="" />
-						</dd>
+						<input type="text" id="" class="datepicker" value="" placeholder="발주예정일을 선택해주세요." readonly="" />
 					</dd>
 				</dl>
 
+				<dl class="frm_group">
+					<dt><label>대여조건</label></dt>
+					<dd>
+						<div class="btn_wrap">
+							<button class="btn default">대여조건 확인하기</button>
+						</div>
+					</dd>
+				</dl>
+
+				<dl class="frm_group">
+					<dt><label>약정서 업로드</label></dt>
+					<dd>
+						<div class="btn_wrap">
+							<button class="btn default">업로드하기</button>
+						</div>
+						<p class="warn">약정서를 수기로 작성하신 파트너께서는 사진 또는 PDF 형태로 업로드 바라며, 아래 온라인약정서는 작성하지 않으셔도 됩니다.</p>
+					</dd>
+				</dl>
+			</div>
+
+			<hr>
+			<div class="row write contract_row">
+				<h2 class="title">약정서 작성하지
+					<p class="warn">약정서를 수기로 작성하지 않은 파트너분은 아래 내용 입력 후 서명해 주시기 바랍니다.</p>
+				</h2>
+				<div class="sign_input">
+					당 <span><input type="text" value="" placeholder="파트너사명을 입력해주세요." ></span> 은(는) 유한킴벌리 전용용기를 사용함에 있어 상기의 대여조건으로 사용하기를 약정합니다.<br>단, 내장형 용기의 약정기간은 2년입니다.
+				</div>
+				<dl class="frm_group">
+					<dt><label for=""> 대표자명</label></dt>
+					<dd>
+						<input type="text" id="" value="" placeholder="대표자명을 입력해주세요." >
+					</dd>
+				</dl>
+				<dl class="frm_group">
+					<dt><label for=""> 서명</label>
+						<a href="#" class="btn_rewrt"><i></i>다시쓰기</a>
+					</dt>
+					<dd>
+						<div class="sign_pad">
+							서명패드 영역
+						</div>
+					</dd>
+				</dl>
+
+				<div class="btn_wrap">
+					<button onclick="layerOpen('alert2');" class="btn btn_temp">임시저장</button>
+				</div>
+				<p class="info">임시저장은 대여신청은 되지 않은 상태로, 추후 반드시 대여신청 버튼을 눌러서  대여신청을  완료해 주셔야 정상적으로 처리됩니다.</p>
+			</div>
+			
+			<!-- sticky button -->
+			<div class="btn_wrap _fixed half up">
+				<button onclick="layerOpen('alert4');" class="btn cancel max">취소</button>
+				<button onclick="layerOpen('alert3');" class="btn primary max">대여신청</button>
+			</div>
+
+		</div>
+
+		<!-- 대여용품 선택 팝업 -->
+		<div class="layer_body layer_full rentpopup" id="rentpopup" aria-hidden="true" role="dialog">
+			<div class="layer_wrap">
+				<div class="layer_head">
+					<button onclick="layerClose('rentpopup')" class="layer_close manualfn">닫기</button>
+					<h2 class="layer_title">대여용품 선택</h2>
+				</div>
+				<div class="layer_cont">
+					<div class="desc">
+						아래 목록에서 대여하고자 하는 품목을 선택바랍니다.
+						<p>중복체크 가능</p>
+					</div>
+					<div class="tbl_list">
+						<table>
+							<colgroup>
+								<col>
+								<col style="width:25%;">
+								<col style="width:25%;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th>[제품코드]제품명</th>
+									<th>박스당입수</th>
+									<th>신청단위</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="left">
+										<p class="chkwrap"><input type="checkbox" id="ck01"><label for="ck01"><span class="code">[57157]</span> 크리넥스 셀 방향제 전용용기</label></p>
+									</td>
+									<td>5EA</td>
+									<td>CS</td>
+								</tr>
+								<tr>
+									<td class="left">
+										<p class="chkwrap"><input type="checkbox" id="ck01"><label for="ck01"><span class="code">[57157]</span> 크리넥스 셀 방향제 전용용기</label></p>
+									</td>
+									<td>5EA</td>
+									<td>CS</td>
+								</tr>
+								<tr>
+									<td class="left">
+										<p class="chkwrap"><input type="checkbox" id="ck01"><label for="ck01"><span class="code">[57157]</span> 크리넥스 셀 방향제 전용용기</label></p>
+									</td>
+									<td>5EA</td>
+									<td>CS</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+
+			<!-- sticky button -->
+			<div class="layer_foo btn_wrap _fixed">
+				<button class="btn primary max">선택제품 적용</button>
 			</div>
 		</div>
+		<!--// 대여용품 선택 팝업 -->
+
+		<!-- 재고수량 안내 팝업 -->
+		<div class="layer_body stockpopup" id="stockpopup" aria-hidden="true" role="dialog">
+			<div class="layer_wrap">
+				<div class="layer_cont">
+					<p class="desc">신청 제품 중 재고가 있는 아래 항목은 요청수량에서 재고를 제외하고 발송됩니다.</p>
+					<ul class="stk_list">
+						<li>
+							<p><span class="code">[56722]</span> 크리넥스 럭셔리 폼 솝 1000ml</p>
+							<dl class="elm">
+								<dt>신청수량</dt>
+								<dd>60 <span class="unit">개</span></dd>
+							</dl>
+							<dl class="elm">
+								<dt>파트너사 재고</dt>
+								<dd>120 <span class="unit">개</span></dd>
+							</dl>
+							<dl class="elm">
+								<dt>발송예정수량 </dt>
+								<dd>128 <span class="unit">개</span></dd>
+							</dl>
+						</li>
+						<li>
+							<p><span class="code">[56722]</span> 크리넥스 럭셔리 폼 크리넥스 럭셔리 폼 솝 1000ml</p>
+							<dl class="elm">
+								<dt>신청수량</dt>
+								<dd>60 <span class="unit">개</span></dd>
+							</dl>
+							<dl class="elm">
+								<dt>파트너사 재고</dt>
+								<dd>120 <span class="unit">개</span></dd>
+							</dl>
+							<dl class="elm">
+								<dt>발송예정수량 </dt>
+								<dd>128 <span class="unit">개</span></dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+				<div class="btn_wrap">
+					<button onclick="layerClose('stockpopup')" class="btn btn_confirm">확인</button>
+				</div>
+			</div>
+		</div>
+		<!--// 재고수량 안내 팝업 -->
+		<script>
+			layerOpen('stockpopup');
+		</script>
+
+
+		<!-- alert popups -->
+		<div class="layer_body popup" id="alert1" aria-hidden="true" role="dialog">
+			<div class="layer_wrap">
+				<div class="layer_cont alert">
+					<p>선택된 제품이 없습니다.<br>확인 후 다시 입력바랍니다.</p>
+				</div>
+				<div class="btn_wrap">
+					<button onclick="layerClose('alert1')" class="btn btn_confirm">확인</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="layer_body popup" id="alert2" aria-hidden="true" role="dialog">
+			<div class="layer_wrap">
+				<div class="layer_cont alert">
+					<p>임시저장 후에는 추후 반드시 대여신청을 완료하셔야 정상적으로 대여신청이 완료됩니다.</p>
+				</div>
+				<div class="btn_wrap">
+					<button onclick="layerClose('alert2')" class="btn btn_cancel">취소</button>
+					<button onclick="layerClose('alert2')" class="btn btn_confirm">확인</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="layer_body popup" id="alert3" aria-hidden="true" role="dialog">
+			<div class="layer_wrap">
+				<div class="layer_cont alert">
+					<p>모든 항목을 빠짐없이<br>선택/입력해 주세요</p>
+				</div>
+				<div class="btn_wrap">
+					<button onclick="layerClose('alert3')" class="btn btn_confirm">확인</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="layer_body popup" id="alert4" aria-hidden="true" role="dialog">
+			<div class="layer_wrap">
+				<div class="layer_cont alert">
+					<p>전용용기 대여신청을 취소하시겠습니까?</p>
+				</div>
+				<div class="btn_wrap">
+					<button onclick="layerClose('alert4')" class="btn btn_cancel">취소</button>
+					<button onclick="layerClose('alert4')" class="btn btn_confirm">확인</button>
+				</div>
+			</div>
+		</div>
+
 	</div>
 	<!--// container -->
 </div>
@@ -192,15 +404,15 @@
 <!-- //footer -->
 
 <script>
-	if($('#addphoto_swipe').length > 0){
-		var rtsolutionswipe = new Swiper('#addphoto_swipe', {
-			loop: false,
-			slidesPerView: 'auto',
-			parallax: true,
-			observer: true,
-			observeParents: true,	
-		});
-	}
+if($('#addphoto_swipe').length > 0){
+	var rtsolutionswipe = new Swiper('#addphoto_swipe', {
+		loop: false,
+		slidesPerView: 'auto',
+		parallax: true,
+		observer: true,
+		observeParents: true,	
+	});
+}
 </script>
 
 </body>

@@ -20,11 +20,11 @@ $(window).scroll(function (e) {
 		} else {
 			$('.fixed_menu').removeClass('hide').addClass('show')
 		}
-		if ($('.btn_sticky').length > 0) {
+		if ($('.btn_sticky, .btn_wrap._fixed:not(.layer_foo)').length > 0) {
 			if (st > lastSt) {
-				$('.btn_sticky').removeClass('up')
+				$('.btn_sticky, .btn_wrap._fixed:not(.layer_foo)').removeClass('up')
 			} else {
-				$('.btn_sticky').addClass('up')
+				$('.btn_sticky, .btn_wrap._fixed:not(.layer_foo)').addClass('up')
 			}
 		}
 	}
