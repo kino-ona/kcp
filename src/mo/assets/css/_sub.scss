@@ -1048,10 +1048,25 @@
 		margin-top:40px;
 	}
 	.tit_wrap {
+		position:relative;
 		margin-bottom:15px;
 		.title {
 			font-size:17px;
 			font-weight:500;
+		}
+		.btn_print {
+			position:absolute;
+			top:0;
+			right:0;
+			&:after {
+				content:'';
+				display:inline-block;
+				width:5px;
+				height:8px;
+				margin:-2px 0 0 8px;
+				vertical-align:middle;
+				background:url(../images/icon/ico_arr-bk.png) no-repeat 50% 50% / cover;
+			}
 		}
 	}
 	.info {
@@ -1099,6 +1114,18 @@
 		.frm_group {
 			margin-bottom:14px;
 		}
+	}
+	.tbl_list {
+		margin:0 -30px 40px;
+		.warn {
+			margin-top:10px;
+			padding:0 30px;
+		}
+	}
+	.order_num {
+		margin-bottom:20px;
+		padding-bottom:10px;
+		border-bottom:1px solid #eee;
 	}
 
 	// search
@@ -1162,13 +1189,6 @@
 		}
 		.item {
 			background-color:#fff;
-		}
-	}
-	.tbl_list {
-		margin:0 -30px 40px;
-		.warn {
-			margin-top:10px;
-			padding:0 30px;
 		}
 	}
 }
