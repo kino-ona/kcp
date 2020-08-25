@@ -415,6 +415,9 @@ hr {
 			margin-top:14px;
 		}
 	}
+	dd + dd {
+		margin-top:6px;
+	}
 	li {
 		&:nth-of-type(n+2) {
 			margin-top:10px;
@@ -452,6 +455,24 @@ hr {
 			width:auto;
 			flex:.6;
 		}
+		&_unit {
+			.inpwrap {
+				display:flex;
+				background-color:#f2f4f6;
+				input[type="text"] {
+					text-align:right;
+				}
+				.unit {
+					position:static;
+					padding:8px 10px 8px 0;
+					flex-shrink:0;
+				}
+				.subtit {
+					padding:8px 0 8px 10px;
+					color:#999;
+				}
+			}
+		}
 	}
 	.unit {
 		position:absolute;
@@ -462,8 +483,11 @@ hr {
 	.unit + input {
 		padding-right:20%;
 	}
-	.inpwrap + .inpwrap {
-		margin-top:10px;
+	.inpwrap {
+		position:relative;
+		& + .inpwrap {
+			margin-top:10px;
+		}
 	}
 }
 .certify {

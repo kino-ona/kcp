@@ -87,24 +87,41 @@
 			<button class="btn default btn_confirm">확인</button>
 		</dd>
 		
-		<dt><label for="frm3">전화번호</label></dt>
+		<dt><label for="frm4">전화번호</label></dt>
 		<dd class="mix">
 			<select>
 				<option>02</option>
 				<option>02</option>
 			</select>
-			<input type="text" id="frm8">
+			<input type="text" id="frm4">
+		</dd>
+
+		<dt><label for="">현재사용제품 <span class="required"><span class="a11y">필수</span></span></label></dt>
+		<dd><input type="text" value="윈도우즈* Series i 점보롤 화장지" required></dd>
+		<dd class="mix_unit">
+			<div class="inpwrap">
+				<span class="subtit">구입단가</span>
+				<input type="text" value="1,320" readonly>
+				<span class="unit">원</span>
+			</div>
+		</dd>
+		<dd class="mix_unit">
+			<div class="inpwrap">
+				<span class="subtit">사용량</span>
+				<input type="text" value="20" readonly>
+				<span class="unit">Case/월</span>
+			</div>
 		</dd>
 	</dl>
 
 	<div class="frm_half">
 		<dl class="frm_group">
-			<dt><label for="frm3">담당자</label></dt>
-			<dd><input type="text" id="frm3" placeholder="담당자명 입력"></dd>
+			<dt><label for="frm10">담당자</label></dt>
+			<dd><input type="text" id="frm10" placeholder="담당자명 입력"></dd>
 		</dl>
 		<dl class="frm_group">
-			<dt><label for="frm4">부서</label></dt>
-			<dd><input type="text" id="frm4" placeholder="부서입력"></dd>
+			<dt><label for="frm11">부서</label></dt>
+			<dd><input type="text" id="frm11" placeholder="부서입력"></dd>
 		</dl>
 	</div>
 
@@ -202,7 +219,7 @@
 
 	<div>
 		<h3>신청현황 - 목록</h3>
-		<div class="order_list">
+		<div class="order_list type1">
 			<div class="item">
 				<!-- status type 
 					type1: 임시저장중, 승인중, 재승인 요청중, 파손교체/분실 신청중
