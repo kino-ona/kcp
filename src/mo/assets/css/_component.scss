@@ -428,6 +428,23 @@
 			}
 		}
 	}
+	.btn_plus {
+		// position:absolute;
+		// left:0;
+		// top:0;
+		// width:70px;
+		// height:70px;
+		width:100%;
+		padding-top:calc(100% - 2px);
+		border:1px solid #0053a7;
+		background:{
+			color:#fff;
+			image: url(../images/common/btn_plus.png);
+			size:15px;
+			repeat:no-repeat;
+			position: center center;
+		}
+	}
 	&:after {
 		@extend %clearer;
 	}

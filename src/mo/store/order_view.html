@@ -245,30 +245,29 @@
 
 				<dt><label for="frm22">설치사진</label></dt>
 				<dd>
-					<button class="btn btn_plus"><span class="a11y">이미지 추가</span></button>
-
-					<div id="addphoto_swipe" class="swiper-container addphoto">
-						<div class="swiper-wrapper">
-							<div class="item swiper-slide">
-								<button onclick="alert('delete')" class="btn_del"><span class="a11y">delete</span></button>
-								<p class="img"><img src="../assets/images/dummy/@thunm01.png"></p>
-							</div>
-							<div class="item swiper-slide">
-								<button class="btn_del"><span class="a11y">delete</span></button>
-								<p class="img"><img src="../assets/images/dummy/@list_01.png"></p>
-							</div>
-							<div class="item swiper-slide">
-								<!-- <button class="btn_del"><span class="a11y">delete</span></button>
-								<p class="img"><img src="../assets/images/dummy/@thunm01.png"></p> -->
-							</div>
-							<div class="item swiper-slide">
-								<!-- <button class="btn_del"><span class="a11y">delete</span></button>
-								<p class="img"><img src="../assets/images/dummy/@list_01.png"></p> -->
-							</div>
-							<div class="item swiper-slide">
-								<!-- <button class="btn_del"><span class="a11y">delete</span></button>
-								<p class="img"><img src="../assets/images/dummy/@list_01.png"></p> -->
-							</div>
+					<div class="addphoto">
+						<div class="item">
+							<button class="btn btn_plus"><span class="a11y">이미지 추가</span></button>
+						</div>
+						<div class="item">
+							<button onclick="alert('delete')" class="btn_del"><span class="a11y">delete</span></button>
+							<p class="img"><img src="../assets/images/dummy/@thunm01.png"></p>
+						</div>
+						<div class="item">
+							<button class="btn_del"><span class="a11y">delete</span></button>
+							<p class="img"><img src="../assets/images/dummy/@list_01.png"></p>
+						</div>
+						<div class="item">
+							<button class="btn_del"><span class="a11y">delete</span></button>
+							<p class="img"><img src="../assets/images/dummy/@thunm01.png"></p>
+						</div>
+						<div class="item">
+							<button class="btn_del"><span class="a11y">delete</span></button>
+							<p class="img"><img src="../assets/images/dummy/@list_01.png"></p>
+						</div>
+						<div class="item">
+							<button class="btn_del"><span class="a11y">delete</span></button>
+							<p class="img"><img src="../assets/images/dummy/@list_01.png"></p>
 						</div>	
 					</div>
 					<p class="warn">이미지첨부는 최대 5개 까지만 가능합니다.</p>
@@ -331,18 +330,6 @@
 	"webroot2":".."
 })
 <!-- //footer -->
-
-<script>
-	if($('#addphoto_swipe').length > 0){
-		var rtsolutionswipe = new Swiper('#addphoto_swipe', {
-			loop: false,
-			slidesPerView: 'auto',
-			parallax: true,
-			observer: true,
-			observeParents: true,	
-		});
-	}
-	</script>
 
 </body>
 </html>
