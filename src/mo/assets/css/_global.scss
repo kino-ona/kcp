@@ -463,6 +463,7 @@ hr {
 				display:flex;
 				background-color:#f2f4f6;
 				input[type="text"] {
+					position: relative;
 					text-align:right;
 				}
 				.unit {
@@ -483,11 +484,13 @@ hr {
 		right:10px;
 		top:9px;
 	}
-	.unit + input {
-		padding-right:20%;
-	}
 	.inpwrap {
 		position:relative;
+		&._unit {
+			input {
+				padding-right:25%;
+			}
+		}
 		& + .inpwrap {
 			margin-top:10px;
 		}
