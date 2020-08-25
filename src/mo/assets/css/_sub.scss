@@ -626,8 +626,8 @@
 	}
 }
 
-/** rental **/
-.rental {
+/** order **/
+.order {
 	padding-top:10px;
 	h2.title {
 		margin-bottom:15px;
@@ -638,11 +638,13 @@
 		position:relative;
 		width:100%;
 		.row {
+			margin-top:40px;
 			&.intro {
 				position:absolute;
-				top:78px;
+				top:5rem;
 				left:50%;
 				width:100%;
+				margin-top:0;
 				padding-left:6rem;
 				padding-right:6rem;
 				@include transform(translateX(-50%));
@@ -703,7 +705,7 @@
 				}
 			} //&.intro {
 			&.write {
-				margin-top:40px;
+				// margin-top:40px;
 				margin-bottom:40px;
 				&:first-child {
 					margin-top:0;
@@ -723,13 +725,13 @@
 						margin-bottom:0;
 					}
 				}
-				&.contract_row {
-					.btn_wrap + .info {
-						margin-top:-20px;
-						font-size:12px;
-						color:#666666;
-					}
-				}
+				// &.contract_row {
+				// 	.btn_wrap + .info {
+				// 		margin-top:-20px;
+				// 		font-size:12px;
+				// 		color:#666666;
+				// 	}
+				// }
 				.sign_input {
 					padding-bottom:15px;
 					font-weight: 300;
@@ -809,11 +811,21 @@
 						font-weight: 300;
 					}
 					.name {
+						float:left;
 						font-weight: 500;
+					}
+					.qty {
+						float:right;
+						font-weight: 300;
 					}
 					.inpwrap {
 						position:relative;
-						margin-top:7px;
+						clear:both;
+						overflow: hidden;
+						padding-top:7px;
+						.unit {
+							top:15px;
+						}
 					}
 					.desc {
 						margin-top:10px;
@@ -824,8 +836,43 @@
 							font-weight: 500;
 						}
 					}
+
+					.btn_wrap {
+						clear:both;
+						padding-top:10px;
+						border-top:1px solid #eeeeee;
+					}
+				}
+				&._view {
+					margin-top:2rem;
+					.item {
+						position: relative;
+						border-bottom:0;
+						&:last-child {
+							padding-bottom:0;
+							margin-bottom:0;
+						}
+						.name {
+							float:left;
+							padding-bottom:20px;
+						}
+						.qty {
+							float:right;
+							font-weight: 300;
+						}
+						.btn_wrap {
+							clear:both;
+							padding-top:10px;
+							border-top:1px solid #eeeeee;
+						}
+					}
 				}
 			} //.item_list
+			.mix_half {
+				._unit {
+					input {padding-right:25%;}
+				}
+			}
 			.sel_wrap {
 				clear:both;
 				overflow: hidden;
@@ -909,6 +956,30 @@
 				margin-top:13px;
 				padding-top:15px;
 				border-top:1px solid #eeeeee;
+			}
+			&._pred {
+				margin-top:15px;
+				padding-top:10px;
+				border-top:1px solid #666666;
+				.price {
+					font-size:14px;
+				}
+			}
+		}
+		.btn_list-down {
+			position: absolute;
+			top:1px;
+			right:0;
+			color:#666666;
+			&:after {
+				content: '';
+				display: inline-block;
+				width: 5px;
+				height: 8px;
+				margin-left:3px;
+				margin-top:-2px;
+				background: url(../images/icon/ico_arr-bk.png) 50% 50%/cover;
+				vertical-align: middle;
 			}
 		}
 	} //.rent_write
