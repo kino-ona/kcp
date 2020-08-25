@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	@@include('../inc/pagehead.inc',{
+		"webroot":".."
+	})
+</head>
+<body>
+<div class="skipnavigation"><a href="#container">본문 바로가기</a></div>
+<!-- header -->
+@@include('../inc/header.inc',{
+	"headtype":"subhead",
+	"pagetitle":"전용용기 재고현황"
+})
+<!-- //header -->
+
+<div class="wrap">
+	<!-- container -->
+	<div class="container partner">
+		<!-- tab navi -->
+		<div class="tab_navi">
+			<ul>
+				<li><a href="#">전용용기</a></li>
+				<li><a href="#">무료사용</a></li>
+				<li><a href="#">전용용기 파손/손실</a></li>
+				<li><a href="#">영업도구</a></li>
+				<li class="active"><a href="#">전용용기 재고현황</a></li> <!-- 활성화 .active -->
+			</ul>
+		</div>
+
+		<!-- search -->
+		<div class="search_order">
+			<select>
+				<option>제품코드</option>
+				<option>전용용기명</option>
+			</select>
+			<div class="inpwrap">
+				<input type="text" placeholder="검색어를 입력해주세요.">
+				<button class="btn btn_search"></button>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="tbl_list">
+				<table>
+					<colgroup>
+						<col>
+						<col style="width:25%;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th class="left">[제품코드] 전용용기명</th>
+							<th>재고</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="left"><span class="code">[57157]</span> 윈도즈* Series i 점보롤 1000m 화장지 전용용기 </td>
+							<td>5개</td>
+						</tr>
+						<tr>
+							<td class="left"><span class="code">[57157]</span> 윈도즈* Series i 물비뉴 500ml  전용용기</td>
+							<td>200개</td>
+						</tr>
+						<tr>
+							<td class="left"><span class="code">[57157]</span> 윈도즈* Series i 점보롤 1000m 화장지 전용용기 </td>
+							<td>5개</td>
+						</tr>
+						<tr>
+							<td class="left"><span class="code">[57157]</span> 윈도즈* Series i 점보롤 1000m 화장지 전용용기 </td>
+							<td>5개</td>
+						</tr>
+						<tr>
+							<td class="left"><span class="code">[57157]</span> 윈도즈* Series i 점보롤 1000m 화장지 전용용기 </td>
+							<td>5개</td>
+						</tr>
+						<tr>
+							<td class="left"><span class="code">[57157]</span> 윈도즈* Series i 점보롤 1000m 화장지 전용용기 </td>
+							<td>5개</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<!-- 검색결과가 없을 경우 -->
+		<div class="layer_body popup" id="alert1" aria-hidden="true" role="dialog">
+			<div class="layer_wrap">
+				<div class="layer_cont alert">
+					<p>검색결과가 없습니다.</p>
+				</div>
+				<div class="btn_wrap">
+					<button onclick="layerClose('alert1')" class="btn btn_confirm">확인</button>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!--// container -->
+</div>
+<!--// wrap -->
+
+<!-- footer -->
+@@include('../inc/footer.inc',{
+	"webroot2":".."
+})
+<!-- //footer -->
+
+</body>
+</html>

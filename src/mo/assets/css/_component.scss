@@ -379,6 +379,60 @@
 		.btn_wrap { margin:0; }
 	}
 	&.type2 {
+		.num {
+			font-size:14px;
+		}
+		.info {
+			padding-top:0;
+			&:after {
+				@extend %clearer;
+			}
+		}
+		.qty {
+			&:before {
+				content:'';
+				display:inline-block;
+				width:1px;
+				height:9px;
+				margin:0 8px 0 -4px;
+				background-color:#e0e0e0;
+			}
+		}
+		.name {
+			margin:5px 0 20px;
+			font-size:15px;
+			font-weight:500;
+			line-height:24px;
+		}
+		.prd {
+			display:flex;
+			align-items:center;
+			.thumb {
+				width:120px;
+			}
+			dl {
+				display:flex;
+				flex-wrap:wrap;
+				width:calc(100% - 130px);
+				margin-left:auto;
+			}
+			dt, dd {
+				width:50%;
+				font-size:12px;
+				&:last-of-type {
+					width:100%;
+				}
+			}
+			dt {
+				&:last-of-type {
+					margin-top:10px;
+				}
+			}
+			dd {
+				font-weight:300;
+				color:#666;
+			}
+		}
 	}
 }
 
