@@ -424,6 +424,9 @@ hr {
 		font-size:13px;
 		color:#666;
 	}
+	// input[type=text], input[type=password], input[type=number] {
+	// 	padding-right:20%;
+	// }
 	select {
 		padding: 9px 10px;
 		border:1px solid #000;
@@ -449,6 +452,18 @@ hr {
 			width:auto;
 			flex:.6;
 		}
+	}
+	.unit {
+		position:absolute;
+		display: block;
+		right:10px;
+		top:9px;
+	}
+	.unit + input {
+		padding-right:20%;
+	}
+	.inpwrap + .inpwrap {
+		margin-top:10px;
 	}
 }
 .certify {
