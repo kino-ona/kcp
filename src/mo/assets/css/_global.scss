@@ -76,8 +76,34 @@ input[type=text], input[type=password], input[type=number], input[type=tel], inp
 	}
 }
 textarea {
-	width:100%;min-height:100px;padding:10px;border:1px solid #a1a1a1;
-	background-color:#fff; -webkit-appearance: none;
+	width:100%;
+	padding:10px;
+	min-height:120px;
+	background-color:#f2f4f6;
+	border:1px solid #f2f4f6;
+	font-size:14px;
+	-webkit-appearance: none;
+	&:not([readonly]) {
+		&:focus {
+			background-color:#fff;
+			border-color:#00a8e2;
+		}
+	}
+	&:read-only {
+		color:#666;
+	}
+	::-webkit-input-placeholder {
+		font-size: 14px;
+		color:#999;
+	}
+	::-moz-placeholder {
+		font-size: 14px;
+		color:#999;
+	}
+	::-moz-placeholder {
+		font-size: 14px;
+		color:#999;
+	}
 }
 input::-ms-clear {
   display: none;
@@ -414,6 +440,11 @@ hr {
 	dt {
 		position: relative;
 		margin-bottom:6px;
+		.date {
+			position: absolute;
+			right:0;
+			color:#999;
+		}
 		&:nth-of-type(n+2) {
 			margin-top:14px;
 		}
@@ -1368,6 +1399,10 @@ input.datepicker {
 .tbl_list {
 	th, td {
 		vertical-align:middle;
+		&.left {
+			padding-left:2.5rem;
+			text-align:left;
+		}
 	}
 	th {
 		position:relative;
@@ -1391,9 +1426,5 @@ input.datepicker {
 		padding:13px 0;
 		text-align:center;
 		border-bottom:1px solid #eee;
-		&.left {
-			padding-left:2.5rem;
-			text-align:left;
-		}
 	}
 }
