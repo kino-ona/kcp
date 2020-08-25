@@ -723,20 +723,6 @@
 						margin-bottom:0;
 					}
 				}
-				.btn_plus {
-					position:absolute;
-					left:0;
-					top:0;
-					width:70px;
-					height:70px;
-					border:1px solid #0053a7;
-					background:{
-						image: url(../images/common/btn_plus.png);
-						size:15px;
-						repeat:no-repeat;
-						position: center center;
-					}
-				}
 				&.contract_row {
 					.btn_wrap + .info {
 						margin-top:-20px;
@@ -1116,11 +1102,9 @@
 		}
 	}
 	.mix_group {
+		margin-bottom:26px;
 		.frm_group {
 			margin-bottom:14px;
-			&:last-of-type {
-				margin-bottom:40px;
-			}
 		}
 	}
 	.tbl_list {
@@ -1147,6 +1131,7 @@
 	// search
 	.search_order {
 		display:flex;
+		align-content:center;
 		margin:20px 30px;
 		select {
 			width:31.66666666667%;
@@ -1205,33 +1190,6 @@
 		}
 		.item {
 			background-color:#fff;
-		}
-	}
-	
-	.addphoto.view {
-		display:flex;
-		flex-wrap:wrap;
-		margin:0 -7px -7px 0;
-		.item {
-			width:calc(25% - 7px);
-			margin:0 7px 7px 0;
-			background:{
-				image: url(../images/common/photo_bg.png);
-				size:cover;
-				repeat:no-repeat;
-				position: center center;
-			}
-		}
-		.img {
-			position: relative;
-			width:100%;
-			padding-top:100%;
-			img {
-				position: absolute;
-				top:50%;
-				left:50%;
-				@include transform(translate(-50%, -50%));
-			}
 		}
 	}
 
