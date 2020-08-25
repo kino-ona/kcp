@@ -476,15 +476,6 @@ hr {
 		border:1px solid #000;
 		background-position:right 10px center;
 	}
-	.required {
-		&::before {
-			content:'*';
-			display:inline-block;
-			color:#00abe4;
-			line-height:1;
-			vertical-align:middle;
-		}
-	}
 	.mix {
 		display:flex;
 		select {
@@ -538,6 +529,20 @@ hr {
 		& + .inpwrap {
 			margin-top:10px;
 		}
+	}
+	.inline {
+		display:inline-block;
+		margin:0;
+		vertical-align:middle;
+	}
+}
+.required {
+	&::before {
+		content:'*';
+		display:inline-block;
+		color:#00abe4;
+		line-height:1;
+		vertical-align:middle;
 	}
 }
 .certify {
@@ -1420,6 +1425,10 @@ input.calendar {
 			padding-left:2.5rem;
 			text-align:left;
 		}
+		&.right {
+			padding-right:2.5rem;
+			text-align:right;
+		}
 	}
 	th {
 		position:relative;
@@ -1443,5 +1452,12 @@ input.calendar {
 		padding:13px 0;
 		text-align:center;
 		border-bottom:1px solid #eee;
+	}
+	tfoot {
+		th, td {
+			border-top:1px solid #e0e0e0;
+			border-bottom:1px solid #e0e0e0;
+			background-color:#f1fbff;
+		}
 	}
 }

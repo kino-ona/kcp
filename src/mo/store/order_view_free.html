@@ -10,7 +10,7 @@
 <!-- header -->
 @@include('../inc/header.inc',{
 	"headtype":"subhead",
-	"pagetitle":"전용용기 신청내역"
+	"pagetitle":"무료사용 신청내역"
 })
 <!-- //header -->
 
@@ -23,134 +23,70 @@
 			<dd>12345678976543</dd>
 		</dl>
 
-		<!-- 파트너사 정보 -->
+		<!-- 신청 정보 -->
 		<div class="row">
-			<div class="tit_wrap">
-				<h2 class="title">파트너사 정보</h2>
-				<a href="#" class="btn_print">신청내역 출력</a>
-			</div>
 			<dl class="frm_group">
-				<dt><label for="frm1">대리점명</label></dt>
+				<dt><label for="frm1">신청경로</label></dt>
 				<dd><input type="text" id="frm1" value="프로페셔널 강남점" readonly></dd>
 		
-				<dt><label for="frm2">대표자명</label></dt>
-				<dd><input type="text" id="frm2" value="홍길동" readonly></dd>
+				<dt><label for="frm2">대상고객 <span class="required"><span class="a11y">필수</span></span></label></dt>
+				<dd><input type="text" id="frm2" value="홍길동" readonly required></dd>
 		
-				<dt><label for="frm3">담당자</label></dt>
-				<dd><input type="text" id="frm3" value="박길동" readonly></dd>
+				<dt><label for="frm3">주소 <span class="required"><span class="a11y">필수</span></span></label></dt>
+				<dd><input type="text" id="frm3" value="박길동" readonly required></dd>
 		
-				<dt><label for="frm4">주소</label></dt>
+				<dt><label for="frm4">주생산품</label></dt>
 				<dd><input type="text" id="frm4" value="서울시 강남구 삼성동 123-4" readonly></dd>
 		
-				<dt><label for="frm5">전화번호</label></dt>
-				<dd><input type="tel" id="frm5" value="02-222-2222" readonly></dd>
-			</dl>
-		</div>
-		<!--// 파트너사 정보 -->
-		<hr>
-
-		<!-- 대여 고객정보 -->
-		<div class="row mix_group">
-			<div class="tit_wrap">
-				<h2 class="title">대여 고객정보</h2>
-			</div>
-			<dl class="frm_group">
-				<dt><label for="frm6">대여구분</label></dt>
-				<dd><input type="text" id="frm6" value="H∙C 발주용" readonly></dd>
-
-				<dt><label for="frm7">약정일</label></dt>
-				<dd><input type="text" id="frm7" value="2020.7.12" readonly></dd>
-
-				<dt><label for="frm8">업체명</label></dt>
-				<dd><input type="text" id="frm8" value="리버스" readonly></dd>
-
-				<dt><label for="frm9">주소</label></dt>
-				<dd><input type="text" id="frm9" value="서울시 강남구 삼성동 123-4" readonly></dd>
-			</dl>
-
-			<div class="frm_half">
-				<dl class="frm_group">
-					<dt><label for="frm10">담당자</label></dt>
-					<dd><input type="text" id="frm10" value="홍길동" readonly></dd>
-				</dl>
-				<dl class="frm_group">
-					<dt><label for="frm11">부서</label></dt>
-					<dd><input type="text" id="frm11" value="구매팀/부장" readonly></dd>
-				</dl>
-			</div>
-
-			<dl class="frm_group">
-				<dt><label for="frm12">전화번호</label></dt>
-				<dd><input type="tel" id="frm12" value="02-222-2222" readonly></dd>
-			</dl>
-
-			<div class="frm_half">
-				<dl class="frm_group">
-					<dt><label for="frm13">시장구분</label></dt>
-					<dd><input type="text" id="frm13" value="교육시설" readonly></dd>
-				</dl>
-				<dl class="frm_group">
-					<dt><label for="frm14">담당영업대표</label></dt>
-					<dd><input type="text" id="frm14" value="홍길동" readonly></dd>
-				</dl>
-			</div>
-
-			<dl class="frm_group">
-				<dt><label>설치장소</label></dt>
-				<dd>
-					<div class="addphoto">
-						<div class="item">
-							<p class="img"><img src="../assets/images/dummy/@thunm01.png"></p>
-						</div>
-						<div class="item">
-							<p class="img"><img src="../assets/images/dummy/@list_01.png"></p>
-						</div>
-						<div class="item">
-							<p class="img"><!-- <img src="../assets/images/dummy/@thunm01.png"> --></p>
-						</div>
-						<div class="item">
-							<p class="img"><!-- <img src="../assets/images/dummy/@thunm01.png"> --></p>
-						</div>
-						<div class="item">
-							<p class="img"><!-- <img src="../assets/images/dummy/@thunm01.png"> --></p>
-						</div>
+				<dt><label for="frm5">현재사용제품 <span class="required"><span class="a11y">필수</span></span></label></dt>
+				<dd><input type="text" id="frm5" value="윈도우즈* Series i 점보롤 화장지" readonly required></dd>
+				<dd class="mix_unit">
+					<div class="inpwrap">
+						<span class="subtit">구입단가</span>
+						<input type="text" value="1,320,000,000,000,000,000" readonly>
+						<span class="unit">원</span>
 					</div>
 				</dd>
-
-				<dt><label for="frm15">설치사유</label></dt>
-				<dd><input type="text" id="frm15" value="신규영업" readonly></dd>
-
-				<dt><label for="frm16">발주예정(완료)일</label></dt>
-				<!-- 발주완료 버튼 클릭 전 -->
-				<dd><input type="text" id="frm16" class="calendar" value="2020년 08월 11일 발주예정" readonly></dd>
-				<dd class="btn_wrap">
-					<button class="btn default">발주완료</button>
+				<dd class="mix_unit">
+					<div class="inpwrap">
+						<span class="subtit">사용량</span>
+						<input type="text" value="20" readonly>
+						<span class="unit">Case/월</span>
+					</div>
+				</dd>
+				<dd class="total">
+					<p class="tit">구입비용</p>
+					<p class="price">999,999,990<span class="unit">원/월</span></p>
 				</dd>
 
-				<!-- 발주완료 버튼 클릭 후 -->
-				<dd><input type="text" id="frm16" class="calendar" value="2020년 08월 11일 발주완료" readonly></dd>
+				<dt><label for="frm6">사용처 및 용도 <span class="required"><span class="a11y">필수</span></span></label></dt>
+				<dd><input type="text" id="frm6" value="사용처 및 용도는 다음과 같습니다." readonly required></dd>
+
+				<dt><label for="frm7">신청사유 <span class="required"><span class="a11y">필수</span></span></label></dt>
+				<dd>
+					<textarea id="frm7" readonly required>본 무료신청 제품의 기회 및 배경은 다음과 같이 무료신청 제품의 기회 및 배경은 다음과 같이 무료신청 제품의 기회 및 배경은 다음과 같이 </textarea>
+				</dd>
+				
 			</dl>
 		</div>
-		<!--// 대여 고객정보 -->
+		<!--// 신청 정보 -->
 		<hr>
 
-		<!-- 대여 요청 내역 -->
+		<!-- 신청제품 -->
 		<div class="row">
 			<div class="tit_wrap">
-				<h2 class="title">대여 요청 내역</h2>
+				<h2 class="title">신청제품 <span class="required"><span class="a11y">필수</span></span></h2>
 			</div>
 			<div class="tbl_list">
 				<table>
 					<colgroup>
 						<col>
-						<col style="width:25%;">
-						<col style="width:25%;">
+						<col style="width:30%;">
 					</colgroup>
 					<thead>
 						<tr>
 							<th class="left">[제품코드]전용용기명</th>
 							<th>신청수량</th>
-							<th>재고</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -159,30 +95,78 @@
 								<span class="code">[57157]</span> 크리넥스 셀 방향제 전용용기
 							</td>
 							<td>5EA</td>
-							<td>0EA</td>
 						</tr>
 						<tr>
 							<td class="left">
 								<span class="code">[57157]</span> 크리넥스 셀 방향제 전용용기
 							</td>
 							<td>5EA</td>
-							<td>0EA</td>
 						</tr>
 						<tr>
 							<td class="left">
 								<span class="code">[57157]</span> 크리넥스 셀 방향제 전용용기
 							</td>
 							<td>5EA</td>
-							<td>0EA</td>
 						</tr>
 					</tbody>
 				</table>
-				<p class="warn">재고는 실제 배송된 수량에서 파트너사가 신청한 신청수량을
-					뺀 수량이 표시되며, 추후 재고가 있는 제품 신청 시 재고
-					수량을 뺀 나머지가 배송되오니 참고 바랍니다.</p>
 			</div>
 		</div>
-		<!--// 대여 요청 내역 -->
+		<!--// 신청제품 -->
+		<hr>
+
+		<!-- 성공시 판매 예측 -->
+		<div class="row">
+			<div class="tit_wrap">
+				<h2 class="title">성공시 판매 예측</h2>
+			</div>
+			<div class="tbl_list">
+				<table>
+					<colgroup>
+						<col>
+						<col style="width:20%;">
+						<col style="width:30%;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th class="left">[제품코드]전용용기명</th>
+							<th>신청수량</th>
+							<th>예상금액(원/월)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="left">
+								<span class="code">[57157]</span> 크리넥스 셀 방향제 전용용기
+							</td>
+							<td>5CS</td>
+							<td>10,000,000</td>
+						</tr>
+						<tr>
+							<td class="left">
+								<span class="code">[57157]</span> 크리넥스 셀 방향제 전용용기
+							</td>
+							<td>5EA</td>
+							<td>10,000,000</td>
+						</tr>
+						<tr>
+							<td class="left">
+								<span class="code">[57157]</span> 크리넥스 셀 방향제 전용용기
+							</td>
+							<td>5EA</td>
+							<td>10,000,000</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th class="left">판매예측 총 금액</th>
+							<td colspan="2" class="right">40,000,000 <span class="unit">원/월</span></td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+		</div>
+		<!--// 성공시 판매 예측 -->
 		<hr>
 
 		<!-- 승인반려/재신청 -->
@@ -231,20 +215,41 @@
 		<!--// 승인반려/재신청 -->
 		<hr>
 
-		<!-- 설치피드백 -->
+		<!-- 결과피드백 -->
 		<div class="row">
 			<div class="tit_wrap">
-				<h2 class="title">설치 피드백</h2>
+				<h2 class="title">결과피드백</h2>
 			</div>
 
 			<!-- 작성 전 -->
 			<dl class="frm_group">
-				<dt><label for="frm21">설치결과</label></dt>
+				<dt><label for="">거래성사여부</label></dt>
 				<dd>
-					<textarea id="frm21" placeholder="설치 결과를 간략하게 작성해주세요.&#10;(설치날짜, 고객반응, 문제점 등)"></textarea>
+					<div class="sel_wrap">
+						<label class="sel">
+							<input type="radio" name="reason" checked> 
+							<p>성공</p>
+						</label>
+						<label class="sel">
+							<input type="radio" name="reason"> 
+							<p>실패</p>
+						</label>
+					</div>
 				</dd>
 
-				<dt><label for="frm22">설치사진</label></dt>
+				<dt><label for="frm21">고객의견</label></dt>
+				<dd>
+					<textarea id="frm21" placeholder="거래 후 고객의견을 간략하게 작성해주세요.&#10;(설치날짜, 고객반응, 문제점 등)"></textarea>
+				</dd>
+
+				<!-- 거래 성사여부 실패 선택 시 노출 -->
+				<dt><label for="frm22">실패요인 및 향후 방향</label></dt>
+				<dd>
+					<textarea id="frm22" placeholder="실패요인에 대한 분석과 향후 방향에 대해 간략하게 작성해주세요."></textarea>
+				</dd>
+				<!--// 거래 성사여부 실패 선택 시 노출 -->
+
+				<dt><label for="frm23">설치사진</label></dt>
 				<dd>
 					<div class="addphoto">
 						<div class="item">
@@ -275,16 +280,26 @@
 				</dd>
 			</dl>
 			<div class="btn_wrap">
-				<button class="btn default">설치 피드백 등록</button>
+				<button class="btn default">결과 피드백 등록</button>
 			</div>
 			<!--// 작성 전 -->
 
 			<!-- 작성 후 -->
 			<dl class="frm_group">
-				<dt><label for="frm21">설치결과</label></dt>
+				<dt class="inline"><label for="">거래성사여부</label></dt>
+				<dd class="inline"><span class="tag">실패</span></dd>
+
+				<dt><label for="frm21">고객의견</label></dt>
 				<dd>
-					<textarea id="frm21" placeholder="설치 결과를 간략하게 작성해주세요.&#10;(설치날짜, 고객반응, 문제점 등)">2020년 7월 15일 설치한 코드번호 57200는 문제없이 잘 사용 중이고 고객만족도도 매우 높음.</textarea>
+					<textarea id="frm21" placeholder="거래 후 고객의견을 간략하게 작성해주세요.&#10;(설치날짜, 고객반응, 문제점 등)" readonly>금번에 설치한 제품에 대해 고객 만족도가 매우 높고 향후 지속적인 거래를 원함.</textarea>
 				</dd>
+
+				<!-- 거래 성사여부 실패 선택 시 노출 -->
+				<dt><label for="frm22">실패요인 및 향후 방향</label></dt>
+				<dd>
+					<textarea id="frm22" placeholder="실패요인에 대한 분석과 향후 방향에 대해 간략하게 작성해주세요." readonly>금번에 설치한 제품에 대해 고객 만족도가 매우 높고 향후 지속적인 거래를 원함.</textarea>
+				</dd>
+				<!--// 거래 성사여부 실패 선택 시 노출 -->
 
 				<dt><label for="frm22">설치사진</label></dt>
 				<dd>
@@ -306,9 +321,12 @@
 						</div>
 				</dd>
 			</dl>
+			<div class="btn_wrap">
+				<button class="btn default">결과 피드백 수정</button>
+			</div>
 			<!--// 작성 후 -->
 		</div>
-		<!--// 설치피드백 -->
+		<!--// 결과피드백 -->
 
 		<!-- 누락 항목이 있을 경우 -->
 		<div class="layer_body popup" id="alert1" aria-hidden="true" role="dialog">
