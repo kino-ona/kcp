@@ -843,14 +843,12 @@
 			.sel_wrap {
 				clear:both;
 				overflow: hidden;
-				display: flex;
 			}
 			.sel {
 				position: relative;
 				cursor: pointer;
-				// float:left;
-				// width:calc((100% / 4) - 5px);
-				flex:1;
+				float:left;
+				width:calc((100% / 4) - 5px);
 				margin-right:6px;
 				&:nth-child(4n), &:last-child {
 					margin-right:0;
@@ -871,17 +869,60 @@
 					background-color:#d1d1d1;
 					color:#fff;
 				}
-				&.big {
-					padding-top:21%;
-					max-height:64px;
-					p {
-						position:absolute;
-						top:50%;
-						left:50%;
-						height:100%;
-						@include transform(translate(-50%, -50%));
-					}
+			}
+		}
+		.sel_tab {
+			display:flex;
+			.tabs {
+				flex:1;
+				position:relative;
+				margin:0;
+				margin-right:6px;
+				text-align:center;
+				padding-top:20%;
+				background-color:#d1d1d1;
+				&:last-child {margin-right:0;}
+				&.active {
+					background-color:#0053a7;
 				}
+				a {
+					position:absolute;
+					width:100%;
+					top:50%;
+					left:50%;
+					@include transform(translate(-50%, -50%));
+					color:#fff;
+				}
+			}
+		}
+		.total {
+			> div {
+				&:after {
+					@extend %clearer;
+				}
+			}
+			.tit {
+				float:left;
+				width:30%;
+			}
+			.price {
+				float:left;
+				width:70%;
+				font-weight: 700;
+				text-align:right;
+				.unit {
+					position:relative;
+					right:inherit;
+					top:inherit;
+					display: inline-block;
+					margin-left:3px;
+					font-weight: 400;
+				}
+			}
+			.btn_wrap {
+				margin-top:13px;
+				padding-top:15px;
+				border-top:1px solid #eeeeee;
 			}
 		}
 	} //.rent_write

@@ -288,6 +288,13 @@ hr {
 			border-color:#e0e0e0;
 			color:#999;
 		}
+		&.bk {
+			border-color: #666666;
+			color:#666;
+		}
+		& + .btn_line {
+			margin-left:10px;
+		}
 	}
 	&_link {
 		display:inline-block;
@@ -506,6 +513,12 @@ hr {
 					padding:8px 0 8px 10px;
 					color:#999;
 				}
+			}
+		}
+		&_half {
+			input	 {
+				width:auto;
+				flex:1;
 			}
 		}
 	}
