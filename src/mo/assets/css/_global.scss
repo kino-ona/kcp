@@ -514,11 +514,15 @@ hr {
 					color:#999;
 				}
 			}
-		}
+		} 
 		&_half {
-			input	 {
-				width:auto;
-				flex:1;
+			.inpwrap {
+				display:flex;
+				input {
+					flex:1;
+					margin-left:10px;
+					&:first-child {margin-left:0;}
+				}
 			}
 		}
 	}

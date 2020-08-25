@@ -826,6 +826,21 @@
 					}
 				}
 			} //.item_list
+			.mix_half {
+				.item_list {
+					margin-top:2rem;
+					.item {
+						border-bottom:0;
+						.name {
+							padding-bottom:20px;
+						}
+						.btn_wrap {
+							padding-top:10px;
+							border-top:1px solid #eeeeee;
+						}
+					}
+				}
+			}
 			.sel_wrap {
 				clear:both;
 				overflow: hidden;
@@ -909,6 +924,22 @@
 				margin-top:13px;
 				padding-top:15px;
 				border-top:1px solid #eeeeee;
+			}
+		}
+		.btn_list-down {
+			position: absolute;
+			top:1px;
+			right:0;
+			color:#666666;
+			&:after {
+				content: '';
+				display: inline-block;
+				width: 5px;
+				height: 8px;
+				margin-left:3px;
+				margin-top:-2px;
+				background: url(../images/icon/ico_arr-bk.png) 50% 50%/cover;
+				vertical-align: middle;
 			}
 		}
 	} //.rent_write
