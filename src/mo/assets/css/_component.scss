@@ -327,13 +327,13 @@
 		border-bottom:1px solid #eee;
 		font-size:14px;
 		color:#000;
-		.name {
-			&:before {
+		.company {
+			&:after {
 				content:'';
 				display:inline-block;
 				width:1px;
 				height:9px;
-				margin:0 8px 0 4px;
+				margin:0 4px 0 8px;
 				background-color:#e0e0e0;
 			}
 		}

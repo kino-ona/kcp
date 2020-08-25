@@ -450,7 +450,7 @@ hr {
 		}
 	}
 	dd + dd {
-		margin-top:6px;
+		margin-top:10px;
 	}
 	li {
 		&:nth-of-type(n+2) {
@@ -1189,7 +1189,8 @@ h1.logo {
 }
 
 // ui-datepicker
-input.datepicker {
+input.datepicker,
+input.calendar {
 	background: {
 		image:url(../images/icon/ico_calender.png);
 		size:17px;
