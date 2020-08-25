@@ -381,3 +381,54 @@
 	&.type2 {
 	}
 }
+
+.addphoto {
+	margin-bottom:10px;
+	.item {
+		position:relative;
+		float:left;
+		width:calc((100% / 4) - 5px);
+		margin-right:6px;
+		margin-bottom:6px;
+		background:{
+			image: url(../images/common/photo_bg.png);
+			size:cover;
+			repeat:no-repeat;
+			position: center ce₩nter;
+		}
+		&:nth-child(4n) {
+			margin-right:0;
+		}
+		&:last-child {
+			margin-bottom:0;
+		}
+		.btn_del {
+			position: absolute;
+			right:.75rem;
+			top:.75rem;
+			width:15px;
+			height:15px;
+			background:{
+				image: url(../images/common/btn_wdel.png);
+				size:15px;
+				repeat:no-repeat;
+				position: center center;
+			}
+			z-index: 9;
+		}
+		.img {
+			position: relative;
+			width:100%;
+			padding-top:100%;
+			img {
+				position: absolute;
+				top:50%;
+				left:50%;
+				@include transform(translate(-50%, -50%));
+			}
+		}
+	}
+	&:after {
+		@extend %clearer;
+	}
+} //.addphoto

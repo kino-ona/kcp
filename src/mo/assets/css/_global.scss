@@ -1031,7 +1031,7 @@ h1.logo {
 	width:calc(100% - 80px);
 	background-color: #fff;
 	opacity: 0;
-	transform:translate(-50%, -50%);
+	@include transform(translate(-50%, -50%));
 	overflow-y: auto;
 	-webkit-transition: visibility 0.2s 0.1s, opacity 0.2;
 	-moz-transition: visibility 0.2s 0.1s, opacity 0.2;

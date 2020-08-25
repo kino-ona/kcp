@@ -737,46 +737,6 @@
 						position: center center;
 					}
 				}
-				.addphoto {
-					margin-left:80px;
-					margin-bottom:10px;
-					.item {
-						width:70px;
-						height:70px;
-						margin-right:.65rem;
-						background:{
-							image: url(../images/common/photo_bg.png);
-							size:cover;
-							repeat:no-repeat;
-							position: center center;
-						}
-						.btn_del {
-							position: absolute;
-							right:.75rem;
-							top:.75rem;
-							width:15px;
-							height:15px;
-							background:{
-								image: url(../images/common/btn_wdel.png);
-								size:15px;
-								repeat:no-repeat;
-								position: center center;
-							}
-							z-index: 9;
-						}
-						.img {
-							position: relative;
-							width:100%;
-							padding-top:100%;
-							img {
-								position: absolute;
-								top:50%;
-								left:50%;
-								@include transform(translate(-50%, -50%));
-							}
-						}
-					}
-				} //.addphoto
 				&.contract_row {
 					.btn_wrap + .info {
 						margin-top:-20px;
@@ -868,15 +828,6 @@
 					.inpwrap {
 						position:relative;
 						margin-top:7px;
-						input {
-							padding-right:50px;
-						}
-						.unit {
-							position:absolute;
-							display: block;
-							right:20px;
-							top:10px;
-						}
 					}
 					.desc {
 						margin-top:10px;
@@ -892,14 +843,16 @@
 			.sel_wrap {
 				clear:both;
 				overflow: hidden;
+				display: flex;
 			}
 			.sel {
 				position: relative;
 				cursor: pointer;
-				float:left;
-				width:calc((100% / 4) - 5px);
+				// float:left;
+				// width:calc((100% / 4) - 5px);
+				flex:1;
 				margin-right:6px;
-				&:nth-child(4n) {
+				&:nth-child(4n), &:last-child {
 					margin-right:0;
 				}
 				input[type=radio], input[type=checkbox] {
@@ -917,6 +870,17 @@
 					text-align: center;
 					background-color:#d1d1d1;
 					color:#fff;
+				}
+				&.big {
+					padding-top:21%;
+					max-height:64px;
+					p {
+						position:absolute;
+						top:50%;
+						left:50%;
+						height:100%;
+						@include transform(translate(-50%, -50%));
+					}
 				}
 			}
 		}
