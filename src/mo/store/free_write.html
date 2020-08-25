@@ -16,7 +16,7 @@
 
 <div class="wrap">
 	<!-- container -->
-	<div class="container rental">
+	<div class="container order">
 		<div class="rent_write">
 			<div class="row write">
 				<dl class="frm_group">
@@ -117,15 +117,37 @@
 					</dt>
 					<dd class="mix_half">
 						<div class="inpwrap">
-							<input type="text" id="frm10" placeholder="담당자명 입력">
-							<input type="text" id="" placeholder="부서입력">
+							<p><input type="text" id="frm10" placeholder="제품코드"></p>
+							<p class="_unit">
+								<input type="text" id="" placeholder="수량">
+								<span class="unit">EA</span>
+							</p>
 						</div>
-						<div class="item_list">
+						<div class="item_list _view">
 							<ul>
 								<li class="item">
-									<p class="name">크리넥스 셀 방향제 전용용기 
-										<span class="qty">100 Case</span>
-									</p>
+									<p class="name">크리넥스 셀 방향제 전용용기</p>
+									<p class="qty">100 Case</p>
+									<div class="btn_wrap">
+										<a href="#" class="btn_line">추가</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</dd>
+					<dd class="mix_half">
+						<div class="inpwrap">
+							<p><input type="text" id="frm10" placeholder="제품코드"></p>
+							<p class="_unit">
+								<input type="text" id="" placeholder="수량">
+								<span class="unit">EA</span>
+							</p>
+						</div>
+						<div class="item_list _view">
+							<ul>
+								<li class="item">
+									<p class="name">크리넥스 셀 방향제 전용용기</p>
+									<p class="qty">100 Case</p>
 									<div class="btn_wrap">
 										<a href="#" class="btn_line bk">삭제</a>
 										<a href="#" class="btn_line">추가</a>
@@ -136,8 +158,101 @@
 					</dd>
 				</dl>
 
+				<dl class="frm_group">
+					<dt><label for="frm10">성공시 판매예측</label></dt>
+					<dd>
+						<div class="inpwrap">
+							<input type="text" id="" placeholder="제품코드">
+						</div>
+						<div class="inpwrap _unit">
+							<input type="text" id="" placeholder="예상금액을 입력해주세요.">
+							<span class="unit">원/월</span>
+						</div>
+						<div class="item_list _view">
+							<ul>
+								<li class="item">
+									<p class="name">크리넥스 셀 방향제 전용용기</p>
+									<p class="qty">100 Case</p>
+									<div class="btn_wrap">
+										<a href="#" class="btn_line">추가</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</dd>
+					<dd>
+						<div class="inpwrap">
+							<input type="text" id="" placeholder="제품코드">
+						</div>
+						<div class="inpwrap _unit">
+							<input type="text" id="" placeholder="예상금액을 입력해주세요.">
+							<span class="unit">원/월</span>
+						</div>
+						<div class="item_list _view">
+							<ul>
+								<li class="item">
+									<p class="name">크리넥스 셀 방향제 전용용기</p>
+									<p class="qty">100 Case</p>
+									<div class="btn_wrap">
+										<a href="#" class="btn_line bk">삭제</a>
+										<a href="#" class="btn_line">추가</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</dd>
+
+					<dd class="total _pred">
+						<div>
+							<p class="tit">판매예측 총금액</p>
+							<p class="price">999,999,990<span class="unit">원</span></p>
+						</div>
+					</dd>
+				</dl>
+				<div class="help">
+					<p>프로그램 실시 확인은 온라인으로 신청하는 시점에서 대리점확인 혹은 엔드유저 협의가 완료된 것으로 간주됩니다. 영업대표의 책임하에 신청을 해주시기 바랍니다.</p>
+				</div>
+
+				<div class="btn_wrap">
+					<button onclick="layerOpen('alert2');" class="btn btn_temp">임시저장</button>
+				</div>
+				<div class="info">
+					임시저장은 대여신청은 되지 않은 상태로, 추후 반드시 대여신청 버튼을 눌러서 대여신청을  완료해 주셔야 정상적으로 처리됩니다.
+				</div>
+
 			</div>
 		</div>
+		<!--// rent_write -->
+
+		<!-- sticky button -->
+		<div class="btn_wrap _fixed half up">
+			<button class="btn cancel max">취소</button>
+			<button onclick="layerOpen('alert5');" class="btn primary max">무료사용 신청</button>
+		</div>
+
+		<!-- alert popups -->
+		<div class="layer_body popup" id="alert5" aria-hidden="true" role="dialog">
+			<div class="layer_wrap">
+				<div class="layer_cont alert">
+					<p>무료사용이 정상적으로<br>신청되었습니다.</p>
+				</div>
+				<div class="btn_wrap">
+					<button onclick="layerClose('alert5')" class="btn btn_confirm">확인</button>
+				</div>
+			</div>
+		</div>
+		<div class="layer_body popup" id="alert6" aria-hidden="true" role="dialog">
+			<div class="layer_wrap">
+				<div class="layer_cont alert">
+					<p>무료사용 신청을<br>취소하시겠습니까?</p>
+				</div>
+				<div class="btn_wrap">
+					<button onclick="layerClose('alert6')" class="btn btn_cancel">취소</button>
+					<button onclick="layerClose('alert6')" class="btn btn_confirm">확인</button>
+				</div>
+			</div>
+		</div>
+
 	</div>	
 	<!--// container -->
 </div>

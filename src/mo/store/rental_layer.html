@@ -17,14 +17,19 @@
 <div class="wrap">
 	<!-- container -->
 	<div class="container">
-		<p><button onclick="layerOpen('rentpopup');">대여용품 선택 팝업</button></p><br>
-		<p><button onclick="layerOpen('stockpopup');">재고수량 안내 팝업</button></p><br>
-		<p><button onclick="layerOpen('alert1');">선택된 제품이 없는 경우 안내 팝업</button></p><br>
-		<p><button onclick="layerOpen('alert2');">임시저장 후 안내 팝업</button></p><br>
-		<p><button onclick="layerOpen('alert3');">빠진항목이 있는 경우 안내 팝업</button></p><br>
-		<p><button onclick="layerOpen('alert4');">대여신청 취소 안내 팝업</button></p><br>
-		<p><button onclick="layerOpen('conditpopup');">전용용기 대여조건 안내 팝업</button></p>
-
+		<div style="padding:20px;">
+			<p><button onclick="layerOpen('rentpopup');">대여용품 선택 팝업</button></p><br>
+			<p><button onclick="layerOpen('stockpopup');">재고수량 안내 팝업</button></p><br>
+			<p><button onclick="layerOpen('alert1');">선택된 제품이 없는 경우 안내 팝업</button></p><br>
+			<p><button onclick="layerOpen('alert2');">임시저장 후 안내 팝업</button></p><br>
+			<p><button onclick="layerOpen('alert3');">빠진항목이 있는 경우 안내 팝업</button></p><br>
+			<p><button onclick="layerOpen('alert4');">대여신청 취소 안내 팝업</button></p><br>
+			<p><button onclick="layerOpen('conditpopup');">전용용기 대여조건 안내 팝업</button></p><br>
+			<p><button onclick="layerOpen('alert5');">무료사용 정상 
+				신청 안내 팝업</button></p><br>
+			<p><button onclick="layerOpen('alert4');">무료사용 취소 팝업</button></p>
+	
+		</div>
 
 		<!-- 대여용품 선택 팝업 -->
 		<div class="layer_body layer_full rentpopup" id="rentpopup" aria-hidden="true" role="dialog">
@@ -230,6 +235,31 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="layer_body popup" id="alert5" aria-hidden="true" role="dialog">
+			<div class="layer_wrap">
+				<div class="layer_cont alert">
+					<p>무료사용이 정상적으로<br>신청되었습니다.</p>
+				</div>
+				<div class="btn_wrap">
+					<button onclick="layerClose('alert5')" class="btn btn_confirm">확인</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="layer_body popup" id="alert6" aria-hidden="true" role="dialog">
+			<div class="layer_wrap">
+				<div class="layer_cont alert">
+					<p>무료사용 신청을<br>취소하시겠습니까?</p>
+				</div>
+				<div class="btn_wrap">
+					<button onclick="layerClose('alert6')" class="btn btn_cancel">취소</button>
+					<button onclick="layerClose('alert6')" class="btn btn_confirm">확인</button>
+				</div>
+			</div>
+		</div>
+
+
 	</div>
 	<!--// container -->
 </div>
