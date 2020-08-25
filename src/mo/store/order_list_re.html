@@ -43,7 +43,7 @@
 		</div>
 
 		<!-- order list -->
-		<div class="row order_list">
+		<div class="row order_list type1">
 			<!-- filter -->
 			<div class="filter">
 				<select>
@@ -63,7 +63,7 @@
 			<div class="item">
 				<!-- status type 
 					type1: 임시저장중, 승인중, 재승인 요청중, 파손교체/분실 신청중
-					type2: 승인완료, 발주가능, 배송지시완료
+					type2: 승인완료, 발주가능
 					type3: 승인반려
 				-->
 				<span class="status type1">임시저장중</span>
@@ -88,7 +88,7 @@
 			<!--// loop -->
 
 			<div class="item">
-				<span class="status type2">배송지시완료</span>
+				<span class="status type2">승인완료</span>
 				<span class="num">123456789123</span>
 				<div class="info">
 					<span>리버스</span>
@@ -118,10 +118,23 @@
 					<p>신청내역</p>
 					<ul>
 						<li><a href="#"><span class="code">[57200]</span> 윈도즈* Series i 물비누 <em>20</em>개</a></li>
+						<li><a href="#"><span class="code">[57200]</span> 윈도즈* Series i 물비누 <em>20</em>개</a></li>
 					</ul>
 				</div>
 				<div class="btn_wrap">
 					<button class="btn_line" disabled>설치피드백</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- 검색결과가 없을 경우 -->
+		<div class="layer_body popup" id="alert1" aria-hidden="true" role="dialog">
+			<div class="layer_wrap">
+				<div class="layer_cont alert">
+					<p>검색결과가 없습니다.</p>
+				</div>
+				<div class="btn_wrap">
+					<button onclick="layerClose('alert1')" class="btn btn_confirm">확인</button>
 				</div>
 			</div>
 		</div>

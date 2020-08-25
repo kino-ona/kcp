@@ -1157,19 +1157,3 @@
 		}
 	}
 }
-
-/* temp */
-.right {
-	.inp_wrap {
-		position:relative;
-		display:flex;
-		background-color:#f2f4f6;
-		input[type="text"] {
-			text-align:right;
-		}
-		.unit {
-			padding:8px 10px 8px 0;
-			flex-shrink:0;
-		}
-	}
-}
