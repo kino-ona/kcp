@@ -65,6 +65,7 @@ input[type=text], input[type=password], input[type=number], input[type=tel], inp
 	font-size:14px;
 	line-height:20px;
 	-webkit-appearance: none;
+	color:#000;
 	&:not([readonly]) {
 		&:focus {
 			background-color:#fff;
@@ -73,6 +74,11 @@ input[type=text], input[type=password], input[type=number], input[type=tel], inp
 	}
 	&:read-only {
 		color:#666;
+	}
+	&.datepicker {
+		&:read-only {
+			color:#000;
+		}
 	}
 }
 textarea {
@@ -261,6 +267,16 @@ hr {
       position: center center;
     }
 	}
+	&.btn_reset2 {
+		width:15px;
+		height:15px;
+    background: {
+      image:url(../images/common/btn_gdel.png);
+      size:12px;
+      repeat:no-repeat;
+      position: center center;
+    }
+	}
 	&.primary {
 		background-image:linear-gradient(to right, #00a8e2, #0053a7);
 		color:#fff;
@@ -432,6 +448,43 @@ hr {
     }
   }
 }
+.radiowrap {
+  min-height:2rem;
+  input[type=radio] {
+    display:none;
+    & + label {
+      display: inline-block;
+      cursor: pointer;
+      min-width:100px;
+      padding-left:23px;
+      margin-right:5px;
+      background: {
+        image: url(../images/common/radio_off.png);
+        repeat: no-repeat;
+        size:1.75rem;
+        position: 0 3px;
+      }
+			span {
+				display: inline-block;
+				margin-left:3px;
+				vertical-align:middle;
+				font: {
+					size:12px;
+					weight:300;
+				};
+				&.code {
+					font: {
+						size:13px;
+					};
+					vertical-align: inherit;
+				}
+			}
+    }
+    &:checked + label {
+      background-image: url(../images/common/radio_on.png);
+    }
+  }
+}
 .warn {
 	font-size:12px;
 	font-weight:300;
@@ -473,9 +526,6 @@ hr {
 		font-size:13px;
 		color:#666;
 	}
-	// input[type=text], input[type=password], input[type=number] {
-	// 	padding-right:20%;
-	// }
 	select {
 		padding: 9px 10px;
 		border:1px solid #000;
@@ -514,6 +564,17 @@ hr {
 		&_half {
 			.inpwrap {
 				display:flex;
+				&.period {
+					margin-bottom:10px;
+					background-color:#f2f4f6;
+					&:before {
+						content: '-';
+						position:absolute;
+						left:50%;
+						top:25%;
+						color:#999999;
+					}
+				}
 				p {
 					flex:1;
 					margin-left:10px;
@@ -537,6 +598,19 @@ hr {
 		}
 		& + .inpwrap {
 			margin-top:10px;
+		}
+		&._upload {
+			margin-top:10px;
+			margin-bottom:10px;
+			input {
+				padding-right:30px;
+			}
+			.btn_reset2 {
+				position: absolute;
+				top:50%;
+				right:10px;
+				margin-top:-.75rem;
+			}
 		}
 	}
 	.inline {

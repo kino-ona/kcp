@@ -78,6 +78,12 @@
 		padding-left:30px;
 		padding-right:30px;
 	}
+	.row_title {
+		padding:40px 30px 10px;
+		border-bottom:1px solid #eeeeee;
+		font-size:17px;
+		font-weight: 700;
+	}
 } // .container
 
 .page_summary {
@@ -135,6 +141,7 @@
 
 /** container > search container **/
 .search_cont {
+	margin-bottom:-70px;
 	.search_frm-input {
 		margin-left:60px;
 		padding-bottom:30px;
@@ -150,6 +157,7 @@
 	}
 } // .search_cont
 .search_result {
+	padding-bottom:70px;
 	border-top:1px solid #eeeeee;
 } // .search_result
 
@@ -157,11 +165,11 @@
 	position: fixed;
 	top:0;
 	right:-100%;
-	width:calc(100% - 110px);
+	width:calc(100% - 100px);
 	height:100%;
 	background-color: #fff;
 	z-index: 10;
-	@include transition(.4s, ease-in-out);
+	@include transition(.2s, ease-in);
 	&.active {
 		right:0;
 	}
@@ -174,7 +182,7 @@
 	}
 	.layer_head {
 		position:fixed;
-		width:calc(100% - 110px);
+		width:calc(100% - 100px);
 		padding:2.1rem 3rem;
 		background-color:#fff;
 		z-index:1;
@@ -187,9 +195,7 @@
 			clear:both;overflow: hidden;
 		}
 		.chkwrap {
-			float:left;
-			min-width:calc(100% / 2);
-			margin-bottom:2rem;
+			margin-bottom:1.8rem;
 		}
 		.item {
 			padding:0 3rem;
@@ -637,6 +643,7 @@
 	.rent_write {
 		position:relative;
 		width:100%;
+		.row_title + .row { margin-top:20px; }
 		.row {
 			margin-top:40px;
 			&.intro {
@@ -725,13 +732,6 @@
 						margin-bottom:0;
 					}
 				}
-				// &.contract_row {
-				// 	.btn_wrap + .info {
-				// 		margin-top:-20px;
-				// 		font-size:12px;
-				// 		color:#666666;
-				// 	}
-				// }
 				.sign_input {
 					padding-bottom:15px;
 					font-weight: 300;
@@ -740,7 +740,7 @@
 						margin-bottom:3px;
 						min-width:15rem;
 						max-width:25rem;
-						width:100%;
+						width:80%;
 						vertical-align: middle;
 					}
 				} //.sign_input
@@ -785,6 +785,8 @@
 
 				}
 			} // &.write {
+			// &.contract_row {
+			// }
 			.item_list {
 				margin-top:3.3rem;
 				.item {
@@ -876,12 +878,17 @@
 			.sel_wrap {
 				clear:both;
 				overflow: hidden;
+				display: flex;
+				& + .sel_wrap {
+					padding-top:15px;
+					margin-top:15px;
+					border-top:1px solid #eeeeee;
+				}
 			}
 			.sel {
 				position: relative;
 				cursor: pointer;
-				float:left;
-				width:calc((100% / 4) - 5px);
+				flex:1;
 				margin-right:6px;
 				&:nth-child(4n), &:last-child {
 					margin-right:0;
@@ -1100,6 +1107,28 @@
 					font-weight: 300;
 				}
 			}
+		}
+	}
+	.condi_foo {
+		.logo {
+			display: block;
+			width:100%;
+			height:3.35rem;
+			margin-top:40px;
+			margin-bottom:20px;
+			background: {
+				image:url(../images/common/logo.png);
+				size:90px;
+				repeat:no-repeat;
+				position:right 0;
+			}
+			text-align:right;
+		}
+		p {
+			padding:9px 0 30px;
+			border-top:1px solid #eee;
+			font-size:11px;
+			font-weight:300;
 		}
 	}
 } //.layer_body.conditionpopup

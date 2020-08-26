@@ -19,16 +19,166 @@
 	<div class="container order">
 		<div class="rent_write">
 			<div class="row write">
-				
+				<h2 class="title">고객정보 입력</h2>
 
+				<dl class="frm_group">
+					<dt><label for="frm1">업체명</label></dt>
+					<dd><input type="text" id="frm1" placeholder="업체명을 입력해주세요"></dd>
+			
+					<dt><label for="frm2">주소</label></dt>
+					<dd class="inpwrap">
+						<input type="text" id="frm2" placeholder="주소를 입력해주세요">
+					</dd>
+				</dl>
+
+				<div class="frm_half">
+					<dl class="frm_group">
+						<dt><label for="frm3">담당자</label></dt>
+						<dd><input type="text" id="frm3" placeholder="담당자명 입력"></dd>
+					</dl>
+					<dl class="frm_group">
+						<dt><label for="frm4">부서</label></dt>
+						<dd><input type="text" id="frm4" placeholder="부서입력"></dd>
+					</dl>
+				</div>
+
+				<dl class="frm_group">
+					<dt><label for="frm5">전화번호</label></dt>
+					<dd class="mix">
+						<select>
+							<option>02</option>
+							<option>02</option>
+						</select>
+						<input type="text" id="frm5" placeholder="전화번호를 입력하세요">
+					</dd>
+				</dl>
+
+				<dl class="frm_group">
+					<dt><label for="frm6">시장구분</label></dt>
+					<dd class="mix">
+						<select>
+							<option>산업체</option>
+							<option>교육시설</option>
+							<option>의료기관</option>
+							<option>다중이용시설</option>
+							<option>빌딩</option>
+							<option>요식업소</option>
+							<option>숙박없소</option>
+							<option>기타</option>
+						</select>
+						<input type="text" id="frm6" placeholder="기타">
+					</dd>
+				</dl>
+
+				<dl class="frm_group">
+					<dt><label for="frm7">담당영업대표</label></dt>
+					<dd><input type="text" id="frm7" value="담당영업대표이름" placeholder="" readonly></dd>
+				</dl>
+
+				<dl class="frm_group">
+					<dt><label for="frm7">구분선택</label></dt>
+					<dd>
+						<div class="sel_wrap">
+							<label class="sel">
+								<input type="radio" name="sel0" checked> 
+								<p>HC 발주용</p>
+							</label>
+							<label class="sel">
+								<input type="radio" name="sel0"> 
+								<p>무상 대여용</p>
+							</label>
+						</div>
+						<div class="sel_wrap">
+							<label class="sel">
+								<input type="radio" name="sel1" checked> 
+								<p>파손교체</p>
+							</label>
+							<label class="sel">
+								<input type="radio" name="sel1"> 
+								<p>분실신청</p>
+							</label>
+						</div>
+					</dd>
+				</dl>
+
+				<dl class="frm_group">
+					<dt><label for="">신청사유 <span class="required"><span class="a11y">필수</span></span></label></dt>
+					<dd>
+						<dd class="inpwrap">
+							<textarea id="" placeholder="기회 및 배경을 기재해주세요.(30자 이상)"></textarea>
+							<p class="warn">신청사유는 30자 이상 입력해주세요.</p>
+						</dd>
+					</dd>
+				</dl>
 			</div>
+
+			<hr>
+			<div class="row write">
+				<h2 class="title">전용용기 대여 요청 내역</h2>
+
+				<dl class="frm_group">
+					<dt><label for="">대여품목</label></dt>
+					<dd>
+						<button onclick="layerOpen('rentpopup');" class="btn_line">선택</button>
+						<div class="item_list">
+							<ul>
+								<li class="item">
+									<button onclick="alert('delete');" class="btn_del"><span class="a11y">delete</span></button>
+
+									<p class="code">[57157]</p>
+									<p class="name">크리넥스 셀 방향제 전용용기</p>
+									<div class="inpwrap">
+										<input type="text" value="" placeholder="수량">
+										<span class="unit">EA</span>
+									</div>
+									<p class="desc">박스당 입수 <span>5EA</span> 입니다.</p>
+								</li>
+								<li class="item">
+									<button onclick="alert('delete');" class="btn_del"><span class="a11y">delete</span></button>
+
+									<p class="code">[57157]</p>
+									<p class="name">크리넥스 셀 방향제 전용용기</p>
+									<div class="inpwrap _unit">
+										<input type="text" value="" placeholder="수량">
+										<span class="unit">EA</span>
+									</div>
+									<p class="desc">박스당 입수 <span>5EA</span> 입니다.</p>
+								</li>
+							</ul>
+						</div>
+					</dd>
+				</dl>
+
+				<div class="btn_wrap">
+					<button class="btn btn_temp">임시저장</button>
+				</div>
+				<p class="info">임시저장은 대여신청은 되지 않은 상태로, 추후 반드시 대여신청 버튼을 눌러서  대여신청을  완료해 주셔야 정상적으로 처리됩니다.</p>
+			</div>
+
+			<hr>
+			<div class="row">
+				<h2 class="title">승인반려/재신청</h2>
+				<dl class="frm_group">
+					<dt><label for="">승인반려 사유</label>
+						<span class="date">2020.07.30</span>
+					</dt>
+					<dd>
+						<textarea readonly>당 파트너사는 등록된 설치장소 사진이 명확하지 않아 승인이 반려되었습니다. 설치장소 사진을 다시 등록하신 후 다시 요청해 주시기 바랍니다. 
+						</textarea>
+					</dd>
+					<dd>
+						<textarea placeholder="재 승인 요청 내용을 입력해주세요."></textarea>
+					</dd>
+				</dl>
+			</div>
+
 		</div>
 		<!--// rent_write -->
 
 		<!-- sticky button -->
 		<div class="btn_wrap _fixed half up">
 			<button class="btn cancel max">취소</button>
-			<button class="btn primary max">대여신청</button>
+			<button class="btn primary max">파손교체 및 분실신청</button>
 		</div>
 
 	</div>	

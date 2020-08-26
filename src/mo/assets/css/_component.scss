@@ -3,7 +3,7 @@
 
 .nodata {
 	height:100%;
-	padding:7.25rem 0;
+	padding:2rem 0 4rem;
 	text-align: center;
 	> p {
 		font-size: 14px;
@@ -12,7 +12,76 @@
 			color:#00a8e2;
 		}
 	}
+	> span {
+		display:block;
+		font-weight: 300;
+		color:#666666;
+		line-height: 1.6;
+	}
 }
+.nodata_recom {
+	padding-top:30px;
+	margin-right:-30px;
+	> p {
+		padding-bottom:27px;
+		text-align:center;
+		> span {
+			display: block;
+			font-size:12px;
+			font-weight: 300;
+		}
+	}
+	.recom_swipe {
+		.swiper-slide {
+			margin-right:10px;
+			.figure {
+				position:relative;
+				height:0;
+				padding-top:100%;
+				overflow:hidden;
+				img {
+					position:absolute;
+					top:50%;
+					left:50%;
+					max-width:135%;
+					@include transform(translate(-50%, -50%));
+				}
+			}
+			.info {
+				padding-top:10px;
+			}
+		}
+	}
+}
+.cust_info {
+	width:100%;
+	margin-top:40px;
+	background-color:#f2f4f6;
+	.row {
+		padding-top:20px;
+		padding-bottom:20px;
+		a {
+			display: inline-block;
+			margin-top:-2px;
+			font-size:15px;
+			font-weight:700;
+			// vertical-align: middle;
+		}
+		i {
+			display: inline-block;
+			width:1.85rem;
+			height:2.1rem;
+			margin-right:8px;
+			background: {
+				image:url(../images/icon/icon_contact.png);
+				size:1.85rem;
+				repeat:no-repeat;
+				position:0 0;
+			}
+		}
+	}
+}
+
 .sort {
 	position: relative;
 	min-height:3rem;
@@ -80,11 +149,14 @@
 		padding-top:15px;
 	}
 	.desc {
-		padding-top:10px;
+		padding-top:5px;
 		li {
 			padding-top:2px;
 			font-size: 12px;
 			color:#666666;
+			&:first-child {
+				padding-top:0;
+			}
 		}
 		.code {
 			color: #0053a7;
@@ -138,6 +210,10 @@
 			display: block;
 			clear:both;
 		}
+	}
+	hr {
+		margin-left:-30px;
+		margin-right:-30px;
 	}
 }
 
