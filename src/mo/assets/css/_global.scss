@@ -146,6 +146,7 @@ select{
 	-moz-appearance:none;
 	appearance:none;
 	width:100%;
+	margin:0;
 	padding:17px 25px 17px 0;
 	// border:1px solid #a1a1a1;
   border:0;
@@ -534,12 +535,12 @@ hr {
 	.mix {
 		display:flex;
 		select {
-			width:auto;
+			// width:auto;
 			flex:.4;
 			margin-right:10px;
 		}
 		input {
-			width:auto;
+			// width:auto;
 			flex:.6;
 		}
 		&_unit {

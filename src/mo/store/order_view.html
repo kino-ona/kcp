@@ -27,7 +27,7 @@
 		<div class="row">
 			<div class="tit_wrap">
 				<h2 class="title">파트너사 정보</h2>
-				<a href="#" class="btn_print">신청내역 출력</a>
+				<button onclick="layerOpen('alert2')" class="btn_send">신청내역 이메일 보내기</button>
 			</div>
 			<dl class="frm_group">
 				<dt><label for="frm1">대리점명</label></dt>
@@ -134,8 +134,10 @@
 		<!--// 대여 고객정보 -->
 		<hr>
 
+		<p class="row_title">고객 확인란</p>
+
 		<!-- 대여 요청 내역 -->
-		<div class="row">
+		<div class="row rental">
 			<div class="tit_wrap">
 				<h2 class="title">대여 요청 내역</h2>
 			</div>
@@ -181,8 +183,82 @@
 					뺀 수량이 표시되며, 추후 재고가 있는 제품 신청 시 재고
 					수량을 뺀 나머지가 배송되오니 참고 바랍니다.</p>
 			</div>
+			<dl class="frm_group">
+				<dt><label>업로드 약정서</label></dt>
+				<dd>
+					<div class="btn_wrap">
+						<button class="btn btn_line">업로드하기</button>
+					</div>
+					<p class="warn">수기 약정서를 업로드하신 분은 위에 파일을 다운로드하여 출력하시기 바랍니다.</p>
+				</dd>
+			</dl>
 		</div>
 		<!--// 대여 요청 내역 -->
+		<hr>
+
+		<!-- 약정서 내역 -->
+		<div class="row">
+			<div class="tit_wrap">
+				<h2 class="title">약정서 내역</h2>
+			</div>
+			<div class="sign_input">
+				당 <span><input type="text" value="리버스" placeholder="파트너사명을 입력해주세요." readonly ></span> 은(는) 유한킴벌리 전용용기를 사용함에 있어 상기의 대여조건으로 사용하기를 약정합니다.<br>단, 내장형 용기의 약정기간은 2년입니다.
+			</div>
+			<dl class="frm_group">
+				<dt><label for="">약정기간</label></dt>
+				<dd>
+					<input type="text" id="" value="2020년 8월 25일 - 2021년 8월 28일" readonly>
+				</dd>
+
+				<dt><label for="">대표자명</label></dt>
+				<dd>
+					<input type="text" id="" value="김길동" placeholder="대표자명을 입력해주세요." readonly>
+				</dd>
+
+				<dt><label for="">서명</label></dt>
+				<dd>
+					<div class="sign_pad">
+						서명패드 영역
+					</div>
+				</dd>
+			</dl>
+		</div>
+		<!--// 약정서 내역 -->
+		<hr>
+
+		<!-- 전용용기 약정조건 -->
+		<div class="row">
+			<div class="tit_wrap">
+				<h2 class="title">전용용기 약정조건</h2>
+			</div>
+			<ul class="condi_list">
+				<li>
+					<p class="gu">가.</p>
+					<p class="desc">약정 기간 중 어떠한 이유로든지 유한킴벌리의 제품 사용을 중단할 경우 유한킴벌리는 전용용기를 철거할 권리를 가지며, 전용용기 철거 시 손상된 시설물을 복구하는데 발생되는 비용은 실사용자가 부담하는 것으로 한다.</p>
+				</li>
+				<li>
+					<p class="gu">나.</p>
+					<p class="desc">전용용기는 유한킴벌리의 자산이므로 일부 또는 전부를 타인에게 대여, 양도 할 수 없으며, 훼손이나 분실 시 책임을 부담할 수 있다.</p>
+				</li>
+				<li>
+					<p class="gu">다.</p>
+					<p class="desc">본 약정서에 기재된 전용용기의 수량과 실제 설치한 전용용기 수량의 차이 발생 시 유한킴벌리는 본 약정서에 기재된 수량에서 실제 설치 수량을 차감한 수량의 기준금액(1) 에 해당하는 금액 지급을 청구할 수 있다.</p>
+				</li>
+				<li>
+					<p class="gu">라.</p>
+					<p class="desc">전용용기에 사용하는 제품은 전용용기 설치 시 계약한 유한킴벌리 대리점으로부터 구매하는 것을 원칙으로 한다</p>
+				</li>
+				<li>
+					<p class="gu">마.</p>
+					<p class="desc">유한킴벌리의 제품을 지속적으로 사용하며, 유한킴벌리 제품 이외 타사 제품을 사용할 시에는 신규 납품하는 업체로 하여금 전용용기를 철거토록 한 후 유한킴벌리에 반환하여야 한다.</p>
+				</li>
+			</ul>
+			<div class="condi_foo">
+				<span class="logo"><span class="a11y">유한킴벌리 프로폐셔널</span></span>
+				<p>(1) 본 약정 체결 시점에 고지된 “공급가격”을 “YK” 비품 상각년수 기준에 준하여 정액법으로 차감한 금액</p>
+			</div>
+		</div>
+		<!--// 전용용기 약정조건 -->
 		<hr>
 
 		<!-- 승인반려/재신청 -->
@@ -232,7 +308,7 @@
 		<hr>
 
 		<!-- 설치피드백 -->
-		<div class="row">
+		<div class="row feedback">
 			<div class="tit_wrap">
 				<h2 class="title">설치 피드백</h2>
 			</div>
@@ -283,7 +359,7 @@
 			<dl class="frm_group">
 				<dt><label for="frm21">설치결과</label></dt>
 				<dd>
-					<textarea id="frm21" placeholder="설치 결과를 간략하게 작성해주세요.&#10;(설치날짜, 고객반응, 문제점 등)">2020년 7월 15일 설치한 코드번호 57200는 문제없이 잘 사용 중이고 고객만족도도 매우 높음.</textarea>
+					<textarea id="frm21" placeholder="설치 결과를 간략하게 작성해주세요.&#10;(설치날짜, 고객반응, 문제점 등)" readonly>2020년 7월 15일 설치한 코드번호 57200는 문제없이 잘 사용 중이고 고객만족도도 매우 높음.</textarea>
 				</dd>
 
 				<dt><label for="frm22">설치사진</label></dt>
@@ -306,6 +382,9 @@
 						</div>
 				</dd>
 			</dl>
+			<div class="btn_wrap">
+				<button class="btn default">설치 피드백 수정</button>
+			</div>
 			<!--// 작성 후 -->
 		</div>
 		<!--// 설치피드백 -->
@@ -318,6 +397,32 @@
 				</div>
 				<div class="btn_wrap">
 					<button onclick="layerClose('alert1')" class="btn btn_confirm">확인</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- 신청내역 이메일 보내기 -->
+		<div class="layer_body popup" id="alert2" aria-hidden="true" role="dialog">
+			<div class="layer_wrap">
+				<div class="layer_cont alert">
+					<p>신청내역을 이메일로 보내신 후<br>출력하실 수 있습니다.<br>이메일을 보내시겠습니까?</p>
+				</div>
+				<div class="btn_wrap">
+					<button onclick="layerClose('alert2')" class="btn btn_cancel">취소</button>
+					<button onclick="layerClose('alert2')" class="btn btn_confirm">확인</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- 약정서 다운로드 -->
+		<div class="layer_body popup" id="alert3" aria-hidden="true" role="dialog">
+			<div class="layer_wrap">
+				<div class="layer_cont alert">
+					<p>약정서를 다운로드 하시겠습니까?</p>
+				</div>
+				<div class="btn_wrap">
+					<button onclick="layerClose('alert3')" class="btn btn_cancel">취소</button>
+					<button onclick="layerClose('alert3')" class="btn btn_confirm">확인</button>
 				</div>
 			</div>
 		</div>

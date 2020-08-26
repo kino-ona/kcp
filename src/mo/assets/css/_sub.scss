@@ -138,6 +138,67 @@
 		}
 	}
 }
+.sign {
+	&_input {
+		padding-bottom:15px;
+		font-weight: 300;
+		span {
+			display: inline-block;
+			margin-bottom:3px;
+			min-width:15rem;
+			max-width:25rem;
+			width:80%;
+			vertical-align: middle;
+		}
+	} //.sign_input
+	&_pad {
+		min-height:13rem;
+		max-height:15rem;
+		background-color:#f2f4f6;
+	}
+}
+
+.condi {
+	&_list {
+		li {
+			clear:both;
+			overflow: hidden;
+			margin-bottom:2.5rem;
+			p {
+				float:left;
+				&.gu {
+					width:2.5rem
+				}
+				&.desc {
+					width:calc(100% - 2.5rem);
+					font-weight: 300;
+				}
+			}
+		}
+	}
+	&_foo {
+		.logo {
+			display: block;
+			width:100%;
+			height:3.35rem;
+			margin-top:40px;
+			margin-bottom:20px;
+			background: {
+				image:url(../images/common/logo.png);
+				size:90px;
+				repeat:no-repeat;
+				position:right 0;
+			}
+			text-align:right;
+		}
+		p {
+			padding:9px 0 30px;
+			border-top:1px solid #eee;
+			font-size:11px;
+			font-weight:300;
+		}
+	}
+}
 
 /** container > search container **/
 .search_cont {
@@ -732,18 +793,6 @@
 						margin-bottom:0;
 					}
 				}
-				.sign_input {
-					padding-bottom:15px;
-					font-weight: 300;
-					span {
-						display: inline-block;
-						margin-bottom:3px;
-						min-width:15rem;
-						max-width:25rem;
-						width:80%;
-						vertical-align: middle;
-					}
-				} //.sign_input
 				.btn_rewrt {
 					position: absolute;
 					top:1px;
@@ -762,11 +811,6 @@
 						}
 						vertical-align: middle;
 					}
-				}
-				.sign_pad {
-					min-height:13rem;
-					max-height:15rem;
-					background-color:#f2f4f6;
 				}
 				.btn_temp {
 					background-color:#888888;
@@ -1091,52 +1135,14 @@
 		}
 	}
 } // .layer_body.stockpopup
-.layer_body.conditpopup {
-	.condi_list {
-		li {
-			clear:both;
-			overflow: hidden;
-			margin-bottom:2.5rem;
-			p {
-				float:left;
-				&.gu {
-					width:2.5rem
-				}
-				&.desc {
-					width:calc(100% - 2.5rem);
-					font-weight: 300;
-				}
-			}
-		}
-	}
-	.condi_foo {
-		.logo {
-			display: block;
-			width:100%;
-			height:3.35rem;
-			margin-top:40px;
-			margin-bottom:20px;
-			background: {
-				image:url(../images/common/logo.png);
-				size:90px;
-				repeat:no-repeat;
-				position:right 0;
-			}
-			text-align:right;
-		}
-		p {
-			padding:9px 0 30px;
-			border-top:1px solid #eee;
-			font-size:11px;
-			font-weight:300;
-		}
-	}
-} //.layer_body.conditionpopup
 
 /** partner **/
 .partner {
 	hr + .row {
 		margin-top:40px;
+	}
+	.row_title + .row {
+		margin-top:20px;
 	}
 	.tit_wrap {
 		position:relative;
@@ -1145,7 +1151,7 @@
 			font-size:17px;
 			font-weight:500;
 		}
-		.btn_print {
+		.btn_send {
 			position:absolute;
 			top:3px;
 			right:0;
@@ -1296,11 +1302,23 @@
 		}
 		&.type2 {
 			> .desc {
-				padding-top:10px;
+				padding-top:20px;
 			}
 		}
 	}
-
+	.rental, .forecast {
+		.tbl_list {
+			margin-bottom:20px;
+		}
+		.btn_wrap {
+			margin-bottom:10px;
+		}
+	}
+	.feedback {
+		.frm_group {
+			margin-bottom:20px;
+		}
+	}
 	.reason {
 		.frm_group {
 			margin-bottom:30px;

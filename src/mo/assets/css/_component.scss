@@ -493,18 +493,19 @@
 				margin-left:auto;
 			}
 			dt, dd {
-				width:50%;
 				font-size:12px;
 				&:last-of-type {
 					width:100%;
 				}
 			}
 			dt {
+				width:65px;
 				&:last-of-type {
 					margin-top:10px;
 				}
 			}
 			dd {
+				width:calc(100% - 65px);
 				font-weight:300;
 				color:#666;
 			}
