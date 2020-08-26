@@ -1265,6 +1265,11 @@
 		.item {
 			background-color:#fff;
 		}
+		&.type2 {
+			> .desc {
+				padding-top:10px;
+			}
+		}
 	}
 
 	.reason {
