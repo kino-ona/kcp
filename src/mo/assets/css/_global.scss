@@ -584,6 +584,20 @@ hr {
 					margin-left:10px;
 					&:first-child {margin-left:0;}
 				}
+				&.email {
+					margin-bottom:10px;
+					&:before {
+						content: '@';
+						position:absolute;
+						left:calc(50% - 5px);
+						top:25%;
+						color:#999999;
+					}
+					p {
+						margin-left:20px;
+						&:first-child {margin-left:0;}
+					}
+				}
 			}
 		}
 	}
@@ -621,6 +635,41 @@ hr {
 		display:inline-block;
 		margin:0;
 		vertical-align:middle;
+	}
+	.sel_wrap {
+		clear:both;
+		overflow: hidden;
+		display: flex;
+		& + .sel_wrap {
+			padding-top:15px;
+			margin-top:15px;
+			border-top:1px solid #eeeeee;
+		}
+		.sel {
+			position: relative;
+			cursor: pointer;
+			flex:1;
+			margin-right:6px;
+			&:nth-child(4n), &:last-child {
+				margin-right:0;
+			}
+			input[type=radio], input[type=checkbox] {
+				position: absolute;
+				left:0;
+				top:0;
+				visibility: hidden;
+				&:checked + p {
+					background-color:#0053a7;
+				}
+			}
+			p {
+				width:100%;
+				padding: 0.85rem 0;
+				text-align: center;
+				background-color:#d1d1d1;
+				color:#fff;
+			}
+		}
 	}
 }
 .required {
