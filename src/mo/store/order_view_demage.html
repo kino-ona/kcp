@@ -27,7 +27,7 @@
 		<div class="row">
 			<div class="tit_wrap">
 				<h2 class="title">파트너사 정보</h2>
-				<a href="#" class="btn_send">신청내역 이메일 보내기</a>
+				<button onclick="layerOpen('alert1')" class="btn_send">신청내역 이메일 보내기</button>
 			</div>
 			<dl class="frm_group">
 				<dt><label for="frm1">대리점명</label></dt>
@@ -198,6 +198,18 @@
 		</div>
 		<!--// 승인반려/재신청 -->
 
+		<!-- 신청내역 이메일 보내기 -->
+		<div class="layer_body popup" id="alert1" aria-hidden="true" role="dialog">
+			<div class="layer_wrap">
+				<div class="layer_cont alert">
+					<p>신청내역을 이메일로 보내신 후<br>출력하실 수 있습니다.<br>이메일을 보내시겠습니까?</p>
+				</div>
+				<div class="btn_wrap">
+					<button onclick="layerClose('alert1')" class="btn btn_cancel">취소</button>
+					<button onclick="layerClose('alert1')" class="btn btn_confirm">확인</button>
+				</div>
+			</div>
+		</div>
 	</div>
 	<!--// container -->
 </div>

@@ -1436,4 +1436,27 @@
 		font-weight:500;
 		vertical-align:middle;
 	}
+	.mix_half {
+		.inpwrap {
+			margin-bottom:10px;
+		}
+		input {
+			width:calc(100% - 110px);
+		}
+		.btn_download {
+			width:110px;
+			border:1px solid #0053a7;
+			line-height:38px;
+			text-align:center;
+			color:#0053a7;
+			&::before {
+				content:'';
+				display:inline-block;
+				margin-right:10px;
+				width:13px;
+				height:13px;
+				background:url(../images/common/btn_download.png) no-repeat 0 0 / cover;
+			}
+		}
+	}
 }
