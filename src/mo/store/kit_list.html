@@ -9,7 +9,7 @@
 <div class="skipnavigation"><a href="#container">본문 바로가기</a></div>
 <!-- header -->
 @@include('../inc/header.inc',{
-	"headtype":"subhead",
+	"headtype":"subhead _basket",
 	"pagetitle":"영업도구신청"
 })
 <!-- //header -->
@@ -51,7 +51,7 @@
 							<div class="info">
 								<div class="etc">
 									<span class="bedge">카탈로그</span>
-									<a href="#" class="btn_cart"><span class="a11y">장바구니담기</span></a>
+									<a href="#" onclick="layerOpen('alert8');return false;" class="btn_cart"><span class="a11y">장바구니담기</span></a>
 								</div>
 								<a href="#">
 									<p class="pname">학교 대상 시장용 리플렛</p>
@@ -114,6 +114,17 @@
 						<a href="#">더보기 (10/106) <i></i></a>
 					</div>
 
+				</div>
+			</div>
+		</div>
+
+		<div class="layer_body popup" id="alert8" aria-hidden="true" role="dialog">
+			<div class="layer_wrap">
+				<div class="layer_cont alert">
+					<p>장바구니에 담았습니다.</p>
+				</div>
+				<div class="btn_wrap">
+					<button onclick="layerClose('alert8')" class="btn btn_confirm">확인</button>
 				</div>
 			</div>
 		</div>

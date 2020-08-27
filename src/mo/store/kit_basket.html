@@ -20,8 +20,8 @@
 		<div class="kit_wrap">
 			<div class="basket_head">
 				<div class="row">
-					<p class="chkwrap">
-						<input type="checkbox" id="allchk"><label for="allchk">전체선택 (3/3)</label>
+					<p class="chkwrap chkall">
+						<input type="checkbox" name="chk" id="allchk"><label for="allchk">전체선택 (3/3)</label>
 					</p>
 
 					<a href="#" class="btn_delete"><i></i>선택삭제</a>
@@ -33,9 +33,9 @@
 					<div class="row">
 						<div class="title">
 							<p class="chkwrap">
-								<input type="checkbox" id="chk1"><label for="chk1">에스빈 위생용품 수거함 카달로그</label>
+								<input type="checkbox" name="chk" id="chk1"><label for="chk1">에스빈 위생용품 수거함 카달로그</label>
 							</p>
-							<a href="#" class="btn_delete"><i></i><span class="a11y">삭제</span></a>
+							<a href="#" onclick="layerClose('alertdel');return false;" class="btn_delete"><i></i><span class="a11y">삭제</span></a>
 						</div>
 						<div class="figuer">
 							<p class="img"><a href="#"><img src="../assets/images/dummy/@kit01.png" alt=""></a></p>
@@ -70,7 +70,7 @@
 					<div class="row">
 						<div class="title">
 							<p class="chkwrap">
-								<input type="checkbox" id="chk2"><label for="chk2">윈도즈* Series i 핸드타올 전용용기 쏟아짐 방지 어댑터</label>
+								<input type="checkbox" name="chk" id="chk2"><label for="chk2">윈도즈* Series i 핸드타올 전용용기 쏟아짐 방지 어댑터</label>
 							</p>
 							<a href="#" class="btn_delete"><i></i><span class="a11y">삭제</span></a>
 						</div>
@@ -101,7 +101,34 @@
 						</dl>
 					</div>
 				</div>
+			</div>
 
+			<!-- sticky button -->
+			<div class="btn_wrap _fixed up">
+				<button onclick="layerOpen('alert10');" class="btn primary max">선택 영업도구 신청하기</button>
+			</div>
+
+		</div>
+
+		<div class="layer_body popup" id="alert10" aria-hidden="true" role="dialog">
+			<div class="layer_wrap">
+				<div class="layer_cont alert">
+					<p>영업도구 신청이 정상적으로<br>처리되었습니다.</p>
+				</div>
+				<div class="btn_wrap">
+					<button onclick="layerClose('alert10')" class="btn btn_confirm">확인</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="layer_body popup" id="alertdel" aria-hidden="true" role="dialog">
+			<div class="layer_wrap">
+				<div class="layer_cont alert">
+					<p>삭제하시겠습니까?</p>
+				</div>
+				<div class="btn_wrap">
+					<button onclick="layerClose('alertdel')" class="btn btn_confirm">확인</button>
+				</div>
 			</div>
 		</div>
 

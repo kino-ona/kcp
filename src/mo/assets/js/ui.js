@@ -1,5 +1,26 @@
 $(document).ready(function () {
 	if($('.datepicker').length > 0) datepickerControl();
+
+	// checkbox all 
+	if($('.chkall').length > 0) {
+		$('.chkall label').click(function() {
+			if($('.chkall input:checkbox').is(':checked')) {
+        $('.chkwrap:not(.chkall) input:checkbox').prop('checked', false)
+			}else{
+				$('.chkwrap:not(.chkall) input:checkbox').prop('checked', true)
+			}
+		});
+
+		var chkleng = $('.chkwrap:not(.chkall)').length;
+		$('.chkwrap:not(.chkall) input:checkbox').click(function() {
+			if($('.chkwrap:not(.chkall) input:checkbox:checked').length == chkleng){
+				$('.chkall input:checkbox').prop('checked', true)
+			}else {
+				$('.chkall input:checkbox').prop('checked', false)
+			}
+		});
+	}
+
 });
 
 ////// global common 

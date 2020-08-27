@@ -81,8 +81,8 @@ function datepickerControl() {
 		showMonthAfterYear: true,
 		// dateFormat: "yy-mm-dd",
 		dateFormat: "yy.mm.dd",
-		minDate: "-5y",
-		maxDate: "now",
+		// minDate: "-5y",
+		// maxDate: "now",
 		showOtherMonths: true,
   	selectOtherMonths: true,
 	}

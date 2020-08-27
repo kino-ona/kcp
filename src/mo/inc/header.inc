@@ -16,6 +16,12 @@
 				-->
 				<h2 class="kleenex"><span class="a11y">@@pagetitle</span></h2>
 			} 
+			@@if (headtype === 'subhead _basket') {
+				<h2>@@pagetitle</h2>
+				<p class="head_cart">
+					<a href="#" onclick="layerOpen('alert8');return false;" class="btn_cart"><span class="cnt">22</span><span class="a11y">장바구니담기</span></a>
+				</p>
+			} 
 		</div>
 	</div>
 </header>

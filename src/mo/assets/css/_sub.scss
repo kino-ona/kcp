@@ -50,6 +50,47 @@
 			}
 			.kleenex { background-image:url(../images/common/logo_kleenex.png);}
 		}
+		&._basket {
+			.head {
+				position: relative;
+			}
+			.head_cart {
+				display: inline-block;
+				position: absolute;
+				right:0;
+				top:4px;
+			}
+		}
+		.btn_cart {
+			position: relative;
+			display: inline-block;
+			width:2.5rem;
+			height:1.8rem;
+			background: {
+				image:url(../images/common/btn_cart.png);
+				size:auto 1.8rem;
+				repeat:no-repeat;
+				position: 0 0;
+			}
+			.cnt {
+				display: inline-block;
+				position: absolute;
+				right:-6px;
+				top:-8px;
+				min-width:18px;
+				padding:0 3px;
+				background-color:#0053a7;
+				font-size:.4rem;
+				font-weight:700;
+				color:#fff;
+				text-align:center;
+				border-radius: 100%;
+				-webkit-border-radius: 100%;
+				-moz-border-radius: 100%;
+				-ms-border-radius: 100%;
+				-o-border-radius: 100%;
+}
+		}
 	}
 	// &.subhead
 	&.fixed {

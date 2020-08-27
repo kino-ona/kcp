@@ -1303,8 +1303,11 @@ input.calendar {
 		position: right 10px center;
 	}
 }
+
 .ui-datepicker {
-	width: 200px;
+	left:30px !important;
+	// width: 200px;
+	width: calc(100% - 60px);
 	padding: 2px 2px 0;
 	margin-top:2px;
 	display: none;
@@ -1318,9 +1321,10 @@ input.calendar {
 .ui-datepicker .ui-datepicker-prev,
 .ui-datepicker .ui-datepicker-next {
 	position: absolute;
-	top: 2px;
-	width: 18px;
-	height: 18px;
+	top: 8px;
+	width: 28px;
+	height: 28px;
+	z-index: 10;
 	background: {
 		position:center center;
 		repeat:no-repeat
@@ -1333,15 +1337,15 @@ input.calendar {
 .ui-datepicker .ui-datepicker-prev {
 	left: 4px;
 	background: {
-		image:url(/static/assets/images/ico/ico_cal_prev.png);
-		size:18px;
+		image:url(../images/icon/ico_cal_prev.png);
+		size:10px;
 	}
 }
 .ui-datepicker .ui-datepicker-next {
 	right: 4px;
 	background: {
-		image:url(/static/assets/images/ico/ico_cal_next.png);
-		size:18px;
+		image:url(../images/icon/ico_cal_next.png);
+		size:10px;
 	}
 }
 .ui-datepicker .ui-datepicker-prev-hover {
@@ -1361,10 +1365,11 @@ input.calendar {
 }
 .ui-datepicker .ui-datepicker-title {
 	margin: 0 23px;
+	padding:5px 0;
 	line-height: 18px;
 	text-align: center;
 	span {
-		font-size: 13px;
+		font-size: 14px;
 	}
 }
 .ui-datepicker .ui-datepicker-title select {
@@ -1397,13 +1402,23 @@ input.calendar {
 .ui-datepicker td span,
 .ui-datepicker td a {
 	display: block;
-	padding: 2px;
+	width:30px;
+	height:30px;
+	// padding: 10px 2px;
 	text-align: center;
 	text-decoration: none;
-	font-size: 11px;
+	font-size: 13px;
+	line-height:27px;
 	&.ui-state-active {
+		border:1px solid #0053a7;
 		background-color: #fff;
-	}
+		color:#0053a7;
+		border-radius: 100%;
+		-webkit-border-radius: 100%;
+		-moz-border-radius: 100%;
+		-ms-border-radius: 100%;
+		-o-border-radius: 100%;
+}
 }
 .ui-datepicker .ui-datepicker-buttonpane {
 	background-image: none;

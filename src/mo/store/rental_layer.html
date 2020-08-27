@@ -27,7 +27,12 @@
 			<p><button onclick="layerOpen('conditpopup');">전용용기 대여조건 안내 팝업</button></p><br>
 			<p><button onclick="layerOpen('alert5');">무료사용 정상 
 				신청 안내 팝업</button></p><br>
-			<p><button onclick="layerOpen('alert4');">무료사용 취소 팝업</button></p>
+			<p><button onclick="layerOpen('alert6');">무료사용 취소 팝업</button></p><br>
+			<p><button onclick="layerOpen('alert7');">검색결과 없음 팝업</button></p><br>
+			<p><button onclick="layerOpen('alert8');">장바구니 담기 확인 팝업</button></p><br>
+			<p><button onclick="layerOpen('alert9');">선택된 영업도구가 없는 경우 확인 팝업</button></p><br>
+			<p><button onclick="layerOpen('alert10');">영업도구 신청 처리 완료 확인 팝업</button></p><br>
+			<p><button onclick="layerOpen('alertdel');">삭제 확인 팝업</button></p>
 	
 		</div>
 
@@ -251,6 +256,61 @@
 				<div class="btn_wrap">
 					<button onclick="layerClose('alert6')" class="btn btn_cancel">취소</button>
 					<button onclick="layerClose('alert6')" class="btn btn_confirm">확인</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="layer_body popup" id="alert7" aria-hidden="true" role="dialog">
+			<div class="layer_wrap">
+				<div class="layer_cont alert">
+					<p>검색결과가 없습니다.</p>
+				</div>
+				<div class="btn_wrap">
+					<button onclick="layerClose('alert7')" class="btn btn_confirm">확인</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="layer_body popup" id="alert8" aria-hidden="true" role="dialog">
+			<div class="layer_wrap">
+				<div class="layer_cont alert">
+					<p>장바구니에 담았습니다.</p>
+				</div>
+				<div class="btn_wrap">
+					<button onclick="layerClose('alert8')" class="btn btn_confirm">확인</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="layer_body popup" id="alert9" aria-hidden="true" role="dialog">
+			<div class="layer_wrap">
+				<div class="layer_cont alert">
+					<p>선택된 영업도구가<br>없습니다.</p>
+				</div>
+				<div class="btn_wrap">
+					<button onclick="layerClose('alert9')" class="btn btn_confirm">확인</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="layer_body popup" id="alert10" aria-hidden="true" role="dialog">
+			<div class="layer_wrap">
+				<div class="layer_cont alert">
+					<p>영업도구 신청이 정상적으로<br>처리되었습니다.</p>
+				</div>
+				<div class="btn_wrap">
+					<button onclick="layerClose('alert10')" class="btn btn_confirm">확인</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="layer_body popup" id="alertdel" aria-hidden="true" role="dialog">
+			<div class="layer_wrap">
+				<div class="layer_cont alert">
+					<p>삭제하시겠습니까?</p>
+				</div>
+				<div class="btn_wrap">
+					<button onclick="layerClose('alertdel')" class="btn btn_confirm">확인</button>
 				</div>
 			</div>
 		</div>
