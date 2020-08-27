@@ -697,7 +697,7 @@
 
 /** order **/
 .order {
-	padding-top:10px;
+	// padding-top:10px;
 	h2.title {
 		margin-bottom:15px;
 		font-size:17px;
@@ -1051,11 +1051,253 @@
 			min-height:47px;
 			max-height:47px;
 		}
+		.etc {
+			position: relative;
+			padding:0 5px 8px;
+			margin-bottom:5px;
+			border-bottom:1px solid #eeeeee;
+			.bedge {
+				display:inline-block;
+				padding:0 4px;
+				background-color:#e9e9ea;
+				border-radius: 4px;
+				-webkit-border-radius: 4px;
+				-moz-border-radius: 4px;
+				-ms-border-radius: 4px;
+				-o-border-radius: 4px;
+				font-size:10px;
+			}
+		}
 		.btn_cart {
-			
+			display: inline-block;
+			position: absolute;
+			right:10px;
+			top:0;
+			width:2.5rem;
+			height:1.8rem;
+			background: {
+				image:url(../images/common/btn_cart.png);
+				size:auto 1.8rem;
+				repeat:no-repeat;
+				position: 0 0;
+			}
 		}
 	}
 } //.order
+.kit_wrap {
+	.figure {
+		text-align:center;
+	}
+	.details {
+		margin-top:30px;
+		&_slide {
+			padding:40px 0;
+			border-top:1px solid #eee;
+			&:first-of-type {
+				border-top:0;
+			}
+			h4 {
+				font-size:14px;
+				font-weight:400;
+				> p {
+					font-size:12px;
+					font-weight: 300;
+					span {
+						font-size:inherit;
+						color:#0053a7;
+						font-weight: 500;
+					}
+				}
+			}
+			.desc {
+				padding-top:4px;
+				li {
+					padding:0;
+					font-weight:300;
+				}
+			}
+		}
+		.prd {
+			&_info {
+				padding-bottom:30px;
+				.tit {
+					font-size:20px;
+					font-weight:400;
+				}
+				.code {
+					font-size:13px;
+					color:#0053a7;
+				}
+			}
+			&_spec {
+				display:flex;
+				flex-wrap:wrap;
+				padding:30px 30px 15px;
+				border-top:1px solid #eee;
+				dt {
+					width:110px;
+				}
+				dd {
+					width:calc(100% - 110px);
+					color:#666;
+					font-weight: 300;
+				}
+			}
+			&_summary {
+				padding-top:40px;
+				padding-bottom:40px;
+				.option {
+					overflow:hidden;
+					dt {
+						font-size:14px;
+						font-weight:500;
+					}
+					ul {
+						display:flex;
+						flex-wrap:wrap;
+						margin:0 0 30px -10px;
+						font-size:0;
+					}
+					li {
+						position:relative;
+						margin:10px 0 0 10px;
+						@media (max-width:359px) {
+							min-width:calc(50% - 10px);
+						}
+					}
+					input[type="radio"] {
+						position:absolute;
+						top:0;
+						left:0;
+						width:0;
+						height:0;
+						&:checked + label {
+							border-color:#000;
+							color:#000;
+						}
+					}
+					label {
+						display:block;
+						min-width:85px;
+						padding:0 18px;
+						border:1px solid #e0e0e0;
+						font-size:14px;
+						line-height:28px;
+						text-align:center;
+					}
+				}
+				.desc {
+					dt {
+						margin-bottom:10px;
+					}
+					dd {
+						font-size:12px;
+						font-weight:300;
+					}
+					ul {
+						margin-bottom:30px;
+						li {
+							padding-left:10px;
+							font-size:inherit;
+							text-indent:-10px;
+							&:before {
+								content:'- ';
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}//.kit_wrap
+[class*='basket_'] {
+	.btn_delete {
+		display:inline-block;
+		position:absolute;
+		right:30px;
+		top:0;
+		color:#666666;
+		i {
+			display: inline-block;
+			width:18px;
+			height:18px;
+			margin-right:5px;
+			background: {
+				image:url(../images/common/btn_bin.png);
+				size:1.75rem;
+				repeat:no-repeat;
+				position:0 0;
+			}
+			vertical-align: middle;
+		}
+	}
+}
+.basket_head {
+	padding-bottom:15px;
+	border-bottom:1px solid #eeeeee;
+	.row {
+		position: relative;
+	}
+}
+.basket_list {
+	.item {
+		padding:4.0rem 0 2.75rem;
+		border-bottom:1px solid #eeeeee;
+		&:last-child {
+			border-bottom:0;
+		}
+		.chkwrap {
+			width:calc(100% - 65px);
+		}
+	}
+	.title {
+		position:relative;
+		.btn_delete {
+			right:0;
+		}
+	}
+	.figuer {
+		position: relative;
+		padding-top:10px;
+		.img {
+			width:14.5rem;
+			margin-right:10px;
+		}
+	}
+	.qty {
+		position: absolute;
+		left:15.5rem;
+		top:50%;
+		@include transform(translateY(-50%));
+		width:calc((100% - 14.5rem) - 10px);
+		overflow:hidden;
+		dt {
+			padding-bottom:7px;
+			color:#666666;
+		}
+		.radiowrap {
+			display: inline-block;
+			input[type=radio] + label {
+				min-width:45px;
+			}
+		}
+	}
+	.desc {
+		display:flex;
+		flex-wrap:wrap;
+		margin-top:10px;
+		dt {
+			width:100px;
+			font-size:12px;
+		}
+		dd {
+			width:calc(100% - 100px);
+			font-size:12px;
+			color:#666666;
+		}
+	}
+}
+// .basket_
 .layer_body.rentpopup {
 	.layer_cont {
 		padding:20px 0;

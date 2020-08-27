@@ -17,87 +17,85 @@
 <div class="wrap">
 	<!-- container -->
 	<div class="container order">
-		<!-- tab navi -->
-		<div class="tab_navi">
-			<ul>
-				<li class="active"><a href="#">전체</a></li> <!-- 활성화 .active -->
-				<li><a href="#">부품</a></li>
-				<li><a href="#">리플렛</a></li>
-				<li><a href="#">라벨(스티커)</a></li>
-				<li><a href="#">카탈로그</a></li>
-			</ul>
-		</div>
-		
-		<div class="borad_wrap">
-			<!-- sort -->
-			<div class="sort">
-				<select class="dropdown">
-					<option>제품 카테고리 선택</option>
-					<option>기타 위생케어</option>
-					<option>화장실용 화장지</option>
-					<option>와이퍼</option>
-					<option>마스크</option>
-					<option>글러브</option>
-					<option>사이언티픽&amp;연구개발</option>
-					<option>핸드워시</option>
-				</select>
+		<div class="kit_wrap">
+			<div class="figure">
+				<img src="../assets/images/dummy/@kit01.png" alt="">
 			</div>
-			<!--// sort -->
-			<div class="row">
-				<div class="product_list _kit">
-					<ul class="col_2">
-						<li class="item">
-							<!-- <p class="btn_cart"><a href="#"><span class="a11y">장바구니담기</span></a></p> -->
+			<section class="details">
+				<div class="row prd_info">
+					<h3 class="tit">학교 대상 시장용 리플렛</h3>
+					<p class="code">관리코드 : HG017</p>
+				</div>
+				<dl class="row prd_spec">
+					<dt>종류</dt>
+					<dd>라벨(스티커)</dd>
+					<dt>제품 카테고리</dt>
+					<dd>기타 위생케어, 핸드타올, 화장실용 화장지</dd>
+				</dl>
+				
+				<hr>
+				<div class="row prd_summary">
+					<dl class="option">
+						<dt>수량선택</dt>
+						<dd>
+							<ul class="opt_qty">
+								<li><input type="radio" id="qty1" name="opt_qty" checked><label for="qty1">10개</label></li>
+								<li><input type="radio" id="qty2" name="opt_qty"><label for="qty2">20개</label></li>
+								<li><input type="radio" id="qty3" name="opt_qty"><label for="qty3">30개</label></li>
+							</ul>
+						</dd>
+					</dl>
+
+					<dl class="desc">
+						<dt>제품 설명</dt>
+						<dd>
+							학교에서 사용할 수 있는 위생용품 및 급식실 푸드서비스 와이퍼 제안 리플렛입니다.
+						</dd>
+					</dl>
+				</div>
+			</section>
+
+			<hr>
+			<div class="details_slide">
+				<div id="relation_swipe" class="row swiper-container">
+					<h4>해당제품 <p>해당 영업도구는 <span>핸드타올</span> 에 적용됩니다.</p></h4>
+					<div class="swiper-wrapper">
+						<!-- slide -->
+						<div class="swiper-slide">
 							<a href="#">
-								<p class="img"><img src="../assets/images/dummy/@kit01.png" alt=""></p>
+								<div class="img"><img src="../assets/images/dummy/@product290_01.jpg" alt=""></div>
 								<div class="info">
-									<p class="pname">학교 대상 시장용 리플렛</p>
-									<ul class="desc">
-										<li>관리코드: HG 001</li>
-										<li>종류: 라벨(스티커)</li>
-									</ul>
+									<p class="pname">크리넥스 에어셀 화장지 220m 순수</p>
 								</div>
 							</a>
-						</li>
-						<li class="item">
+						</div>
+						<!--// slide -->
+						<div class="swiper-slide">
 							<a href="#">
-								<p class="img"><img src="../assets/images/dummy/@kit02.png" alt=""></p>
+								<div class="img"><img src="../assets/images/dummy/@product290_02.jpg" alt=""></div>
 								<div class="info">
-									<p class="pname">크리넥스 센터풀 티슈 스탠다드 세일즈 카다로그</p>
-									<ul class="desc">
-										<li>관리코드: HG 001</li>
-										<li>종류: 라벨(스티커)</li>
-									</ul>
+									<p class="pname">크리넥스 에어셀 두루마리 화장지 50m</p>
 								</div>
 							</a>
-						</li>
-						<li class="item">
+						</div>
+						<div class="swiper-slide">
 							<a href="#">
-								<p class="img"><img src="../assets/images/dummy/@kit03.png" alt=""></p>
+								<div class="img"><img src="../assets/images/dummy/@product290_03.jpg" alt=""></div>
 								<div class="info">
-									<p class="pname">학교 대상 시장용 리플렛</p>
-									<ul class="desc">
-										<li>관리코드: HG 001</li>
-										<li>종류: 라벨(스티커)</li>
-									</ul>
+									<p class="pname">크리넥스 에어셀 두루마리 화장지 50m</p>
 								</div>
 							</a>
-						</li>
-						<li class="item">
-							<a href="#">
-								<p class="img"><img src="../assets/images/dummy/@kit04.png" alt=""></p>
-								<div class="info">
-									<p class="pname">크리넥스 센터풀 티슈 스탠다드 세일즈 카다로그</p>
-									<ul class="desc">
-										<li>관리코드: HG 001</li>
-										<li>종류: 라벨(스티커)</li>
-									</ul>
-								</div>
-							</a>
-						</li>
-					</ul>
+						</div>
+					</div>
 				</div>
 			</div>
+			<!--// 해당제품 -->
+		</div>
+
+		<!-- sticky button -->
+		<div class="btn_wrap _fixed half up">
+			<button class="btn secondary max">장바구니 담기</button>
+			<button class="btn default max">장바구니 보기</button>
 		</div>
 
 	</div>
@@ -110,6 +108,20 @@
 	"webroot2":".."
 })
 <!-- //footer -->
+
+<script>
+	// 해당제품 swipe
+	if($('#relation_swipe').length > 0){
+		var rtsolutionswipe = new Swiper('#relation_swipe', {
+			loop: false,
+			slidesPerView: 2.2,
+			parallax: true,
+			observer: true,
+			observeParents: true,
+			spaceBetween: 10
+		});
+	}
+</script>
 
 </body>
 </html>

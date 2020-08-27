@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	@@include('../inc/pagehead.inc',{
+		"webroot":".."
+	})
+</head>
+<body>
+<div class="skipnavigation"><a href="#container">본문 바로가기</a></div>
+<!-- header -->
+@@include('../inc/header.inc',{
+	"headtype":"subhead",
+	"pagetitle":"장바구니"
+})
+<!-- //header -->
+
+<div class="wrap">
+	<!-- container -->
+	<div class="container order">
+		<div class="kit_wrap">
+			<div class="basket_head">
+				<div class="row">
+					<p class="chkwrap">
+						<input type="checkbox" id="allchk"><label for="allchk">전체선택 (3/3)</label>
+					</p>
+
+					<a href="#" class="btn_delete"><i></i>선택삭제</a>
+				</div>
+			</div>
+			<div class="basket_list">
+				<!-- loop -->
+				<div class="item">
+					<div class="row">
+						<div class="title">
+							<p class="chkwrap">
+								<input type="checkbox" id="chk1"><label for="chk1">에스빈 위생용품 수거함 카달로그</label>
+							</p>
+							<a href="#" class="btn_delete"><i></i><span class="a11y">삭제</span></a>
+						</div>
+						<div class="figuer">
+							<p class="img"><a href="#"><img src="../assets/images/dummy/@kit01.png" alt=""></a></p>
+							<dl class="qty">
+								<dt>수량선택</dt>
+								<dd>
+									<p class="radiowrap">
+										<input type="radio" name="qyt0" id="qyt1"><label for="qyt1">10</label>
+									</p>
+									<p class="radiowrap">
+										<input type="radio" name="qyt0" id="qyt2"><label for="qyt2">20</label>
+									</p>
+									<p class="radiowrap">
+										<input type="radio" name="qyt0" id="qyt3"><label for="qyt3">30</label>
+									</p>
+								</dd>
+							</dl>
+						</div>
+						<dl class="desc">
+							<dt>관리코드</dt>
+							<dd>HG017</dd>
+							<dt>종류</dt>
+							<dd>라벨(스티커)</dd>
+							<dt>제품 카테고리</dt>
+							<dd>기타 위생케어, 핸드타올, 화장실용 화장지</dd>
+						</dl>
+					</div>
+				</div>
+				<!--// loop -->
+
+				<div class="item">
+					<div class="row">
+						<div class="title">
+							<p class="chkwrap">
+								<input type="checkbox" id="chk2"><label for="chk2">윈도즈* Series i 핸드타올 전용용기 쏟아짐 방지 어댑터</label>
+							</p>
+							<a href="#" class="btn_delete"><i></i><span class="a11y">삭제</span></a>
+						</div>
+						<div class="figuer">
+							<p class="img"><a href="#"><img src="../assets/images/dummy/@kit02.png" alt=""></a></p>
+							<dl class="qty">
+								<dt>수량선택</dt>
+								<dd>
+									<p class="radiowrap">
+										<input type="radio" name="qyt1" id="qyt1_1"><label for="qyt1_1">10</label>
+									</p>
+									<p class="radiowrap">
+										<input type="radio" name="qyt1" id="qyt1_2"><label for="qyt1_2">20</label>
+									</p>
+									<p class="radiowrap">
+										<input type="radio" name="qyt1" id="qyt1_3"><label for="qyt1_3">30</label>
+									</p>
+								</dd>
+							</dl>
+						</div>
+						<dl class="desc">
+							<dt>관리코드</dt>
+							<dd>HG017</dd>
+							<dt>종류</dt>
+							<dd>라벨(스티커)</dd>
+							<dt>제품 카테고리</dt>
+							<dd>기타 위생케어, 핸드타올, 화장실용 화장지</dd>
+						</dl>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+	<!--// container -->
+</div>
+<!--// wrap -->
+
+<!-- footer -->
+@@include('../inc/footer.inc',{
+	"webroot2":".."
+})
+<!-- //footer -->
+
+</body>
+</html>
