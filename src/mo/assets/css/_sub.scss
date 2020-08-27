@@ -1260,6 +1260,10 @@
 		.code {
 			font-weight:300;
 		}
+		& + .more_view {
+			margin-top:-20px;
+			background-color:#ebebeb;
+		}
 	}
 	.order_num {
 		margin-bottom:20px;
@@ -1458,5 +1462,9 @@
 				background:url(../images/common/btn_download.png) no-repeat 0 0 / cover;
 			}
 		}
+	}
+	.more_view {
+		margin:30px auto 0;
+		background-color:#ebebeb;
 	}
 }
