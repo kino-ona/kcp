@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	@@include('../inc/pagehead.inc',{
+		"webroot":".."
+	})
+</head>
+<body>
+<div class="skipnavigation"><a href="#container">본문 바로가기</a></div>
+<!-- header -->
+@@include('../inc/header.inc',{
+	"headtype":"subhead",
+	"pagetitle":"고객의 소리"
+})
+<!-- //header -->
+
+<div class="wrap">
+	<!-- container -->
+	<div class="container custom">
+		<!-- sort -->
+		<div class="sort">
+			<a href="#" class="btn_write">글쓰기</a>
+			<select>
+				<option>전체</option>
+				<option>제품관련 건의</option>
+				<option>고객의견</option>
+				<option>고객불만</option>
+				<option>답변완료</option>
+				<option>답변중</option>
+			</select>
+		</div>
+
+		<div class="accord_wrap _qna">
+			<!-- loop -->
+			<div class="item" data-status="expanded">
+				<div class="acco_head">
+					<a href="#" class="acco_target" tabindex="0">
+						<p class="title">개인정보 열람 및 수정에 대한 안내 개인정보 열람 및 수정에 대한 안내 개인정보 열람 및 열람 및 수정에 대한 안내 개인정보 열람 및 열람 및 수정에 대한 안내 개인정보 열람 및 </p>
+						<div class="info">
+							<span class="cate">고객의견</span>
+							<span class="date">2020.07.01(수)</span>
+							<span>답변중</span>
+						</div>
+						<i></i>
+					</a>
+				</div>
+				<!-- 고객의 소리 내용 -->
+				<div class="acco_panel">
+					<p class="question">개인정보 열람 및 수정에 대한 안내 개인정보 열람 및 수정에 대한 안내 개인정보 열림 및 수정에 대한 안내 개인정보?</p>
+					<p class="answer">개인정보처리방침이 아래와 같이 일부 변경되어 안내 드리오니 내용 참고하시어 서비스 이용에 불편이 없으시길 바랍니다.</p>
+				</div>
+				<!--// 고객의 소리 내용 -->
+			</div>
+			<!--// loop -->
+			
+			<div class="item" data-status="hidden">
+				<div class="acco_head">
+					<a href="#" class="acco_target" tabindex="0">
+						<p class="title">개인정보 열람 및 수정에 대한 안내 개인정보 열람 및 수정에 대한 안내 개인정보 열람 및 열람 및 수정에 대한 안내 개인정보 열람 및 열람 및 수정에 대한 안내 개인정보 열람 및 </p>
+						<div class="info">
+							<span class="cate">고객불만</span>
+							<span class="date">2020.07.01(수)</span>
+							<span>답변중</span>
+						</div>
+						<i></i>
+					</a>
+				</div>
+				<div class="acco_panel">
+					<p class="question">개인정보 열람 및 수정에 대한 안내 개인정보 열람 및 수정에 대한 안내 개인정보 열림 및 수정에 대한 안내 개인정보?</p>
+					<p class="answer">개인정보처리방침이 아래와 같이 일부 변경되어 안내 드리오니 내용 참고하시어 서비스 이용에 불편이 없으시길 바랍니다.</p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!--// container -->
+</div>
+<!--// wrap -->
+
+<!-- footer -->
+@@include('../inc/footer.inc',{
+	"webroot2":".."
+})
+<!-- //footer -->
+
+</body>
+</html>

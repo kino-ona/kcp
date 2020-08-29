@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	@@include('../inc/pagehead.inc',{
+		"webroot":".."
+	})
+</head>
+<body>
+<div class="skipnavigation"><a href="#container">본문 바로가기</a></div>
+<!-- header -->
+@@include('../inc/header.inc',{
+	"headtype":"subhead",
+	"pagetitle":"고객의 소리"
+})
+<!-- //header -->
+
+<div class="wrap">
+	<!-- container -->
+	<div class="container custom">
+		<div class="row _view">
+			<dl class="frm_group">
+				<dt><label for="">문의선택</label></dt>
+				<dd>
+					<div class="sel_wrap">
+						<label class="sel">
+							<input type="radio" name="reason" checked> 
+							<p>제품관련건의</p>
+						</label>
+						<label class="sel">
+							<input type="radio" name="reason"> 
+							<p>고객의견</p>
+						</label>
+						<label class="sel">
+							<input type="radio" name="reason"> 
+							<p>구매건의</p>
+						</label>
+					</div>
+				</dd>
+
+				<dt><label for="">제목 <span class="required"><span class="a11y">필수</span></span></label></dt>
+				<dd><input type="text" placeholder="제목을 입력해주세요" required></dd>
+
+				<dt><label for="">내용 <span class="required"><span class="a11y">필수</span></span></label></dt>
+				<dd>
+					<textarea id="" placeholder="내용을 입력해주세요" required></textarea>
+				</dd>
+			</dl>
+		</div>
+
+		<!-- sticky button -->
+		<div class="btn_wrap _fixed half up">
+			<button class="btn cancel max" onclick="layerOpen('alert1')">취소</button>
+			<button class="btn default max" onclick="layerOpen('alert2')">확인</button>
+		</div>
+
+		<!-- 취소 -->
+		<div class="layer_body popup" id="alert1" aria-hidden="true" role="dialog">
+			<div class="layer_wrap">
+				<div class="layer_cont alert">
+					<p>문의를 취소하시겠습니까?</p>
+				</div>
+				<div class="btn_wrap">
+					<button onclick="layerClose('alert1')" class="btn btn_cancel">취소</button>
+					<button onclick="layerClose('alert1')" class="btn btn_confirm">확인</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- 누락 항목이 있을 경우 -->
+		<div class="layer_body popup" id="alert2" aria-hidden="true" role="dialog">
+			<div class="layer_wrap">
+				<div class="layer_cont alert">
+					<p>모든 항목을 빠짐없이 <br> 등록해주세요.</p>
+				</div>
+				<div class="btn_wrap">
+					<button onclick="layerClose('alert2')" class="btn btn_confirm">확인</button>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!--// container -->
+</div>
+<!--// wrap -->
+
+<!-- footer -->
+@@include('../inc/footer.inc',{
+	"webroot2":".."
+})
+<!-- //footer -->
+
+</body>
+</html>
