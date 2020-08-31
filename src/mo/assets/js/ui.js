@@ -80,6 +80,16 @@ function accoSet(setId, multiTF, setFocus) {
 		setFocus: setFocus
 	});
 }
+// tab control
+$('ul.tablist li button').click(function(){
+	var tab_id = $(this).attr('data-tab');
+	
+	$('ul.tablist button').removeClass('current');
+	$(this).parents('.tab_wrap').find('.tab-cont').removeClass('current');
+
+	$(this).addClass('current');
+	$("#"+tab_id).addClass('current');
+});
 // family site
 function goFamilySite(select) {
 	if (select.value != 'none') {

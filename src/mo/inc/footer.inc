@@ -1,3 +1,46 @@
+<!-- gnb(menu) -->
+<div class="gnb_menu">
+	<div class="gnb_head">
+		<div class="row">
+			<!-- 파트너사 로그인 전 -->
+			<!-- <a href="#" class="btn_link _login">파트너사 로그인</a> -->
+			<!--// 파트너사 로그인 전 -->
+
+			<!-- 파트너사 로그인 후 -->
+			<p>현재 <span>Parter_01Parter_01</span> 로 로그인하셨습니다.</p>
+			<a href="#" class="btn_link _modi">정보수정</a>
+			<!--// 파트너사 로그인 후 -->
+
+			<a href="#" class="btn btn_close"><span class="a11y">close</span></a>
+		</div>
+	</div>
+	<div class="tab_wrap gnb_wrap">
+		<!-- 일반사용자 메뉴 -->
+		<ul class="tablist" role="tablist">
+			<li><button class="current" data-tab="gnb-1">프로페셔널</button></li>
+			<li><button class="" data-tab="gnb-2">브랜드</button></li>
+			<li><button class="" data-tab="gnb-3">제품</button></li>
+			<li><button class="" data-tab="gnb-4">솔루션</button></li>
+		</ul>
+		<!-- 파트너사 메뉴 -->
+		<ul class="tablist" role="tablist">
+			<li><button class="" data-tab="part_gnb-1">파트너정보</button></li>
+			<li><button class="" data-tab="part_gnb-2">주문신청</button></li>
+			<li><button class="" data-tab="part_gnb-3">커뮤니티</button></li>
+			<li><button class="" data-tab="gnb-1">프로페셔널</button></li>
+			<li><button class="" data-tab="gnb-2">브랜드</button></li>
+			<li><button class="" data-tab="gnb-3">제품</button></li>
+			<li><button class="" data-tab="gnb-4">솔루션</button></li>
+		</ul>
+		<div class="tab_contents">
+			<div id="gnb-1" class="tab-cont current">
+			</div>
+		</div>
+		
+	</div>
+</div>
+<!--// gnb(menu) -->
+
 
 <!-- search layer -->
 <div class="search_layer">
