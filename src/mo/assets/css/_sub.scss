@@ -1751,11 +1751,42 @@
 		font-weight: 350;
 		background:url(../images/icon/ico_arr-bk.png) no-repeat right center / 5px;
 	}
+	.cust_call {
+		dt {
+			font-size:17px;
+			font-weight: 500;
+		}
+		dd {
+			margin-top:15px;
+			p {
+				margin-top:7px;
+				color:#666666;
+				font-size:12px;
+				font-weight: 350;
+			}
+		}
+	}
 } // .custom 
 .layer_body.agreepopup {
 	.agr_text {
 		min-height:calc(100% - 100px);
 		max-height:calc(100% - 100px);
 		overflow-y:auto;
+		dl {
+			margin-top:25px;
+			&:first-child {margin-top:0;}
+		}
+		dt {
+			color:#0053a7;
+			font-weight: 500;
+		}
+		dd {
+			padding-top:20px;
+			color:#666666;
+			&.light {
+				padding-top:5px;
+				font-weight: 300;
+			}
+		}
 	}
 }

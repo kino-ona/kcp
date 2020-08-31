@@ -11,7 +11,7 @@
 <!-- header -->
 @@include('../inc/header.inc',{
 	"headtype":"subhead",
-	"pagetitle":"제품 구매 문의"
+	"pagetitle":"고객상담"
 })
 <!-- //header -->
 
@@ -19,18 +19,18 @@
 	<!-- container -->
 	<div class="container custom">
 		<div class="page_summary">
-			유한킴벌리 프로페셔널 제품구매를 원하시는 고객님은 구매문의를 해주시면 담당자가 연락하여 상세하게 안내해 드립니다.
+			유한킴벌리 프로페셔널은 고객님의 불편사항을 신속하게 처리할 수 있도록 다양한 방법을 통해 접수하실 수 있도록 운영하고 있습니다.
 		</div>
 
 		<div class="counsel_wrap">
 			<div class="row">
-				<dl class="frm_group">
-					<dt><label for="frm1">문의제품 <span class="required"><span class="a11y">필수</span></span></label></dt>
-					<dd class="inpwrap">
-						<!-- 제품 상세페이지에서 [제품구매문의] 선택 후 이동했을 경우 //-->
-						<input type="text" id="frm1" value="크리넥스 오토매틱 폼 솝 1200ml" placeholder="문의하실 제품명 또는 제품군을 입력해주세요." readonly>
-						<!-- 메인 등에서 [제품구매문의] 선택 후 이동했을 경우 //-->
-						<input type="text" id="frm1" value="" placeholder="문의하실 제품명 또는 제품군을 입력해주세요.">
+				<dl class="cust_call">
+					<dt>상담전화
+						<a href="#" class="btn_view">1 : 1 문의</a>
+					</dt>
+					<dd>
+						<a href="tel:1588 - 5332" class="btn_line">1588 - 5332</a>
+						<p>평일 : 09:00 ~ 17:30 / 토, 일요일 및 공유일 휴무</p>
 					</dd>
 				</dl>
 			</div>
@@ -46,22 +46,16 @@
 			<hr>
 			<div class="row">
 				<dl class="frm_group">
-					<dt><label for="frm2">기업정보 <span class="required"><span class="a11y">필수</span></span></label></dt>
+					<dt><label for="frm1">성명 <span class="required"><span class="a11y">필수</span></span></label></dt>
 					<dd class="inpwrap">
-						<input type="text" id="frm2" value="" placeholder="기업정보를 입력해주세요.">
+						<input type="text" id="frm1" value="" placeholder="서울시 강남구 삼성동 123-4">
 					</dd>
 				</dl>
 				<dl class="frm_group">
-					<dt><label for="frm3">담당자 <span class="required"><span class="a11y">필수</span></span></label></dt>
-					<dd class="inpwrap">
-						<input type="text" id="frm3" value="" placeholder="담당자 성함을 입력해주세요.">
-					</dd>
-				</dl>
-				<dl class="frm_group">
-					<dt><label for="frm4">이메일 <span class="required"><span class="a11y">필수</span></span></label></dt>
+					<dt><label for="frm2">이메일 <span class="required"><span class="a11y">필수</span></span></label></dt>
 					<dd class="mix_half">
 						<div class="inpwrap email">
-							<p><input type="text" id="frm4" value="" placeholder=""></p>
+							<p><input type="text" id="frm2" value="" placeholder=""></p>
 							<p><input type="text" id="" placeholder="직접입력"></p>
 						</div>
 						<select>
@@ -71,34 +65,13 @@
 					</dd>
 				</dl>
 				<dl class="frm_group">
-					<dt><label for="frm5">휴대폰번호 <span class="required"><span class="a11y">필수</span></span></label></dt>
-					<dd class="inpwrap">
-						<input type="text" id="frm5" value="" placeholder="-를 제외한 숫자만 입력해주세요.">
-					</dd>
-				</dl>
-				<dl class="frm_group">
-					<dt><label>업종 <span class="required"><span class="a11y">필수</span></span></label></dt>
-					<dd class="inpwrap">
+					<dt><label for="frm3">전화번호 <span class="required"><span class="a11y">필수</span></span></label></dt>
+					<dd class="mix">
 						<select>
-							<option>업종선택</option>
-							<option>산업체-중공업</option>
-							<option>산업체-클린룸</option>
-							<option>산업체-유통서비스</option>
-							<option>산업체-기타</option>
-							<option>푸드세그먼트</option>
-							<option>교육/연구기관</option>
-							<option>의료기관</option>
-							<option>다중이용시설</option>
-							<option>빌딩</option>
-							<option>호텔 및 숙박</option>
-							<option>농축수산업</option>
-							<option>정부기관</option>
-							<option>비영리기관</option>
-							<option>기타</option>
+							<option>02</option>
+							<option>02</option>
 						</select>
-						<p class="warn">제품을 판매, 설치할 곳의 업종을 선택해주세요.</p>
-
-						<input type="text" id="" value="" placeholder="기타">
+						<input type="text" id="frm3">
 					</dd>
 				</dl>
 				<dl class="frm_group">
@@ -142,7 +115,7 @@
 		<!-- sticky button -->
 		<div class="btn_wrap _fixed half up">
 			<button onclick="layerOpen('alert1')" class="btn cancel max">취소</button>
-			<button onclick="layerOpen('alert2')" class="btn primary max">구매문의하기</button>
+			<button onclick="layerOpen('alert2')" class="btn primary max">문의하기</button>
 		</div>
 
 		<!--  개인정보 수집 및 이용 동의 popup -->
@@ -193,7 +166,7 @@
 		<div class="layer_body popup" id="alert1" aria-hidden="true" role="dialog">
 			<div class="layer_wrap">
 				<div class="layer_cont alert">
-					<p>등록을 취소하시겠습니까?</p>
+					<p>문의를 취소하시겠습니까?</p>
 				</div>
 				<div class="btn_wrap">
 					<button onclick="layerClose('alert1')" class="btn btn_cancel">취소</button>
