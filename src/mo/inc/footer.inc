@@ -16,24 +16,27 @@
 	</div>
 	<div class="tab_wrap gnb_wrap">
 		<!-- 일반사용자 메뉴 -->
-		<ul class="tablist" role="tablist">
+		<!-- <ul class="tablist" role="tablist">
 			<li><button class="current" data-tab="gnb-1">프로페셔널</button></li>
 			<li><button class="" data-tab="gnb-2">브랜드</button></li>
 			<li><button class="" data-tab="gnb-3">제품</button></li>
 			<li><button class="" data-tab="gnb-4">솔루션</button></li>
-		</ul>
+		</ul> -->
 		<!-- 파트너사 메뉴 -->
 		<ul class="tablist" role="tablist">
-			<li><button class="" data-tab="part_gnb-1">파트너정보</button></li>
+			<li><button class="current" data-tab="part_gnb-1">파트너정보</button></li>
 			<li><button class="" data-tab="part_gnb-2">주문신청</button></li>
 			<li><button class="" data-tab="part_gnb-3">커뮤니티</button></li>
 			<li><button class="" data-tab="gnb-1">프로페셔널</button></li>
 			<li><button class="" data-tab="gnb-2">브랜드</button></li>
 			<li><button class="" data-tab="gnb-3">제품</button></li>
 			<li><button class="" data-tab="gnb-4">솔루션</button></li>
+			<li><button class="" data-tab="gnb-5">현장혁신정보</button></li>
+			<li><button class="" data-tab="gnb-6">고객서비스</button></li>
 		</ul>
 		<div class="tab_contents">
-			<div id="gnb-1" class="tab-cont current">
+			<div id="part_gnb-1" class="tab-cont current">
+
 			</div>
 		</div>
 		
