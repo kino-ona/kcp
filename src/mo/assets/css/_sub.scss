@@ -1731,8 +1731,6 @@
 		}
 		&._view {
 			margin-top:0;
-			padding-top:20px;
-			border-top:1px solid #000;
 			textarea {
 				min-height:250px;
 			}
@@ -1780,18 +1778,16 @@
 		display:flex;
 		margin:0;
 		padding:0 30px;
-		border-top:1px solid #000;
 		&:after {
 			@extend %clearer;
 		}
 		select {
 			width:auto;
 			margin-left:auto;
+			padding:0 25px 0 0;
 		}
 		.btn_write {
-			float:left;
 			display:inline-block;
-			margin:20px 0;
 			padding:0 14px;
 			border:1px solid #0053a7;
 			color:#0053a7;
@@ -1813,13 +1809,6 @@
 		}
 	}
 	.accord_wrap {
-		.item {
-			&:first-of-type {
-				.acco_head {
-					padding-top:0;
-				}
-			}
-		}
 		.title {
 			font-size:14px;
 			@include ellipse(2);
