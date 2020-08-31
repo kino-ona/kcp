@@ -125,6 +125,23 @@
 		</dl>
 	</div>
 
+	<div class="frm_group">
+		<div class="sel_wrap">
+			<label class="sel">
+				<input type="radio" name="reason" checked> 
+				<p>제품관련건의</p>
+			</label>
+			<label class="sel">
+				<input type="radio" name="reason"> 
+				<p>고객의견</p>
+			</label>
+			<label class="sel">
+				<input type="radio" name="reason"> 
+				<p>구매건의</p>
+			</label>
+		</div>
+	</div>
+
 	<h3>checkbox</h3>
 	<p class="chkwrap"><input type="checkbox" id="ck01"><label for="ck01">평판형<span>(111)</span></label></p>
 	<p class="chkwrap"><input type="checkbox" id="ck02"><label for="ck02">롤타입<span>(20)</span></label></p>
@@ -219,6 +236,7 @@
 
 	<div>
 		<h3>신청현황 - 목록</h3>
+		<h4>type1</h4>
 		<div class="order_list type1">
 			<div class="item">
 				<!-- status type 
@@ -251,6 +269,40 @@
 					<button class="btn_line">설치피드백</button>
 				</div>
 			</div>
+		</div>
+		
+		<h4>type2</h4>
+		<div class="order_list type2">
+			<!-- loop -->
+			<div class="item">
+				<!-- status type 
+					type2: 승인완료, 배송지시완료
+				-->
+				<div class="info">
+					<span class="num">123456789123</span>
+					<span class="date">2020.07.12</span>
+				</div>
+
+				<div class="summary">
+					<span class="status type2">승인완료</span>
+					<span class="qty">10개</span>
+
+					<p class="name">화장실 쓰레기통 치우기 캠페인 스티커(남자화장실용, 행정안전부)</p>
+
+					<div class="prd">
+						<div class="thumb">
+							<img src="./assets/images/dummy/@product_01.png" alt="">
+						</div>
+						<dl>
+							<dt>종류</dt>
+							<dd>라벨(스티커)</dd>
+							<dt>제품 카테고리</dt>
+							<dd>기타 위생케어, 핸드타올, 화장실용 화장지</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<!--// loop -->
 		</div>
 	</div>
 
