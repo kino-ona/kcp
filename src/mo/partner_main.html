@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	@@include('./inc/pagehead.inc',{
+		"webroot":"."
+	})
+	<link rel="stylesheet" href="./assets/css/main.css" />
+</head>
+<body class="main">
+<div class="skipnavigation"><a href="#container">본문 바로가기</a></div>
+<!-- header -->
+@@include('./inc/header.inc',{
+	"headtype":"",
+	"pagetitle":""
+})
+<!-- //header -->
+
+<div class="wrap partner_wrap">
+	<!-- 주문현황 -->
+	<div class="partner_status">
+		<div class="partner_info">
+			<p>현재 <span>Parter_01Parter_01</span> 로 로그인하셨습니다.</p>
+			<a href="#" class="btn_modi">정보수정 <i></i></a>
+		</div>
+		<section id="statswipe" class="swiper-container">
+			<div class="swiper-wrapper">
+				<!-- slide -->
+				<div class="item swiper-slide">
+					<div class="conts">
+						<p class="type_feedback"><i></i>피드백 미등록</p>
+						<p class="desc">현재 피드백 미등록율은 전용용기대여 <strong>65</strong><span class="unit">%</span>,<br>무료사용 <strong>70</strong><span class="unit">%</span> 입니다.</p>
+						<p class="summary">피드백 미등록이 <span>80% 미만</span>일 경우 신청이 제한되므로 피드백 등록 을 하시기 바랍니다.</p>	
+					</div>
+					<ul class="qty_list">
+						<li>
+							<p class="title">전용용기 대여</p>
+							<p class="qty">56</p>
+						</li>
+						<li>
+							<p class="title">무료사용</p>
+							<p class="qty">38</p>
+						</li>
+					</ul>
+				</div>
+				<div class="item swiper-slide">
+					<div class="conts">
+						<p class="type_feedback"><i></i>승인반려</p>
+						<p class="desc">신청하신 내역 중에서 아래와 같이 <strong>승인이 반려된 항목</strong>이 있습니다.</p>
+						<p class="summary">확인 후 재 승인요청을 하시기 바랍니다.</p>
+					</div>
+					<ul class="qty_list">
+						<li>
+							<p class="title">전용용기 대여</p>
+							<p class="qty">56</p>
+						</li>
+						<li>
+							<p class="title">전용용기 파손/분실</p>
+							<p class="qty">38</p>
+						</li>
+						<li>
+							<p class="title">무료사용</p>
+							<p class="qty">38</p>
+						</li>
+					</ul>
+				</div>
+				<!-- 데이터가 없는 경우 -->
+				<div class="item swiper-slide">
+					<div class="conts">
+						<p class="type_feedback"><i></i>피드백 미등록</p>
+						<p class="desc">현재 피드백 미등록율은 전용용기대여 <strong>0</strong><span class="unit">%</span>,<br>무료사용 <strong>0</strong><span class="unit">%</span> 입니다.</p>
+						<p class="summary">피드백 미등록이 <span>80% 미만</span>일 경우 신청이 제한되므로 피드백 등록 을 하시기 바랍니다.</p>	
+					</div>
+					<ul class="qty_list">
+						<li>
+							<p class="title">전용용기 대여</p>
+							<p class="qty">0</p>
+						</li>
+						<li>
+							<p class="title">무료사용</p>
+							<p class="qty">0</p>
+						</li>
+					</ul>
+				</div>
+				<div class="item swiper-slide">
+					<div class="conts">
+						<p class="type_feedback"><i></i>승인반려</p>
+						<p class="desc">신청하신 내역이 없습니다</p>
+						<p class="summary">-</p>
+					</div>
+					<ul class="qty_list">
+						<li>
+							<p class="title">전용용기 대여</p>
+							<p class="qty">0</p>
+						</li>
+						<li>
+							<p class="title">전용용기 파손/분실</p>
+							<p class="qty">0</p>
+						</li>
+						<li>
+							<p class="title">무료사용</p>
+							<p class="qty">0</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</div>
+	<!--// 주문현황 -->
+
+	<div class="app_link">
+		<ul>
+			<li class="lnk01"><i></i>영업도구<br>신청</li>
+			<li class="lnk02"><i></i>전용용기<br>신청</li>
+			<li class="lnk03"><i></i>무료사용<br>신청</li>
+			<li class="lnk04"><i></i>전용용기<br>파손/분실<br>신청</li>
+		</ul>
+	</div>
+
+</div>
+<!--// wrap -->
+
+<!-- footer -->
+@@include('./inc/partner_footer.inc',{
+	"webroot2":"."
+})
+<!-- //footer -->
+<script>
+if($('#statswipe').length > 0){
+	var mainswipe = new Swiper('#statswipe', {
+		loop: false,
+		slidesPerView: 1.2,
+		spaceBetween: 15,
+		parallax: true,
+		observer: true,
+		observeParents: true,
+	});
+}
+</script>
+
+</body>
+</html>
