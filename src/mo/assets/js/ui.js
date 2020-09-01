@@ -23,6 +23,19 @@ $(document).ready(function () {
 
 });
 
+////// common menu open/close
+var globalMenu = function() {
+	if(!$('.gnb_menu').hasClass('open')){
+		$('.gnb_menu').addClass('open');
+		$('body').addClass('noscroll');
+	}
+}
+var globalMenuClose = function() {
+	if($('.gnb_menu').hasClass('open')){
+		$('.gnb_menu').removeClass('open');
+		$('body').removeClass('noscroll');
+	}
+}
 ////// global common 
 var lastSt = 0;
 $(window).scroll(function (e) {
