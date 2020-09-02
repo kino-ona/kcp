@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	@@include('../inc/pagehead.inc',{
+		"webroot":".."
+	})
+</head>
+<body>
+<div class="skipnavigation"><a href="#container">본문 바로가기</a></div>
+<!-- header -->
+@@include('../inc/header.inc',{
+	"headtype":"subhead",
+	"pagetitle":"파트너사 찾기"
+})
+<!-- //header -->
+
+<div class="wrap">
+	<!-- container -->
+	<div class="container professional">
+		<div class="page_summary">
+			<span>STEP1</span> 지역선택 > <span>SETP2</span> 취급품목선택 후 검색하시면 아래에 해당 파트너사 정보가 검색됩니다.
+		</div>
+
+		<div class="frm_group sort_store">
+			<div class="inpwrap">
+				<select name="" id="">
+					<option value="">지역선택</option>
+					<option value="">서울</option>
+					<option value="">경기</option>
+					<option value="">인천</option>
+					<option value="">대전</option>
+					<option value="">세종</option>
+					<option value="">충남</option>
+					<option value="">충북</option>
+					<option value="">광주</option>
+					<option value="">전남</option>
+					<option value="">전북</option>
+					<option value="">대구</option>
+					<option value="">경남</option>
+					<option value="">경북</option>
+					<option value="">부산</option>
+					<option value="">울산</option>
+					<option value="">제주</option>
+				</select>
+				<select name="" id="">
+					<option value="">취급품목 선택</option>
+					<option value="">전제품</option>
+					<option value="">산업용품</option>
+					<option value="">위생용품</option>
+					<option value="">보호복</option>
+					<option value="">핸드타올</option>
+					<option value="">두루마리</option>
+					<option value="">점보롤</option>
+					<option value="">글러브세정제</option>
+					<option value="">미용티슈</option>
+					<option value="">방향제</option>
+					<option value="">와이퍼</option>
+					<option value="">롤핸드타올</option>
+				</select>
+			</div>
+			<div class="btn_wrap">
+				<button class="btn primary">검색</button>
+			</div>
+		</div>
+
+		<div class="row">
+			<!-- table -->
+			<div class="tbl_list">
+				<table>
+					<colgroup>
+						<col style="width:30%;">
+						<col>
+						<col style="width:30%;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th>파트너사명</th>
+							<th class="center">주소</th>
+							<th>전화번호</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- loop -->
+						<tr>
+							<td>파트너사01</td>
+							<td>서울 용산구 한강로 1가 11-111</td>
+							<td class="tel">02-222-2222</td>
+						</tr>
+						<tr>
+							<td colspan="3">핸드타올, 티슈, 세정제</td>
+						</tr>
+						<!--// loop -->
+
+						<tr>
+							<td>파트너사01</td>
+							<td>서울 용산구 한강로 1가 11-111</td>
+							<td class="tel">02-222-2222</td>
+						</tr>
+						<tr>
+							<td colspan="3">핸드타올, 티슈, 세정제</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+	
+			<!-- more -->
+			<div class="more_view">
+				<a href="#">더보기 (10/106) <i></i></a>
+			</div>
+		</div>
+		
+		<!-- 지도 영역 -->
+		<div class="map_area">
+			<span style="position:absolute;top:0;left:0;">@@ 지도 api 영역</span>
+		</div>
+
+	</div>
+	<!--// container -->
+</div>
+<!--// wrap -->
+
+<!-- footer -->
+@@include('../inc/footer.inc',{
+	"webroot2":".."
+})
+<!-- //footer -->
+
+</body>
+</html>
