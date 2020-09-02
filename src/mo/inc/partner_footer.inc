@@ -358,7 +358,7 @@
 
 <footer class="footer">
 	<div class="enquiry">
-		<a href="#"></a>
+		<a href="mailto:professional@ykp.co.kr">사이트 이용문의는 이메일<br><span>professional@ykp.co.kr</span>로 문의바랍니다.</a>
 	</div>
 	<div class="row">
 		<ul class="util">
