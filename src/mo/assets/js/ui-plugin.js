@@ -85,10 +85,18 @@ function datepickerControl() {
 		dayNamesShort: ['일','월','화','수','목','금','토'],
 		dayNamesMin: ['일','월','화','수','목','금','토'],
 		showMonthAfterYear: true,
-		// dateFormat: "yy-mm-dd",
 		dateFormat: "yy.mm.dd",
-		// minDate: "-5y",
-		// maxDate: "now",
+		showOtherMonths: true,
+  	selectOtherMonths: true,
+	}
+	var defaultOptShort = {
+		monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+		monthNamesShort: ['1','2','3','4','5','6','7','8','9','10','11','12'],
+		dayNames: ['일','월','화','수','목','금','토'],
+		dayNamesShort: ['일','월','화','수','목','금','토'],
+		dayNamesMin: ['일','월','화','수','목','금','토'],
+		showMonthAfterYear: true,
+		dateFormat: "yy.mm",
 		showOtherMonths: true,
   	selectOtherMonths: true,
 	}
@@ -97,13 +105,19 @@ function datepickerControl() {
 		var $this = $(this),
 			defaultValue = $this.val() ? $this.val() : null;
 		var option = $.extend({}, defaultOpt, $this.data());
-
-		$this.datepicker(option);
+		var optionS = $.extend({}, defaultOptShort, $this.data());
+		
+		if($this.hasClass('short')) {
+			$this.datepicker(optionS);
+		}else{
+			$this.datepicker(option);
+		}
 		defaultValue && $this.datepicker('setDate', new Date(defaultValue));
 		if(!$(this).val == '') {
 			console.log($(this).val)
 		}
 	});
+
 }
 /*! jQuery UI - v1.12.1 - 2018-06-05
 * http://jqueryui.com
