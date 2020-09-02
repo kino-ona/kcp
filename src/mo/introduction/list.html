@@ -101,37 +101,41 @@
 				</div>
 
 				<div class="layer_cont">
-
+					
 					<div class="accord_wrap _filter" id="filters" role="filter">
-						<div class="item" data-status="expanded">
-							<div class="acco_head">
-								<a href="#" class="acco_target" tabindex="0">카테고리 <i></i></a>
+						<!-- 제품 카테고리 수정 -->
+						<div class="item item_category" data-status="expanded">
+							<div class="cate_head">
+								<a href="#" tabindex="0">카테고리</a>
 							</div>
-							<div class="acco_panel">
+							<div class="cate_panel">
 								<ul class="category">
+									<!-- 이하 선택된 카테고리는 li.active //-->
 									<!-- depth 1 -->
-									<li class="depth1 active"> <!-- 해당 리스트가 포함된 Depth에 .active-->
-										위생용품 <span>(562)</span>
-
+									<li class="depth1">화장실 &amp; 위생
 										<!-- depth 2 -->
 										<ul class="depth2">
-											<li class="active">화장실 화장지 <span>(111)</span>  <!-- 해당 리스트가 포함된 Depth에 .active-->
-
+											<li><a href="#">핸드타올</a>
 												<!-- depth 3 -->
 												<ul class="depth3">
-													<li class="chkwrap"><input type="checkbox" id="ck01"><label for="ck01">둘둘 꽁꽁 여러번 잘 둘러있는 두루마리 화장지<span>(111)</span></label></li>
-													<li class="chkwrap"><input type="checkbox" id="ck02"><label for="ck02">평판형<span>(111)</span></label></li>
-													<li class="chkwrap"><input type="checkbox" id="ck03"><label for="ck03">평판형<span>(111)</span></label></li>
+													<li><a href="#">롤타입 롤타입 롤타입 롤타입 롤타입</a>
+														<!-- depth 4 -->
+														<ul class="depth4">
+															<li><a href="#">프리미엄</a></li>
+															<li class="active"><a href="#">천연펄프</a></li> 
+															<li><a href="#">프리미엄</a></li>
+															<li><a href="#">스탠다드</a></li>
+														</ul>
+													</li>
 												</ul>
 											</li>
-											<li>화장실용 화장지 <span>(111)</span></li>
-											<li>화장실용 화장지 <span>(111)</span></li>
 										</ul>
 									</li>
-									<li class="depth1">안전용품 <span>(562)</span></li>
 								</ul>
 							</div>
 						</div>
+						<!--// 제품 카테고리 수정 -->
+						
 						<div class="item" data-status="hidden">
 							<div class="acco_head">
 								<a href="#" class="acco_target" tabindex="0">브랜드 <i></i></a>
