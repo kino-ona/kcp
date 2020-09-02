@@ -516,6 +516,229 @@
 			}
 		}
 	}
+	.search {
+		margin-top:50px;
+		background-color:#f2f4f6;
+		.row {
+			padding:45px 30px 35px;
+			text-align:center;
+			> h3 {
+				font-size:23px;
+				font-weight: 450px;
+			}
+			.inpwrap {
+				position:relative;
+				margin-top:2rem;
+				-webkit-box-shadow: 6px 6px 10px 0px rgba(0,0,0,0.2);
+				-moz-box-shadow: 6px 6px 10px 0px rgba(0,0,0,0.2);
+				box-shadow: 6px 6px 10px 0px rgba(0,0,0,0.2);
+				input {
+					padding-right:15%;
+					background-color:#fff;
+				}
+				.btn_search {
+					position: absolute;
+					right:10px;
+					top:13px;
+				}
+			}
+		}
+	}
+	.noti_board {
+		margin-top:50px;
+		.board_head {
+			position:relative;
+			padding:10px 0;
+			margin:0 30px;
+			text-align:center;
+			input.datepicker {
+				width:10rem;
+				background-color:transparent;
+				border:0;
+				padding:0;
+			}
+			.btn {
+				position: absolute;
+				top:34%;
+				i {
+					display: inline-block;
+					line-height: inherit;
+					vertical-align: middle;
+					width: 7px;
+					height: 7px;
+					border-left: 1px solid #000;
+					border-bottom: 1px solid #000;
+					box-sizing: border-box;
+				}
+				&.btn_prev {
+					left:18%;
+					i {
+						-webkit-transform: rotate(135deg);
+						transform: rotate(45deg);
+					}
+				}
+				&.btn_next {
+					right:21%;
+					i {
+						-webkit-transform: rotate(-135deg);
+						transform: rotate(-135deg);
+					}
+				}
+				&.last {
+					i {
+						border-left-color: #666666;
+						border-bottom-color: #666666;
+					}
+				}
+			}
+			.btn_link {
+				position: absolute;
+				right:0;
+				top:17px;
+				font-size:13px;
+				color:#666666;
+				border-bottom-color:#666666;
+			}
+		}
+		.board_wrap {
+			margin-left:30px;
+			border-top:1px solid #eeeeee;
+			li {
+				padding:20px 0 16px;
+				border-bottom:1px solid #eeeeee;
+				.title {
+					padding-right:30px;
+					@include ellipse(1);
+				}
+				.etc {
+					p {
+						display: inline-block;
+						padding-left:5px;
+						font-weight: 300;
+						font-size:12px;
+						&:before {
+							content: '';
+							display: inline-block;
+							margin-right:8px;
+							margin-top:-3px;
+							width:1px;
+							height:7px;
+							background-color:#eeeeee;
+							vertical-align: middle;
+						}
+						&:first-child {
+							padding-left:0;
+							&:before {display: none;}
+						}
+						&.type {
+							color:#00a8e2;
+						}
+						&.date {
+							color:#999999;
+						}
+					}
+				}
+			}
+		}
+	}
+	.succ_case {
+		position: relative;
+		margin-top:50px;
+		padding-top:40px;
+		&:before {
+			content:'';
+			display: block;
+			position: absolute;
+			left:0;
+			top:0;
+			width:calc(100% - 60px);
+			height:0;
+			padding-top:60%;
+			background: {
+				image:url(../images/common/pt_topbg.png);
+				size: cover;
+				repeat:no-repeat;
+				position:0 0;
+			}
+		}
+		h3 {
+			font-size:23px;
+			color:#fff;
+			text-align:center;
+		}
+		.swiper-container {
+			padding-left:30px;
+			.swiper-wrapper {
+				margin-top:25px;
+			}
+			.figure {
+				position: relative;
+				padding-top:100%;
+				width:100%;
+				height:0;
+				overflow: hidden;
+				-webkit-box-shadow: 6px 6px 10px 0px rgba(0,0,0,0.2);
+				-moz-box-shadow: 6px 6px 10px 0px rgba(0,0,0,0.2);
+				box-shadow: 6px 6px 10px 0px rgba(0,0,0,0.2);
+				img {
+					position: absolute;
+					top:50%;
+					left:50%;
+					@include transform(translate(-50%, -50%));
+				}
+			}
+			.info {
+				padding-top:15px;
+				* {
+					font-weight: 300;
+				}
+			}
+		}
+	}
+	.feedback {
+		margin-top:50px;
+		padding:45px 0;
+		background-color:#f2f4f6;
+		h3 {
+			font-size:23px;
+			text-align:center;
+		}
+		.feed_tab {
+			display: flex;
+			margin-top:20px;
+			.tabs {
+				flex:1;
+				padding:10px 0;
+				border-bottom:1px solid #e5e5e5;
+				text-align:center;
+				a {
+					display: block;
+					color:#999999;
+				}
+				&.active {
+					border-bottom:2px solid #0053a7;
+					a {
+						font-weight: 450;
+						color:#0053a7;
+					}
+				}
+			}
+			&:after {
+				content:'';
+				display: block;
+				clear:both;
+			}
+		}
+		.row {
+			padding-left:30px;
+			padding-right:30px;
+		}
+		.order_list {
+			.item {
+				background-color:#fff;
+			}
+		}
+	}
 }
 .partner_status {
 	background: {
