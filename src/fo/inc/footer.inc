@@ -1,5 +1,5 @@
 
-<footer class="footer" style="display:none">
+<footer class="footer">
 	<div class="social">
 		<a href="#">유한킴벌리 프로페셔널<br><span>카카오톡 플러스</span> 친구 추가하기</a>
 	</div>

@@ -758,7 +758,214 @@ h1.logo {
 		line-height:27px;
 		border:1px solid #000000;
 	}
-}
+} //.header
+
+.footer {
+	margin-top:70px;
+	background-color: #222222;
+	.social{
+		padding:17px 30px 15px;
+		background-color:#fae100;
+		a {
+			display: inline-block;
+			padding-left:40px;
+			line-height:1.5;
+			font-size:12px;
+			background:{
+				image:url(../images/common/kakao_logo.png);
+				size:34px;
+				repeat:no-repeat;
+				position:0 center;
+			}
+			span {
+				line-height:1.5;
+				font-size:12px;
+				font-weight: 450;
+			}
+		}
+	}
+	.enquiry {
+		margin-top:-70px;
+		padding:17px 30px 15px;
+		background-color:#495560;
+		a {
+			display: inline-block;
+			padding-left:35px;
+			line-height:1.5;
+			font-size:12px;
+			color:#fff;
+			background:{
+				image:url(../images/icon/icon_femail.png);
+				size:21px;
+				repeat:no-repeat;
+				position:0 center;
+			}
+			span {
+				line-height:1.5;
+				font-size:12px;
+				font-weight: 450;
+				color:#fff;
+			}
+		}
+	}
+	.row {
+		position: relative;
+		padding:42px 55px 20px;
+		* {
+			color:#eeeeee;
+		}
+	}
+	select {
+		border:0;
+		border-bottom:1px solid #ffffff;
+		background: {
+			image: url(../images/icon/ico_down.png);
+			size:6px;
+			repeat:no-repeat;
+			position: right 5px center;
+		}
+	}
+	.util {
+		padding-bottom:30px;
+		> li {
+			float:left;
+			padding-right:15px;
+			&:last-child {
+				padding-right:0;
+			}
+		}
+		a {
+			letter-spacing: -.4px;
+			&.point {
+				font-weight: 700;
+			}
+		}
+		&:after {
+			content: '';
+			display: block;
+			clear:both;
+		}
+	}
+	.cs {
+		clear:both;
+		display: flex;
+		padding-bottom:30px;
+		> div {
+			flex:1;
+			&:last-child {
+				text-align: right;
+			}
+		}
+		p {
+			font-size: 12px;
+			font-weight: 350;
+		}
+		.tel {
+      display: block;
+      margin-top:-5px;
+			font-size: 25px;
+			font-weight: 700;
+      letter-spacing: -.8px;
+		}
+		.btn-cust {
+			display: inline-block;
+			width:100%;
+			max-width:110px;
+			padding:11px 0 12px;
+			border:2.5px solid #eee;
+			font-size: 12px;
+			text-align: center;
+		}
+	}
+	.familysite {
+		padding-bottom:30px;
+	}
+	.addr {
+		> p {
+			padding-bottom:10px;
+			span {
+				position: relative;
+				display: inline-block;
+				margin-left:10px;
+				padding-left:10px;
+				font-size: 12px;
+				font-weight: 350;
+				&:before {
+					content: '';
+					position: absolute;
+					display: block;
+					left:0;
+					top:50%;
+          margin-top:-4px;
+					width:1px;
+					height:9px;
+					background-color: #eee;
+				}
+				&:first-child{
+					margin-left:0;
+					padding-left:0;
+					&:before {display: none;}
+				}
+			}
+		}
+	}
+	.copyr {
+		padding: 20px 55px 70px;
+		border-top:1px solid #4b4b4b;
+		p {
+			font-size: 12px;
+			line-height:24px;
+			color:#eee;
+		}
+		.btm {
+			position: relative;
+			padding:15px 0 10px;
+			> span {
+				display: block;
+				font-size: 12px;
+				color:#888888;
+			}
+			.sns {
+				position: absolute;
+				right:0;
+				bottom:0;
+				a {
+					display: inline-block;
+					width:25px;
+					height:25px;
+					margin-left:5px;
+					i {
+						display: block;
+						width:100%;
+						height:100%;
+						background: {
+							repeat:no-repeat;
+							position: center center;
+						}
+					}
+					&.btn-insta > i{
+						background: {
+							image: url(../images/icon/fico_insta.png);
+							size:20px;
+						}
+					}
+					&.btn-fb > i{
+						background: {
+							image: url(../images/icon/fico_fb.png);
+							size:10px;
+						}
+					}
+					&.btn-yt > i{
+						background: {
+							image: url(../images/icon/fico_yt.png);
+							size:20px;
+						}
+					}
+				}
+			}
+		}
+	}
+} // .footer
 
 
 [class*='_layer'] {
