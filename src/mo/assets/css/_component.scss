@@ -465,20 +465,30 @@
 			}
 		}
 		.qty {
+			display:inline-block;
+			margin-top:-2px;
+			font-weight:300;
 			&:before {
 				content:'';
 				display:inline-block;
 				width:1px;
 				height:9px;
-				margin:0 8px 0 -4px;
+				margin:0 8px;
 				background-color:#e0e0e0;
 			}
 		}
 		.name {
-			margin:5px 0 20px;
-			font-size:15px;
+			margin:10px 0;
+			font-size:12px;
 			font-weight:500;
-			line-height:24px;
+			line-height:18px;
+		}
+		.summary > ul {
+			li:nth-child(n+2) {
+				margin-top:20px;
+				padding-top:20px;
+				border-top:1px solid #eee;
+			}
 		}
 		.prd {
 			display:flex;
@@ -499,13 +509,13 @@
 				}
 			}
 			dt {
-				width:65px;
+				width:40px;
 				&:last-of-type {
 					margin-top:10px;
 				}
 			}
 			dd {
-				width:calc(100% - 65px);
+				width:calc(100% - 40px);
 				font-weight:300;
 				color:#666;
 			}

@@ -1601,6 +1601,7 @@
 		.desc {
 			position:relative;
 			clear:both;
+			font-size:12px;
 			padding-left:24px;
 			text-indent:-24px;
 			color:#666;
@@ -1617,10 +1618,12 @@
 			em {
 				color:#0053a7;
 				font-weight:400;
+				font-size:inherit;
 			}
 			span {
 				display:block;
-				padding-left:24px;
+				font-size:inherit;
+				text-indent:0;
 				color:#999;
 			}
 		}
