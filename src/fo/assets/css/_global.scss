@@ -694,7 +694,7 @@ hr {
 html, body {min-width:1280px;margin:0 auto;height:100%;min-height:100%;}
 .wrap {
 	min-height:100%;
-	padding-top:100px;
+	// padding-top:100px;
 }
 h1.logo {
 	display: block;
@@ -709,7 +709,9 @@ h1.logo {
 }
 .header {
 	position: fixed;
+	position:relative;
 	width:100%;
+	min-width:1280px;
 	min-height:100px;
 	background-color:#fff;
 	z-index:100;
@@ -734,11 +736,11 @@ h1.logo {
 }
 .headgnb {
 	position: relative;
-	max-width:800px;
+	max-width:930px;
 	margin:0 auto;
 	.menu {
 		display: flex;
-		width:100%;
+		max-width:800px;
 		li {
 			flex:1;
 			text-align:center;
@@ -753,10 +755,12 @@ h1.logo {
 		}
 	}
 	.btn_partner {
+		position:absolute;
+		right:0;
+		top:0;
 		display: inline-block;
-		padding:1px 18px 2px;
-		line-height:27px;
-		border:1px solid #000000;
+		color:#666666;
+		font-size:16px;
 	}
 } //.header
 
