@@ -149,6 +149,57 @@ var filterClose = function () {
 	fltayer.removeClass('active');
 	$('body').removeClass('noscroll');
 }
+var inquiryDoor = function () {
+	if(!$('.cust_inquiry').hasClass('open')) {
+		if($('.cust_inquiry').hasClass('hidd')) {
+			$('.cust_inquiry').removeClass('hidd');
+		}
+		$('body').addClass('noscroll');
+		$('.cust_inquiry').addClass('open');
+	} else {
+		$('body').removeClass('noscroll');
+		$('.cust_inquiry').removeClass('open');
+	}
+}
+$(window).scroll(function (e) {
+	var st = $(this).scrollTop();
+	docH = $(window).height();
+
+	if (st > 100) {
+		$('.cust_inquiry').addClass('hidd')
+	}
+	if (st < 100) {
+		$('.cust_inquiry').removeClass('hidd');
+	}
+	lastSt = st;
+});
+$('.headgnb .menu:not(".submenu")').find('>li').each(function(i, e) {
+	$(this).on('mouseover mouseenter focus', function() {
+		$(this).siblings().removeClass('active');
+		$(this).addClass('active');
+		$('.subgnb').addClass('show');
+
+		var gnbNum = $(this).index() + 1;
+		$('.submenu').removeClass('show');
+		$('.submenu').each(function(e) {
+			var subNum = $(this).attr('data-sub');
+			if(subNum == gnbNum){
+				$(this).addClass('show')
+			}
+		});
+	});
+	$('.header .row').mouseleave(function(){
+		$(this).removeClass('active');
+		$('.headgnb .menu li').removeClass('active');
+		$('.subgnb').removeClass('show');
+	});
+	$('.headgnb .etc').mouseover(function(){
+		$(this).removeClass('active');
+		$('.headgnb .menu li').removeClass('active');
+		$('.subgnb').removeClass('show');
+	});
+
+});
 
 ////// sub
 // login

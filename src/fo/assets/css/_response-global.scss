@@ -1,11 +1,64 @@
 @charset "utf-8";
 @import "mixins";
 
-@media screen and (min-width: 1024px) and (max-width: 1280px) {
+@media screen and (max-width: 1440px) {
+	.cust_inquiry {
+		.head {
+			width:calc((100% - 57vw) / 2);
+			.title {font-size:3rem;}
+			span {font-size:13px;}
+		}
+		.mid {
+			width:55vw;
+			padding:5rem 5rem 0;
+		}
+		.etc {
+			width:calc((100% - 57vw) / 2);
+		}
+		.cust_call {
+			left:25px;
+			dt, p {
+				font-size:14px;
+			}
+			.tel {
+				font-size:30px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1440px) and (max-height: 1000px) {
+	.cust_inquiry {
+		.head {
+			width:calc((100% - 57vw) / 2);
+			.title {font-size:4rem;}
+			span {font-size:14px;}
+		}
+		.mid {
+			width:53vw;
+			padding:5rem 8rem 0;
+		}
+		.etc {
+			width:calc((100% - 57vw) / 2);
+		}
+		.cust_call {
+			left:25px;
+			dt, p {
+				font-size:14px;
+			}
+			.tel {
+				font-size:30px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1640px) {
 	.headgnb {
-		max-width:inherit;
+		max-width:900px;
+		margin:0;
 		.menu {
-			max-width:60%;
+			max-width:70%;
 			li {
 				a {
 					padding:0 10px;
@@ -14,4 +67,43 @@
 			}
 		}
 	}
+}
+
+@media screen and (max-width: 1320px) {
+	.cust_inquiry {
+		.mid {
+			width:65vw;
+			padding:4rem 10rem 0;
+			h4 {
+				margin-bottom:20px;
+			}
+			.title {
+				display: none;
+			}
+		}
+		&.open {
+			.top_util {
+				position:fixed;
+				left:70px;
+				width:calc((100% - 62vw) / 2);
+				.weather {
+					margin-left:50px;
+				}
+				.btn_search {
+					left:30px;
+					right:inherit;
+				}
+			}
+			.etc {
+				width:0;
+			}
+			.cust_call {
+				display: none;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1220px) {
+	.cust_inquiry {display: none;}
 }

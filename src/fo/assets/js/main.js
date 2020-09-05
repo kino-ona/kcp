@@ -52,7 +52,7 @@ if($('#recommswipe').length > 0){ // 추천제품
 	var recommswipe = new Swiper('#recommswipe', {
 		loop: true,
 		initialSlide: 1,
-		slidesPerView: 4.1,
+		slidesPerView: 4.01,
 		centeredSlides: true,
 		navigation: {
 			nextEl: '#recommswipe .swiper-button-next',
@@ -61,13 +61,14 @@ if($('#recommswipe').length > 0){ // 추천제품
 	});
 	if($('#recommswipe .swiper-slide').length > 0){
 		$('.recommand_sec .swiper-container').css({
-			'background-size': $('#recommswipe .swiper-slide').width() - 40
+			// 'background-size': $('#recommswipe .swiper-slide').width() - 40
+			'background-size': $('#recommswipe .swiper-slide').width()
 		});
 	}
 	$(window).resize(function (){
 		var resW = setTimeout(function(){
 			$('.recommand_sec .swiper-container').css({
-				'background-size': $('#recommswipe .swiper-slide').width() - 40
+				'background-size': $('#recommswipe .swiper-slide').width()
 			});
 			clearTimeout(resW);
 		}, 300);

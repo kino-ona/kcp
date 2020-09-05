@@ -4,6 +4,23 @@
 .main {
 	height:100%;
 	min-height:100%;
+
+	.btn_more {
+		display: inline-block;
+		margin-top:30px;
+		margin-left:100px;
+		i {
+			display: inline-block;
+			width:7px;
+			height:7px;
+			margin-top:-2px;
+			border-top:1px solid #333;
+			border-right:1px solid #333;
+			-webkit-transform: rotate(45deg);
+			transform: rotate(45deg);
+			vertical-align: middle;
+		}
+	}
 	.keyvisual {
 		margin:0 100px;
 		.figure {
@@ -112,36 +129,20 @@
 				> h4 {
 					font-size:40px;
 					font-weight: 300;	
-					line-height:1.2;
+					line-height:1.4;
 					@include ellipse(2);
 				}
 				p {
 					margin-left:10rem;
 				}
 				.title {
-					padding-top:1.75rem;
+					padding-top:60px;
 					font-weight: 700;
 				}
 				.desc {
-					padding-top:1.0rem;
+					padding-top:30px;
 					font-weight: 300;	
 					@include ellipse(4);
-				}
-				.btn_more {
-					display: inline-block;
-					margin-top:20px;
-					margin-left:100px;
-					i {
-						display: inline-block;
-						width:7px;
-						height:7px;
-						margin-top:-2px;
-						border-top:1px solid #333;
-						border-right:1px solid #333;
-						-webkit-transform: rotate(45deg);
-						transform: rotate(45deg);
-						vertical-align: middle;
-					}
 				}
 			}
 			&.swiper-slide-active {
@@ -208,20 +209,21 @@
 		.figure {
 			position: relative;
 			padding-top:100%;
-			padding-top:59.8%;
-			width:59.8%;
+			padding-top:70%;
+			width:70%;
 			margin:0 auto;
 			img {
 				position: absolute;
-				bottom:5px;
+				top:50%;
 				left:50%;
-				@include transform(translateX(-50%));
+				@include transform(translate(-50%, -50%));
 				@include transition(.4s, ease-in);
-				max-width:calc(100% - 40px);
+				// max-width:calc(100% - 40px);
 			}
 		}
 		.info {
-			padding-top:40px;
+			padding-top:0px;
+			padding-bottom:40px;
 			@include transition(.3s, ease);
 			.desc {
 				padding-top:1.15rem;
@@ -289,9 +291,10 @@
 			.figure {
 				width:100%;
 				padding-top:100%;
-				img {
-					bottom:-5px;
-				}
+			}
+			.info {
+				padding-top:40px;
+				padding-bottom:0;
 			}
 		}
 		.swipe_navi {
@@ -352,7 +355,7 @@
 		.info {
 			margin-top:20px;
 			.desc {
-				width:calc(100% - 100px);
+				width:calc(100% - 10px);
 				font-size:18px;
 			}
 		}
@@ -403,6 +406,17 @@
 		}
 	} //.mailling_sec
 	.brand_sec {
+		position:relative;
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			top:283px;
+			width:13%;
+			height:10px;
+			background-color:#fff;
+			z-index:10;
+		}
 		.container-navi {
 			padding-right:3rem;
 			.swiper-slide {
@@ -431,18 +445,6 @@
 		}
 		.swiper-wrapper {
 			margin-top:80px;
-			.swiper-slide {
-				&:after {
-					content: '';
-					display: block;
-					position: absolute;
-					left:0;
-					top:17px;
-					width:5.5rem;
-					height:.4rem;
-					background-color:#fff;
-				}
-			}
 		}
 		.swiper-pagination {
 			display:flex;
@@ -473,9 +475,8 @@
 			}
 		}
 		.container-top {
-			padding-bottom:55px;
+			padding-bottom:125px;
 			.swiper-slide {
-				// padding-top:23%;
 				background: {
 					size:cover;
 					position:center 0;
@@ -496,34 +497,48 @@
 			position: relative;
 			max-width:1280px;
 			margin:0 auto;
-			padding:14.4rem 0 0;
+			padding:110px 0 0;
 			z-index:1;
-			p {
-				padding-left: 8.0rem;
-				padding-right:5rem;
-				color:#fff;
-			}
+			p { color:#fff; }
 			.name {
-				// position: relative;
+				margin-bottom:50px;
 				font-size:60px;
 				font-weight: 300;
 			}
 			.eng {
-				padding-top:15px;
+				padding-bottom:30px;
+				font-size:20px;
 				font-weight: 700;
+				text-transform: uppercase;
 			}
 			.desc {
+				position:absolute;
+				right:0;
 				padding-top:10px;
+				width:360px;
+				color:#fff;
+				p:not(.eng) {
+					line-height:2;
+					@include ellipse(4);
+					font-weight: 300;
+				}
 			}
 			.img {
-				max-width:500px;
-				margin:0 auto;
-				img {
-
+				max-width:490px;
+				margin:0 auto -120px;
+			}
+			.btn_more {
+				margin-left:0;
+				color:#fff;
+				font-weight: 450;
+				i {
+					border-color:#fff;
 				}
 			}
 		}
 	} //.brand_sec 
+
+	.footer .main_service { display: block; }
 } //.main
 
 .partner_wrap {
