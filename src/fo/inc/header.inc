@@ -21,7 +21,8 @@
 				<li><a href="#">파트너사 찾기</a></li>
 			</ul>
 			<ul class="submenu" data-sub="2">
-				<li><a href="#">브랜드</a></li>
+				<li><a href="#" class="logo logo_kleenex"><span class="a11y">크리넥스</span></a></li>
+				<li><a href="#" class="logo logo_popee"><span class="a11y">뽀삐</span></a></li>
 			</ul>
 			<ul class="submenu _more" data-sub="3">
 				<li><a href="#" class="ti">전용용기</a>
