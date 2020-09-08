@@ -26,9 +26,13 @@
 					<dd><input type="text" id="frm1" placeholder="업체명을 입력해주세요"></dd>
 			
 					<dt><label for="frm2">주소</label></dt>
-					<dd class="inpwrap">
-						<input type="text" id="frm2" placeholder="주소를 입력해주세요">
+					<!-- 09.08 -->
+					<dd class="inpwrap addr">
+						<p class="line zipcode"><input type="text" value="" readonly><a href="#" class="btn btn_addr"><i></i>주소 찾기</a></p>
+						<p class="line"><input type="text" value="" readonly></p>
+						<p class="line"><input type="text" value="" placeholder="상세주소를 입력해주세요"></p>
 					</dd>
+					<!--// 09.08 -->
 				</dl>
 
 				<div class="frm_half">
@@ -190,6 +194,12 @@
 						<div class="btn_wrap">
 							<button class="btn btn_line">업로드하기</button>
 						</div>
+						<!-- 09.08 -->
+						<div class="inpwrap _upload">
+							<input type="text" id="" value="20200830_약정서.jpg" readonly>
+							<a href="#" class="btn btn_reset2"><span class="a11y">reset</span></a>
+						</div>
+						<!--// 09.08 -->
 						<p class="warn">약정서를 수기로 작성하신 파트너께서는 사진 또는 PDF 형태로 업로드 바라며, 아래 온라인약정서는 작성하지 않으셔도 됩니다.</p>
 					</dd>
 				</dl>

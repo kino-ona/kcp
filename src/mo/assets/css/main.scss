@@ -2,6 +2,11 @@
 @import "mixins";
 
 .main {
+	.footer {
+		.social{
+			display: block;
+		}
+	}
 	.keyvisual {
 		.figure {
 			padding-top:82%;

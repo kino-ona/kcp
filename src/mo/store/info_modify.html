@@ -46,8 +46,25 @@
 				<dt><label for="frm6">휴대폰 <span class="required"><span class="a11y">필수</span></span></label></dt>
 				<dd><input type="tel" id="frm6" placeholder="대표 휴대폰 번호를 입력해주세요." required></dd>
 
+				<!-- 09.08 -->
+				<!-- 주소 변경하기 전 -->
 				<dt><label for="frm7">주소 <span class="required"><span class="a11y">필수</span></span></label></dt>
-				<dd><input type="text" id="frm7" placeholder="파트너사 주소를 입력해주세요." required></dd>
+				<dd>
+					<p class="line"><input type="text" value="(12345) 서울시 강남구 삼성동 123-4" readonly></p>
+					<div class="with_btn">
+						<input type="text" value="월드타워 29층" readonly>
+						<button class="btn default btn_confirm" onclick="layerOpen('popup1');return false;">변경</button>
+					</div>
+				</dd>
+
+				<!-- 주소 변경하기 후 -->
+				<dt><label for="frm7">주소 <span class="required"><span class="a11y">필수</span></span></label></dt>
+				<dd class="inpwrap addr">
+					<p class="line zipcode"><input type="text" value="" readonly><a href="#" class="btn btn_addr"><i></i>주소 찾기</a></p>
+					<p class="line"><input type="text" value="" readonly></p>
+					<p class="line"><input type="text" value="" placeholder="상세주소를 입력해주세요"></p>
+				</dd>
+				<!--// 09.08 -->
 
 				<dt><label for="frm8">전화번호 <span class="required"><span class="a11y">필수</span></span></label></dt>
 				<dd class="mix mobile">
