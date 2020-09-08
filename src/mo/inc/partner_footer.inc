@@ -358,7 +358,7 @@
 
 <footer class="footer">
 	<div class="enquiry">
-		<a href="mailto:YKP.Partnersupport@kcc.com">사이트 이용문의는 이메일<br><span>YKP.Partnersupport@kcc.com</span>로 문의바랍니다.</a> <!-- 09.07 email 수정 -->
+		<a href="mailto:YKP.Partnersupport@kcc.com">사이트 이용문의는 이메일<br><span>YKP.Partnersupport@kcc.com</span>로 문의바랍니다.</a> <!-- 09.08 email 수정 -->
 	</div>
 	<div class="row">
 		<ul class="util">
