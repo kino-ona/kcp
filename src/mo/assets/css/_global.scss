@@ -513,6 +513,11 @@ hr {
 			position: absolute;
 			right:0;
 			color:#999;
+			&.single {
+				position:relative;
+				display:block;
+				text-align:right;
+			}
 		}
 		&:nth-of-type(n+2) {
 			margin-top:14px;
