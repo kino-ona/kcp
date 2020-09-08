@@ -250,42 +250,7 @@
 			}
 		}
 		.logo {
-			height:30px;
-			background: {
-				repeat:no-repeat;
-				position:center 0;
-				size:auto 25px;
-			}
-			&.logo_kleenex {
-				background: {
-					image: url(../images/common/logo_kleenex.png);
-				}
-			}
-			&.logo_popee {
-				background: {
-					image: url(../images/common/logo_popee.png);
-				}
-			}
-			&.logo_wya {
-				background: {
-					image: url(../images/common/logo_wya.png);
-				}
-			}
-			&.logo_ktech {
-				background: {
-					image: url(../images/common/logo_ktech.png);
-				}
-			}
-			&.logo_cleanguard {
-				background: {
-					image: url(../images/common/logo_cleanguard.png);
-				}
-			}
-			&.logo_scott {
-				background: {
-					image: url(../images/common/logo_scott.png);
-				}
-			}
+			min-height:30px;
 		}
 		.swiper-slide-active {
 			.figure {

@@ -701,7 +701,7 @@ hr {
 html, body {min-width:1280px;margin:0 auto;height:100%;min-height:100%;}
 .wrap {
 	min-height:100%;
-	// padding-top:100px;
+	padding-top:100px;
 }
 h1.logo {
 	display: block;
@@ -713,15 +713,17 @@ h1.logo {
 		repeat:no-repeat;
 		position: 0 0;
 	}
+	@include transition(.2s, ease-in);
 }
 .header {
 	position: fixed;
-	position:relative;
+	// position:relative;
 	width:100%;
 	min-width:1280px;
 	min-height:100px;
 	background-color:#fff;
 	z-index:100;
+	@include transition(.2s, ease-in);
 	.row {
 		position:relative;
 		margin:0 100px;
@@ -740,6 +742,37 @@ h1.logo {
 	}
 	&:after {
 		@extend %clearer;
+	}
+	&.fixed {
+		position:fixed;
+		min-height:80px;
+		-webkit-box-shadow: 10px 15px 20px 0px rgba(0,0,0,0.1);
+		-moz-box-shadow: 10px 15px 20px 0px rgba(0,0,0,0.1);
+		box-shadow: 10px 15px 20px 0px rgba(0,0,0,0.1);
+		.row {
+			width:100%;
+			margin:0 auto;
+			padding-left:100px;
+			padding-right:100px;
+		}
+		h1.logo {
+			background-size:95px;
+			margin-top:20px;
+		}
+		.headgnb  {
+			.menu {
+				li {
+					a {
+						line-height:80px;
+					}
+				}
+			}
+		}
+		.etc {
+			a {
+				line-height:80px;
+			}
+		}
 	}
 }
 .headgnb {
@@ -785,18 +818,23 @@ h1.logo {
 	margin:0 auto;
 	padding-bottom:50px;
 	background-color:#fff;
+	text-align:center;
 	&.show {
 		display: block;
 	}
 	.submenu {
 		display: none;
-		max-width:100%;
+		// max-width:100%;
+		margin:0 auto;
 		padding-top:40px;
-		li {
-			flex:1;
-			text-align:center;
+		> li {
+			display:inline-block;
+			padding-left:25px;
+			padding-right:25px;
+			text-align:center;	
 			a {
 				display: block;
+				width:100%;
 				font-weight: 300;
 				letter-spacing: -1px;
 				&:hover {
@@ -817,20 +855,32 @@ h1.logo {
 			@extend %clearer;
 		}
 		&.show {
-			display: flex;
+			display:inline-block;
 		}
 		&._more {
+			&.show {
+				display: flex;
+			}
 			li {
+				flex:1;
 				text-align:left;
+			}
+		}
+		&._short {
+			max-width:inherit;
+			text-align:center;
+			> li {
+				flex: none;
 			}
 		}
 	}
 }
 .logo {
-	height:30px;
+	min-width:100px;
+	min-height:60px;
 	background: {
 		repeat:no-repeat;
-		position:center 0;
+		position:center center;
 		size:auto 25px;
 	}
 	&.logo_kleenex {
@@ -854,21 +904,72 @@ h1.logo {
 	&.logo_ktech {
 		background: {
 			image: url(../images/common/logo_ktech.png);
+			size:auto 20px;
 		}
 	}
 	&.logo_cleanguard {
 		background: {
 			image: url(../images/common/logo_cleanguard.png);
+			size:auto 20px;
 		}
 	}
 	&.logo_scott {
 		background: {
 			image: url(../images/common/logo_scott.png);
+			size:auto 55px;
 		}
 	}
 }
 //.header
-
+.skybanner {
+	position:fixed;
+	top:200px;
+	right:0;
+	width:54px;
+	z-index:90;
+	-webkit-box-shadow: 0px 10px 15px 5px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 10px 15px 5px rgba(0,0,0,0.2);
+	box-shadow: 0px 10px 15px 5px rgba(0,0,0,0.2);
+	.btn_search {
+		position: relative;
+		display: block;
+		width:100%;
+		height:54px;
+		background-image:linear-gradient(to right, #008dcf, #006fba);
+		i {
+			position: absolute;
+			top:50%;
+			left:50%;
+			display: inline-block;
+			width:25px;
+			height:25px;
+			background:{
+				image: url(../images/icon/ico_wsearch.png);
+				size:20px;
+				repeat:no-repeat;
+				position:center center;
+			}
+			@include transform(translate(-50%, -50%));
+		}
+	}
+	.btn_inquiry {
+		display: block;
+		width:100%;
+		padding:30px 0;
+		background-color:#000;
+		color:#fff;
+		text-align:center;
+		span {
+			display: block;
+			width:26px;
+			margin:0 auto;
+			font-size:16px;
+			line-height:1.2;
+			color:#fff;
+			word-break: break-all;
+		}
+	}
+} //.skybanner
 .footer {
 	margin-top:70px;
 	background-color: #222222;
@@ -1083,7 +1184,7 @@ h1.logo {
 	@include transition(.3s, ease-in);
 	.door {
 		position:absolute;
-		left:-70px;
+		left:-35px;
 		top:0;
 		width:70px;
 		height:100%;
@@ -1275,6 +1376,7 @@ h1.logo {
 	&.open {
 		left:70px;
 		.door {
+			left:-70px;
 			background-color:#fff;
 			.btn_door i {
 				-webkit-transform: rotate(-140deg);

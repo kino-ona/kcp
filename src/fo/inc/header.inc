@@ -13,6 +13,10 @@
 			</ul>
 			<div class="etc">
 				<a href="#" class="btn_partner">파트너</a>
+
+				<!-- 날씨 디자인 미정 <div class="weather">
+					<p>미세먼지 <span>보통</span><img src="/fo/assets/images/dummy/@weather.png" alt="미세먼지 보통" /></p>
+				</div> //-->
 			</div>
 		</div>
 		<div class="subgnb">
@@ -22,7 +26,11 @@
 			</ul>
 			<ul class="submenu" data-sub="2">
 				<li><a href="#" class="logo logo_kleenex"><span class="a11y">크리넥스</span></a></li>
+				<li><a href="#" class="logo logo_scott"><span class="a11y">스카트</span></a></li>
 				<li><a href="#" class="logo logo_popee"><span class="a11y">뽀삐</span></a></li>
+				<li><a href="#" class="logo logo_wya"><span class="a11y">와이프올</span></a></li>
+				<li><a href="#" class="logo logo_ktech"><span class="a11y">킴테크</span></a></li>
+				<li><a href="#" class="logo logo_cleanguard"><span class="a11y">크린가드</span></a></li>
 			</ul>
 			<ul class="submenu _more" data-sub="3">
 				<li><a href="#" class="ti">전용용기</a>
@@ -89,5 +97,6 @@
 				<li><a href="#">고객상담</a></li>
 			</ul>
 		</div>
+
 	</div>
 </header>

@@ -159,6 +159,9 @@ var inquiryDoor = function () {
 	} else {
 		$('body').removeClass('noscroll');
 		$('.cust_inquiry').removeClass('open');
+		if($(window).scrollTop() > 100) {
+			$('.cust_inquiry').addClass('hidd');
+		}
 	}
 }
 $(window).scroll(function (e) {
@@ -166,10 +169,16 @@ $(window).scroll(function (e) {
 	docH = $(window).height();
 
 	if (st > 100) {
-		$('.cust_inquiry').addClass('hidd')
+		$('.cust_inquiry').addClass('hidd');
 	}
 	if (st < 100) {
 		$('.cust_inquiry').removeClass('hidd');
+	}
+
+	if (st > 0) {
+		$('.header').addClass('fixed');
+	}else{
+		$('.header').removeClass('fixed');
 	}
 	lastSt = st;
 });

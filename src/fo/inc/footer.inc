@@ -103,7 +103,7 @@
 
 	<div class="etc">
 		<div class="top_util">
-			<div class="weather">
+			<div class="weather"> <!-- 날씨 디자인 미정 //-->
 				<p>미세먼지 <span>보통</span><img src="@@webroot2/assets/images/dummy/@weather.png" alt="미세먼지 보통" /></p>
 			</div>
 			<a href="#" class="btn_search"><span class="a11y">검색</span></a>
@@ -119,6 +119,13 @@
 	</div>
 </div>
 <!--// 구매문의 -->
+
+<!-- 공통 : 구매문의/검색 플로팅 버튼  -->
+<div class="skybanner">
+	<a href="#" class="btn_search"><i></i><span class="a11y">검색</span></a>
+	<a href="#" onclick="inquiryDoor();return false;" class="btn_inquiry"><span>구매문의</span></a>
+</div>
+<!--// 공통 : 구매문의/검색 플로팅 버튼  -->
 
 <footer class="footer">
 	<!-- 메인에서만 노출되는 영역 -->
