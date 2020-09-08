@@ -267,6 +267,47 @@
 	padding-bottom:70px;
 	border-top:1px solid #eeeeee;
 } // .search_result
+.product_tree {
+	dt {
+		padding-bottom:7px;
+		font-size:14px;
+		border-bottom:1px solid #eeeeee;
+		i {
+			display: inline-block;
+			width:20px;
+			height:20px;
+			background:{
+				repeat:no-repeat;
+				size:cover;
+				position:0 0;
+			}
+			vertical-align: middle;
+		}
+	}
+	dd {
+		.item {
+			float:left;
+			width:50%;
+		}
+		&:after {
+			content: '';
+			display: block;
+			clear:both;
+		}
+	}
+	.ptype01 {
+		i {
+			background-image:url(../images/icon/ico_ptype01.png);
+			background-size:16px;
+		}
+	}
+	.ptype02 {
+		i {
+			background-image:url(../images/icon/ico_ptype02.png);
+			background-size:15px;
+		}
+	}
+} //.product_tree
 
 .filter_layer {
 	position: fixed;
