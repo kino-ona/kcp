@@ -139,7 +139,7 @@ input::-ms-clear {
   color:#999;
 }
 .clearfix:after {content: ''; display: block; clear: both;}
-button {cursor:pointer; border:none; margin:0; padding:0;background-color: rgba(255,255,255, 0);}
+button {cursor:pointer; border:none; margin:0; padding:0;background-color: rgba(255,255,255, 0);outline:none;}
 input,button,select {vertical-align:middle;}
 * {
 	-webkit-box-sizing: border-box;
@@ -714,6 +714,11 @@ h1.logo {
 		position: 0 0;
 	}
 	@include transition(.2s, ease-in);
+	a {
+		display: inline-block;
+		width:100%;
+		height:100%;
+	}
 }
 .header {
 	position: fixed;
@@ -1176,7 +1181,7 @@ h1.logo {
 
 // 구매문의
 .cust_inquiry {
-	left:80%;
+	left:110%;
 	position:fixed;
 	top:0;
 	width:100%;
@@ -1400,6 +1405,122 @@ h1.logo {
 		}
 	}
 } //.cust_inquiry
+.search_wrap {
+	display: none;
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0, .9);
+	z-index: 101;
+	&.open {
+		display: block;
+	}
+	.btn_close {
+		position:absolute;
+		right:30px;
+		top:30px;
+		display: inline-block;
+		width:50px;
+		height:50px;
+		background:{
+			image: url(../images/icon/icon_wclose.png);
+			size:20px;
+			repeat:no-repeat;
+			position:center center;
+		}
+	}
+	.row {
+		max-width:1000px;
+		margin:5% auto 0;
+	}
+	.title {
+		margin-bottom:60px;
+		font-size:48px;
+		font-weight: 700;
+		color:#fff;
+	}
+	input {
+		height:auto;
+		padding:20px 80px 20px 20px;
+		background-color:transparent;
+		border:0;
+		border-bottom:4px solid #5bb7f3;
+		font-size:24px;
+		color:#fff;
+		&:not([readonly]) {
+			&:focus {
+				background-color:transparent;
+			}
+		}
+	}
+	::-webkit-input-placeholder {
+		font-size:24px;
+	}
+	::-moz-placeholder {
+		font-size:24px;
+	}
+	::-moz-placeholder {
+		font-size:24px;
+	}
+	.frm {
+		position: relative;
+		.btn_search {
+			display: block;
+			position: absolute;
+			top:21px;
+			right:20px;
+			width:31px;
+			height:31px;
+			i {
+				display: inline-block;
+				width:31px;
+				height:31px;
+				background:{
+					image: url(../images/icon/ico_wbsearch.png);
+					size:31px;
+					repeat:no-repeat;
+					position:center center;
+				}
+			}
+		}
+	}
+	.recom_keyword {
+		margin-top:9%;
+		> p {
+			padding-bottom:20px;
+			font-size:24px;
+			font-weight: 700;
+			color:#fff;
+		}
+		> div {
+			&:after {
+				@extend %clearer;
+			}
+		}
+		.item {
+			float:left;
+			width:50%;
+			li {
+				padding:13px 0;
+			}
+			em {
+				margin-right:10px;
+				font-style:oblique;
+				font-weight: 700;
+				color:#fff;
+			}
+			a {
+				display: inline-block;
+				max-width:70%;
+				font-weight: 300;
+				color:#e0e0e0;
+				@include ellipse(1);
+			}
+		}
+	}
+}
 
 .main_service {
 	position: relative;
@@ -2041,4 +2162,4 @@ input.calendar {
 	}
 }
 
-@import "_response-global";
+@import "response-global";

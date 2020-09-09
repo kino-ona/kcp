@@ -504,6 +504,19 @@
 	} //.brand_sec 
 
 	.footer .main_service { display: block; }
+
+	.cust_inquiry {
+		left:80%;
+		&.open {
+			left:70px;
+		}
+		&.hidd {
+			left:110%;
+			.top_util {
+				right:-100%;
+			}
+		}
+	}
 } //.main
 
 .partner_wrap {

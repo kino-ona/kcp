@@ -158,6 +158,19 @@ var inquiryDoor = function () {
 		}
 	}
 }
+var searchcomPop = function () {
+	if(!$('.search_wrap').hasClass('open')) {
+		$('body').addClass('noscroll');
+		$('.search_wrap').addClass('open');
+	} else {
+		$('body').removeClass('noscroll');
+		$('.search_wrap').removeClass('open');
+	}
+}
+var searchPopclose = function () {
+	$('body').removeClass('noscroll');
+	$('.search_wrap').removeClass('open');
+}
 $(window).scroll(function (e) {
 	var st = $(this).scrollTop();
 	docH = $(window).height();
