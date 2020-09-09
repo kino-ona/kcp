@@ -264,8 +264,11 @@
 	}
 } // .search_cont
 .search_result {
-	padding-bottom:70px;
+	padding-bottom:50px;
 	border-top:1px solid #eeeeee;
+	.nodata {
+		padding:50px 0;
+	}
 } // .search_result
 .product_tree {
 	dt {
@@ -285,9 +288,29 @@
 		}
 	}
 	dd {
+		padding:10px 10px 20px 20px;
 		.item {
+			position:relative;
 			float:left;
-			width:50%;
+			width:calc(50% - 10px);
+			padding-left:10px;
+			padding-top:7px;
+			padding-bottom:7px;
+			a {
+				color:#666666;
+				font-size:12px;
+				font-weight: 300;
+			}
+			&:before {
+				content: '';
+				position: absolute;
+				left:0;
+				top:48%;
+				display: block;
+				width:2px;
+				height:2px;
+				background-color:#7fa9d3;
+			}
 		}
 		&:after {
 			content: '';
@@ -305,6 +328,24 @@
 		i {
 			background-image:url(../images/icon/ico_ptype02.png);
 			background-size:15px;
+		}
+	}
+	.ptype03 {
+		i {
+			background-image:url(../images/icon/ico_ptype03.png);
+			background-size:13px;
+		}
+	}
+	.ptype04 {
+		i {
+			background-image:url(../images/icon/ico_ptype04.png);
+			background-size:16px;
+		}
+	}
+	.ptype05 {
+		i {
+			background-image:url(../images/icon/ico_ptype05.png);
+			background-size:14px;
 		}
 	}
 } //.product_tree

@@ -24,11 +24,6 @@ if($('#kvswipe').length > 0){
 		$('#kvswipe').find('.swiper-counter .cur').html(cur)
 	});
 
-	// var kvh = $('#kvswipe .figure').innerHeight();
-	// $('#kvswipe .kvpage').css({
-	// 	'top': kvh - 43
-	// })
-
 	$(window).resize(function (){
 		mainswipe.update();
 	})
@@ -61,7 +56,6 @@ if($('#recommswipe').length > 0){ // 추천제품
 	});
 	if($('#recommswipe .swiper-slide').length > 0){
 		$('.recommand_sec .swiper-container').css({
-			// 'background-size': $('#recommswipe .swiper-slide').width() - 40
 			'background-size': $('#recommswipe .swiper-slide').width()
 		});
 	}

@@ -1,10 +1,4 @@
 $(document).ready(function () {
-  jQuery('body').append('<div id=test style=position:fixed;top:0;width:100%;color:red;z-index:99999;text-align:center;>'+jQuery(window).width()+'/' + jQuery(window).height() + '</div>');
-  $(window).resize((100, function(e) {
-    var width = jQuery(window).width();
-    $('#test').html(width + '/' + jQuery(window).height())
-  }));
-
 	if($('.datepicker').length > 0) datepickerControl();
 
 	// checkbox all 
@@ -212,26 +206,26 @@ $('.headgnb .menu:not(".submenu")').find('>li').each(function(i, e) {
 
 ////// sub
 // login
-var changePw = $('.member .btn_confirm');
-var pwBox = $('.member .pw');
-changePw.on('click', function () {
-	pwBox.slideDown();
-});
+// var changePw = $('.member .btn_confirm');
+// var pwBox = $('.member .pw');
+// changePw.on('click', function () {
+// 	pwBox.slideDown();
+// });
 
-// rental
-var rentType = $('.rent_write .rent_type');
-var rentTypesel = function (type) {
-	var $type = $(type).attr('data-type');
-	var $this = $(type);
-	if(!$this.hasClass('active')) {
-		$('.btn_rent').removeClass('active')
-		$this.addClass('active')
-	}
-	rentType.each(function(){ 
-		if($(this).hasClass($type)) {
-			$(this).addClass('active')
-		}else {
-			$(this).removeClass('active')
-		}
-	});
-}
+// // rental
+// var rentType = $('.rent_write .rent_type');
+// var rentTypesel = function (type) {
+// 	var $type = $(type).attr('data-type');
+// 	var $this = $(type);
+// 	if(!$this.hasClass('active')) {
+// 		$('.btn_rent').removeClass('active')
+// 		$this.addClass('active')
+// 	}
+// 	rentType.each(function(){ 
+// 		if($(this).hasClass($type)) {
+// 			$(this).addClass('active')
+// 		}else {
+// 			$(this).removeClass('active')
+// 		}
+// 	});
+// }
