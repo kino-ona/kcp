@@ -142,56 +142,23 @@
 		</section>
 
 		<hr>
-		<!-- 제품 가이드 -->
-		<div class="details_slide">
-			<div id="guide_swipe" class="row swiper-container">
-				<h4>제품 가이드</h4>
-				<div class="swiper-wrapper product_list">
-					<!-- slide -->
-					<div class="swiper-slide">
-						<a href="#">
-							<div class="img"><img src="../assets/images/dummy/@product290_01.jpg" alt=""></div>
-							<div class="info">
-								<p class="pname">슈퍼 점보롤 화장지 600m</p>
-								<ul class="desc">
-									<li>98mmx300m</li>
-									<li>1겹, 에어셀 원단</li>
-									<li>4롤/백, 4백/케이스</li>
-								</ul>
-							</div>
-						</a>
+		<!-- 제품라인업 / 09.09 영역 수정: 제품가이드 > 제품라인업 -->
+		<div class="prd_lineup">
+			<div class="row">
+				<h4>제품라인업</h4>
+				<p class="desc">이미지를 선택시 제품라인업을 자세히 볼수 있습니다.</p>
+				<a href="#" onclick="layerOpen('lineuppopup')">
+					<div class="info">
+						<p class="tit">푸드</p>
+						<p class="item"><span>키친타월</span><span>행주 &amp; 수세미</span></p>
 					</div>
-					<!--// slide -->
-					<div class="swiper-slide">
-						<a href="#">
-							<div class="img"><img src="../assets/images/dummy/@product290_02.jpg" alt=""></div>
-							<div class="info">
-								<p class="pname">에어셀 두루마리 화장지 50m 에어셀 두루마리 화장지 50m</p>
-								<ul class="desc">
-									<li>98mmx300m</li>
-									<li>1겹, 에어셀 원단</li>
-									<li>4롤/백, 4백/케이스</li>
-								</ul>
-							</div>
-						</a>
+					<div class="thumb">
+						<img src="../assets/images/dummy/@product_03.png" alt="">
 					</div>
-					<div class="swiper-slide">
-						<a href="#">
-							<div class="img"><img src="../assets/images/dummy/@product290_03.jpg" alt=""></div>
-							<div class="info">
-								<p class="pname">슈퍼 점보롤 화장지 600m</p>
-								<ul class="desc">
-									<li>98mmx300m</li>
-									<li>1겹, 에어셀 원단</li>
-									<li>4롤/백, 4백/케이스</li>
-								</ul>
-							</div>
-						</a>
-					</div>
-				</div>
+				</a>
 			</div>
 		</div>
-		<!--// 제품 가이드 -->
+		<!--// 제품라인업 / 09.09 영역 수정  -->
 
 		<!-- 전용용기: 해당 제품이 전용용기를 필요로 하는 제품일 경우 노출 -->
 		<div class="details_slide">
@@ -265,6 +232,41 @@
 		</div>
 		<!--// 해당제품 -->
 
+		<!-- 09.09 추가 -->
+		<hr>
+		<!-- 솔루션 & 현장혁신정보 -->
+		<div class="innov_slide">
+			<div id="innovation_swipe" class="row swiper-container">
+				<h4>솔루션 &amp; 현장혁신정보</h4>
+				<div class="swiper-wrapper">
+					<!-- slide -->
+					<div class="swiper-slide">
+						<a href="#">
+							<div class="figure">
+								<img src="../assets/images/dummy/@list_01.png">
+							</div>
+							<div class="info">
+								<p class="title">안전을 최우선으로 하면 생산성, 효율성이 향상됩니다.</p>
+							</div>
+						</a>
+					</div>
+					<!--// slide -->
+					<div class="swiper-slide">
+						<a href="#">
+							<div class="figure">
+								<img src="../assets/images/dummy/@list_02.png">
+							</div>
+							<div class="info">
+								<p class="title">유한킴벌리의 노력!</p>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--// 솔루션 & 현장혁신정보 -->
+		<!--// 09.09 추가 -->
+
 		<hr>
 		<!-- 자료 -->
 		<div class="accord_wrap _reference" id="reference">
@@ -313,6 +315,54 @@
 			<a href="#" class="btn primary">구매문의 하기</a>
 		</div>
 
+		<!-- 09.09 추가: 제품 라인업 팝업 -->
+		<div class="layer_body layer_full lineuppopup" id="lineuppopup" aria-hidden="true" role="dialog">
+			<div class="layer_wrap">
+				<div class="layer_head">
+					<button onclick="layerClose('lineuppopup')" class="layer_close manualfn">닫기</button>
+					<h2 class="layer_title">제품 라인업</h2>
+				</div>
+				<div class="layer_cont">
+					<!-- breadcrumb -->
+					<div class="breadcrumb">
+						<ul>
+							<li>핸드타올</li>
+							<li>평판형</li>
+							<li>프리미엄</li>
+						</ul>
+					</div>
+
+					<!-- loop -->
+					<div class="row">
+						<h3 class="cate">키친타월 <span>(푸드컨택)</span></h3>
+						<ul class="item_list">
+							<li><img src="../assets/images/dummy/@product_01.png" alt=""></li>
+							<li><img src="../assets/images/dummy/@product_01.png" alt=""></li>
+							<li><img src="../assets/images/dummy/@product_01.png" alt=""></li>
+						</ul>
+					</div>
+					<!--// loop -->
+
+					<div class="row">
+						<h3 class="cate">행주 &amp; 수세미</h3>
+						<h4 class="subcate">행주<span>(위생용품 행주)</span></h4>
+						<ul class="item_list">
+							<li><img src="../assets/images/dummy/@product_01.png" alt=""></li>
+							<li><img src="../assets/images/dummy/@product_01.png" alt=""></li>
+							<li><img src="../assets/images/dummy/@product_01.png" alt=""></li>
+							<li><img src="../assets/images/dummy/@product_01.png" alt=""></li>
+							<li><img src="../assets/images/dummy/@product_01.png" alt=""></li>
+						</ul>
+						<h4 class="subcate">수세미</h4>
+						<ul class="item_list">
+							<li><img src="../assets/images/dummy/@product_01.png" alt=""></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--// 09.09 추가: 제품 라인업 팝업 -->
+
 	</div>
 	<!--// container -->
 </div>
@@ -343,17 +393,17 @@
 		});
 	}
 
-	// 제품 가이드 swipe
-	if($('#guide_swipe').length > 0){
-		var rtsolutionswipe = new Swiper('#guide_swipe', {
-			loop: false,
-			slidesPerView: 2.2,
-			parallax: true,
-			observer: true,
-			observeParents: true,
-			spaceBetween: 10
-		});
-	}
+	// 제품 가이드 swipe 09.09 삭제
+	// if($('#guide_swipe').length > 0){
+	// 	var rtsolutionswipe = new Swiper('#guide_swipe', {
+	// 		loop: false,
+	// 		slidesPerView: 2.2,
+	// 		parallax: true,
+	// 		observer: true,
+	// 		observeParents: true,
+	// 		spaceBetween: 10
+	// 	});
+	// }
 
 	// 전용용기 swipe
 	if($('#dispensers_swipe').length > 0){
@@ -376,6 +426,18 @@
 			observer: true,
 			observeParents: true,
 			spaceBetween: 10
+		});
+	}
+
+	// 09.09 추가: 솔루션 & 현장혁신정보 swipe
+	if($('#innovation_swipe').length > 0){
+		var rtsolutionswipe = new Swiper('#innovation_swipe', {
+			loop: false,
+			slidesPerView: 1.5,
+			parallax: true,
+			observer: true,
+			observeParents: true,
+			spaceBetween: 20
 		});
 	}
 </script>

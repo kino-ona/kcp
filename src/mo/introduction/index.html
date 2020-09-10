@@ -22,6 +22,40 @@
 		</div>
 
 		<div class="borad_wrap">
+
+			<!-- 09.09 추가 -->
+			<!-- 솔루션 & 현장혁신정보 -->
+			<div class="innov_slide">
+				<div id="innovation_swipe" class="row swiper-container">
+					<h4>솔루션 &amp; 현장혁신정보</h4>
+					<div class="swiper-wrapper">
+						<!-- slide -->
+						<div class="swiper-slide">
+							<a href="#">
+								<div class="figure">
+									<img src="../assets/images/dummy/@list_01.png">
+								</div>
+								<div class="info">
+									<p class="title">안전을 최우선으로 하면 생산성, 효율성이 향상됩니다.</p>
+								</div>
+							</a>
+						</div>
+						<!--// slide -->
+						<div class="swiper-slide">
+							<a href="#">
+								<div class="figure">
+									<img src="../assets/images/dummy/@list_02.png">
+								</div>
+								<div class="info">
+									<p class="title">유한킴벌리의 노력!</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--// 솔루션 & 현장혁신정보 -->
+			<!--// 09.09 추가 -->
 			
 			<!-- board_list -->
 			<div class="board_list type1">
@@ -77,6 +111,21 @@
 	"webroot2":".."
 })
 <!-- //footer -->
+
+<!-- 09.09 추가: 솔루션 & 현장혁신정보 swipe --> 
+<script>
+	if($('#innovation_swipe').length > 0){
+		var rtsolutionswipe = new Swiper('#innovation_swipe', {
+			loop: false,
+			slidesPerView: 1.5,
+			parallax: true,
+			observer: true,
+			observeParents: true,
+			spaceBetween: 20
+		});
+	}
+</script>
+<!--// 09.09 추가: 솔루션 & 현장혁신정보 swipe --> 
 
 </body>
 </html>
