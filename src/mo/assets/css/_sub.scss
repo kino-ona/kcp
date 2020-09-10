@@ -385,10 +385,23 @@
 		}
 		.chkwrap {
 			margin-bottom:1.8rem;
+			i {
+				display: inline-block;
+				width:10px;
+				height:10px;
+				margin-left:3px;
+				margin-right:3px;
+				background:{
+					image:url(../images/icon/icon_depth.png);
+					size:5px;
+					repeat:no-repeat;
+					position:center top 0;
+				}
+				vertical-align: middle;
+			}
 		}
 		.item {
-			padding:0 3rem;
-
+			padding:0 2.6rem .5rem;
 			&.item_category {
 				margin-bottom:2rem;
 				border-bottom: 10px solid #f2f4f6;

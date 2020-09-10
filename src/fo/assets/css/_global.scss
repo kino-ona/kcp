@@ -44,7 +44,7 @@ big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, s
 dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td, 
 article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, 
 ruby, section, summary,time, mark, audio, video {
-	margin: 0;padding: 0; vertical-align: top; letter-spacing: 0; font-size: 16px;line-height:1.8;word-break:keep-all
+	margin: 0;padding: 0; vertical-align: top; letter-spacing: 0; font-size: 16px;line-height:1.8;word-break:keep-all;font-weight: 400;
 }
 fieldset,img, textarea {border: 0;outline: 0;}
 /* HTML5 display-role reset for older browsers */
@@ -248,11 +248,11 @@ hr {
 .btn {
 	display: inline-block;
   &.btn_search {
-    width:20px;
-    height:20px;
+    width:26px;
+    height:26px;
     background: {
-      image:url(../images/icon/ico_search.png);
-      size:18px;
+      image:url(../images/icon/ico_gsearch.png);
+      size:26px;
       repeat:no-repeat;
       position: 0 0;
     }
@@ -399,7 +399,7 @@ hr {
       min-width:100px;
       // height:2rem;
       // line-height: 2rem;
-      padding-left:23px;
+      padding-left:28px;
       margin-right:5px;
       background: {
         image: url(../images/common/uncheck.png);
@@ -703,6 +703,13 @@ html, body {min-width:1280px;margin:0 auto;height:100%;min-height:100%;}
 	min-height:100%;
 	padding-top:100px;
 }
+.container {
+	max-width:1280px;
+	margin:30px auto 0;
+	padding-left:40px;
+	padding-right:40px;
+
+}
 h1.logo {
 	display: block;
 	width:115px;
@@ -722,7 +729,6 @@ h1.logo {
 }
 .header {
 	position: fixed;
-	// position:relative;
 	width:100%;
 	min-width:1280px;
 	min-height:100px;
@@ -782,6 +788,33 @@ h1.logo {
 				line-height:60px;
 			}
 		}
+	}
+	&.subhead {
+		&:before {
+			content: '';
+			position:absolute;
+			left:0;
+			bottom:0;
+			width:50%;
+			height:2px;
+			background-color:#54abe7;
+			z-index:10;
+		}
+		&:after {
+			content: '';
+			position:absolute;
+			left:50%;
+			bottom:0;
+			width:50%;
+			height:2px;
+			background-color:#2450a4;
+		}
+	}
+	&.fixed, &.show {
+		&:after, &:before {display: none;}
+		-webkit-box-shadow: 10px 15px 20px 0px rgba(0,0,0,0.1);
+		-moz-box-shadow: 10px 15px 20px 0px rgba(0,0,0,0.1);
+		box-shadow: 10px 15px 20px 0px rgba(0,0,0,0.1);
 	}
 }
 .headgnb {
@@ -1181,8 +1214,7 @@ h1.logo {
 
 // 구매문의
 .cust_inquiry {
-	left:110%;
-	position:fixed;
+	left:110%;	position:fixed;
 	top:0;
 	width:100%;
 	min-width:1200px;
@@ -1861,17 +1893,23 @@ h1.logo {
 				vertical-align: middle;
 				width: 7px;
 				height: 7px;
-				border-left: 1px solid #333;
-				border-bottom: 1px solid #333;
-				-webkit-transform: rotate(-45deg);
-				transform: rotate(-45deg);
+				border-top:5px solid none;
+				border-bottom:6px solid #333;
+				border-right: 5px solid transparent;
+				border-left: 5px solid  transparent;
+				-webkit-transform: rotate(180deg);
+				transform: rotate(180deg);
+				
+				// -webkit-transform: rotate(-45deg);
+				// transform: rotate(-45deg);
 				box-sizing: border-box;
 			}
+
 		}
 		&[aria-expanded="true"] {
 			.acco_target i {
-				-webkit-transform: rotate(135deg);
-				transform: rotate(135deg);
+				-webkit-transform: rotate(0deg);
+				transform: rotate(0deg);
 			}
 		}
 	}
