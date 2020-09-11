@@ -273,3 +273,134 @@
 		}
 	}
 }
+
+
+/*-- fo/introduction/index --*/
+
+// .page_head {
+// 	position: relative;
+// 	margin-bottom: 93px;
+// 	h2 {
+// 	display: inline-block;
+// 	font-size: 40px;
+// 	line-height: 1;
+// 	font-weight: 700;
+// 	vertical-align: middle;
+// 	margin-bottom: 30px;
+// 	}
+// 	.desc {
+// 		font-weight: 500;
+// 	}
+// }
+
+.sol_innov_sec {
+	padding-bottom: 100px;
+	overflow: hidden;
+	h3 {
+		display: inline-block;
+		font-size: 28px;
+		font-weight: 700;
+		vertical-align: middle;
+		margin-bottom: 30px;
+	}
+	.swiper-container {
+		padding-left:3rem;
+		padding-right:2.5rem;
+	}
+	.figure {
+		position: relative;
+		padding-top:100%;
+		img {
+			position: absolute;
+			top:50%;
+			left:50%;
+			width:100%;
+			@include transform(translate(-50%, -50%));
+		}
+	}
+	.info {
+		margin-top:20px;
+		.desc {
+			width:calc(100% - 10px);
+			font-size:18px;
+		}
+	}
+} //.innov_sec
+
+.board_list ul {
+	.item {
+		display: flex;
+		min-width: 100%;
+		min-height: 420px;
+		margin-bottom: 30px;
+	}
+	.img {
+		width: 560px;
+		height: 420px;
+	}
+}
+.desc_wrapper {	
+	width: 600px;
+	height: 420px;
+	margin: 0 40px;
+	position: relative;
+	.wrapper {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+	}
+	.info {
+		margin: 0 0 24px 0;
+		.title {
+			font-size: 22px;
+			line-height: 1;
+			font-weight: 700;
+			padding-bottom: 8px;
+		}
+		.desc {
+			font-weight: 500;
+			color: #666666;
+		}
+	}
+}
+.item_link {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	// -ms-flex-wrap: wrap;
+	// flex-wrap: wrap;
+	// max-width: 99.9%;	
+	li:nth-of-type(2n-1) a {
+		margin-left: 0;
+	}
+	li:nth-of-type(3n) a {
+		margin-right: 0;
+	}
+	a {
+		display: block;
+		border: 1px solid #0053a7;
+		color: #0053a7;
+		line-height: 36px;
+		text-align: center;
+		margin-right: 20px;		
+		&:after {
+			content: '';
+			display: inline-block;
+			width: 10px;
+			height: 16px;
+			margin: -4px 0 0 17px;
+			vertical-align: middle;
+			background-image: url(../images/icon/ico_arr_link.png);
+			background-position: 0 0;
+			background-size: cover;
+		}
+	}
+	.btn-b {
+		width: 186px;
+		height: 40px;
+	}
+	.btn-s {
+		width: 160px;
+	}
+}
