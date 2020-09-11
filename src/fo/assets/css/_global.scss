@@ -355,7 +355,7 @@ hr {
 			}
 			&.max {
 				height:70px;
-				font-size:20px;
+				font-size:18px;
 				font-weight:700;
 				line-height:67px;
 			}
@@ -919,7 +919,7 @@ h1.logo {
 }
 .logo {
 	min-width:100px;
-	min-height:60px;
+	min-height:20px;
 	background: {
 		repeat:no-repeat;
 		position:center center;
@@ -956,6 +956,7 @@ h1.logo {
 		}
 	}
 	&.logo_scott {
+		height:58px;
 		background: {
 			image: url(../images/common/logo_scott.png);
 			size:auto 55px;
@@ -1078,9 +1079,7 @@ h1.logo {
 			}
 		}
 		&:after {
-			content: '';
-			display: block;
-			clear:both;
+			@extend %clearer;
 		}
 	}
 	.cs {
