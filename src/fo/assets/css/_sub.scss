@@ -4,6 +4,9 @@
 
 /** container **/
 .container {
+	&:after {
+		@extend %clearer;
+	}
 	.breadcrumb {
 		margin-bottom:50px;
 		a {
@@ -214,6 +217,86 @@
 				}
 			}
 		}
+		.item_category {
+			margin-top:15px;
+			.depth1 {
+				position:relative;
+				margin-bottom:20px;
+				font-size:14px;
+				font-weight: 500;
+				
+				&.active {
+					.depth2 {
+						position:relative;
+						display:block;
+						margin-top:1.4rem;
+						padding-top:1.4rem;
+						border-top:1px solid #eee;
+					}
+				}
+			}
+			.depth2 {
+				margin-top:1rem;
+				> li {
+					position:relative;
+					padding-left:2rem;
+					margin-bottom:2rem;
+					&:last-of-type {
+						margin-bottom:3rem;
+					}
+					&:before {
+						content:'';
+						position:absolute;
+						top:7px;
+						left:5px;
+						width:5px;
+						height:7px;
+						border-left:1px solid #c3c3c3;
+						border-bottom:1px solid #c3c3c3;
+					}
+					a {
+						font-size:14px;
+					}
+				}
+			}
+			.depth3, .depth4 {
+				margin-top:8px;
+				> li {
+					position:relative;
+					padding-left:20px;
+					margin-bottom:15px;
+					font-weight: 300;
+					color:#666666;
+					a {
+						font-weight: 300;
+						color:#666666;
+						line-height:1;
+					}
+					&.active {
+						color:#0053a7;
+						font-weight: 450;
+						> a {
+							color:#0053a7;
+						}
+					}
+					&:before {
+						content:'';
+						position:absolute;
+						top:5px;
+						left:5px;
+						width:5px;
+						height:7px;
+						border-left:1px solid #c3c3c3;
+						border-bottom:1px solid #c3c3c3;
+					}
+				}
+			}
+			.depth4 { 
+				> li {
+					margin-bottom:2px;
+				}
+			}
+		}
 	}
 }
 .sch_area {
@@ -275,23 +358,22 @@
 }
 
 
-/*-- fo/introduction/index --*/
-
-// .page_head {
-// 	position: relative;
-// 	margin-bottom: 93px;
-// 	h2 {
-// 	display: inline-block;
-// 	font-size: 40px;
-// 	line-height: 1;
-// 	font-weight: 700;
-// 	vertical-align: middle;
-// 	margin-bottom: 30px;
-// 	}
-// 	.desc {
-// 		font-weight: 500;
-// 	}
-// }
+/** fo/introduction/index **/
+.page_head {
+	position: relative;
+	margin-bottom: 93px;
+	h2 {
+	display: inline-block;
+	font-size: 40px;
+	line-height: 1;
+	font-weight: 700;
+	vertical-align: middle;
+	margin-bottom: 30px;
+	}
+	.desc {
+		font-weight: 500;
+	}
+}
 
 .sol_innov_sec {
 	padding-bottom: 100px;
@@ -402,5 +484,237 @@
 	}
 	.btn-s {
 		width: 160px;
+	}
+}
+
+// introduction
+.introduction {
+	.details {
+		&:after {
+			@extend %clearer;
+		}
+		&._top {
+			padding-bottom:60px;
+			margin-bottom:60px;
+			border-bottom:1px solid #e2e2e2;
+		}
+	}
+	.prd_slide {
+		float:left;
+		position:relative;
+		width:570px;
+		margin-right:60px;
+		.prd-swipe {
+			margin-left:90px;
+			.figure {
+				width:492px;
+			}
+		}
+		.prd-thumbs {
+			position: absolute; 
+			left:0;
+			top:0;
+			width:90px;
+			height:100%;
+			z-index: 1;
+			.swiper-slide {
+				width:90px;
+				height:90px !important;
+				margin-bottom:10px;
+				cursor: pointer;
+				&:last-child {margin-bottom:0}
+				&.swiper-slide-thumb-active {
+					.figure {
+						border-color:#0053a7;
+					}
+				}
+			}
+			.figure {
+				border:1px solid #eeeeee;
+			}
+		}
+	}
+	.prd_info {
+		float:left;
+		width:570px;
+		.logo {
+			display: inline-block;
+			margin-bottom:20px;
+		}
+		.tit {
+			margin-bottom:20px;
+			font-size:26px;
+			line-height:1.5;
+		}
+		.code {
+			> li {
+				position:relative;
+				float:left;
+				color:#0053a7;
+				padding-left:20px;
+				margin-left:20px;
+				&:before {
+					content: '';
+					position:absolute;
+					left:0;
+					top:50%;
+					margin-top:-6px;
+					display: block;
+					width:1px;
+					height:13px;
+					background-color:#e0e0e0;
+				}
+				&:first-child {
+					padding-left:0;
+					margin-left:0;
+					&:before {display: none;}
+				}
+			}
+			&:after {
+				@extend %clearer;
+			}
+		}
+		.option {
+			margin-top:40px;
+			overflow:hidden;
+			dt {
+				margin-top:40px;
+				font-weight:500;
+				&:first-child {
+					margin-top:0;
+				}
+			}
+			ul {
+				display:flex;
+				flex-wrap:wrap;
+				margin:0 0 0 -10px;
+				font-size:0;
+			}
+			li {
+				position:relative;
+				margin:10px 0 0 10px;
+				@media (max-width:359px) {
+					min-width:calc(50% - 10px);
+				}
+			}
+			input[type="radio"] {
+				position:absolute;
+				top:0;
+				left:0;
+				width:0;
+				height:0;
+				&:checked + label {
+					border-color:#000;
+					color:#000;
+				}
+			}
+			label {
+				display:block;
+				min-width:85px;
+				padding:0 18px;
+				border:1px solid #e0e0e0;
+				line-height:38px;
+				text-align:center;
+				cursor: pointer;
+			}
+		}
+		.btn_wrap {
+			margin-top:60px;
+			.btn {
+				flex:none;
+				width:380px;
+			}
+		}
+	}
+	.prd_spec {
+		float:left;
+		width:50%;
+		dt {
+			float:left;
+			width:150px;
+			margin-bottom:14px;
+			&.mark {
+				padding-top:30px;
+			}
+		}
+		dd {
+			float:left;
+			width:calc(100% - 150px);
+			margin-bottom:14px;
+			color:#666;
+			font-weight: 300;
+			&.mark {
+				margin-top:20px;
+			}
+		}
+		[class^="ico"] {
+			display:inline-block;
+			width:60px;
+			height:60px;
+			margin-right:10px;
+		}
+		&:after {
+			@extend %clearer;
+		}
+	}
+	.prd_desc {
+		float:left;
+		width:50%;
+		dt {
+			float:left;
+			width:150px;
+			margin-bottom:15px;
+		}
+		dd {
+			float:left;
+			width:calc(100% - 150px);
+			margin-bottom:15px;
+			font-weight: 300;
+		}
+		ul {
+			margin-bottom:30px;
+			li {
+				padding-left:10px;
+				font-size:inherit;
+				text-indent:-10px;
+				font-weight: 300;
+				&:before {
+					content:'- ';
+				}
+			}
+		}
+	}
+	.row {
+		margin-top:120px;
+		h4 {
+			margin-bottom:20px;
+			font-size:28px;
+			font-weight: 500;
+		}
+	}
+	.details_slide {
+		position:relative;
+	}
+	.slide_navi {
+		position:absolute;
+		right:0px;
+		top:10px;
+		width:90px;
+		height:30px;
+		[class^="swiper-button"] {
+			width:30px;
+			height:30px;
+			background: {
+				size:30px;
+				position:0 0;
+				repeat:no-repeat;
+			}
+		}
+		.swiper-button-next {
+			background-image:url(../images/common/swipe_next.png)
+		}
+		.swiper-button-prev {
+			background-image:url(../images/common/swipe_prev.png)
+		}
 	}
 }
