@@ -22,7 +22,7 @@
 			<span class="b_now">위생케어</span>
 		</div>
 
-		<div class="page_head">
+		<div class="idx-page_head">
 			<h2>위생케어</h2>
 			<div class="desc">
 				<p>크리넥스 위생케어에는 변기시트크리너와 변기세정제가 있습니다.</p>
@@ -31,15 +31,21 @@
 			</div>
 		</div>	
 
-		<section class="sol_innov_sec">
-			<h3>솔루션 &amp; 현장혁신정보</h3>
-			<div id="sol_innovswipe" class="swiper-container">
+		<section class="sol-innov_sec">
+			<div id="sol-innov_swipe" class="swiper-container">
+				<h3>솔루션 &amp; 현장혁신정보</h3>
+				<div class="slide_navi">
+					<div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>
+				</div>
 				<div class="swiper-wrapper">
 					<!-- slide -->
 					<div class="swiper-slide">
 						<a href="#">
 							<div class="figure">
-								<img src="./assets/images/dummy/@list_01.jpg" alt="">
+								<img src="../assets/images/dummy/@list_01.jpg" alt="">
 							</div>
 							<div class="info">
 								<p class="desc">안전을 최우선으로 하면 생산성과 효율성이 향상됩니다.</p>
@@ -49,7 +55,7 @@
 					<div class="swiper-slide">
 						<a href="#">
 							<div class="figure"> 
-								<img src="./assets/images/dummy/@list_02.jpg" alt="">
+								<img src="../assets/images/dummy/@list_02.jpg" alt="">
 							</div>
 							<div class="info">
 								<p class="desc">안전을 최우선으로 하면 생산성과 효율성이 향상됩니다.</p>
@@ -59,7 +65,7 @@
 					<div class="swiper-slide">
 						<a href="#">
 							<div class="figure">
-								<img src="./assets/images/dummy/@list_03.jpg" alt="">
+								<img src="../assets/images/dummy/@list_03.jpg" alt="">
 							</div>
 							<div class="info">
 								<p class="desc">안전을 최우선으로 하면 생산성과 효율성이 향상됩니다.</p>
@@ -68,7 +74,15 @@
 					</div>
 				</div>
 			</div>
+			<div class="sol-innov_page">
+				<div>
+					<div class="swiper-counter"><span class="cur">01</span> <span class="total"> / 05</span></div>
+					<div class="swiper-pagination swiper-pagination-progressbar"><span class="swiper-pagination-progressbar-fill" style="transform: translate3d(0px, 0px, 0px) scaleX(0.5) scaleY(1); transition-duration: 300ms;"></span></div>
+				</div>
+			</div>
 		</section>
+		<div class="slide-bg">
+		</div>
 
 		<div class="board_list type1">
 			<ul>
@@ -122,9 +136,8 @@
 					</div>
 				</li>
 			</ul>
-		</div>		
-
-	</div>
+		</div>	
+	</div><!--// container -->
 </div>
 <!--// wrap -->
 
@@ -133,6 +146,20 @@
 	"webroot2":".."
 })
 <!-- //footer -->
+<script>
+	if($('#sol-innov_swipe').length > 0){
+		var solinnovswipe = new Swiper('#sol-innov_swipe', {
+		// slidesPerView: 1.945,
+		loop:true,
+		slidesPerView: 4.65,
+		parallax: true,
+		observer: true,
+		observeParents: true,
+		centeredSlides: true,
+		spaceBetween: 40
+	});
+}
 
+</script>
 </body>
 </html>

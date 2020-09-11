@@ -395,28 +395,34 @@
 		}
 	}
 } 
-
-
 /** fo/introduction/index **/
-// .page_head {
-// 	position: relative;
-// 	margin-bottom: 93px;
-// 	h2 {
-// 	display: inline-block;
-// 	font-size: 40px;
-// 	line-height: 1;
-// 	font-weight: 700;
-// 	vertical-align: middle;
-// 	margin-bottom: 30px;
-// 	}
-// 	.desc {
-// 		font-weight: 500;
-// 	}
-// }
-
-.sol_innov_sec {
-	padding-bottom: 100px;
-	overflow: hidden;
+.slide-bg {
+	position: absolute;
+	top: 654px;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	background-color: #eeeeee;
+	height: 227px;
+	width: 100%;
+}
+.idx-page_head {
+	position: relative;
+	margin-bottom: 93px;
+	h2 {
+	display: inline-block;
+	font-size: 40px;
+	line-height: 1;
+	font-weight: 700;
+	vertical-align: middle;
+	margin-bottom: 30px;
+	}
+	.desc {
+		font-weight: 500;
+	}
+}
+.sol-innov_sec {
+	margin-bottom: 165px;
 	h3 {
 		display: inline-block;
 		font-size: 28px;
@@ -424,9 +430,8 @@
 		vertical-align: middle;
 		margin-bottom: 30px;
 	}
-	.swiper-container {
-		padding-left:3rem;
-		padding-right:2.5rem;
+	.swiper-wrapper	.swiper-slide {
+		width: 208px !important; 
 	}
 	.figure {
 		position: relative;
@@ -443,12 +448,67 @@
 		margin-top:20px;
 		.desc {
 			width:calc(100% - 10px);
-			font-size:18px;
+			font-size: 14px;
+			line-height: 24px;
+			color: #666666;
+		}
+	}	
+	.sol-innov_page { 
+		position: absolute;
+		padding-top: 27px;
+		width: 100%; 
+		max-width: 1200px; 
+		text-align: right; 
+		z-index: 1; 
+		> div { 
+			width: 100%; 
+			max-width: 1200px; 
+		}
+		.swiper-counter { 
+			margin-bottom: 10px; 
+			span { 
+				display: inline-block; 
+				color: #888888; 
+			}	
+			span.cur { 
+				color: #000; 
+			}	
+		}	
+		.swiper-pagination-progressbar { 
+			width: 100%; 
+			max-width: 1200px;  
+			height: 2px; 
+			background: #e9e9ea;
+			.swiper-pagination-progressbar-fill { 
+				width: 20%; 
+				background: #000; 
+				transform: scaleX(1) scaleY(1) !important; 
+			}
 		}
 	}
-} //.innov_sec
-
+	.slide_navi {
+		position: absolute;
+		right: 0px;
+		top: 10px;
+		width: 100px;
+		height: 30px;
+		.swiper-button-next {
+			background-image: url(../images/common/swipe_next.png);
+		}
+		.swiper-button-prev {
+			background-image: url(../images/common/swipe_prev.png);
+		}
+		[class^="swiper-button"] {
+			width: 30px;
+			height: 30px;
+			background-size: 30px;
+			background-position: 0 0;
+			background-repeat: no-repeat;
+		}
+	}
+} 
 .board_list ul {
+	padding-bottom: 80px;
 	.item {
 		display: flex;
 		min-width: 100%;
