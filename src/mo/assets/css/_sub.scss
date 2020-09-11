@@ -899,55 +899,14 @@
 				font-weight:500;
 			}
 			.desc {
-				margin-bottom:30px;
+				margin-bottom:20px;
 				font-size:12px;
 				font-weight:300;
 				color:#666;
 			}
 			a {
-				display:flex;
-				height:115px;
-				padding:0 20px;
-				background-color:#e5f0fe;
-				align-items:center;
-			}
-			.info {
-				width:calc(100% - 120px);
-				.tit {
-					font-weight:700;
-					&:after {
-						content:'';
-						display:inline-block;
-						width:5px;
-						height:8px;
-						margin-left:7px;
-						background:url('../images/icon/ico_arr-bk.png') no-repeat 0 0 / cover;
-						vertical-align:middle;
-					}
-				}
-				.item {
-					line-height:1.2;
-					span {
-						font-size:10px;
-						font-weight:300;
-						&:nth-of-type(n+2):before {
-							content:'';
-							display:inline-block;
-							width:1px;
-							height:7px;
-							margin:0 8px 0 6px;
-							background-color:#999;
-							vertical-align:middle;
-						}
-					}
-				}
-			}
-			.thumb {
-				height:100%;
-				margin-left:auto;
-				img {
-					height:100%;
-				}
+				display:block;
+				text-align:center;
 			}
 		}
 	}
