@@ -34,7 +34,14 @@
 								<div class="figure"><a href="#"><img src="../assets/images/dummy/@product720_01.jpg"></a></div>
 							</div>
 							<div class="swiper-slide">
-								<div class="figure"><a href="#"><img src="../assets/images/dummy/@product720_02.jpg"></a></div>
+								<div class="figure">
+									<video muted="muted" loop onloadedmetadata="this.muted = true">
+										<source src="../../../vod/yk.mp4" type="video/mp4" autostart="false">
+									</video>
+									<div class="video_util">
+										<button class="btn_play" aria-label="재생/일시정지" title="재생/일시정지"><span></span></button>
+									</div>
+								</div>
 							</div>
 							<div class="swiper-slide">
 								<div class="figure"><a href="#"><img src="../assets/images/dummy/@product720_01.jpg"></a></div>
@@ -442,7 +449,7 @@
 			slidesPerView: 1,
       thumbs: {
         swiper: galleryThumbs,
-      },
+			},
 		});
 	}
 

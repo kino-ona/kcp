@@ -1,5 +1,6 @@
 $(document).ready(function () {
 	if($('.datepicker').length > 0) datepickerControl();
+	if($('.video_util').length > 0) videoControl();
 
 	// checkbox all 
 	if($('.chkall').length > 0) {
@@ -219,28 +220,53 @@ $('.headgnb .menu:not(".submenu")').find('>li').each(function(i, e) {
 
 });
 
-////// sub
-// login
-// var changePw = $('.member .btn_confirm');
-// var pwBox = $('.member .pw');
-// changePw.on('click', function () {
-// 	pwBox.slideDown();
-// });
+var videoControl = function(){
+	$('.swiper-slide').each(function(i) {
+		var media = $(this).find('video').get(0);
+		var control = $(this).find('.btn_play');
 
-// // rental
-// var rentType = $('.rent_write .rent_type');
-// var rentTypesel = function (type) {
-// 	var $type = $(type).attr('data-type');
-// 	var $this = $(type);
-// 	if(!$this.hasClass('active')) {
-// 		$('.btn_rent').removeClass('active')
-// 		$this.addClass('active')
-// 	}
-// 	rentType.each(function(){ 
-// 		if($(this).hasClass($type)) {
-// 			$(this).addClass('active')
-// 		}else {
-// 			$(this).removeClass('active')
-// 		}
-// 	});
-// }
+		function controlShow() {
+			$(control).animate({'opacity':1});
+		}
+		function controlHide() {
+			$(control).animate({'opacity':0});
+		}
+		function playPauseMedia() {
+			if(media.paused) {
+				media.play();
+				$(control).addClass('stop');
+				$(this).find('.video_util').removeClass('cover');
+			} else {
+				media.pause();
+				$(control).removeClass('stop');
+				$(this).find('.video_util').addClass('cover');
+			}
+		}
+		if($(control).length > 0) {
+			$(control).click(playPauseMedia);
+		}
+		if($(control).length > 0) {
+			$(this).on('mouseenter mouseover',controlShow).on('mouseleave',function(){
+				controlHide();
+			});
+			$(this).on('focus',controlShow).on('blur',function(){
+				if(media.paused == false) {
+					controlHide();
+				}
+			});
+		}
+
+		if($('.prd-thumbs').length > 0) {
+			$('.prd-thumbs').find('.swiper-slide').on('click', function() {
+				if($(control).length > 0) {
+					if(media.paused == false) {
+						media.pause();
+						$(control).removeClass('stop');
+						$(this).find('.video_util').addClass('cover');
+						controlShow();
+					}
+				}
+			});
+		}
+	});
+}

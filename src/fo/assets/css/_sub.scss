@@ -546,7 +546,50 @@
 		.prd-swipe {
 			margin-left:90px;
 			.figure {
+				position: relative;
 				width:492px;
+				padding-bottom:100%;
+				overflow:hidden;
+				img, video, .youtube_vod {
+					position:absolute;
+					top:50%; left:50%;
+					max-width:100%;min-width:100%; min-height:100%;
+					transform: translate(-50%, -50%);
+				}
+				.video_util {
+					position: absolute;top:0;
+					width:100%;height:100%;
+					overflow: hidden;
+					button.btn_play {
+						> span {
+							display: block;
+							position: absolute;
+							top:50%; left:50%;
+							min-width:50px; min-height:50px;
+							transform: translate(-50%, -50%);
+							background: {
+								image: url(../images/common/btn_play.png);
+								size:cover;
+								position: center 0;
+								repeat:no-repeat;				
+							};
+						}
+						&.stop {
+							> span {
+								background: {
+									image: url(../images/common/btn_stop.png);
+								}
+							}
+						}
+						&:before {
+							content: '';
+							position: absolute;
+							top:0;left:0;
+							width:100%;height:100%;
+							background-color:rgba(0,0,0,.5);
+						}
+					}
+				}
 			}
 		}
 		.prd-thumbs {
