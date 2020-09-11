@@ -46,6 +46,13 @@
 							</div>
 						</a>
 					</div>
+					<div class="swiper-slide">
+						<a href="#">
+							<div class="figure">
+								
+							</div>
+						</a>
+					</div>
 				</div>
 				<div class="swiper-pagination"></div>
 			</div>
@@ -312,46 +319,9 @@
 		<!-- 09.09 추가: 제품 라인업 팝업 -->
 		<div class="layer_body layer_full lineuppopup" id="lineuppopup" aria-hidden="true" role="dialog">
 			<div class="layer_wrap">
-				<div class="layer_head">
-					<button onclick="layerClose('lineuppopup')" class="layer_close manualfn">닫기</button>
-					<h2 class="layer_title">제품 라인업</h2>
-				</div>
 				<div class="layer_cont">
-					<!-- breadcrumb -->
-					<div class="breadcrumb">
-						<ul>
-							<li>핸드타올</li>
-							<li>평판형</li>
-							<li>프리미엄</li>
-						</ul>
-					</div>
-
-					<!-- loop -->
-					<div class="row">
-						<h3 class="cate">키친타월 <span>(푸드컨택)</span></h3>
-						<ul class="item_list">
-							<li><img src="../assets/images/dummy/@product_01.png" alt=""></li>
-							<li><img src="../assets/images/dummy/@product_01.png" alt=""></li>
-							<li><img src="../assets/images/dummy/@product_01.png" alt=""></li>
-						</ul>
-					</div>
-					<!--// loop -->
-
-					<div class="row">
-						<h3 class="cate">행주 &amp; 수세미</h3>
-						<h4 class="subcate">행주<span>(위생용품 행주)</span></h4>
-						<ul class="item_list">
-							<li><img src="../assets/images/dummy/@product_01.png" alt=""></li>
-							<li><img src="../assets/images/dummy/@product_01.png" alt=""></li>
-							<li><img src="../assets/images/dummy/@product_01.png" alt=""></li>
-							<li><img src="../assets/images/dummy/@product_01.png" alt=""></li>
-							<li><img src="../assets/images/dummy/@product_01.png" alt=""></li>
-						</ul>
-						<h4 class="subcate">수세미</h4>
-						<ul class="item_list">
-							<li><img src="../assets/images/dummy/@product_01.png" alt=""></li>
-						</ul>
-					</div>
+					<button onclick="layerClose('lineuppopup')" class="layer_close manualfn">닫기</button>
+					<p><img src="../assets/images/introduction/mlineup_pop-food.jpg" alt="제품 라인업 : 푸드"></p>
 				</div>
 			</div>
 		</div>
@@ -371,7 +341,7 @@
 <script>
 	// 제품 이미지 swipe
 	if($('#prd_swipe').length > 0){
-		var rtsolutionswipe = new Swiper('#prd_swipe', {
+		var productswipe = new Swiper('#prd_swipe', {
 			pagination: {
 				el: '.swiper-pagination',
 				type: 'fraction',
