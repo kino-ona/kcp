@@ -175,6 +175,11 @@
 				<!--// 제품 설명 -->
 			</div>
 
+			<div class="row">
+				<h4>제품라인업<p>이미지를 선택시 제품라인업을 자세히 볼 수 있습니다.</p></h4>
+				<p><button onclick="layerOpen('lineuppopup')"><img src="../assets/images/introduction/lineup_food.jpg" alt=""></button></p>
+			</div>
+
 			<!-- 전용용기: 해당 제품이 전용용기를 필요로 하는 제품일 경우 노출 -->
 			<div class="row details_slide">
 				<div id="dispensers_swipe" class="swiper-container">
@@ -274,7 +279,7 @@
 							<a href="#">
 								<div class="img"><img src="../assets/images/dummy/@product290_03.jpg" alt=""></div>
 								<div class="info">
-									<p class="pname">크리넥스 에어셀 두루마리 화장지 50m</p>
+									<p class="pname">크리넥스 에어셀 두루마리 화장지에어셀 두루마리 화장지 50m</p>
 								</div>
 							</a>
 						</div>
@@ -306,9 +311,113 @@
 				</div>
 			</div>
 			<!--// 해당제품 -->
+
+			<!-- 솔루션 & 현장혁신정보 -->
+			<div class="row details_slide">
+				<div id="innovation_swipe" class="row swiper-container innov_swipe">
+					<h4>솔루션 &amp; 현장혁신정보</h4>
+					<div class="slide_navi">
+						<div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+					</div>
+					<div class="swiper-wrapper">
+						<!-- slide -->
+						<div class="swiper-slide">
+							<a href="#">
+								<div class="figure">
+									<img src="../assets/images/dummy/@list_01.jpg">
+								</div>
+								<div class="info">
+									<p class="desc">안전을 최우선으로 하면 생산성, 안전을 최우선으로 하면 생산성 효율성이 향상됩니다.</p>
+								</div>
+							</a>
+						</div>
+						<!--// slide -->
+						<div class="swiper-slide">
+							<a href="#">
+								<div class="figure">
+									<img src="../assets/images/dummy/@list_02.jpg">
+								</div>
+								<div class="info">
+									<p class="desc">유한킴벌리의 노력!</p>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#">
+								<div class="figure">
+									<img src="../assets/images/dummy/@list_03.jpg">
+								</div>
+								<div class="info">
+									<p class="desc">유한킴벌리의 노력!</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--// 솔루션 & 현장혁신정보 -->
+
+			<!-- 자료 -->
+			<div class="accord_wrap _reference" id="reference">
+				<div class="item" data-status="expanded">
+					<div class="acco_head">
+						<a href="#" class="acco_target" tabindex="0">관련자료 <i></i></a>
+					</div>
+					<div class="acco_panel">
+						<ul>
+							<li><a href="#"><i class="ico_pdf"></i>크리넥스® 드라이셀* 핸드타올 관련자료</a></li> <!-- pdf 일 경우 ico_pdf 클래스 추가 -->
+							<li><a href="#"><i class="ico_jpg"></i>크리넥스® 드라이셀* 핸드타올 관련자료</a></li> <!-- jpg 일 경우 ico_jpg 클래스 추가 -->
+							<li><a href="#"><i class="ico_gif"></i>크리넥스® 드라이셀* 핸드타올 관련자료</a></li> <!-- gif 일 경우 ico_gif 클래스 추가 -->
+						</ul>
+					</div>
+				</div>
+				<div class="item" data-status="hidden">
+					<div class="acco_head">
+						<a href="#" class="acco_target" tabindex="0">기술인증자료 <i></i></a>
+					</div>
+					<div class="acco_panel">
+						<ul>
+							<li><a href="#"><i class="ico_pdf"></i>크리넥스® 드라이셀* 핸드타올 관련자료</a></li>
+							<li><a href="#"><i class="ico_jpg"></i>크리넥스® 드라이셀* 핸드타올 관련자료</a></li>
+							<li><a href="#"><i class="ico_gif"></i>크리넥스® 드라이셀* 핸드타올 관련자료</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- 성적서/인증서: 파트너 로그인 상태에서만 노출-->
+				<div class="item" data-status="hidden">
+					<div class="acco_head">
+						<a href="#" class="acco_target" tabindex="0">성적서/인증서 <i></i></a>
+					</div>
+					<div class="acco_panel">
+						<ul>
+							<li><a href="#"><i class="ico_pdf"></i>크리넥스® 드라이셀* 핸드타올 관련자료</a></li>
+							<li><a href="#"><i class="ico_jpg"></i>크리넥스® 드라이셀* 핸드타올 관련자료</a></li>
+							<li><a href="#"><i class="ico_gif"></i>크리넥스® 드라이셀* 핸드타올 관련자료</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--// 자료 -->
+
 			
 		</div>
 		<!--// conts introduction -->
+
+		<!-- lineup popup -->
+		<div class="layer_body lineuppopup" id="lineuppopup" aria-hidden="false" role="dialog" open="open" tabindex="0">
+			<div class="layer_wrap">
+				<div class="layer_cont">
+					<button onclick="layerClose('lineuppopup')" class="layer_close manualfn">닫기</button>
+
+					<p><img src="../assets/images/introduction/lineup_pop-food.jpg" alt="제품 라인업 : 푸드"></p>
+				</div>
+			</div>
+		</div>
+		<!--// lineup popup -->
 
 	</div>
 </div>
@@ -356,6 +465,22 @@
 	// 해당제품 swipe
 	if($('#relation_swipe').length > 0){
 		var rtsolutionswipe = new Swiper('#relation_swipe', {
+			loop: false,
+			slidesPerView: 5,
+			parallax: true,
+			observer: true,
+			observeParents: true,
+			spaceBetween: 20,
+			navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+		});
+	}
+
+	// 솔루션 & 현장혁신정보 swipe
+	if($('#innovation_swipe').length > 0){
+		var rtsolutionswipe = new Swiper('#innovation_swipe', {
 			loop: false,
 			slidesPerView: 5,
 			parallax: true,
