@@ -58,13 +58,15 @@
 						</div>
 					</div>
 					<div class="swiper-container prd-thumbs">
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
 						<div class="swiper-wrapper">
 							<!-- slide -->
 							<div class="swiper-slide">
 								<div class="figure"><img src="../assets/images/dummy/@product720_01.jpg"></div>
 							</div>
 							<div class="swiper-slide">
-								<div class="figure"><img src="../assets/images/dummy/@product720_02.jpg"></div>
+								<div class="figure video"><img src="../assets/images/dummy/@product720_02.jpg"></div>
 							</div>
 							<div class="swiper-slide">
 								<div class="figure"><img src="../assets/images/dummy/@product720_01.jpg"></div>
@@ -439,11 +441,14 @@
 	// 제품 이미지 swipe
 	if($('#prd_swipe').length > 0){
 		var galleryThumbs = new Swiper('.prd-thumbs', {
-			direction: 'vertical',
-      slidesPerView: 5,
+			slidesPerView: 5,
       freeMode: true,
       watchSlidesVisibility: true,
-      watchSlidesProgress: true,
+			watchSlidesProgress: true,
+			navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
 		});
 		var prdSwipe = new Swiper('#prd_swipe', {
 			slidesPerView: 1,
