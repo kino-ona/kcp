@@ -410,19 +410,33 @@
 	position: relative;
 	margin-bottom: 93px;
 	h2 {
-	display: inline-block;
-	font-size: 40px;
-	line-height: 1;
-	font-weight: 700;
-	vertical-align: middle;
-	margin-bottom: 30px;
+		display: inline-block;
+		font-size: 40px;
+		line-height: 1;
+		font-weight: 700;
+		vertical-align: middle;
+		margin-bottom: 30px;
 	}
 	.desc {
 		font-weight: 500;
+		p {
+			font-weight: 300;
+		}
 	}
 }
 .sol-innov_sec {
+	// position: relative;
 	margin-bottom: 165px;
+	// &:after {
+	// 	content: '';
+	// 	display: block;
+	// 	position:absolute;
+	// 	left:0;
+	// 	bottom:0;
+	// 	width:300%;
+	// 	height:225px;
+	// 	background-color:#f2f4f6;
+	// }
 	h3 {
 		display: inline-block;
 		font-size: 28px;
@@ -430,9 +444,9 @@
 		vertical-align: middle;
 		margin-bottom: 30px;
 	}
-	.swiper-wrapper	.swiper-slide {
-		width: 208px !important; 
-	}
+	// .swiper-wrapper	.swiper-slide {
+	// 	width: 208px !important; 
+	// }
 	.figure {
 		position: relative;
 		padding-top:100%;
@@ -453,60 +467,51 @@
 			color: #666666;
 		}
 	}	
-	.sol-innov_page { 
-		position: absolute;
-		padding-top: 27px;
-		width: 100%; 
-		max-width: 1200px; 
-		text-align: right; 
-		z-index: 1; 
-		> div { 
-			width: 100%; 
-			max-width: 1200px; 
-		}
-		.swiper-counter { 
-			margin-bottom: 10px; 
-			span { 
-				display: inline-block; 
-				color: #888888; 
-			}	
-			span.cur { 
-				color: #000; 
-			}	
-		}	
-		.swiper-pagination-progressbar { 
-			width: 100%; 
-			max-width: 1200px;  
-			height: 2px; 
-			background: #e9e9ea;
-			.swiper-pagination-progressbar-fill { 
-				width: 20%; 
-				background: #000; 
-				transform: scaleX(1) scaleY(1) !important; 
+} 
+.slide_page {
+	position:relative;
+	width:100%;
+	max-width:1200px;
+	min-height:50px;
+	margin-top:30px;
+	text-align:right;
+	z-index:1;
+	&:after {
+		@extend %clearer;
+	}
+	> div {		
+		width:100%;
+	}
+	.swiper-counter {
+		margin-bottom:10px;
+		margin-right:40px;
+		span {
+			display: inline-block;
+			color:#888888;
+			&.cur {
+				color:#000;
 			}
 		}
 	}
-	.slide_navi {
-		position: absolute;
-		right: 0px;
-		top: 10px;
-		width: 100px;
-		height: 30px;
-		.swiper-button-next {
-			background-image: url(../images/common/swipe_next.png);
-		}
-		.swiper-button-prev {
-			background-image: url(../images/common/swipe_prev.png);
-		}
-		[class^="swiper-button"] {
-			width: 30px;
-			height: 30px;
-			background-size: 30px;
-			background-position: 0 0;
-			background-repeat: no-repeat;
-		}
+	.swiper-pagination-progressbar {
+		width:100%;
+		height:2px;
+		background-color:#e9e9ea;
 	}
-} 
+	.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+		background:#000;
+	}
+}
+.slide-bg {
+	position: absolute;
+	top: 654px;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	background-color: #eeeeee;
+	height: 227px;
+	width: 100%;
+}
 .board_list ul {
 	padding-bottom: 80px;
 	.item {
@@ -546,12 +551,14 @@
 	}
 }
 .item_link {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	// -ms-flex-wrap: wrap;
-	// flex-wrap: wrap;
-	// max-width: 99.9%;	
+	// display: -webkit-box;
+	// display: -ms-flexbox;
+	// display: flex;
+	li {
+		float:left;
+		margin-right:20px;
+		margin-bottom:20px;
+	}
 	li:nth-of-type(2n-1) a {
 		margin-left: 0;
 	}
@@ -559,12 +566,13 @@
 		margin-right: 0;
 	}
 	a {
-		display: block;
+		display: inline-block;
+		padding-left:28px;
+		padding-right:28px;
 		border: 1px solid #0053a7;
 		color: #0053a7;
 		line-height: 36px;
 		text-align: center;
-		margin-right: 20px;		
 		&:after {
 			content: '';
 			display: inline-block;
@@ -577,12 +585,8 @@
 			background-size: cover;
 		}
 	}
-	.btn-b {
-		width: 186px;
-		height: 40px;
-	}
-	.btn-s {
-		width: 160px;
+	&:after {
+		@extend %clearer;
 	}
 }
 
@@ -871,28 +875,6 @@
 				@include ellipse(2);
 				line-height:1.6;
 			}
-		}
-	}
-	.slide_navi {
-		position:absolute;
-		right:0px;
-		top:10px;
-		width:100px;
-		height:30px;
-		[class^="swiper-button"] {
-			width:30px;
-			height:30px;
-			background: {
-				size:30px;
-				position:0 0;
-				repeat:no-repeat;
-			}
-		}
-		.swiper-button-next {
-			background-image:url(../images/common/swipe_next.png)
-		}
-		.swiper-button-prev {
-			background-image:url(../images/common/swipe_prev.png)
 		}
 	}
 	._reference {

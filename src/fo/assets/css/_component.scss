@@ -588,3 +588,26 @@
 	font-size:14px;
 	font-weight:300;
 } //.help 
+
+.slide_navi {
+	position:absolute;
+	right:0px;
+	top:10px;
+	width:100px;
+	height:30px;
+	[class^="swiper-button"] {
+		width:30px;
+		height:30px;
+		background: {
+			size:30px;
+			position:0 0;
+			repeat:no-repeat;
+		}
+	}
+	.swiper-button-next {
+		background-image:url(../images/common/swipe_next.png)
+	}
+	.swiper-button-prev {
+		background-image:url(../images/common/swipe_prev.png)
+	}
+}
