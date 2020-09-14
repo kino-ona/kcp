@@ -247,7 +247,9 @@ var videoControl = function(){
 		}
 		if($(control).length > 0) {
 			$(this).on('mouseenter mouseover',controlShow).on('mouseleave',function(){
-				controlHide();
+				if(media.paused == false) {
+					controlHide();
+				}
 			});
 			$(this).on('focus',controlShow).on('blur',function(){
 				if(media.paused == false) {

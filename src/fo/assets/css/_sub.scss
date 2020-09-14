@@ -425,18 +425,7 @@
 	}
 }
 .sol-innov_sec {
-	// position: relative;
 	margin-bottom: 165px;
-	// &:after {
-	// 	content: '';
-	// 	display: block;
-	// 	position:absolute;
-	// 	left:0;
-	// 	bottom:0;
-	// 	width:300%;
-	// 	height:225px;
-	// 	background-color:#f2f4f6;
-	// }
 	h3 {
 		display: inline-block;
 		font-size: 28px;
@@ -444,9 +433,6 @@
 		vertical-align: middle;
 		margin-bottom: 30px;
 	}
-	// .swiper-wrapper	.swiper-slide {
-	// 	width: 208px !important; 
-	// }
 	.figure {
 		position: relative;
 		padding-top:100%;
@@ -933,15 +919,20 @@
 }
 .layer_body.lineuppopup {
 	.layer_wrap {
-		max-width:1196px;
+		max-width:860px;
 		max-height:80%;
 		.layer_cont {
 			position:relative;
 			padding:0;
+			text-align: center;
 			.layer_close {
 				position:absolute;
 				right:40px;
 				top:40px;
+			}
+			img {
+				max-width:720px;
+				margin:0 auto;
 			}
 		}
 	}

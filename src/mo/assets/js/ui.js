@@ -183,16 +183,16 @@ var videoControl = function(){
 			$(control).animate({'opacity':0});
 		}
 		function playPauseMedia() {
-			console.log(media)
 			if(media.paused) {
 				media.play();
 				$(control).addClass('stop');
 				$(this).find('.video_util').removeClass('cover');
-				controlHide()
+				controlHide();
 			} else {
 				media.pause();
 				$(control).removeClass('stop');
 				$(this).find('.video_util').addClass('cover');
+				controlShow();
 			}
 		}
 		if($(control).length > 0) {
@@ -208,5 +208,18 @@ var videoControl = function(){
 				controlHide();
 			}
 		});
+
+		if($('.prd-thumbs').length > 0) {
+			$('.prd-thumbs').find('.swiper-slide').on('click', function() {
+				if($(control).length > 0) {
+					if(media.paused == false) {
+						media.pause();
+						$(control).removeClass('stop');
+						$(this).find('.video_util').addClass('cover');
+						controlShow();
+					}
+				}
+			});
+		}
 	});
 }

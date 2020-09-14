@@ -49,13 +49,14 @@
 					<div class="swiper-slide">
 						<a href="#">
 							<div class="figure">
-								<video muted="muted" loop onloadedmetadata="this.muted = true">
+								<!-- 09.14 video 타입추가 -->
+								<video muted="muted" loop onloadedmetadata="this.muted = true" poster="../assets/images/common/default_image.png">
 									<source src="../../../vod/yk.mp4" type="video/mp4" autostart="false">
 								</video>
 								<div class="video_util">
 									<button class="btn_play" aria-label="재생/일시정지" title="재생/일시정지"><span></span></button>
 								</div>
-								<!-- <iframe class="youtube_vod" src="https://www.youtube.com/embed/FMbltnleR4c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+								<!-- 09.14 video 타입추가 -->
 							</div>
 						</a>
 					</div>
@@ -155,7 +156,7 @@
 		</section>
 
 		<hr>
-		<!-- 제품라인업 / 09.09 영역 수정: 제품가이드 > 제품라인업 -->
+		<!-- 제품라인업 / 09.14 영역 수정: 제품가이드 > 제품라인업 -->
 		<div class="prd_lineup">
 			<div class="row">
 				<h4>제품라인업</h4>
@@ -165,7 +166,7 @@
 				</a>
 			</div>
 		</div>
-		<!--// 제품라인업 / 09.09 영역 수정  -->
+		<!--// 제품라인업 / 09.14 영역 수정  -->
 
 		<!-- 전용용기: 해당 제품이 전용용기를 필요로 하는 제품일 경우 노출 -->
 		<div class="details_slide">
@@ -239,7 +240,7 @@
 		</div>
 		<!--// 해당제품 -->
 
-		<!-- 09.09 추가 -->
+		<!-- 09.14 추가 -->
 		<hr>
 		<!-- 솔루션 & 현장혁신정보 -->
 		<div class="innov_slide">
@@ -272,7 +273,7 @@
 			</div>
 		</div>
 		<!--// 솔루션 & 현장혁신정보 -->
-		<!--// 09.09 추가 -->
+		<!--// 09.14 추가 -->
 
 		<hr>
 		<!-- 자료 -->
@@ -322,16 +323,16 @@
 			<a href="#" class="btn primary">구매문의 하기</a>
 		</div>
 
-		<!-- 09.09 추가: 제품 라인업 팝업 -->
+		<!-- 09.14 추가: 제품 라인업 팝업 -->
 		<div class="layer_body layer_full lineuppopup" id="lineuppopup" aria-hidden="true" role="dialog">
 			<div class="layer_wrap">
 				<div class="layer_cont">
 					<button onclick="layerClose('lineuppopup')" class="layer_close manualfn">닫기</button>
-					<p><img src="../assets/images/introduction/mlineup_pop-food.jpg" alt="제품 라인업 : 푸드"></p>
+					<p class="img"><img src="../assets/images/introduction/lineup_pop-food.jpg" alt="제품 라인업 : 푸드"></p>
 				</div>
 			</div>
 		</div>
-		<!--// 09.09 추가: 제품 라인업 팝업 -->
+		<!--// 09.14 추가: 제품 라인업 팝업 -->
 
 	</div>
 	<!--// container -->
@@ -345,7 +346,7 @@
 <!-- //footer -->
 
 <script>
-	// 제품 이미지 swipe
+	// 제품 이미지 swipe 09.14
 	if($('#prd_swipe').length > 0){
 		var productswipe = new Swiper('#prd_swipe', {
 			pagination: {
@@ -363,16 +364,16 @@
 			on : {
 				slideChange: function () {
 					$('.swiper-slide').each(function () {
-						if($(this).find('video').length > 0) {
-							$(this).find('video').stop();
+						if($('video').get(0).paused == false) {
+							$('video').get(0).pause();
+							$('.btn_play').addClass('stop');
 						}
 					});
 				}
 			}
 		});
 	}
-
-	// 제품 가이드 swipe 09.09 삭제
+	// 제품 가이드 swipe 09.14 삭제
 	// if($('#guide_swipe').length > 0){
 	// 	var rtsolutionswipe = new Swiper('#guide_swipe', {
 	// 		loop: false,
@@ -408,7 +409,7 @@
 		});
 	}
 
-	// 09.09 추가: 솔루션 & 현장혁신정보 swipe
+	// 09.14 추가: 솔루션 & 현장혁신정보 swipe
 	if($('#innovation_swipe').length > 0){
 		var rtsolutionswipe = new Swiper('#innovation_swipe', {
 			loop: false,
