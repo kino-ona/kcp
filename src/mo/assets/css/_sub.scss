@@ -60,6 +60,12 @@
 				right:0;
 				top:4px;
 			}
+			&.fixed {
+				.row {
+					padding-left:0;
+					padding-right:0;
+				}
+			}
 		}
 		.btn_cart {
 			position: relative;
@@ -89,7 +95,7 @@
 				-moz-border-radius: 100%;
 				-ms-border-radius: 100%;
 				-o-border-radius: 100%;
-}
+			}
 		}
 	}
 	// &.subhead
@@ -100,6 +106,9 @@
 		right:0;
 		z-index: 9;
 		height: 50px;
+		-webkit-box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.1);
+		-moz-box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.1);
+		box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.1);
 		.head {
 			position: absolute;
 			width:calc(100% - 60px);
