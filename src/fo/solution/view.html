@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	@@include('../inc/pagehead.inc',{
+		"webroot":".."
+	})
+</head>
+<body>
+<div class="skipnavigation"><a href="#container">본문 바로가기</a></div>
+<!-- header -->
+@@include('../inc/header.inc',{
+	"headtype":"subhead",
+	"pagetitle":""
+})
+<!-- //header -->
+
+<div class="wrap">
+	<div class="container">
+		<div class="breadcrumb">
+			<a href="#" class="b_home"><i></i><span class="a11y">home</span></a>
+			<a href="#" class="b_lnk">제품</a>
+			<a href="#" class="b_lnk">위생케어</a>
+			<span class="b_now">두루마리화장지</span>
+		</div>
+
+		<div class="conts introduction">
+			<div class="details _top">
+				<!-- 제품 이미지 -->
+				<div class="prd_slide">
+					<div id="prd_swipe" class="swiper-container prd-swipe">
+						<div class="swiper-wrapper">
+							<!-- slide -->
+							<div class="swiper-slide">
+								<div class="figure"><a href="#"><img src="../assets/images/dummy/@product720_01.jpg"></a></div>
+							</div>
+							<div class="swiper-slide">
+								<div class="figure">
+									<video muted="muted" loop onloadedmetadata="this.muted = true" poster="../assets/images/common/default_image.png">
+										<source src="../../../vod/yk.mp4" type="video/mp4" autostart="false">
+									</video>
+									<div class="video_util">
+										<button class="btn_play" aria-label="재생/일시정지" title="재생/일시정지"><span></span></button>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="figure"><a href="#"><img src="../assets/images/dummy/@product720_01.jpg"></a></div>
+							</div>
+							<div class="swiper-slide">
+								<div class="figure"><a href="#"><img src="../assets/images/dummy/@product720_02.jpg"></a></div>
+							</div>
+							<div class="swiper-slide">
+								<div class="figure"><a href="#"><img src="../assets/images/dummy/@product720_01.jpg"></a></div>
+							</div>
+							<div class="swiper-slide">
+								<div class="figure"><a href="#"><img src="../assets/images/dummy/@product720_02.jpg"></a></div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-container prd-thumbs">
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-wrapper">
+							<!-- slide -->
+							<div class="swiper-slide">
+								<div class="figure"><img src="../assets/images/dummy/@product720_01.jpg"></div>
+							</div>
+							<div class="swiper-slide">
+								<div class="figure video"><img src="../assets/images/dummy/@product720_02.jpg"></div>
+							</div>
+							<div class="swiper-slide">
+								<div class="figure"><img src="../assets/images/dummy/@product720_01.jpg"></div>
+							</div>
+							<div class="swiper-slide">
+								<div class="figure"><img src="../assets/images/dummy/@product720_02.jpg"></div>
+							</div>
+							<div class="swiper-slide">
+								<div class="figure"><img src="../assets/images/dummy/@product720_01.jpg"></div>
+							</div>
+							<div class="swiper-slide">
+								<div class="figure"><img src="../assets/images/dummy/@product720_02.jpg"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--// 제품 이미지 -->
+				<div class="prd_info">
+					<p class="logo logo_kleenex"><span class="a11y">크리넥스</span></p>
+					<!-- 
+						<p class="logo logo_popee"><span class="a11y">뽀삐</span></p>
+						<p class="logo logo_ktech"><span class="a11y">킴테크</span></p>
+						<p class="logo logo_cleanguard"><span class="a11y">클린가드</span></p>
+						<p class="logo logo_wya"><span class="a11y">와이프올</span></p> 
+						<p class="logo logo_scott"><span class="a11y">스카트</span></p> 
+					-->
+					
+					<h3 class="tit">크리넥스® 드라이셀* 드라이셀* 핸드타올 F250 (100% 천연)</h3>
+					<ul class="code">
+						<li>제품코드 : 47227</li>
+						<li>자제코드 : 11028023</li>
+					</ul>
+					<!-- 제품 옵션 -->
+					<dl class="option">
+						<!-- <dt>색상</dt>
+						<dd>
+							<ul class="opt_color">
+								<li><input type="radio" id="color1" name="opt_color" checked><label for="color1">흰색</label></li>
+								<li><input type="radio" id="color2" name="opt_color"><label for="color2">검정</label></li>
+								<li><input type="radio" id="color3" name="opt_color"><label for="color3">회색</label></li>
+							</ul>
+						</dd>
+						<dt>사이즈</dt>
+						<dd>
+							<ul class="opt_size">
+								<li><input type="radio" id="size1" name="opt_size" checked><label for="size1">196mmX240mm</label></li>
+								<li><input type="radio" id="size2" name="opt_size"><label for="size2">196mmX200mm</label></li>
+							</ul>
+						</dd> -->
+						<dt>향</dt>
+						<dd>
+							<ul class="opt_frag">
+								<li><input type="radio" id="frag0" name="opt_frag"><label for="frag0">스윗한 파우던향 같은데 깔끔한 플로럴향</label></li>
+								<li><input type="radio" id="frag1" name="opt_frag" checked><label for="frag1">시트러스향(감귤)</label></li>
+								<li><input type="radio" id="frag2" name="opt_frag"><label for="frag2">그린플로럴향</label></li>
+								<li><input type="radio" id="frag3" name="opt_frag"><label for="frag3">멜란지색상(회색계열)</label></li>
+							</ul>
+						</dd>
+					</dl>
+					<!--// 제품 옵션 -->
+
+					<div class="btn_wrap">
+						<a href="#" class="btn primary max">구매문의하기</a>
+					</div>
+				</div>
+			</div>
+			<!--// details _top -->
+			<div class="details _summary">
+				<!-- 기본 제원 -->
+				<dl class="prd_spec">
+					<dt>향</dt>
+					<dd>플로랄</dd>
+
+					<dt>제품입수(박스당)</dt>
+					<dd>100매/카톤, 8카톤/케이스, 100매/카톤, 8카톤/케이스</dd>
+
+					<dt>박스무게(kg)</dt>
+					<dd>11.314</dd>
+
+					<dt>박스사이즈(cm)</dt>
+					<dd>74.0X32.0X38.0</dd>
+
+					<dt>제품무게(kg)</dt>
+					<dd>7.9</dd>
+
+					<dt>제품사이즈</dt>
+					<dd>152미터(m)</dd>
+
+					<dt>장당사이즈(cm)</dt>
+					<dd>F250VF (19.6X23.9)</dd>
+
+					<dt class="mark">인증마크</dt>
+					<dd class="mark">
+						<span class="ico_fsc"><img src="../assets/images/icon/mark_fsc.png" alt="FSC 마크"></span>
+						<span class="ico_eco"><img src="../assets/images/icon/mark_eco.png" alt="친환경 마크"></span>
+					</dd>
+				</dl>
+				<!--// 기본 제원 -->
+				<!-- 제품 설명 -->
+				<dl class="prd_desc">
+					<dt>제품 설명</dt>
+					<dd>
+						<ul>
+							<li>흡수력이 뛰어나므로 한 장이면 충분합니다.</li>
+							<li>흡수속도가 빨라 신속하게 손을 닦을 수 있습니다.</li>
+							<li>젖은 손으로 잡아 당겨도 잘 찢어지지 않습니다.</li>
+							<li>사용 감촉이 고급스럽습니다.</li>
+							<li>100% 천연펄프 사용으로 푸드서비스 타올/ 병원 등 위생에 더욱 민감한 곳에 적합합니다.</li>
+						</ul>
+					</dd>
+
+					<dt>전성분</dt>
+					<dd>정제수, 에탄올(살균제, 22.5%), 계면활성제 총5%이상~15%미만[고급 알코올게(비이온), 제4급 암모늄염계], 용제, 에틸렌다이아민테트라아세트산사나트륨염(금속이온봉쇄제, 0.63%), 산도조절제, 향료, 다이프로필렌글리콜메틸에테르(향료, 보존제, 2.26%), 살리실산메틸(향료, 보존제, 0.05%)</dd>
+				</dl>
+				<!--// 제품 설명 -->
+			</div>
+
+			<div class="row">
+				<h4>제품라인업<p>이미지를 선택시 제품라인업을 자세히 볼 수 있습니다.</p></h4>
+				<p><button onclick="layerOpen('lineuppopup')"><img src="../assets/images/introduction/lineup_food.jpg" alt=""></button></p>
+			</div>
+
+			<!-- 전용용기: 해당 제품이 전용용기를 필요로 하는 제품일 경우 노출 -->
+			<div class="row details_slide">
+				<div id="dispensers_swipe" class="swiper-container">
+					<h4>전용용기</h4>
+					<div class="slide_navi">
+						<div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+					</div>
+					<div class="swiper-wrapper">
+						<!-- slide -->
+						<div class="swiper-slide">
+							<a href="#">
+								<div class="img"><img src="../assets/images/dummy/@product290_01.jpg" alt=""></div>
+								<div class="info">
+									<p class="pname">센터풀 화장지 전용용기 플러스</p>
+								</div>
+							</a>
+						</div>
+						<!--// slide -->
+						<div class="swiper-slide">
+							<a href="#">
+								<div class="img"><img src="../assets/images/dummy/@product290_02.jpg" alt=""></div>
+								<div class="info">
+									<p class="pname">센터풀 티슈 전용용기</p>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#">
+								<div class="img"><img src="../assets/images/dummy/@product290_03.jpg" alt=""></div>
+								<div class="info">
+									<p class="pname">센터풀 티슈 전용용기</p>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#">
+								<div class="img"><img src="../assets/images/dummy/@product290_02.jpg" alt=""></div>
+								<div class="info">
+									<p class="pname">센터풀 티슈 전용용기</p>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#">
+								<div class="img"><img src="../assets/images/dummy/@product290_03.jpg" alt=""></div>
+								<div class="info">
+									<p class="pname">센터풀 티슈 전용용기</p>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#">
+								<div class="img"><img src="../assets/images/dummy/@product290_02.jpg" alt=""></div>
+								<div class="info">
+									<p class="pname">센터풀 티슈 전용용기</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--// 전용용기 -->
+
+			<!-- 해당제품: 해당 제품이 전용용기일 경우 해당제품 노출 -->
+			<div class="row details_slide">
+				<div id="relation_swipe" class="swiper-container">
+					<h4>해당제품</h4>
+					<div class="slide_navi">
+						<div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+					</div>
+					<div class="swiper-wrapper">
+						<!-- slide -->
+						<div class="swiper-slide">
+							<a href="#">
+								<div class="img"><img src="../assets/images/dummy/@product290_01.jpg" alt=""></div>
+								<div class="info">
+									<p class="pname">크리넥스 에어셀 화장지 220m 순수</p>
+								</div>
+							</a>
+						</div>
+						<!--// slide -->
+						<div class="swiper-slide">
+							<a href="#">
+								<div class="img"><img src="../assets/images/dummy/@product290_02.jpg" alt=""></div>
+								<div class="info">
+									<p class="pname">크리넥스 에어셀 두루마리 화장지 50m</p>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#">
+								<div class="img"><img src="../assets/images/dummy/@product290_03.jpg" alt=""></div>
+								<div class="info">
+									<p class="pname">크리넥스 에어셀 두루마리 화장지에어셀 두루마리 화장지 50m</p>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#">
+								<div class="img"><img src="../assets/images/dummy/@product290_02.jpg" alt=""></div>
+								<div class="info">
+									<p class="pname">크리넥스 에어셀 두루마리 화장지 50m</p>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#">
+								<div class="img"><img src="../assets/images/dummy/@product290_03.jpg" alt=""></div>
+								<div class="info">
+									<p class="pname">크리넥스 에어셀 두루마리 화장지 50m</p>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#">
+								<div class="img"><img src="../assets/images/dummy/@product290_02.jpg" alt=""></div>
+								<div class="info">
+									<p class="pname">크리넥스 에어셀 두루마리 화장지 50m</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--// 해당제품 -->
+
+			<!-- 솔루션 & 현장혁신정보 -->
+			<div class="row details_slide">
+				<div id="innovation_swipe" class="row swiper-container innov_swipe">
+					<h4>솔루션 &amp; 현장혁신정보</h4>
+					<div class="slide_navi">
+						<div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+					</div>
+					<div class="swiper-wrapper">
+						<!-- slide -->
+						<div class="swiper-slide">
+							<a href="#">
+								<div class="figure">
+									<img src="../assets/images/dummy/@list_01.jpg">
+								</div>
+								<div class="info">
+									<p class="desc">안전을 최우선으로 하면 생산성, 안전을 최우선으로 하면 생산성 효율성이 향상됩니다.</p>
+								</div>
+							</a>
+						</div>
+						<!--// slide -->
+						<div class="swiper-slide">
+							<a href="#">
+								<div class="figure">
+									<img src="../assets/images/dummy/@list_02.jpg">
+								</div>
+								<div class="info">
+									<p class="desc">유한킴벌리의 노력!</p>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#">
+								<div class="figure">
+									<img src="../assets/images/dummy/@list_03.jpg">
+								</div>
+								<div class="info">
+									<p class="desc">유한킴벌리의 노력!</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--// 솔루션 & 현장혁신정보 -->
+
+			<!-- 자료 -->
+			<div class="accord_wrap _reference" id="reference">
+				<div class="item" data-status="expanded">
+					<div class="acco_head">
+						<a href="#" class="acco_target" tabindex="0">관련자료 <i></i></a>
+					</div>
+					<div class="acco_panel">
+						<ul>
+							<li><a href="#"><i class="ico_pdf"></i>크리넥스® 드라이셀* 핸드타올 관련자료</a></li> <!-- pdf 일 경우 ico_pdf 클래스 추가 -->
+							<li><a href="#"><i class="ico_jpg"></i>크리넥스® 드라이셀* 핸드타올 관련자료</a></li> <!-- jpg 일 경우 ico_jpg 클래스 추가 -->
+							<li><a href="#"><i class="ico_gif"></i>크리넥스® 드라이셀* 핸드타올 관련자료</a></li> <!-- gif 일 경우 ico_gif 클래스 추가 -->
+						</ul>
+					</div>
+				</div>
+				<div class="item" data-status="hidden">
+					<div class="acco_head">
+						<a href="#" class="acco_target" tabindex="0">기술인증자료 <i></i></a>
+					</div>
+					<div class="acco_panel">
+						<ul>
+							<li><a href="#"><i class="ico_pdf"></i>크리넥스® 드라이셀* 핸드타올 관련자료</a></li>
+							<li><a href="#"><i class="ico_jpg"></i>크리넥스® 드라이셀* 핸드타올 관련자료</a></li>
+							<li><a href="#"><i class="ico_gif"></i>크리넥스® 드라이셀* 핸드타올 관련자료</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- 성적서/인증서: 파트너 로그인 상태에서만 노출-->
+				<div class="item" data-status="hidden">
+					<div class="acco_head">
+						<a href="#" class="acco_target" tabindex="0">성적서/인증서 <i></i></a>
+					</div>
+					<div class="acco_panel">
+						<ul>
+							<li><a href="#"><i class="ico_pdf"></i>크리넥스® 드라이셀* 핸드타올 관련자료</a></li>
+							<li><a href="#"><i class="ico_jpg"></i>크리넥스® 드라이셀* 핸드타올 관련자료</a></li>
+							<li><a href="#"><i class="ico_gif"></i>크리넥스® 드라이셀* 핸드타올 관련자료</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--// 자료 -->
+
+			
+		</div>
+		<!--// conts introduction -->
+
+		<!-- lineup popup -->
+		<div class="layer_body lineuppopup" id="lineuppopup" aria-hidden="false" role="dialog" open="open" tabindex="0">
+			<div class="layer_wrap">
+				<div class="layer_cont">
+					<button onclick="layerClose('lineuppopup')" class="layer_close manualfn">닫기</button>
+
+					<p class="img"><img src="../assets/images/introduction/lineup_pop-food.jpg" alt="제품 라인업 : 푸드"></p>
+				</div>
+			</div>
+		</div>
+		<!--// lineup popup -->
+
+	</div>
+</div>
+<!--// wrap -->
+
+<!-- footer -->
+@@include('../inc/footer.inc',{
+	"webroot2":".."
+})
+<!-- //footer -->
+<script>
+	// 제품 이미지 swipe
+	if($('#prd_swipe').length > 0){
+		var galleryThumbs = new Swiper('.prd-thumbs', {
+			slidesPerView: 5,
+      freeMode: true,
+      watchSlidesVisibility: true,
+			watchSlidesProgress: true,
+			navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+		});
+		var prdSwipe = new Swiper('#prd_swipe', {
+			slidesPerView: 1,
+      thumbs: {
+        swiper: galleryThumbs,
+			},
+		});
+	}
+
+	// 전용용기 swipe
+	if($('#dispensers_swipe').length > 0){
+		var rtsolutionswipe = new Swiper('#dispensers_swipe', {
+			loop: false,
+			slidesPerView: 5,
+			parallax: true,
+			observer: true,
+			observeParents: true,
+			spaceBetween: 20,
+			navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+		});
+	}
+
+	// 해당제품 swipe
+	if($('#relation_swipe').length > 0){
+		var rtsolutionswipe = new Swiper('#relation_swipe', {
+			loop: false,
+			slidesPerView: 5,
+			parallax: true,
+			observer: true,
+			observeParents: true,
+			spaceBetween: 20,
+			navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+		});
+	}
+
+	// 솔루션 & 현장혁신정보 swipe
+	if($('#innovation_swipe').length > 0){
+		var rtsolutionswipe = new Swiper('#innovation_swipe', {
+			loop: false,
+			slidesPerView: 5,
+			parallax: true,
+			observer: true,
+			observeParents: true,
+			spaceBetween: 20,
+			navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+		});
+	}
+</script>
+
+</body>
+</html>

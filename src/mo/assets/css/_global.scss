@@ -647,7 +647,20 @@ hr {
 		position:relative;
 		&._unit {
 			input {
-				padding-right:25%;
+				padding-right:23%;
+			}
+			.tit {
+				position:absolute;
+				left:0;
+				top:0;
+				display: inline-block;
+				margin-top:10px;
+				margin-left:10px;
+				font-size:12px;
+				// color:#666;
+				& + input {
+					padding-left:110px;
+				}
 			}
 		}
 		& + .inpwrap {
