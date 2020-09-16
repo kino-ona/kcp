@@ -1298,9 +1298,15 @@
 				text-align:center;
 				padding-top:20%;
 				background-color:#d1d1d1;
+				border:1px solid #eeeeee;
+				border-left:0;
+				color:#000;
 				&:last-child {margin-right:0;}
 				&.active {
 					background-color:#0053a7;
+					a {
+						color:#fff;
+					}
 				}
 				a {
 					position:absolute;
