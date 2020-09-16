@@ -1042,6 +1042,9 @@ h1.logo {
 			}
 		}
 	}
+	&._etc {
+		.btn-cust {display: none;}
+	}
 } // .footer
 .gnb_menu {
 	position: fixed;
@@ -1256,7 +1259,7 @@ h1.logo {
 } //.search_frm-input
 .search_layer {
   position: fixed;
-  bottom:-100%;
+  bottom:-150%;
   left:0;
   right:0;
   width:100%;

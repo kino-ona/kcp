@@ -356,7 +356,8 @@
 </div>
 <!--// fixed menu -->
 
-<footer class="footer">
+<!-- 09.16 제품상세 클래스(_etc) 추가 //-->
+<footer class="footer @@etctype">
 	<div class="social">
 		<a href="#">유한킴벌리 프로페셔널<br><span>카카오톡 플러스</span> 친구 추가하기</a>
 	</div>
