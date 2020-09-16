@@ -1,0 +1,61 @@
+/** RESET **/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; vertical-align: top; letter-spacing: 0; font-size: 13px; line-height: 1.8; word-break: keep-all; }
+
+fieldset, img, textarea { border: 0; outline: 0; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main { display: block; }
+
+img { max-width: 100%; }
+
+button, input { border-radius: 0; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; padding: 0; margin: 0; outline: none; border: 0; }
+
+body { -webkit-text-size-adjust: none; }
+
+ol, ul { list-style: none; }
+
+address, em { font-style: normal; }
+
+h1, h2, h3, h4, h5, h6 { font-weight: 400; }
+
+div { word-break: keep-all; }
+
+table { border-collapse: collapse; border-spacing: 0; width: 100%; }
+
+* { -webkit-box-sizing: border-box; box-sizing: border-box; text-decoration: none; -webkit-tap-highlight-color: transparent; font-family: 'Helvetica', 'Malgun Gothic', sans-serif; color: #000000; font-size: 13px; }
+
+.ordercontents { max-width: 720px; width: 100%; margin: 0 auto; border-collapse: collapse; font-size: 13px; line-height: 1.6; color: #000000; text-align: left; }
+
+.ordercontents .head { padding: 20px 30px; }
+
+.ordercontents .title { border-top: 3px solid #0053a7; padding: 20px 30px 10px; font-weight: 700; font-size: 18px; }
+
+.ordercontents .ordernum { max-width: 660px; width: 100%; margin: 0 auto; border-collapse: collapse; border: 2px solid #dddddd; text-align: left; }
+
+.ordercontents .ordernum .th { width: 150px; padding: 10px; }
+
+.ordercontents .ordernum .td { padding: 10px 0; color: #0053a7; font-weight: bold; }
+
+.ordercontents .innertbl { max-width: 660px; width: 100%; margin: 0 auto; border-collapse: collapse; text-align: left; }
+
+.ordercontents .innertbl .tbltitle { padding-top: 35px; padding-bottom: 10px; border-bottom: 2px solid #000; font-size: 14px; font-weight: 700; }
+
+.ordercontents .innertbl .th { width: 100px; padding: 12px 0; border-bottom: 1px solid #dddddd; }
+
+.ordercontents .innertbl .td { padding: 12px 0; border-bottom: 1px solid #dddddd; }
+
+.ordercontents .innertbl .agrment { padding: 10px; line-height: 2; font-size: 14px; }
+
+.ordercontents .innertbl .agrment > div { padding: 10px 0; }
+
+.ordercontents .innertbl.terms .th { width: 40px; vertical-align: top; text-align: center; border-bottom: 0; }
+
+.ordercontents .innertbl.terms .td { padding-bottom: 10px; border-bottom: 0; }
+
+.ordercontents .innertbl.terms .inlogo { border-bottom: 1px solid #eeeeee; padding: 10px 0; text-align: right; }
+
+.ordercontents .innertbl.terms .inlogo img { width: 80px; }
+
+.ordercontents .innertbl.terms .stxt { padding-top: 15px; font-size: 12px; }
+
+.ordercontents .copyr div { margin-top: 100px; padding: 20px 30px; background: #999999; color: #ffffff; }
