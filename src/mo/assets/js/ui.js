@@ -46,8 +46,14 @@ $(window).scroll(function (e) {
 
 	if (st > 0) {
 		$('.subhead').addClass('fixed')
+		if($('.container.introduction').find('.details').length > 0) {
+			$('.subhead').addClass('_view')
+		}
 	} else {
 		$('.subhead').removeClass('fixed')
+		if($('.container.introduction').find('.details').length > 0) {
+			$('.subhead').removeClass('_view')
+		}
 	}
 	if ($('.fixed_menu').length > 0) {
 		if (st > lastSt) {
