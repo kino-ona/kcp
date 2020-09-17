@@ -189,25 +189,46 @@
 					</dd>
 				</dl>
 
+				<!-- 09.17 추가 -->
 				<dl class="frm_group">
-					<dt><label>약정서 업로드</label></dt>
+					<dt><label>약정 방법 선택</label></dt>
+					<dd>
+						<p class="radiowrap"><input type="radio" id="rd01" name="radio"><label for="rd01">온라인 약정<span class="st">현재 화면에서 고객사와 약정  할 경우 선택</span></label></p>
+						<p class="radiowrap"><input type="radio" id="rd02" name="radio"><label for="rd02">약정서 업로드<span class="st">약정서를 다운로드하여  작성 후 업로드 할 경우선택</span></label></p>
+					</dd>
+				</dl>
+				<!--// 09.17 추가 -->
+			</div>
+
+			<!-- 09.17 수정 -->
+			<hr>
+			<div class="row write">
+				<dl class="frm_group">
+					<dt class="right">
+						<label>약정서 업로드</label>
+						<button class="btn btn_docdown">약정서 다운로드</button>
+					</dt>
 					<dd>
 						<div class="btn_wrap">
 							<button class="btn btn_line">업로드하기</button>
 						</div>
+						<!-- 09.08 -->
 						<div class="inpwrap _upload">
 							<input type="text" id="" value="20200830_약정서.jpg" readonly>
 							<a href="#" class="btn btn_reset2"><span class="a11y">reset</span></a>
 						</div>
-						<p class="warn">약정서를 수기로 작성하신 파트너께서는 사진 또는 PDF 형태로 업로드 바라며, 아래 온라인약정서는 작성하지 않으셔도 됩니다.</p>
+						<!--// 09.08 -->
+						<p class="warn">- 약정서를 다운로드하여 작성 하신 후 업로드 하시기 바랍니다.</p>
+						<p class="warn">- 사진 또는 PDF 형태로 업로드 바랍니다.</p>
 					</dd>
 				</dl>
 			</div>
+			<!--// 09.17 수정 -->
 
 			<hr>
 			<div class="row write contract_row">
 				<h2 class="title">약정서 작성
-					<p class="warn">약정서를 수기로 작성하지 않은 파트너분은 아래 내용 입력 후 서명해 주시기 바랍니다.</p>
+					<!-- <p class="warn">약정서를 수기로 작성하지 않은 파트너분은 아래 내용 입력 후 서명해 주시기 바랍니다.</p> 09.17 삭제 //-->
 				</h2>
 				<div class="sign_input">
 					당 <span><input type="text" value="" placeholder="파트너사명을 입력해주세요." ></span> 은(는) 유한킴벌리 전용용기를 사용함에 있어 상기의 대여조건으로 사용하기를 약정합니다.<br>단, 내장형 용기의 약정기간은 2년입니다.

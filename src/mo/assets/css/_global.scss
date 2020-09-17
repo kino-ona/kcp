@@ -504,6 +504,13 @@ hr {
 					};
 					vertical-align: inherit;
 				}
+				&.st {
+					display: block;
+					margin-bottom:5px;
+					margin-left:0;
+					font-size:14px;
+					color:#666666;
+				}
 			}
     }
     &:checked + label {
@@ -515,6 +522,7 @@ hr {
 	font-size:12px;
 	font-weight:300;
 	color:#e70707;
+	letter-spacing: -.8px;
 }
 .inp_txt {
 	margin-top:6px;
@@ -531,6 +539,19 @@ hr {
 	dt {
 		position: relative;
 		margin-bottom:6px;
+		label {
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				left:0;
+				top:40%;
+				width:3px;
+				height:3px;
+				background-color: #000;
+				border-radius: 50%;
+			}
+		}
 		.date {
 			position: absolute;
 			right:0;
@@ -543,6 +564,14 @@ hr {
 		}
 		&:nth-of-type(n+2) {
 			margin-top:14px;
+		}
+		&.right {
+			padding-bottom:5px;
+			.btn {
+				position: absolute;
+				top:0;
+				right:0;
+			}
 		}
 	}
 	dd + dd {
@@ -558,17 +587,6 @@ hr {
 		padding-left:10px;
 		font-size:13px;
 		color:#000;
-		&:before {
-			content: '';
-			display: block;
-			position: absolute;
-			left:0;
-			top:40%;
-			width:3px;
-			height:3px;
-			background-color: #000;
-			border-radius: 50%;
-		}
 	}
 	select {
 		padding: 9px 15px 10px 10px;
@@ -697,7 +715,8 @@ hr {
 				position:relative;
 				&.zipcode {
 					input {
-						padding-right:100px;
+						width:calc(100% - 105px);
+						// padding-right:100px;
 					}
 					.btn_addr {
 						position: absolute;
@@ -727,6 +746,7 @@ hr {
 			cursor: pointer;
 			flex:1;
 			margin-right:6px;
+			padding-left:0;
 			&:nth-child(4n), &:last-child {
 				margin-right:0;
 			}
@@ -743,7 +763,7 @@ hr {
 				width:100%;
 				padding: 0.85rem 0;
 				text-align: center;
-				background-color:#d1d1d1;
+				background-color:#c0cfde;
 				color:#fff;
 			}
 		}
@@ -931,9 +951,7 @@ h1.logo {
 			}
 		}
 		&:after {
-			content: '';
-			display: block;
-			clear:both;
+			@extend %clearer;
 		}
 	}
 	.cs {
@@ -1170,9 +1188,7 @@ h1.logo {
 			}
 		}
 		&:after {
-			content: '';
-			display: block;
-			clear:both;
+			@extend %clearer;
 		}
 	}
 } //.gnb_menu

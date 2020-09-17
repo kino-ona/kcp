@@ -729,9 +729,7 @@
 				}
 			}
 			&:after {
-				content:'';
-				display: block;
-				clear:both;
+				@extend %clearer;
 			}
 		}
 		.row {

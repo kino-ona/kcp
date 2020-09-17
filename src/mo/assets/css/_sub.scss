@@ -1148,7 +1148,7 @@
 					margin-top:0;
 				}
 				.frm_group {
-					margin-bottom: 20px;
+					margin-bottom: 30px;
 					dd {
 						position:relative;
 					}
@@ -1195,7 +1195,14 @@
 						line-height: 1.4;
 						color:#999999;
 					}
-
+				}
+				.btn_docdown {
+					padding:2px 8px 3px;
+					border-radius: 18px;
+					font-size:13px;
+					font-weight: 500;
+					background-color: #00a8e2;
+					color:#fff;
 				}
 			} // &.write {
 			// &.contract_row {
@@ -1258,7 +1265,7 @@
 					}
 				}
 				&._view {
-					margin-top:2rem;
+					margin-top:10px;
 					.item {
 						position: relative;
 						border-bottom:0;
@@ -1267,17 +1274,25 @@
 							margin-bottom:0;
 						}
 						.name {
-							float:left;
-							padding-bottom:20px;
+							// float:left;
+							float:none;
+							// padding-bottom:20px;
+							padding-bottom:0;
 						}
 						.qty {
-							float:right;
+							// float:right;
+							float:none;
 							font-weight: 300;
+							padding-bottom:10px;
 						}
 						.btn_wrap {
 							clear:both;
-							padding-top:10px;
-							border-top:1px solid #eeeeee;
+							padding-top:3px;
+							// border-top:1px solid #eeeeee;
+							border:0;
+							position: absolute;
+							right:0;
+							top:0;
 						}
 					}
 				}
@@ -1296,9 +1311,8 @@
 				margin:0;
 				margin-right:6px;
 				text-align:center;
-				padding-top:20%;
-				background-color:#d1d1d1;
-				border:1px solid #eeeeee;
+				padding-top:18%;
+				background-color:#c0cfde;
 				border-left:0;
 				color:#000;
 				&:last-child {margin-right:0;}
@@ -1315,24 +1329,34 @@
 					left:50%;
 					@include transform(translate(-50%, -50%));
 					color:#fff;
+					line-height: 1.4;
 				}
 			}
 		}
 		.total {
+			position:relative;
 			> div {
 				&:after {
 					@extend %clearer;
 				}
 			}
 			.tit {
-				float:left;
-				width:30%;
+				// float:left;
+				// width:30%;
+				display: inline-block;
+				margin-top:3px;
+				vertical-align: middle;
 			}
 			.price {
-				float:left;
-				width:70%;
+				// float:left;
+				// width:70%;
+				// text-align:right;
+				display: inline-block;
+				margin-left:5px;
 				font-weight: 700;
-				text-align:right;
+				font-size:17px;
+				color:#0053a7;
+				vertical-align: middle;
 				.unit {
 					position:relative;
 					right:inherit;
@@ -1340,12 +1364,8 @@
 					display: inline-block;
 					margin-left:3px;
 					font-weight: 400;
+					margin-top:4px;
 				}
-			}
-			.btn_wrap {
-				margin-top:13px;
-				padding-top:15px;
-				border-top:1px solid #eeeeee;
 			}
 			&._pred {
 				margin-top:15px;
@@ -1354,6 +1374,11 @@
 				.price {
 					font-size:14px;
 				}
+			}
+			.btn_wrap {
+				position: absolute;
+				right:0;
+				top:0;
 			}
 		}
 		.btn_list-down {
@@ -1371,6 +1396,40 @@
 				background: url(../images/icon/ico_arr-bk.png) 50% 50%/cover;
 				vertical-align: middle;
 			}
+		}
+
+		.btn_wrap {
+			.btn_plus {
+				width:35px;
+				height:35px;
+				background: {
+					size:35px;
+					repeat:no-repeat;
+					position:0 0;
+				}
+				border:0;
+				text-indent: -9999px;
+				background-image: url(../images/common/btn_line-plus.jpg);
+				& + .btn_delete {
+					margin-left:5px;
+				}
+			}
+			.btn_delete {
+				width:35px;
+				height:35px;
+				background: {
+					size:35px;
+					repeat:no-repeat;
+					position:0 0;
+				}
+				border:0;
+				text-indent: -9999px;
+				background-image: url(../images/common/btn_line-minus.jpg);
+				& + .btn_plus {
+					margin-left:5px;
+				}
+			}
+			
 		}
 	} //.rent_write
 	.product_list._kit {
@@ -1753,7 +1812,7 @@
 	}
 	.tit_wrap {
 		position:relative;
-		margin-bottom:15px;
+		margin-bottom:10px;
 		.title {
 			font-size:17px;
 			font-weight:500;
@@ -1841,10 +1900,17 @@
 		font-weight:300;
 		color:#666;
 		border-bottom:1px solid #eee;
+		dt {
+			float:left;
+		}
 		dd {
+			float:right;
 			font-size:14px;
 			font-weight:400;
 			color:#0053a7;
+		}
+		&:after {
+			@extend %clearer;
 		}
 	}
 	.frm_group .date.single {

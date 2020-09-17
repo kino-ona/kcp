@@ -48,7 +48,8 @@
 						<input type="text" id="frm3" placeholder="주생산품을 입력해주세요.">
 					</dd>
 				</dl>
-				
+
+				<!-- 현재사용제품 추가/삭제 -->
 				<dl class="frm_group">
 					<dt><label for="frm4">현재사용제품</label></label></dt>
 					<dd class="inpwrap">
@@ -62,7 +63,6 @@
 						<input type="text" id="" placeholder="사용량(박스단위)을 입력해주세요.">
 						<span class="unit">Case/월</span>
 					</dd>
-					
 					<dd class="total">
 						<div>
 							<p class="tit">구입비용</p>
@@ -70,13 +70,12 @@
 						</div>
 
 						<div class="btn_wrap">
-							<a href="#" class="btn_line">추가</a>
+							<a href="#" class="btn_plus"><span class="a11y">추가</span></a> <!-- 09.17 //-->
 						</div>
 					</dd>
 				</dl>
-
 				<dl class="frm_group">
-					<dt><label for="frm5">현재사용제품</label></label></dt>
+					<!-- <dt><label for="frm5">현재사용제품</label></label></dt> 09.17 삭제 //-->
 					<dd class="inpwrap">
 						<input type="text" id="frm5" placeholder="현재사용제품을 입력해주세요.(필수)">
 					</dd>
@@ -88,7 +87,6 @@
 						<input type="text" id="" placeholder="사용량(박스단위)을 입력해주세요.">
 						<span class="unit">Case/월</span>
 					</dd>
-					
 					<dd class="total">
 						<div>
 							<p class="tit">구입비용</p>
@@ -96,11 +94,12 @@
 						</div>
 
 						<div class="btn_wrap">
-							<a href="#" class="btn_line bk">삭제</a>
-							<a href="#" class="btn_line">추가</a>
+							<a href="#" class="btn_delete"><span class="a11y">삭제</span></a> <!-- 09.17 //-->
+							<!-- <a href="#" class="btn_plus"><span class="a11y">추가</span></a> //-->
 						</div>
 					</dd>
 				</dl>
+				<!--// 현재사용제품 추가/삭제 -->
 
 				<dl class="frm_group">
 					<dt><label for="frm6">사용처 및 용도 <span class="required"><span class="a11y">필수</span></span></label></label></dt>
@@ -120,7 +119,8 @@
 					</dd>
 					<!--// 09.10 -->
 				</dl>
-
+				
+				<!-- 신청제품 추가/삭제 -->
 				<dl class="frm_group">
 					<dt><label for="frm10">신청제품 <span class="required"><span class="a11y">필수</span></span></label>
 						<a href="#" class="btn_list-down">신청가능 리스트 다운로드</a>
@@ -139,7 +139,7 @@
 									<p class="name">크리넥스 셀 방향제 전용용기</p>
 									<p class="qty">100 Case</p>
 									<div class="btn_wrap">
-										<a href="#" class="btn_line">추가</a>
+										<a href="#" class="btn_plus"><span class="a11y">추가</span></a> <!-- 09.17 //-->
 									</div>
 								</li>
 							</ul>
@@ -159,14 +159,15 @@
 									<p class="name">크리넥스 셀 방향제 전용용기</p>
 									<p class="qty">100 Case</p>
 									<div class="btn_wrap">
-										<a href="#" class="btn_line bk">삭제</a>
-										<a href="#" class="btn_line">추가</a>
+										<a href="#" class="btn_delete"><span class="a11y">삭제</span></a> <!-- 09.17 //-->
+										<a href="#" class="btn_plus"><span class="a11y">추가</span></a> <!-- 09.17 //-->
 									</div>
 								</li>
 							</ul>
 						</div>
 					</dd>
 				</dl>
+				<!--// 신청제품 추가/삭제 -->
 
 				<dl class="frm_group">
 					<dt><label for="frm10">성공시 판매예측</label></dt>
