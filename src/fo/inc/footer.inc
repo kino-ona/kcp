@@ -47,17 +47,13 @@
 		</dl>
 		<dl class="frm_group">
 			<dt><label for="frm5">휴대폰번호 <span class="required"><span class="a11y">필수</span></span></label></dt>
-			<dd class="mix phone">
-				<select>
-					<option value="">선택</option>
-					<option value="">010</option>
-				</select>
-				<input type="text" id="frm5" value="" required>
+			<dd>
+				<input type="text" id="frm5" value="" placeholder="-를 제외한 숫자만 입력해주세요." required>
 			</dd>
 		</dl>
 		<dl class="frm_group">
 			<dt><label for="frm6">업종 <span class="required"><span class="a11y">필수</span></span></label></dt>
-			<dd class="mix phone">
+			<dd class="mix">
 				<select>
 					<option value="">선택</option>
 					<option value="">업종</option>
