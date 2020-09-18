@@ -79,11 +79,11 @@
           <div class="inpwrap email">
             <p><input type="text" id="cs4" value="" placeholder=""></p>
             <p><input type="text" placeholder="직접입력"></p>
+						<select class="sel_email">
+							<option>이메일 선택</option>
+							<option>naver.com</option>
+						</select>
           </div>
-          <select class="select_email">
-            <option>이메일 선택</option>
-            <option>naver.com</option>
-          </select>
         </dd>
       </dl>
       <dl class="frm_group">
@@ -95,31 +95,31 @@
       <dl class="frm_group">
         <dt><label>업종 <span class="required"><span class="a11y">필수</span></span></label></dt>
         <dd class="mix_half">
-          <select class="select_business">
-            <option>업종선택</option>
-            <option>산업체-중공업</option>
-            <option>산업체-클린룸</option>
-            <option>산업체-유통서비스</option>
-            <option>산업체-기타</option>
-            <option>푸드세그먼트</option>
-            <option>교육/연구기관</option>
-            <option>의료기관</option>
-            <option>다중이용시설</option>
-            <option>빌딩</option>
-            <option>호텔 및 숙박</option>
-            <option>농축수산업</option>
-            <option>정부기관</option>
-            <option>비영리기관</option>
-            <option>기타</option>
-          </select>
           <div class="inpwrap business">
+						<select class="sel_business">
+							<option>업종선택</option>
+							<option>산업체-중공업</option>
+							<option>산업체-클린룸</option>
+							<option>산업체-유통서비스</option>
+							<option>산업체-기타</option>
+							<option>푸드세그먼트</option>
+							<option>교육/연구기관</option>
+							<option>의료기관</option>
+							<option>다중이용시설</option>
+							<option>빌딩</option>
+							<option>호텔 및 숙박</option>
+							<option>농축수산업</option>
+							<option>정부기관</option>
+							<option>비영리기관</option>
+							<option>기타</option>
+						</select>
             <p><input type="text" value="" placeholder="기타"></p>
           </div>
           <p class="warn">제품을 판매, 설치할 곳의 업종을 선택해주세요.</p>
         </dd>
       </dl>
       <dl class="frm_group">
-        <dt><label>답변형식</label></dt>
+        <dt><label>답변형식 <span class="required"></span></label></dt>
         <dd class="radiowrap">
           <input type="radio" id="rd01" name="radio"><label for="rd01">전화답변</label>
           <input type="radio" id="rd02" name="radio"><label for="rd02">이메일답변</label>
@@ -130,7 +130,7 @@
         <dd class="mix_half">
           <div class="inpwrap">
             <!-- <p><input type="text" class="datepicker" value="" readonly></p> -->
-            <select class="select_month">
+            <select class="sel_month">
               <option>월 선택</option>
               <option>1월</option>
               <option>2월</option>
@@ -145,7 +145,7 @@
               <option>11월</option>
               <option>12월</option>
             </select>
-            <select class="select_day">
+            <select class="sel_day">
               <option>일 선택</option>
               <option>1일</option>
               <option>2일</option>
@@ -179,7 +179,7 @@
               <option>30일</option>
               <option>31일</option>
             </select>
-            <select class="select_time">
+            <select class="sel_time">
               <option>시간 선택</option>
               <option>9:00 - 10:00</option>
               <option>10:00 - 11:00</option>

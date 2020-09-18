@@ -978,9 +978,13 @@
 .custom {	
 	.idx-page_head {
 		margin-bottom: 65px;
+		h2 {			
+			font-weight: 500;
+		}
 	}
 	._agr {
 		.chkwrap {
+			margin-bottom: 10px;
 			span {
 				font-size: 12px;
 				color: #00a8e2;
@@ -989,8 +993,7 @@
 				// vertical-align: -moz-middle-with-baseline;
 			}
 			label {
-				font-weight: 700;
-				margin: 27px 0;
+				margin: 30px 0;
 			}
 		}
 		.inframe {
@@ -998,7 +1001,7 @@
 			height: 214px;
 			resize: none;
 			font-size: 14px;
-			line-height: 35px;
+			line-height: 26px;
 			overflow-y: scroll;
 		}
 	}
@@ -1012,6 +1015,9 @@
 		border:1px solid #f2f4f6;
 		font-size:16px;
 		line-height:20px;
+	}
+	textarea {
+		padding: 27px 20px;		
 	}
 	.radiowrap input[type=radio] + label {
 		background-position: 0 11px;
@@ -1050,47 +1056,41 @@
 			@extend %clearer;
 		}
 		.warn {
-			position: absolute;
-			top: 48px;
-			left: 0;
-			line-height: 29px;
+			line-height: 30px;
 			font-size: 14px;
 		}
 		.mix_half { 
-			display: flex;
-			position: relative;
 			.email {
 				&:before {
-					left: calc(50% - 8px);
+					left: 307px;
+					top: 18%;
 				}
 				p {
 					width: 300px;
 					margin-left: 32px;
 				}	
 			}				
-			.select_email {
+			.sel_email {
 				width: 300px;
 				margin-left: 8px;
 			}
 			.business {
-				margin-bottom: 46px;
 				p {
-					width: 300px;
+					width: 322px;
 				}
 			}	
-			.select_business {
+			.sel_business {
 				width: 300px;				
-				margin-right: 8px;
 			}
-			.select_month {
+			.sel_month {
 				width: 157px;
 				margin-right: 8px;
 			}
-			.select_day {
+			.sel_day {
 				width: 157px;
 				margin-right: 8px;
 			}
-			.select_time {
+			.sel_time {
 				width: 300px;
 			}
 		}		
@@ -1115,6 +1115,7 @@
 		text-align: center;
 		.btn {
 			font-size: 18px;
+			font-weight: 700;
 			padding-left: 72px;
 			padding-right: 72px;
 			height: 70px;
