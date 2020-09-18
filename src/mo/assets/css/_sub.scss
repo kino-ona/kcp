@@ -28,7 +28,7 @@
 		}
 		&._view {
 			background-image:linear-gradient(to bottom, #008dcf, #006fba);
-			@include transition(.2s, ease-in);
+			@include transition(.3s, ease-in);
 			h2 { color:#fff; }
 			.head {
 				.btn_back {
@@ -927,6 +927,7 @@
 				dd {
 					font-size:12px;
 					font-weight:300;
+					word-break: break-all;
 				}
 				ul {
 					margin-bottom:30px;

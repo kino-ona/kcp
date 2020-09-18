@@ -1019,7 +1019,7 @@ h1.logo {
 		}
 	}
 	.copyr {
-		padding: 20px 55px 70px;
+		padding: 20px 55px 80px;
 		border-top:1px solid #4b4b4b;
 		p {
 			font-size: 12px;
@@ -1668,7 +1668,7 @@ input.calendar {
 .ui-datepicker .ui-datepicker-prev,
 .ui-datepicker .ui-datepicker-next {
 	position: absolute;
-	top: 8px;
+	top: 10px;
 	width: 28px;
 	height: 28px;
 	z-index: 10;
@@ -1720,12 +1720,20 @@ input.calendar {
 	}
 }
 .ui-datepicker .ui-datepicker-title select {
-	font-size: 10px;
-	margin: 1px 0;
+	font-size: 15px;
+	margin: 0;
+	padding:6px 10px;
+	border:1px solid #ddd;
+	background-position:right 10px center;
 }
 .ui-datepicker select.ui-datepicker-month,
 .ui-datepicker select.ui-datepicker-year {
-	width: 45%;
+	width: 80px;
+	text-align: center;
+}
+.ui-datepicker select.ui-datepicker-month {
+	width: 60px;
+	margin-left:10px;
 }
 .ui-datepicker table {
 	width: 100%;

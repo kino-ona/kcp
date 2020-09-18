@@ -2,6 +2,11 @@
 @import "mixins";
 
 @media screen and (max-width: 1440px) {
+	.header  {
+		.row {
+			margin:0 40px;
+		}
+	}
 	.cust_inquiry {
 		.head {
 			width:calc((100% - 57vw) / 2);
