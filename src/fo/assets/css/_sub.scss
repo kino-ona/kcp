@@ -413,7 +413,7 @@
 		display: inline-block;
 		font-size: 40px;
 		line-height: 1;
-		font-weight: 700;
+		font-weight: 500;
 		vertical-align: middle;
 		margin-bottom: 30px;
 	}
@@ -487,16 +487,6 @@
 	.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
 		background:#000;
 	}
-}
-.slide-bg {
-	position: absolute;
-	top: 654px;
-	left: 0;
-	right: 0;
-	z-index: -1;
-	background-color: #eeeeee;
-	height: 227px;
-	width: 100%;
 }
 .board_list ul {
 	padding-bottom: 80px;
@@ -978,9 +968,6 @@
 .custom {	
 	.idx-page_head {
 		margin-bottom: 65px;
-		h2 {			
-			font-weight: 500;
-		}
 	}
 	._agr {
 		.chkwrap {
