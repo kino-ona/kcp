@@ -31,38 +31,54 @@
 
     <div class="row _agr">
       <p class="chkwrap">
-        <input type="checkbox" name="chkagr" id="chkagr"><label for="chkagr">개인정보 수집 및 이용 동의 <span>(필수)</span></label>
+        개인정보 수집 및 이용 동의 <span>(필수)</span></label>
       </p>
       <div class="inscroll">
-        <iframe src="./pc/views/terms/termslayer03.html" class="inframe"></iframe>
+        <textarea class="inframe">[자세한 내용은 개인정보 취급방침을 확인해 보시기 바랍니다.]
+개인정보의 수집 및 이용 목적
+회사는 제품 상담, 서비스 신청 등등을 위해 아래와 같은 개인정보를 수집하고 있습니다.
+- 수집항목 : 성명, 전화번호(유선/핸드폰 고객 선택), 주소, 이메일, 회사명, 접속 IP 정보
+- 개인정보 수집방법 : 홈페이지(응신엽서, 구매상담)
+개인정보의 수집 및 이용 목적
+회사는 수집한 개인정보를 다음의 목적을 위해 활용합니다.
+- 고객 상담 및 원활한 의사 소통을 위한 경로 확보
+- 자료 제공 및 상품 배송등의 서비스 이행을 위한 정보 수집
+- Target Marketing 및 무료 샘플링 등 개인 맞춤 서비스 제공
+개인정보의 보유 및 이용 기간
+원칙적으로, 개인정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체 없이 파기합니다.
+귀하께서 제공한 정보는 내부 규정에 따라 그 보존기간을 5년으로 하고 있으며, 이용자의 요청에 의해 삭제될 수 있습니다.</textarea>
+        <!-- <iframe src="./pc/views/terms/termslayer03.html" class="inframe" name="inframe" width="100%" height="214px" frameborder="0" scrolling="yes"></iframe> -->
       </div>
+      <p class="chkwrap">
+        <input type="checkbox" name="chkagr" id="chkagr"><label for="chkagr">개인정보 수집 및 이용에 동의합니다.</label>
+      </p>
     </div>
-
+    <hr>
     <div class="counsel_wrap">
       <dl class="frm_group">
-        <dt><label for="frm1">문의제품 <span class="required"><span class="a11y">필수</span></span></label></dt>
+        <dt><label for="cs1">문의제품 <span class="required"><span class="a11y">필수</span></span></label></dt>
         <dd class="inpwrap">
-          <input type="text" id="frm1" value="" placeholder="문의하실 제품명 또는 제품군을 입력해주세요.">
+          <input type="text" id="cs1" value="" placeholder="문의하실 제품명 또는 제품군을 입력해주세요.">
         </dd>
       </dl>
       <dl class="frm_group">
-        <dt><label for="frm2">기업정보 <span class="required"><span class="a11y">필수</span></span></label></dt>
+        <dt><label for="cs2">기업정보 <span class="required"><span class="a11y">필수</span></span></label></dt>
         <dd class="inpwrap">
-          <input type="text" id="frm2" value="" placeholder="기업정보를 입력해주세요.">
+          <input type="text" id="cs2" value="" placeholder="기업정보를 입력해주세요.">
         </dd>
       </dl>
       <dl class="frm_group">
-        <dt><label for="frm3">담당자명 <span class="required"><span class="a11y">필수</span></span></label></dt>
+        <dt><label for="cs3">담당자명 <span class="required"><span class="a11y">필수</span></span></label></dt>
         <dd class="inpwrap">
-          <input type="text" id="frm3" value="" placeholder="담당자 성함을 입력해주세요.">
+          <input type="text" id="cs3" value="" placeholder="담당자 성함을 입력해주세요.">
         </dd>
       </dl>
       <dl class="frm_group">
-        <dt><label for="frm4">이메일 <span class="required"><span class="a11y">필수</span></span></label></dt>
+        <dt><label for="cs4">이메일 <span class="required"><span class="a11y">필수</span></span></label></dt>
         <dd class="mix_half">
           <div class="inpwrap email">
-            <p><input type="text" id="frm4" value="" placeholder=""></p>
-            <p><input type="text" id="" placeholder="직접입력"></p>
+            <p><input type="text" id="cs4" value="" placeholder=""></p>
+            <p><input type="text" placeholder="직접입력"></p>
           </div>
           <select class="select_email">
             <option>이메일 선택</option>
@@ -71,9 +87,9 @@
         </dd>
       </dl>
       <dl class="frm_group">
-        <dt><label for="frm5">휴대폰번호 <span class="required"><span class="a11y">필수</span></span></label></dt>
+        <dt><label for="cs5">휴대폰번호 <span class="required"><span class="a11y">필수</span></span></label></dt>
         <dd class="inpwrap">
-          <input type="text" id="frm5" value="" placeholder="-를 제외한 숫자만 입력해주세요.">
+          <input type="text" id="cs5" value="" placeholder="-를 제외한 숫자만 입력해주세요.">
         </dd>
       </dl>
       <dl class="frm_group">
@@ -97,13 +113,13 @@
             <option>기타</option>
           </select>
           <div class="inpwrap business">
-            <p><input type="text" id="" value="" placeholder="기타"></p>
+            <p><input type="text" value="" placeholder="기타"></p>
           </div>
           <p class="warn">제품을 판매, 설치할 곳의 업종을 선택해주세요.</p>
         </dd>
       </dl>
       <dl class="frm_group">
-        <dt><label for="frm7">답변형식</label></dt>
+        <dt><label>답변형식</label></dt>
         <dd class="radiowrap">
           <input type="radio" id="rd01" name="radio"><label for="rd01">전화답변</label>
           <input type="radio" id="rd02" name="radio"><label for="rd02">이메일답변</label>
@@ -114,7 +130,7 @@
         <dd class="mix_half">
           <div class="inpwrap">
             <!-- <p><input type="text" class="datepicker" value="" readonly></p> -->
-            <select class="">
+            <select class="select_month">
               <option>월 선택</option>
               <option>1월</option>
               <option>2월</option>
@@ -129,21 +145,51 @@
               <option>11월</option>
               <option>12월</option>
             </select>
-            <select class="">
+            <select class="select_day">
               <option>일 선택</option>
               <option>1일</option>
               <option>2일</option>
               <option>3일</option>
               <option>4일</option>
               <option>5일</option>
+              <option>6일</option>
+              <option>7일</option>
+              <option>8일</option>
+              <option>9일</option>
+              <option>10일</option>
+              <option>11일</option>
+              <option>12일</option>
+              <option>13일</option>
+              <option>14일</option>
+              <option>15일</option>
+              <option>16일</option>
+              <option>17일</option>
+              <option>18일</option>
+              <option>19일</option>
+              <option>20일</option>
+              <option>21일</option>
+              <option>22일</option>
+              <option>23일</option>
+              <option>24일</option>
+              <option>25일</option>
+              <option>26일</option>
+              <option>27일</option>
+              <option>28일</option>
+              <option>29일</option>
+              <option>30일</option>
+              <option>31일</option>
             </select>
-            <select class="">
+            <select class="select_time">
               <option>시간 선택</option>
               <option>9:00 - 10:00</option>
               <option>10:00 - 11:00</option>
               <option>11:00 - 12:00</option>
               <option>12:00 - 13:00</option>
               <option>13:00 - 14:00</option>
+              <option>14:00 - 15:00</option>
+              <option>15:00 - 16:00</option>
+              <option>16:00 - 17:00</option>
+              <option>17:00 - 18:00</option>
             </select>
           </div>
         </dd>

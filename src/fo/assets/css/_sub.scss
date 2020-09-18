@@ -974,14 +974,32 @@
 	}
 }
 
-//custom/counsel
+// custom/counsel
 .custom {	
+	.idx-page_head {
+		margin-bottom: 65px;
+	}
 	._agr {
-		label span {
-			color: #00a8e2;
+		.chkwrap {
+			span {
+				font-size: 12px;
+				color: #00a8e2;
+				vertical-align: baseline;
+				// vertical-align: -webkit-baseline-middle;
+				// vertical-align: -moz-middle-with-baseline;
+			}
+			label {
+				font-weight: 700;
+				margin: 27px 0;
+			}
 		}
-		iframe {
-
+		.inframe {
+			width: 100%;
+			height: 214px;
+			resize: none;
+			font-size: 14px;
+			line-height: 35px;
+			overflow-y: scroll;
 		}
 	}
 	.counsel_wrap {
@@ -995,10 +1013,13 @@
 		font-size:16px;
 		line-height:20px;
 	}
+	.radiowrap input[type=radio] + label {
+		background-position: 0 11px;
+	}
 	hr {
 		width: 100%;
 		height: 2px;
-		margin: 24px 0;
+		margin-bottom: 40px;
 	}
 	.frm_group {
 		width: 100%;
@@ -1015,13 +1036,15 @@
 		}
 		dt {
 			position: relative;
-			width:110px;
+			width:130px;
 		}
 		dd:not(.mix_half) {
 			width: 630px;
 		}
-		select{
+		select {
 			margin-right:0;
+			height: 40px;
+			box-sizing: border-box;
 		}
 		&:after {
 			@extend %clearer;
@@ -1048,20 +1071,27 @@
 			.select_email {
 				width: 300px;
 				margin-left: 8px;
-				height: 40px;
-				box-sizing: content-box;
 			}
 			.business {
 				margin-bottom: 46px;
 				p {
 					width: 300px;
-					margin-left: 8px;
 				}
 			}	
 			.select_business {
+				width: 300px;				
+				margin-right: 8px;
+			}
+			.select_month {
+				width: 157px;
+				margin-right: 8px;
+			}
+			.select_day {
+				width: 157px;
+				margin-right: 8px;
+			}
+			.select_time {
 				width: 300px;
-				height: 40px;
-				box-sizing: content-box;
 			}
 		}		
 		.chkwrap {
@@ -1073,25 +1103,21 @@
 		}
 		textarea {
 			width: 1070px;
+			resize: none;
 		}
 	}
 	.frm_group + .frm_group {
 		margin-top: 15px;
 	}
-	.etc {
-		position:relative;
-		float:left;
-		width:calc((100% - 47vw) / 2);
-		height:100%;
-	}
 	.btn_wrap{
 		display: block;
 		width: 100%;
 		text-align: center;
-	}
-	.btn {
-		font-size: 18px;
-		width: 240px;
-		height: 70px;
+		.btn {
+			font-size: 18px;
+			padding-left: 72px;
+			padding-right: 72px;
+			height: 70px;
+		}
 	}
 } 
