@@ -395,7 +395,7 @@
 		}
 	}
 } 
-/** fo/introduction/index **/
+// introduction/index
 .slide-bg {
 	position: absolute;
 	top: 654px;
@@ -973,3 +973,125 @@
 		}
 	}
 }
+
+//custom/counsel
+.custom {	
+	._agr {
+		label span {
+			color: #00a8e2;
+		}
+		iframe {
+
+		}
+	}
+	.counsel_wrap {
+		margin-bottom: 60px;
+	}
+	input[type=text], input[type=password], input[type=number], input[type=tel], input[type=email], textarea {
+		height:40px;
+		padding:9px 10px;
+		background-color:#f2f4f6;
+		border:1px solid #f2f4f6;
+		font-size:16px;
+		line-height:20px;
+	}
+	hr {
+		width: 100%;
+		height: 2px;
+		margin: 24px 0;
+	}
+	.frm_group {
+		width: 100%;
+		margin-top:15px;
+		margin-bottom:0;
+		&:first-child {
+			margin-top:0;
+		}
+		label {
+			line-height: 40px;
+		}
+		dt, dd {
+			float:left;
+		}
+		dt {
+			position: relative;
+			width:110px;
+		}
+		dd:not(.mix_half) {
+			width: 630px;
+		}
+		select{
+			margin-right:0;
+		}
+		&:after {
+			@extend %clearer;
+		}
+		.warn {
+			position: absolute;
+			top: 48px;
+			left: 0;
+			line-height: 29px;
+			font-size: 14px;
+		}
+		.mix_half { 
+			display: flex;
+			position: relative;
+			.email {
+				&:before {
+					left: calc(50% - 8px);
+				}
+				p {
+					width: 300px;
+					margin-left: 32px;
+				}	
+			}				
+			.select_email {
+				width: 300px;
+				margin-left: 8px;
+				height: 40px;
+				box-sizing: content-box;
+			}
+			.business {
+				margin-bottom: 46px;
+				p {
+					width: 300px;
+					margin-left: 8px;
+				}
+			}	
+			.select_business {
+				width: 300px;
+				height: 40px;
+				box-sizing: content-box;
+			}
+		}		
+		.chkwrap {
+			margin-bottom:15px;
+			input[type=checkbox] + label {
+				padding-left:25px;
+				font-size:14px;
+			}
+		}
+		textarea {
+			width: 1070px;
+		}
+	}
+	.frm_group + .frm_group {
+		margin-top: 15px;
+	}
+	.etc {
+		position:relative;
+		float:left;
+		width:calc((100% - 47vw) / 2);
+		height:100%;
+	}
+	.btn_wrap{
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	.btn {
+		font-size: 18px;
+		width: 240px;
+		height: 70px;
+	}
+} 
