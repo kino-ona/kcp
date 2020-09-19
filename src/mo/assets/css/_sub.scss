@@ -2491,3 +2491,105 @@
 		background-color:#eee;
 	}
 }
+
+// brand
+.brand {
+	&_info {
+		position:relative;
+		padding:15px 30px 0;
+		background-image:linear-gradient(to bottom, #006fba, #0053a7 calc(100% - 54px), #fff calc(100% - 54px));
+		.logo {
+			height:22px;
+			margin-bottom:20px;
+			img {
+				height:100%;
+			}
+		}
+		figure {
+			margin-top:15px;
+			text-align:center;
+			img {
+				max-height:155px;
+			}
+		}
+		.item_link {
+			margin-top:30px;
+		}
+		&.kleenex {
+			background-image:linear-gradient(to bottom, #006fba, #0053a7 calc(100% - 66px), #fff calc(100% - 66px));
+		}
+		&.kleenguard {
+			background-image:linear-gradient(to bottom, #006fba, #0053a7 calc(100% - 48px), #fff calc(100% - 48px));
+		}
+		&.wypall {
+			background-image:linear-gradient(to bottom, #006fba, #0053a7 calc(100% - 42px), #fff calc(100% - 42px));
+		}
+		&.scott .logo { height:27px; }
+		
+		// sub
+		&.sub {
+			border-bottom:3.25rem solid #fff;
+			background-image:linear-gradient(to bottom, #006fba, #0053a7);
+			figure {
+				position:absolute;
+				right:0;
+				bottom:-3.25rem;
+				width:115px;
+			}
+			.desc {
+				padding:5px 0 10px;
+			}
+			.item_link {
+				margin-top:20px;
+			}
+		}
+	}
+	.desc {
+		font-size:12px;
+		font-weight:300;
+		color:#fff;
+	}
+	.item_link {
+		padding-bottom:15px;
+		font-size:0;
+		li {
+			display:inline-block;
+			margin:0 .75rem .75rem 0;
+			&:last-of-type {
+				margin-bottom:0;
+			}
+		}
+		a {
+			display:block;
+			padding:0 9px;
+			font-size:13px;
+			font-weight:500;
+			line-height:25px;
+			color:#fff;
+			background-color:#0c479b;
+			&:after {
+				content:'';
+				display:inline-block;
+				width:6px;
+				height:9px;
+				margin:-4px 0 0 5px;
+				vertical-align:middle;
+				background: {
+					image:url(../images/icon/ico_arr-wh.png);
+					position:0 0;
+					size:cover;
+				}
+			}
+		}
+	}
+	.tab_navi {
+		margin-bottom:20px;
+		padding:0 20px;
+		li {
+			width:auto;
+			a {
+				color:#999;
+			}
+		}
+	}
+}

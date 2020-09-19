@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	@@include('../inc/pagehead.inc',{
+		"webroot":".."
+	})
+</head>
+<body>
+<div class="skipnavigation"><a href="#container">본문 바로가기</a></div>
+<!-- header -->
+@@include('../inc/header.inc',{
+	"headtype":"subhead _view",
+	"pagetitle":"브랜드"
+})
+<!-- //header -->
+
+<div class="wrap">
+	<!-- container -->
+	<div class="container brand">
+		<!-- 브랜드 소개 -->
+		<section class="brand_info sub">
+			<p class="desc">막힘없이 풀리는 국민안심 화장지</p>
+			<h2 class="logo"><img src="../assets/images/brand/logo_kleenex-s02.png" alt="크리넥스 에어셀 점보롤 화장지"></h2>
+			<ul class="item_link">
+				<li><a href="#">제품바로가기</a></li>
+			</ul>
+			<figure><img src="../assets/images/brand/img_kleenex-s02.png" alt=""></figure>
+		</section>
+
+		<!-- tab -->
+		<div class="tab_wrap">
+			<div class="tab_navi">
+				<ul>
+					<li class="active"><a href="#">물풀림성</a></li> <!-- 활성화 .active -->
+					<li><a href="#">에어셀 소개</a></li>
+					<li><a href="#">동영상 라이브러리</a></li>
+				</ul>
+			</div>
+			<div class="tab_cont">
+				<div class="content active">물풀림성</div> <!-- 활성화 .active -->
+				<div class="content">에어셀 소개</div>
+				<div class="content">동영상 라이브러리</div>
+			</div>
+		</div>
+
+	</div>
+	<!--// container -->
+</div>
+<!--// wrap -->
+
+<!-- footer -->
+@@include('../inc/footer.inc',{
+	"webroot2":"..",
+	"etctype":""
+})
+<!-- //footer -->
+</body>
+</html>

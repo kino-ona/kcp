@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	@@include('../inc/pagehead.inc',{
+		"webroot":".."
+	})
+</head>
+<body>
+<div class="skipnavigation"><a href="#container">본문 바로가기</a></div>
+<!-- header -->
+@@include('../inc/header.inc',{
+	"headtype":"subhead _view",
+	"pagetitle":"브랜드"
+})
+<!-- //header -->
+
+<div class="wrap">
+	<!-- container -->
+	<div class="container brand">
+		<!-- 브랜드 소개 -->
+		<section class="brand_info sub">
+			<p class="desc">막힘없이 풀리는 국민안심화장지</p>
+			<h2 class="logo"><img src="../assets/images/brand/logo_kleenex-s03.png" alt="크리넥스 드라이셀"></h2>
+			<ul class="item_link">
+				<li><a href="#">라인업</a></li>
+			</ul>
+			<figure><img src="../assets/images/brand/img_kleenex-s03.png" alt=""></figure>
+		</section>
+		<!-- tab -->
+		<div class="tab_wrap">
+			<div class="tab_navi">
+				<ul>
+					<li class="active"><a href="#">드라이셀이란</a></li> <!-- 활성화 .active -->
+					<li><a href="#">제품특장점</a></li>
+					<li><a href="#">광고</a></li>
+				</ul>
+			</div>
+			<div class="tab_cont">
+				<div class="content active">드라이셀이란</div> <!-- 활성화 .active -->
+				<div class="content">제품특장점</div>
+				<div class="content">광고</div>
+			</div>
+		</div>
+
+	</div>
+	<!--// container -->
+</div>
+<!--// wrap -->
+
+<!-- footer -->
+@@include('../inc/footer.inc',{
+	"webroot2":"..",
+	"etctype":""
+})
+<!-- //footer -->
+</body>
+</html>
