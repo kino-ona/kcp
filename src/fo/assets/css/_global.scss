@@ -335,6 +335,7 @@ hr {
 	&_wrap {
 		display:flex;
 		margin-bottom:40px;
+		text-align: center;
 		&.unset {
 			display:block;
 			.btn {
@@ -359,6 +360,7 @@ hr {
 				line-height:50px;
 			}
 			&.max {
+				max-width:240px;
 				height:70px;
 				font-size:18px;
 				font-weight:700;
@@ -446,7 +448,7 @@ hr {
       background: {
         image: url(../images/common/radio_off.png);
         repeat: no-repeat;
-        size:1.75rem;
+        size:18px;
         position: 0 6px;
       }
 			span {
@@ -2202,5 +2204,3 @@ input.calendar {
 		}
 	}
 }
-
-@import "response-global";

@@ -112,3 +112,52 @@
 @media screen and (max-width: 1220px) {
 	.cust_inquiry {display: none;}
 }
+
+@media screen and (max-width: 1025px) {
+	html, body {
+		min-width:100%;
+	}
+	.header.fixed {
+		.row {
+			padding-left:40px;
+			padding-right:40px;
+		}
+	}
+	.container {
+		max-width:100%;
+	}
+	.footer .row {
+		.col {
+			width:25%;
+		}
+	}
+	.radiowrap {
+		input[type=radio] + label {
+			padding-left:35px;
+		}
+	}
+	.custom {
+		.frm_group {
+			.mix_half {
+				.email {
+					&:before {
+						left:38%;
+					}
+					p {
+						width: inherit;
+					}
+					.sel_email {
+						width: inherit;
+					}
+				}
+			}
+			textarea {
+				width:100%;
+			}
+		}
+	}
+	.cust_q .btn_wrap {
+		margin-left:0;
+		margin-right:0;
+	}
+}
