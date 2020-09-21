@@ -358,7 +358,8 @@
 					position: absolute;
 					top:50%;
 					left:50%;
-					width:100%;
+					// width:100%;
+					max-width:120%;
 					@include transform(translate(-50%, -50%));
 				}
 			}
@@ -596,3 +597,15 @@
 	font-size:14px;
 	font-weight:300;
 } //.help 
+
+// tab
+.tab {
+	&_cont {
+		.content {
+			display:none;
+			&.active {
+				display:block;
+			}
+		}
+	}
+}
