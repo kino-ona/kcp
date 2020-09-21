@@ -280,38 +280,40 @@
           <textarea></textarea>
         </dd>
       </dl>
-    </div><!--// counsel_wrap -->
+    </div>
 
     <div class="btn_wrap user">
       <button onclick="layerOpen('alert1')" class="btn max cancel">취소</button>
       <button onclick="layerOpen('alert2')" class="btn max primary">구매문의하기</button>
     </div>
 
-		<!-- alert popups -->
-		<div class="layer_body popup" id="alert1" aria-hidden="true" role="dialog">
-			<div class="layer_wrap">
-				<div class="layer_cont alert">
-					<p>문의를 취소하시겠습니까?</p>
-				</div>
-				<div class="btn_wrap">
-					<button onclick="layerClose('alert1')" class="btn btn_cancel">취소</button>
-					<button onclick="layerClose('alert1')" class="btn btn_confirm">확인</button>
-				</div>
-			</div>
-		</div>
+  </div>
+  <!--// container -->  
+  
+  <!-- alert popups -->
+  <div class="layer_body popup" id="alert1" aria-hidden="true" role="dialog">
+    <div class="layer_wrap">
+      <div class="layer_cont alert">
+        <p>문의를 취소하시겠습니까?</p>
+      </div>
+      <div class="btn_wrap">
+        <button onclick="layerClose('alert1')" class="btn btn_cancel">취소</button>
+        <button onclick="layerClose('alert1')" class="btn btn_confirm">확인</button>
+      </div>
+    </div>
+  </div>
 
-		<div class="layer_body popup" id="alert2" aria-hidden="true" role="dialog">
-			<div class="layer_wrap">
-				<div class="layer_cont alert">
-					<p>모든 항목을 빠짐없이<br>입력/선택 해주세요.</p>
-				</div>
-				<div class="btn_wrap">
-					<button onclick="layerClose('alert2')" class="btn btn_confirm">확인</button>
-				</div>
-			</div>
-		</div>
+  <div class="layer_body popup" id="alert2" aria-hidden="true" role="dialog">
+    <div class="layer_wrap">
+      <div class="layer_cont alert">
+        <p>모든 항목을 빠짐없이<br>입력/선택 해주세요.</p>
+      </div>
+      <div class="btn_wrap">
+        <button onclick="layerClose('alert2')" class="btn btn_confirm">확인</button>
+      </div>
+    </div>
+  </div>
 
-	</div>
 </div>
 <!--// wrap -->
 

@@ -1729,7 +1729,7 @@ h1.logo {
 	z-index: 100;
 	top:50%;
 	left:50%;
-	width:calc(100% - 80px);
+	width:480px;
 	background-color: #fff;
 	opacity: 0;
 	@include transform(translate(-50%, -50%));
@@ -1748,7 +1748,16 @@ h1.logo {
 		}
 	}
 	.btn_wrap {
+		width: 100%;
 		margin-bottom:0;
+		display: flex;
+		.btn {
+			flex: 1;
+			margin-left: 0;
+			font-size: 20px;
+			font-weight: 700;
+			line-height: 70px;
+		}
 	}
 	.btn_confirm {
 		background-color:#0053a7;
@@ -1802,11 +1811,12 @@ h1.logo {
 		text-align: center;
 	}
 	&.alert {
-		padding:32px 20px;
+		padding: 70px 130px;
 		text-align:center;
 		p {
-			font-size:14px;
-			font-weight:300;
+			white-space: nowrap;
+			font-size: 20px;
+			font-weight: 300;
 		}
 		strong {
 			font-weight: 500;
