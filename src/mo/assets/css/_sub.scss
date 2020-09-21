@@ -2583,13 +2583,17 @@
 		}
 	}
 	.tab_navi {
-		margin-bottom:20px;
-		padding:0 20px;
+		// margin-bottom:20px;
+		padding:0 20px 20px;
 		li {
 			width:auto;
 			a {
 				color:#999;
 			}
 		}
+	}
+	.tab_cont {
+		position: relative;
+		margin-top:-18px;
 	}
 }

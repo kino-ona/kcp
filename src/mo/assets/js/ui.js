@@ -249,6 +249,16 @@ var slideMenuSet = function(){
 			}, 300);
 		}
 	});
+
+	// tab-navi control
+	$('.tab_navi ul li a').click(function(){
+		var tab_id = $(this).attr('data-tab');
+		$('.tab_navi ul li').removeClass('active');
+		$(this).parents('.tab_wrap').find('.content').removeClass('active');
+		$(this).parents('li').addClass('active');
+		$('[data-conts='+ tab_id).addClass('active');
+		slideMenuSet();
+	});
 }
 $(document).ready(function () {
 	if($('.tab_navi').length > 0) slideMenuSet();
