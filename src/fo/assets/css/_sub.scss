@@ -1108,12 +1108,23 @@
 	.layer_body.popup {
 		.layer_wrap {			
 			width: 480px;
+			.layer_cont.alert {
+				padding: 70px 130px;
+				p {
+					white-space: nowrap;
+					font-size: 20px;
+					font-weight: 300;
+				}
+			} 
 			.btn_wrap {
 				width: 100%;
 				display: flex;
 				.btn {
 					flex: 1;
 					margin-left: 0;
+					font-size: 20px;
+					font-weight: 700;
+					line-height: 70px;
 				}
 			}
 		}
