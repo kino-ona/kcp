@@ -1105,13 +1105,26 @@
 			padding-right: 72px;
 		}
 	}
+	.layer_body.popup {
+		.layer_wrap {			
+			width: 480px;
+			.btn_wrap {
+				width: 100%;
+				display: flex;
+				.btn {
+					flex: 1;
+					margin-left: 0;
+				}
+			}
+		}
+	}
 }
 // custom/customer_question
 .cust_q {
 	.figure {
 		margin-bottom: 50px;
 	}
-	.btn_wrap{
+	.btn_wrap.user{
 		display: flex;
 		margin-left: 355px;
 		margin-right: 355px;
