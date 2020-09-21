@@ -15,19 +15,23 @@
 <!-- //header -->
 
 <div class="wrap">
-	<div class="container custom">
+	<div class="container custom cust_q">
     <div class="breadcrumb">
 			<a href="#" class="b_home"><i></i><span class="a11y">home</span></a>
 			<a href="#" class="b_lnk">고객서비스</a>
-			<span class="b_now">제품구매문의</span>
+			<span class="b_now">고객상담</span>
 		</div>
 
 		<div class="idx-page_head">
-      <h2>제품구매문의</h2>
+      <h2>고객상담</h2>
       <div class="desc">
         <p>유한킴벌리 프로페셔널 제품구매를 원하시는 고객님은 구매문의를 해주시면 담당자가 연락하여 상세하게 안내해 드립니다.</p>
       </div>
-		</div>
+    </div>
+
+    <div class="figure">
+      <img src="../assets/images/cust/cust_info.png" alt="상담전화 1588-5332">
+    </div>
 
     <div class="row _agr">
       <p class="chkwrap">
@@ -56,21 +60,9 @@
     <hr>
     <div class="counsel_wrap">
       <dl class="frm_group">
-        <dt><label for="cs1">문의제품 <span class="required"><span class="a11y">필수</span></span></label></dt>
+        <dt><label for="cs3">성명 <span class="required"><span class="a11y">필수</span></span></label></dt>
         <dd class="inpwrap">
-          <input type="text" id="cs1" value="" placeholder="문의하실 제품명 또는 제품군을 입력해주세요.">
-        </dd>
-      </dl>
-      <dl class="frm_group">
-        <dt><label for="cs2">기업정보 <span class="required"><span class="a11y">필수</span></span></label></dt>
-        <dd class="inpwrap">
-          <input type="text" id="cs2" value="" placeholder="기업정보를 입력해주세요.">
-        </dd>
-      </dl>
-      <dl class="frm_group">
-        <dt><label for="cs3">담당자명 <span class="required"><span class="a11y">필수</span></span></label></dt>
-        <dd class="inpwrap">
-          <input type="text" id="cs3" value="" placeholder="담당자 성함을 입력해주세요.">
+          <input type="text" id="cs3" value="" placeholder="이름을 입력해주세요.">
         </dd>
       </dl>
       <dl class="frm_group">
@@ -93,32 +85,6 @@
         <dt><label for="cs5">휴대폰번호 <span class="required"><span class="a11y">필수</span></span></label></dt>
         <dd class="inpwrap">
           <input type="text" id="cs5" value="" placeholder="-를 제외한 숫자만 입력해주세요.">
-        </dd>
-      </dl>
-      <dl class="frm_group">
-        <dt><label>업종 <span class="required"><span class="a11y">필수</span></span></label></dt>
-        <dd class="mix_half">
-          <div class="inpwrap business">
-						<select class="sel_business">
-							<option>업종선택</option>
-							<option>산업체-중공업</option>
-							<option>산업체-클린룸</option>
-							<option>산업체-유통서비스</option>
-							<option>산업체-기타</option>
-							<option>푸드세그먼트</option>
-							<option>교육/연구기관</option>
-							<option>의료기관</option>
-							<option>다중이용시설</option>
-							<option>빌딩</option>
-							<option>호텔 및 숙박</option>
-							<option>농축수산업</option>
-							<option>정부기관</option>
-							<option>비영리기관</option>
-							<option>기타</option>
-						</select>
-            <p><input type="text" value="" placeholder="기타"></p>
-          </div>
-          <p class="warn">제품을 판매, 설치할 곳의 업종을 선택해주세요.</p>
         </dd>
       </dl>
       <dl class="frm_group">
@@ -206,6 +172,7 @@
     </div><!--// counsel_wrap -->
 
     <div class="btn_wrap">
+      <button class="btn max cancel">취소</button>
       <button class="btn max primary">구매문의하기</button>
     </div>
 

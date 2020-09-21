@@ -417,7 +417,7 @@
 		vertical-align: middle;
 		margin-bottom: 30px;
 	}
-	.desc {
+	.desc *{
 		font-weight: 300;
 	}
 }
@@ -968,6 +968,7 @@
 	._agr {
 		.chkwrap {
 			margin-bottom: 10px;
+			font-weight: 300;
 			span {
 				font-size: 12px;
 				color: #00a8e2;
@@ -976,7 +977,7 @@
 				// vertical-align: -moz-middle-with-baseline;
 			}
 			label {
-				margin: 30px 0;
+				margin: 18px 0;
 			}
 		}
 		.inframe {
@@ -1018,6 +1019,7 @@
 			margin-top:0;
 		}
 		label {
+			font-weight: 300;
 			line-height: 40px;
 		}
 		dt, dd {
@@ -1043,6 +1045,9 @@
 			font-size: 14px;
 		}
 		.mix_half { 
+			.inpwrap p {
+				flex: none;
+			}
 			.email {
 				&:before {
 					left: 307px;
@@ -1094,14 +1099,24 @@
 	}
 	.btn_wrap{
 		display: block;
-		width: 100%;
 		text-align: center;
 		.btn {
-			font-size: 18px;
-			font-weight: 700;
 			padding-left: 72px;
 			padding-right: 72px;
-			height: 70px;
 		}
 	}
-} 
+}
+// custom/customer_question
+.cust_q {
+	.figure {
+		margin-bottom: 50px;
+	}
+	.btn_wrap{
+		display: flex;
+		margin-left: 355px;
+		margin-right: 355px;
+		.btn {
+			flex: 1;
+		}
+	}
+}
