@@ -40,8 +40,6 @@ var globalMenuClose = function() {
 var lastSt = 0;
 $(window).scroll(function (e) {
 	var st = $(this).scrollTop();
-	winH = $(window).height();
-	docH = $(document).height();
 
 	if (st > 0) {
 		$('.subhead').addClass('fixed')
@@ -232,7 +230,7 @@ var videoControl = function(){
 var $slidemenu = $('.tab_navi');
 var slideMenuSet = function(){
 	$('.tab_navi ul li').each(function() {
-			if($(this).hasClass('active')){
+		if($(this).hasClass('active')){
 			var $element = $(this);
 			$slidemenu.find('li').removeClass('active');
 			$element.addClass('active');
@@ -246,18 +244,41 @@ var slideMenuSet = function(){
 			$slidemenu.stop().animate({
 				// scrollLeft: myScrollPos - (menuWidth / 2.7)
 				scrollLeft: myScrollPos - (menuWidth / 9)
-			}, 300);
+			}, 0);
 		}
 	});
 
 	// tab-navi control
 	$('.tab_navi ul li a').click(function(){
+		var $element = $(this);
+		var hashOffset = $element.offset().left;
+		var hashWidth = $element.outerWidth(true);
+		var menuScrollLeft = $slidemenu.scrollLeft();
+		var menuWidth = $slidemenu.width();
+		var myScrollPos = hashOffset + (hashWidth / 2) + menuScrollLeft - (menuWidth / 2);
+
 		var tab_id = $(this).attr('data-tab');
 		$('.tab_navi ul li').removeClass('active');
 		$(this).parents('.tab_wrap').find('.content').removeClass('active');
 		$(this).parents('li').addClass('active');
+		$slidemenu.stop().animate({
+			scrollLeft: myScrollPos - (menuWidth / 9)
+		}, 0);
 		$('[data-conts='+ tab_id).addClass('active');
-		slideMenuSet();
+
+		$( 'html, body' ).animate( { scrollTop : 0 }, 400 );
+		return false;
+	});
+
+	$(window).scroll(function (e) {
+		var st = $(this).scrollTop();
+		tabwrap = $('.tab_wrap').offset().top;
+		if (st > tabwrap - 150) {
+			$slidemenu.addClass('fixed');
+		}else {
+			$slidemenu.removeClass('fixed');
+		}
+		lastSt = st;
 	});
 }
 $(document).ready(function () {

@@ -2,6 +2,10 @@
 @import "mixins";
 
 .main {
+	.wrap {
+		margin-top:0;
+		padding-top:0;
+	}
 	.footer {
 		.social{
 			display: block;
