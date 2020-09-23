@@ -74,6 +74,12 @@ function layerClose(layerId){
 		$(window).scrollTop(curPos);
 		isOpen = false;
 	}
+	if($('#' + layerId).find('iframe').length > 0){
+		$('iframe').each(function(index) {
+			$(this).attr('src', $(this).attr('src'));
+			return false;
+		});
+	}
 }
 
 

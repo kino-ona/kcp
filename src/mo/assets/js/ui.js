@@ -285,3 +285,9 @@ $(document).ready(function () {
 	if($('.tab_navi').length > 0) slideMenuSet();
 });
 
+// brand > youtube iframe
+function vodLink(url) {
+	var $url = url;
+	$('.vodpop').find('iframe')[0].src = 'https://www.youtube.com/embed/'+$url+'?rel=0&amp;amp;autoplay=1&amp;amp;loop=1';
+}
+
