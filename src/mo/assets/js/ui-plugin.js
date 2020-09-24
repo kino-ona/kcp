@@ -76,7 +76,9 @@ function layerClose(layerId){
 	}
 	if($('#' + layerId).find('iframe').length > 0){
 		$('iframe').each(function(index) {
-			$(this).attr('src', $(this).attr('src'));
+			var el_src = $(this).attr("src");
+			$(this).attr("src",el_src);
+				
 			return false;
 		});
 	}
