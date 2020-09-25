@@ -273,11 +273,22 @@ var slideMenuSet = function(){
 	$(window).scroll(function (e) {
 		var st = $(this).scrollTop();
 		tabwrap = $('.tab_wrap').offset().top;
-		if (st > tabwrap - 150) {
-			$slidemenu.addClass('fixed');
-		}else {
-			$slidemenu.removeClass('fixed');
+		brndmain = $('.brand_info').outerHeight();
+
+		if(!$('.brand_info').hasClass('sub')) {
+			if (st > brndmain - 150) {
+				$slidemenu.addClass('fixed');
+			}else{
+				$slidemenu.removeClass('fixed');
+			}
+		}else{
+			if (st > tabwrap - 150) {
+				$slidemenu.addClass('fixed');
+			}else{
+				$slidemenu.removeClass('fixed');
+			}
 		}
+
 		lastSt = st;
 	});
 }
