@@ -53,7 +53,12 @@ function layerOpen(layerId){
 		'tabindex': '0'
 	});
 	if($('[role="dialog"]:visible').length <= 1 && isOpen == false) {
-		$('.wrap').css('top',-curPos);
+		if($('#' + layerId).hasClass('layer_full')){
+			$('.wrap').css('top',-curPos);
+			$('#' + layerId).css('top',0);
+		} else {
+			$('.wrap').css('top',-curPos);
+		}
 		isOpen = true
 	}
 	var delay = setTimeout(function(){

@@ -136,37 +136,39 @@
 			<a href="#" class="btn_link">최신</a>
 		</div>
 		<div class="board_wrap">
-			<!-- 최대 5개까지 -->
+			<!-- 최대 5개까지 -->	
 			<ul>
-				<li><a href="#">
+				<li><a href="#" onclick="layerOpen('notiview');return false;">
 					<p class="title">용산지점 관련 프로모션 확인바랍니다.</p>
 					<div class="etc">
 						<p class="type">담당자공지</p>
 						<p class="date">2020.07.31</p>
+						<p class="util"><i class="ico_download"></i></p> <!-- 09.28 첨부파일이 있는 경우 노출 //-->
 					</div>
 				</a></li>
-				<li><a href="#">
+				<li><a href="#" onclick="layerOpen('notiview');return false;">
 					<p class="title">파트너사 혜택이 파트너사 혜택이파트너사 혜택이파트너사 혜택이 강화됩니다.</p>
 					<div class="etc">
 						<p class="type">프로모션</p>
 						<p class="date">2020.07.31</p>
 					</div>
 				</a></li>
-				<li><a href="#">
+				<li><a href="#" onclick="layerOpen('notiview');return false;">
+					<p class="title">크리넥스 센터풀 신제품이 7/2일 출시됩니다.</p>
+					<div class="etc">
+						<p class="type">주요공지</p>
+						<p class="date">2020.07.31</p>
+						<p class="util"><i class="ico_download"></i></p> <!-- 09.28 첨부파일이 있는 경우 노출 //-->
+					</div>
+				</a></li>
+				<li><a href="#" onclick="layerOpen('notiview');return false;">
 					<p class="title">크리넥스 센터풀 신제품이 7/2일 출시됩니다.</p>
 					<div class="etc">
 						<p class="type">주요공지</p>
 						<p class="date">2020.07.31</p>
 					</div>
 				</a></li>
-				<li><a href="#">
-					<p class="title">크리넥스 센터풀 신제품이 7/2일 출시됩니다.</p>
-					<div class="etc">
-						<p class="type">주요공지</p>
-						<p class="date">2020.07.31</p>
-					</div>
-				</a></li>
-				<li><a href="#">
+				<li><a href="#" onclick="layerOpen('notiview');return false;">
 					<p class="title">파트너사 혜택이 강화됩니다.</p>
 					<div class="etc">
 						<p class="type">프로모션</p>
@@ -343,6 +345,28 @@
 		</div>
 
 	</div>
+
+	<!-- 09.28 공지상세보기 팝업 -->
+	<div class="layer_body layer_full notiview" id="notiview" aria-hidden="true" role="dialog">
+		<div class="layer_wrap">
+			<div class="layer_head">
+				<button onclick="layerClose('notiview')" class="layer_close manualfn">닫기</button>
+				<h2 class="layer_title">용산지점 관련 프로모션 확인바랍니다. 용산지점 관련 프로모션 확인바랍니다.</h2>
+				<div class="etc">
+					<p class="type">주요공지</p>
+					<p class="date">2020.07.31</p>
+				</div>
+			</div>
+			<div class="layer_cont">
+				<div class="attach">
+					<a href="#"><i class="ico_pdf"></i>마케팅자료</a>
+					<a href="#"><i class="ico_jpg"></i>마케팅이미지자료</a>
+				</div>
+				layer contents
+			</div>
+		</div>
+	</div>
+	<!--// 09.28 공지상세보기 팝업 -->
 </div>
 <!--// wrap -->
 
@@ -351,6 +375,7 @@
 	"webroot2":"."
 })
 <!-- //footer -->
+
 <script>
 if($('#statswipe').length > 0){ // 신청현황
 	var mainswipe = new Swiper('#statswipe', {

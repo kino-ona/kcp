@@ -250,15 +250,18 @@
 		}
 		.logo {
 			opacity: 0;
-			height:20px;
+			min-height:20px;
 			background: {
 				repeat:no-repeat;
 				position:center 0;
 				size:auto 20px;
 			}
-			&.logo_kleenex {
-				background: {
-					image: url(../images/common/logo_kleenex.png);
+			img {
+				max-height:21px;
+			}
+			&.logo_scott {
+				img {
+					max-height:58px;
 				}
 			}
 		}
@@ -645,6 +648,20 @@
 						&.date {
 							color:#999999;
 						}
+						&.util {
+							.ico_download {
+								display: inline-block;
+								width:11px;
+								height:10px;
+								background: {
+									image:url(../images/icon/icon_download.png);
+									size:11px;
+									repeat:no-repeat;
+									position: 0 0;
+								}
+								vertical-align: middle;
+							}
+						}
 					}
 				}
 			}
@@ -872,5 +889,71 @@
 			font-size:22px;
 			font-weight: 700;
 		}
+	}
+}
+.layer_body.notiview {
+	.layer_head {
+		padding-bottom:15px;
+		.layer_title {
+			height:inherit;
+			padding-bottom:5px;
+			font-size:14px;
+		}
+		.etc {
+			padding:0 23px;
+			&:after {
+				@extend %clearer;
+			}
+			p {
+				float:left;
+				padding-left: 5px;
+				font-size:12px;
+				font-weight: 300;
+				&:before {
+					content: '';
+					display: inline-block;
+					margin-right: 8px;
+					margin-top: -3px;
+					width: 1px;
+					height: 7px;
+					background-color: #eeeeee;
+					vertical-align: middle;
+				}
+				&:first-child:before {display: none;padding-left: 0;}
+			}
+			.type {
+				color:#00a8e2;
+			}
+			.date {
+				color:#999999;
+			}
+		}
+	}
+	.layer_cont {
+		background-color: #f2f4f6;
+	}
+	.attach {
+		margin-bottom:10px;
+		text-align:right;
+		a {
+			color:#000;
+			font-size:12px;
+			font-weight:500;
+		}
+		[class^="ico"] {
+			display:inline-block;
+			width:1.35rem;
+			height:1.35rem;
+			margin:-4px 5px 0;
+			background: {
+				size:100% auto;
+				position:50% 50%;
+				repeat:no-repeat;
+			}
+			vertical-align:middle;
+		}
+		.ico_pdf {background-image:url(../images/icon/ico_pdf.png)}
+		.ico_jpg {background-image:url(../images/icon/ico_jpg.png)}
+		.ico_gif {background-image:url(../images/icon/ico_gif.png)}
 	}
 }
