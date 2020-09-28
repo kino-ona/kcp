@@ -138,7 +138,7 @@
 		<div class="board_wrap">
 			<!-- 최대 5개까지 -->	
 			<ul>
-				<li><a href="#" onclick="layerOpen('notiview');return false;">
+				<li><a href="#" onclick="layerOpen('notiview');return false;"> <!-- 09.28 상세보기팝업 //-->
 					<p class="title">용산지점 관련 프로모션 확인바랍니다.</p>
 					<div class="etc">
 						<p class="type">담당자공지</p>
@@ -361,8 +361,23 @@
 				<div class="attach">
 					<a href="#"><i class="ico_pdf"></i>마케팅자료</a>
 					<a href="#"><i class="ico_jpg"></i>마케팅이미지자료</a>
+					<a href="#"><i class="ico_gif"></i>마케팅자료</a>
+					<a href="#"><i class="ico_jpg"></i>마케팅이미지자료</a>
 				</div>
-				layer contents
+				<div class="conts">
+					회사는 개인정보 보호법 제15조에 따라 당초 수집 목적과 합리적으로 관련된 범위에서 개인정보를 수집한 정황 또는 처리 관행에 비추어 볼 때 
+					개인정보의 추가적인 제공에 대한 예측 가능성이 있는지 여부, 이용자의 이익을 부당하게 침해하는지 여부, 
+					가명처리 또는 암호화 등 안전성 확보에 필요한 조치를 하였는지 여부 등을 고려하여 아래의 경우에 한해 이용자의 동의없이 
+					개인정보를 제공할 수 있습니다. 다만 이 경우에도 목적 달성을 위한 최소한의 정보만을 제공합니다.<br><br>
+					<p>개인정보처리방침이 아래와 같이 일부 변경되어 안내 드리오니 내용 참고하시어 서비스 이용에 불편이 없으시길 바랍니다.</p>
+					<p><img src="./assets/images/dummy/@case_01.jpg" alt=""></p>
+					가명처리 또는 암호화 등 안전성 확보에 필요한 조치를 하였는지 여부 등을 고려하여 아래의 경우에 한해 이용자의 동의없이 
+					개인정보를 제공할 수 있습니다. 다만 이 경우에도 목적 달성을 위한 최소한의 정보만을 제공합니다.<br><br>
+				</div>
+			</div>
+			<div class="btn_wrap">
+				<button onclick="layerClose('popup1')" class="btn btn_cancel">닫기</button>
+				<button onclick="location.href='./custom/notice.html'" class="btn btn_confirm">목록</button>
 			</div>
 		</div>
 	</div>
