@@ -5,7 +5,6 @@
 		"webroot":".."
 	})
 </head>
-<link rel="stylesheet" href="../assets/css/test.css" />
 <body>
 <div class="skipnavigation"><a href="#container">본문 바로가기</a></div>
 <!-- header -->
@@ -17,7 +16,7 @@
 
 <div class="wrap">
 	<!-- container -->
-	<div class="container professional">
+	<div class="container full professional">
 		<div class="breadcrumb">
 			<a href="#" class="b_home"><i></i><span class="a11y">home</span></a>
 			<a href="#" class="b_lnk">프로페셔널</a>
@@ -27,46 +26,47 @@
 		<div class="idx-page_head">
 			<h2>파트너사 찾기</h2>
 		</div>
-		
-		<div class="frm_group sort_store">
-			<div class="inpwrap">
-				<select name="" id="">
-					<option value="">지역선택</option>
-					<option value="">서울</option>
-					<option value="">경기</option>
-					<option value="">인천</option>
-					<option value="">대전</option>
-					<option value="">세종</option>
-					<option value="">충남</option>
-					<option value="">충북</option>
-					<option value="">광주</option>
-					<option value="">전남</option>
-					<option value="">전북</option>
-					<option value="">대구</option>
-					<option value="">경남</option>
-					<option value="">경북</option>
-					<option value="">부산</option>
-					<option value="">울산</option>
-					<option value="">제주</option>
-				</select>
-				<select name="" id="">
-					<option value="">취급품목 선택</option>
-					<option value="">전제품</option>
-					<option value="">산업용품</option>
-					<option value="">위생용품</option>
-					<option value="">보호복</option>
-					<option value="">핸드타올</option>
-					<option value="">두루마리</option>
-					<option value="">점보롤</option>
-					<option value="">글러브세정제</option>
-					<option value="">미용티슈</option>
-					<option value="">방향제</option>
-					<option value="">와이퍼</option>
-					<option value="">롤핸드타올</option>
-				</select>
-			</div>
-			<div class="btn_wrap">
-				<button class="btn default">검색</button>
+		<div class="row">
+			<div class="frm_group sort_store">
+				<div class="inpwrap">
+					<select name="" id="">
+						<option value="">지역선택</option>
+						<option value="">서울</option>
+						<option value="">경기</option>
+						<option value="">인천</option>
+						<option value="">대전</option>
+						<option value="">세종</option>
+						<option value="">충남</option>
+						<option value="">충북</option>
+						<option value="">광주</option>
+						<option value="">전남</option>
+						<option value="">전북</option>
+						<option value="">대구</option>
+						<option value="">경남</option>
+						<option value="">경북</option>
+						<option value="">부산</option>
+						<option value="">울산</option>
+						<option value="">제주</option>
+					</select>
+					<select name="" id="">
+						<option value="">취급품목 선택</option>
+						<option value="">전제품</option>
+						<option value="">산업용품</option>
+						<option value="">위생용품</option>
+						<option value="">보호복</option>
+						<option value="">핸드타올</option>
+						<option value="">두루마리</option>
+						<option value="">점보롤</option>
+						<option value="">글러브세정제</option>
+						<option value="">미용티슈</option>
+						<option value="">방향제</option>
+						<option value="">와이퍼</option>
+						<option value="">롤핸드타올</option>
+					</select>
+				</div>
+				<div class="btn_wrap">
+					<button class="btn default">검색</button>
+				</div>
 			</div>
 		</div>
 		
@@ -83,54 +83,56 @@
 			</div>
 		</div>
 
-		<div class="tbl_list partner_list">
-			<table>
-				<colgroup>
-					<col style="width:20%;">
-					<col style="width:35%;">
-					<col>
-					<col style="width:15%;">
-				</colgroup>
-				<thead>
-					<tr>
-						<th>파트너사 명</th>
-						<th>주소</th>
-						<th>주요취급품목</th>
-						<th>전화번호</th>
-					</tr>
-				</thead>
-				<tbody>
-					<!-- loop -->
-					<tr>
-						<td>파트너사01</td>
-						<td class="left">서울 용산구 한강로 1가 11-111</td>
-						<td class="items">핸드타올, 티슈, 세정제</td>
-						<td><a href="tel:02-222-2222" class="tel">02-222-2222</a></td>
-					</tr>
-					<tr>
-					</tr>
-					<!--// loop -->
-
-					<tr>
-						<td>파트너사01</td>
-						<td class="left">서울 용산구 한강로 1가 11-111 용산구 한강로 1가 용산구 한강로 1가</td>
-						<td class="items">핸드타올, 티슈, 세정제, 핸드타올, 티슈, 세정제, 핸드타올, 티슈, 세정제</td>
-						<td><a href="tel:02-222-2222" class="tel">02-222-2222</a></td>
-					</tr>
-				</tbody>
-			</table>
-
-			<!-- paging : 5개 씩 -->
-			<div class="paging">
-				<a href="#" class="btn btn_prev"><span class="a11y">이전</span></a>
-				<a href="#" class="now"><span>1</span></a>
-				<a href="#"><span>2</span></a>
-				<a href="#"><span>3</span></a>
-				<a href="#"><span>4</span></a>
-				<a href="#"><span>5</span></a>
-				<a href="#" class="btn btn_next"><span class="a11y">다음</span></a>
+		<div class="row">
+			<div class="tbl_list partner_list">
+				<table>
+					<colgroup>
+						<col style="width:20%;">
+						<col style="width:35%;">
+						<col>
+						<col style="width:15%;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th>파트너사 명</th>
+							<th>주소</th>
+							<th>주요취급품목</th>
+							<th>전화번호</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- loop -->
+						<tr>
+							<td>파트너사01</td>
+							<td class="left">서울 용산구 한강로 1가 11-111</td>
+							<td class="items">핸드타올, 티슈, 세정제</td>
+							<td><a href="tel:02-222-2222" class="tel">02-222-2222</a></td>
+						</tr>
+						<tr>
+						</tr>
+						<!--// loop -->
+	
+						<tr>
+							<td>파트너사01</td>
+							<td class="left">서울 용산구 한강로 1가 11-111 용산구 한강로 1가 용산구 한강로 1가</td>
+							<td class="items">핸드타올, 티슈, 세정제, 핸드타올, 티슈, 세정제, 핸드타올, 티슈, 세정제</td>
+							<td><a href="tel:02-222-2222" class="tel">02-222-2222</a></td>
+						</tr>
+					</tbody>
+				</table>
+	
+				<!-- paging : 5개 씩 -->
+				<div class="paging">
+					<a href="#" class="btn btn_prev"><span class="a11y">이전</span></a>
+					<a href="#" class="now"><span>1</span></a>
+					<a href="#"><span>2</span></a>
+					<a href="#"><span>3</span></a>
+					<a href="#"><span>4</span></a>
+					<a href="#"><span>5</span></a>
+					<a href="#" class="btn btn_next"><span class="a11y">다음</span></a>
+				</div>
+				<!--// paging : 5개 씩 -->
 			</div>
-			<!--// paging : 5개 씩 -->
 		</div>
 
 	</div>
