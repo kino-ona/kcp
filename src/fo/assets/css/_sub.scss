@@ -8,7 +8,8 @@
 		@extend %clearer;
 	}
 	.breadcrumb {
-		margin-bottom:50px;
+		max-width: 1280px;
+		margin:0 auto 50px;
 		a {
 			position:relative;
 			display: inline-block;
@@ -408,7 +409,8 @@
 }
 .idx-page_head {
 	position: relative;
-	margin-bottom: 93px;
+	max-width: 1280px;
+	margin:0 auto 93px;
 	h2 {
 		display: inline-block;
 		font-size: 40px;
@@ -1129,3 +1131,121 @@
 	}
 }
 // custom/customer_question
+
+
+// professional
+.professional {
+	.idx-page_head {
+		position: static;
+		margin-bottom: 50px;
+		h2 {
+			margin-bottom: 0px;
+		}
+	}
+	.bnr_figure {
+		width: 100%;
+		margin-bottom: 105px;
+		img {
+			width: 100%;
+		}
+	}	
+	.about {		
+		padding-bottom: 160px;
+		p {
+			margin-top:30px;
+			font-size:16px;
+			line-height:30px;
+			font-weight:300;
+			&.tit {
+				font-size:54px;
+				line-height:75px;
+				font-weight:300;
+				em {
+					font-size:inherit;
+					line-height:inherit;
+					font-weight:500;
+				}
+			}
+			&.desc {
+				width: 710px;
+				font-size: 22px;
+				line-height: 38px;
+			}
+		}
+		.figs {
+			position: relative;
+			max-width: 100%;
+			margin-top: 92px;
+			margin-bottom: 96px;
+			.img1 {
+				margin-left: 80px;
+			}
+			.img2 {
+				position: absolute;
+				top: -130px;
+				right: 0;
+			}
+		}
+	}
+	.logo {
+		position: relative;
+		max-width: 100%;
+		padding: 90px 0 100px;
+		margin-bottom: -150px;
+		background-color: #eeeeee;
+		.idx-page_head {			
+			line-height: 1;
+			margin-bottom: 150px;
+		}
+		.content {
+			display: flex;
+			justify-content: space-around;
+			padding: 0 20px;
+			dl {
+				&:first-of-type {
+					flex: 1.38;
+				}				
+				&:last-of-type {
+					flex: 1;
+				}				
+			}
+			dt {
+				font-size: 24px;
+				font-weight: 400;
+				padding-bottom: 38px;
+			}
+			dd {
+				display:flex;
+				&.ko {
+					padding:0 10px;
+					align-items:center;
+					justify-content:center;
+					.img {
+						flex: 1;
+						padding-top: 22px;
+					}
+				}
+				&.store {
+					justify-content:space-around;
+					align-items:center;
+					p {
+						font-size: 16px;
+						line-height: 24px;
+						font-weight: 400;
+						color:#999;
+					}
+				}
+			}
+		}
+		.logo-bg {
+			// position: absolute;
+			// height: 386px;		
+			// left: 0;
+			// right: 0;
+			// bottom: 0;
+			// z-index: -1;
+			// background-color: #eeeeee;
+			// width: 100%;
+		}
+	}
+}
