@@ -1233,6 +1233,13 @@
 						line-height: 24px;
 						font-weight: 400;
 						color:#999;
+						position: relative;
+						&:before {
+							content: '*';
+							position: absolute;
+							top: 0;
+							right: 100%;
+						}
 					}
 				}
 			}
