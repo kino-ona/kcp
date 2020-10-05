@@ -275,3 +275,26 @@ var videoControl = function(){
 		}
 	});
 }
+
+if($('#recombnrswipe').length > 0){ // gnb 추천브랜드
+	var headerBnrswipe = new Swiper('#recombnrswipe', {
+		loop:true,
+		slidesPerView: 1,
+		observer: true,
+		observeParents: true,
+		centeredSlides: true,
+		spaceBetween: 0,
+		pagination: {
+			el: '.swiper-pagination',
+		},
+		autoplay: {
+			delay: 1500,
+			disableOnInteraction: true,
+		},
+	});
+	$(".reomm_bnr.swiper-container").hover(function() {
+    headerBnrswipe.autoplay.stop();
+	}, function() {
+		headerBnrswipe.autoplay.start();
+	});
+}
