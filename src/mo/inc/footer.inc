@@ -27,6 +27,47 @@
 			<li><button class="" data-tab="gnb-4">솔루션</button></li>
 			<li><button class="" data-tab="gnb-5">현장혁신정보</button></li>
 			<li><button class="" data-tab="gnb-6">고객서비스</button></li>
+			<li class="comm">
+				<!-- 20201005 추가 -->
+				<div id="recombnrswipe" class="swiper-container reomm_bnr">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<p class="figure"><img src="./assets/images/common/reom_bnr01.png" alt="크리넥스 센터풀 화장지"></p>
+							<div class="info">
+								<a href="#">
+									<p class="btn_more">크리넥스 센터풀 <i></i></p>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<p class="figure"><img src="./assets/images/common/reom_bnr02.png" alt="크리넥스 에어셀 점보롤"></p>
+							<div class="info">
+								<a href="#">
+									<p class="btn_more">크리넥스 에어셀 점보롤 <i></i></p>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<p class="figure"><img src="./assets/images/common/reom_bnr03.png" alt="크리넥스 드라이셀"></p>
+							<div class="info">
+								<a href="#">
+									<p class="btn_more">크리넥스 드라이셀 <i></i></p>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<p class="figure"><img src="./assets/images/common/reom_bnr04.png" alt="와이프올 에어포켓"></p>
+							<div class="info">
+								<a href="#">
+									<p class="btn_more">와이프올 에어포켓 <i></i></p>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+				<!--// 20201005 추가 -->
+			</li>
 		</ul>
 		<div class="tab_contents submenu">
 			<!-- 파트너정보 -->

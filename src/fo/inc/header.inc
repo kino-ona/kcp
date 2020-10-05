@@ -19,6 +19,50 @@
 				</div> //-->
 			</div>
 		</div>
+		<!-- 20201005 추가 -->
+		<div id="recombnrswipe" class="swiper-container reomm_bnr">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<p class="figure"><img src="./assets/images/common/reom_bnr01.png" alt="크리넥스 센터풀 화장지"></p>
+					<div class="info">
+						<a href="#">
+							<p>낭비없이 뽑아쓰는<br>국민절약 화장지</p>
+							<p class="btn_more">크리넥스 센터풀 <i></i></p>
+						</a>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<p class="figure"><img src="./assets/images/common/reom_bnr02.png" alt="크리넥스 에어셀 점보롤"></p>
+					<div class="info">
+						<a href="#">
+							<p>막힘없이 풀리는<br>국민안심 화장지</p>
+							<p class="btn_more">크리넥스 에어셀 점보롤 <i></i></p>
+						</a>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<p class="figure"><img src="./assets/images/common/reom_bnr03.png" alt="크리넥스 드라이셀"></p>
+					<div class="info">
+						<a href="#">
+							<p>건강을 지키는<br>위생습관</p>
+							<p class="btn_more">크리넥스 드라이셀 <i></i></p>
+						</a>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<p class="figure"><img src="./assets/images/common/reom_bnr04.png" alt="와이프올 에어포켓"></p>
+					<div class="info">
+						<a href="#">
+							<p>와이퍼의<br>새로운 기준</p>
+							<p class="btn_more">와이프올 에어포켓 <i></i></p>
+						</a>
+					</div>
+				</div>
+			</div>
+				<div class="swiper-pagination"></div>
+		</div>
+		<!--// 20201005 추가 -->
+
 		<div class="subgnb">
 			<ul class="submenu" data-sub="1">
 				<li><a href="#">사업부소개</a></li>

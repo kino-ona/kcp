@@ -196,6 +196,7 @@ $('.headgnb .menu:not(".submenu")').find('>li').each(function(i, e) {
 		$(this).siblings().removeClass('active');
 		$(this).addClass('active');
 		$('.subgnb').addClass('show');
+		$('.reomm_bnr').addClass('show');
 
 		var gnbNum = $(this).index() + 1;
 		$('.submenu').removeClass('show');
@@ -211,11 +212,13 @@ $('.headgnb .menu:not(".submenu")').find('>li').each(function(i, e) {
 		$(this).removeClass('active');
 		$('.headgnb .menu li').removeClass('active');
 		$('.subgnb').removeClass('show');
+		$('.reomm_bnr').removeClass('show');
 	});
 	$('.headgnb .etc').mouseover(function(){
 		$(this).removeClass('active');
 		$('.headgnb .menu li').removeClass('active');
 		$('.subgnb').removeClass('show');
+		$('.reomm_bnr').removeClass('show');
 	});
 
 });

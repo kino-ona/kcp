@@ -809,6 +809,23 @@ h1.logo {
 				line-height:60px;
 			}
 		}
+		.reomm_bnr.swiper-container {
+			top:90px;
+			left:100px;
+			width:190px;
+			height:auto;
+			padding-bottom:20px;
+			.figure {
+				width:45px;
+			}
+			.info {
+				padding-top:0;	
+				padding-left:60px;
+				p {
+					font-size:12px;
+				}
+			}
+		}
 	}
 	&.subhead {
 		&:before {
@@ -841,7 +858,7 @@ h1.logo {
 .headgnb {
 	position: relative;
 	max-width:930px;
-	margin:0 auto;
+	margin:0 auto 0;
 	.menu {
 		display: flex;
 		max-width:800px;
@@ -874,12 +891,57 @@ h1.logo {
 		font-size:16px;
 	}
 } 
+.reomm_bnr.swiper-container {
+	display: none;
+	position: absolute;
+	left:0;
+	top:140px;
+	width:240px;
+	padding-bottom:20px;
+	border-right:1px solid #eeeeee;
+	.figure {
+		position: absolute;
+		left:0;
+		top:50%;
+		@include transform(translateY(-50%));	
+	}
+	.info {
+		padding-top:0px;
+		padding-left:75px;
+		p {
+			font-size:14px;
+			font-weight: 300;
+			color:#010101;
+			line-height: 1.5;
+			letter-spacing: -1px;
+		}
+		.btn_more {
+			margin:0;
+			margin-top:5px;
+			font-weight: 500;
+		}
+	}
+	&.show {
+		display: block;
+	}
+	.swiper-pagination-bullets {
+		bottom:-20px;
+		left:-10px;
+		.swiper-pagination-bullet {
+			background:#ccc;
+			opacity: 1;
+		}
+		.swiper-pagination-bullet-active {
+			background:#777;
+		}
+	}
+}
 .subgnb {
 	display: none;
 	position: relative;
 	max-width:930px;
 	margin:0 auto;
-	padding-bottom:50px;
+	padding-bottom:120px;
 	background-color:#fff;
 	text-align:center;
 	&.show {
@@ -977,6 +1039,7 @@ h1.logo {
 		}
 	}
 	&.logo_scott {
+		margin-top:-20px;
 		height:58px;
 		background: {
 			image: url(../images/common/logo_scott.png);
