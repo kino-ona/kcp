@@ -1300,3 +1300,194 @@
 		}
 	}
 }
+
+// brand
+.brand {
+	&_info {
+		position:relative;
+		padding:15px 30px 0;
+		.logo {
+			height:22px;
+			margin-bottom:20px;
+			img {
+				height:100%;
+			}
+		}
+		figure {
+			margin-top:15px;
+			text-align:center;
+			img {
+				max-height:155px;
+			}
+		}
+		.item_link {
+			margin-top:30px;
+		}
+		&.kleenex {
+			background-image:linear-gradient(to bottom, #006fba, #0053a7 calc(100% - 66px), #fff calc(100% - 66px));
+		}
+		&.kleenguard {
+			background-image:linear-gradient(to bottom, #006fba, #0053a7 calc(100% - 48px), #fff calc(100% - 48px));
+		}
+		&.wypall {
+			background-image:linear-gradient(to bottom, #006fba, #0053a7 calc(100% - 42px), #fff calc(100% - 42px));
+		}
+		&.scott .logo { height:27px; }
+		
+		// // sub
+		// &.sub {
+		// 	border-bottom:3.25rem solid #fff;
+		// 	background-image:linear-gradient(to bottom, #006fba, #0053a7);
+		// 	figure {
+		// 		position:absolute;
+		// 		right:0;
+		// 		bottom:-3.25rem;
+		// 		width:115px;
+		// 	}
+		// 	.desc {
+		// 		padding:5px 0 10px;
+		// 	}
+		// 	.item_link {
+		// 		margin-top:20px;
+		// 	}
+		// }
+	}
+	.desc {
+		font-size:12px;
+		font-weight:300;
+		color:#fff;
+	}	
+	.item_link {
+		padding-bottom:15px;
+		font-size:0;
+		li {
+			display:inline-block;
+			margin:0 .75rem .75rem 0;
+			&:last-of-type {
+				margin-bottom:0;
+			}
+		}
+		a {
+			display:block;
+			padding:0 9px;
+			font-size:13px;
+			font-weight:500;
+			line-height:25px;
+			color:#fff;
+			background-color:#0c479b;
+			&:after {
+				content:'';
+				display:inline-block;
+				width:6px;
+				height:9px;
+				margin:-4px 0 0 5px;
+				vertical-align:middle;
+				background: {
+					image:url(../images/icon/ico_arr-wh.png);
+					position:0 0;
+					size:cover;
+				}
+			}
+		}
+	}
+	.bnr {
+		&_bg {
+
+			width: 100%;
+			background-image:linear-gradient(to bottom, #006fba, #0053a7 calc(100% - 54px), #fff calc(100% - 54px));
+		}
+		&_cont {
+			&._left {
+				float: left;
+				max-width: 715px;
+			}
+		}
+	}
+
+
+	}
+	.tab_navi {
+		padding:0 20px 18px;
+		border-bottom:0;
+		background-color: #fff;
+		@include transition(.1s, ease);
+		li {
+			width:auto;
+			a {
+				color:#999;
+			}
+		}
+		// &.fixed {
+		// 	position:fixed;
+		// 	left:0;
+		// 	right:0;
+		// 	top:50px;
+		// 	width:100%;
+		// 	z-index: 1;
+		// 	padding-bottom:0;
+		// }
+	}
+	.list_sort {
+		float: right;
+		&:after {
+			content: '';
+			display: block;
+			clear:both;
+		}
+	}
+	// .tab_cont {
+	// 	position: relative;
+	// 	border-top:1px solid #eee;
+	// 	margin-top:-18px;
+	// }	
+	.product_list {
+		._col5 {
+			margin-bottom:50px;
+			border-bottom:1px solid #e0e0e0;
+			&:last-child{border-bottom:0;margin-bottom:0px;}
+			li {
+				position: relative;
+				float:left;
+				width:calc((100% / 5));
+				padding-left:10px;
+				padding-right:10px;
+				padding-bottom:50px;
+				&:nth-child(4n + 1) {
+					clear:none;
+				}
+				&:nth-child(5n + 1) {
+					clear:both;
+				}
+				a {
+					display: block;
+					width:100%;
+					height:100%;
+				}
+			}
+			&:after {
+				content: '';
+				display: block;
+				clear:both;
+			}
+		}
+	}
+}
+.layer_body.vodpop {
+	.layer_close {
+		background-image:url(../images/common/btn_wdel.png);
+	}
+	.layer_wrap {
+		width:calc(100% - 20px);
+		max-width:500px;
+		height:315px;
+		background-color:transparent;
+	}
+	.layer_cont {
+		padding:0;
+		padding-top:30px;
+	}
+	iframe {
+		width:100%;
+		height:100%;
+	}
+}
