@@ -1303,11 +1303,16 @@
 
 // brand
 .brand {
+	.breadcrumb {
+		margin: -18px auto 12px;
+	}
 	&_info {
-		position:relative;
-		padding:15px 30px 0;
+		// position:relative;
+		padding:90px 30px 115px;
+		display: flex;
+		justify-content: space-between;
 		.logo {
-			height:22px;
+			height:45px;
 			margin-bottom:20px;
 			img {
 				height:100%;
@@ -1315,8 +1320,11 @@
 		}
 		figure {
 			text-align:center;
+			max-width: 600px;
+			margin-right: -70px;
 			img {
-				max-height:216px;
+				width: 100%;
+				height: 100%;
 			}
 		}
 		.item_link {
@@ -1332,28 +1340,11 @@
 			background-image:linear-gradient(to bottom, #006fba, #0053a7 calc(100% - 42px), #fff calc(100% - 42px));
 		}
 		&.scott .logo { height:27px; }
-		
-		// // sub
-		// &.sub {
-		// 	border-bottom:3.25rem solid #fff;
-		// 	background-image:linear-gradient(to bottom, #006fba, #0053a7);
-		// 	figure {
-		// 		position:absolute;
-		// 		right:0;
-		// 		bottom:-3.25rem;
-		// 		width:115px;
-		// 	}
-		// 	.desc {
-		// 		padding:5px 0 10px;
-		// 	}
-		// 	.item_link {
-		// 		margin-top:20px;
-		// 	}
-		// }
 	}
 	.desc {
-		font-size:12px;
-		font-weight:300;
+		font-size: 20px;
+		line-height: 30px;
+		font-weight: 350;
 		color:#fff;
 	}	
 	.item_link {
@@ -1368,8 +1359,8 @@
 		}
 		a {
 			display:block;
-			padding:0 9px;
-			font-size:13px;
+			padding:7px 27px;
+			font-size:16px;
 			font-weight:500;
 			line-height:25px;
 			color:#fff;
@@ -1377,9 +1368,9 @@
 			&:after {
 				content:'';
 				display:inline-block;
-				width:6px;
-				height:9px;
-				margin:-4px 0 0 5px;
+				width:9px;
+				height:16px;
+				margin:-4px 0 0 18px;
 				vertical-align:middle;
 				background: {
 					image:url(../images/icon/ico_arr-wh.png);
@@ -1392,38 +1383,44 @@
 	.bnr {
 		&_bg {
 			width: 100%;
-			background-image:linear-gradient(to bottom, #006fba, #0053a7 calc(100% - 54px), #fff calc(100% - 54px));
+			height: 456px;
+			// background-image:linear-gradient(to bottom, #006fba, #0053a7 calc(100% - 54px));
+			background-image:linear-gradient(to bottom, #4daadf, #2357a2 calc(100% - 54px));
 		}
 		&_cont {
-			&._left {
-				float: left;
-				max-width: 715px;
-			}
+			max-width: 715px;			
 		}
 	}
 	.tab_navi {
-		padding:0 20px 18px;
-		border-bottom:0;
-		background-color: #fff;
+		width: 1200px;
+		margin-top: -42px;
+		background-color: #fff;		
+		box-shadow:0 0 10px 15px rgba(0, 0, 0, 0.1);  
 		@include transition(.1s, ease);
-		li {
-			width:auto;
-			a {
-				color:#999;
+		ul {
+			display: flex;
+			height: 70px;
+			li {
+				width: 100%;
+				flex: 1;
+				text-align: center;
+				a {
+					line-height: 70px;
+					color:#999;
+				}
+				&.active {					
+					border-bottom: 5px solid #224c96;
+					a {						
+						color:#224c96;
+						font-weight: 700;
+					}
+				}
 			}
 		}
-		// &.fixed {
-		// 	position:fixed;
-		// 	left:0;
-		// 	right:0;
-		// 	top:50px;
-		// 	width:100%;
-		// 	z-index: 1;
-		// 	padding-bottom:0;
-		// }
 	}
 	.list_sort {
 		float: right;
+		margin-top: 50px;
 		&:after {
 			content: '';
 			display: block;
@@ -1436,6 +1433,7 @@
 	// 	margin-top:-18px;
 	// }	
 	.product_list {
+		padding: 100px 0;
 		._col5 {
 			margin-bottom:50px;
 			border-bottom:1px solid #e0e0e0;
