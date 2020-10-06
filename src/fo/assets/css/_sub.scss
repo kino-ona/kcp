@@ -1314,17 +1314,16 @@
 			}
 		}
 		figure {
-			margin-top:15px;
 			text-align:center;
 			img {
-				max-height:155px;
+				max-height:216px;
 			}
 		}
 		.item_link {
 			margin-top:30px;
 		}
 		&.kleenex {
-			background-image:linear-gradient(to bottom, #006fba, #0053a7 calc(100% - 66px), #fff calc(100% - 66px));
+			// background-image:linear-gradient(to bottom, #006fba, #0053a7 calc(100% - 66px), #fff calc(100% - 66px));
 		}
 		&.kleenguard {
 			background-image:linear-gradient(to bottom, #006fba, #0053a7 calc(100% - 48px), #fff calc(100% - 48px));
@@ -1392,7 +1391,6 @@
 	}
 	.bnr {
 		&_bg {
-
 			width: 100%;
 			background-image:linear-gradient(to bottom, #006fba, #0053a7 calc(100% - 54px), #fff calc(100% - 54px));
 		}
@@ -1402,9 +1400,6 @@
 				max-width: 715px;
 			}
 		}
-	}
-
-
 	}
 	.tab_navi {
 		padding:0 20px 18px;
