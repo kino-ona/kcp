@@ -31,7 +31,7 @@
 				<!-- 20201005 추가 -->
 				<div id="recombnrswipe" class="swiper-container reomm_bnr">
 					<div class="swiper-wrapper">
-						<div class="swiper-slide">
+						<div class="swiper-slide slide01">
 							<p class="figure"><img src="./assets/images/common/reom_bnr01.png" alt="크리넥스 센터풀 화장지"></p>
 							<div class="info">
 								<a href="#">
@@ -39,7 +39,7 @@
 								</a>
 							</div>
 						</div>
-						<div class="swiper-slide">
+						<div class="swiper-slide slide02">
 							<p class="figure"><img src="./assets/images/common/reom_bnr02.png" alt="크리넥스 에어셀 점보롤"></p>
 							<div class="info">
 								<a href="#">
@@ -47,7 +47,7 @@
 								</a>
 							</div>
 						</div>
-						<div class="swiper-slide">
+						<div class="swiper-slide slide03">
 							<p class="figure"><img src="./assets/images/common/reom_bnr03.png" alt="크리넥스 드라이셀"></p>
 							<div class="info">
 								<a href="#">
@@ -55,7 +55,7 @@
 								</a>
 							</div>
 						</div>
-						<div class="swiper-slide">
+						<div class="swiper-slide slide04">
 							<p class="figure"><img src="./assets/images/common/reom_bnr04.png" alt="와이프올 에어포켓"></p>
 							<div class="info">
 								<a href="#">

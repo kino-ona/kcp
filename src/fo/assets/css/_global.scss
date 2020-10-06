@@ -818,6 +818,11 @@ h1.logo {
 			.figure {
 				width:45px;
 			}
+			.slide01, .slide02, .slide03, .slide04 {
+				.figure {
+					background-size:45px;
+				}
+			}
 			.info {
 				padding-top:0;	
 				padding-left:60px;
@@ -902,12 +907,52 @@ h1.logo {
 	.figure {
 		position: absolute;
 		left:0;
-		top:50%;
-		@include transform(translateY(-50%));	
+		top:0;	
+		width:70px;
+		height:90px;
+		background: {
+			repeat:no-repeat;
+			position:center top;
+		}
 	}
+	.slide01 {
+		.figure {
+			background:{
+				image:url(../images/common/reom_bnr01.png);
+				size:56px;
+			}
+		}
+	}
+	.slide02 {
+		.figure {
+			background:{
+				image:url(../images/common/reom_bnr02.png);
+				size:53px;
+			}
+		}
+	}
+	.slide03 {
+		.figure {
+			top:10px;
+			background:{
+				image:url(../images/common/reom_bnr03.png);
+				size:69px;
+			}
+		}
+	}
+	.slide04 {
+		.figure {
+			top:10px;
+			background:{
+				image:url(../images/common/reom_bnr04.png);
+				size:56px;
+			}
+		}
+	}
+	
 	.info {
 		padding-top:0px;
-		padding-left:75px;
+		padding-left:80px;
 		p {
 			font-size:14px;
 			font-weight: 300;
@@ -919,6 +964,17 @@ h1.logo {
 			margin:0;
 			margin-top:5px;
 			font-weight: 500;
+			i {
+				display: inline-block;
+				width:7px;
+				height:7px;
+				margin-top:-2px;
+				border-top:1px solid #333;
+				border-right:1px solid #333;
+				-webkit-transform: rotate(45deg);
+				transform: rotate(45deg);
+				vertical-align: middle;
+			}
 		}
 	}
 	&.show {
