@@ -136,6 +136,11 @@
 		.figure {
 			width:45px;
 		}
+		.slide01, .slide02, .slide03, .slide04 {
+			.figure {
+				background-size:45px;
+			}
+		}
 		.info {
 			padding-top:0;	
 			padding-left:60px;

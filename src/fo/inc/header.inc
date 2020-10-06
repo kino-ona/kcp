@@ -22,8 +22,8 @@
 		<!-- 20201005 추가 -->
 		<div id="recombnrswipe" class="swiper-container reomm_bnr">
 			<div class="swiper-wrapper">
-				<div class="swiper-slide">
-					<p class="figure"><img src="/fo/assets/images/common/reom_bnr01.png" alt="크리넥스 센터풀 화장지"></p>
+				<div class="swiper-slide slide01">
+					<p class="figure"><span class="a11y">크리넥스 센터풀 화장지</span></p>
 					<div class="info">
 						<a href="#">
 							<p>낭비없이 뽑아쓰는<br>국민절약 화장지</p>
@@ -31,8 +31,8 @@
 						</a>
 					</div>
 				</div>
-				<div class="swiper-slide">
-					<p class="figure"><img src="/fo/assets/images/common/reom_bnr02.png" alt="크리넥스 에어셀 점보롤"></p>
+				<div class="swiper-slide slide02">
+					<p class="figure"><span class="a11y">크리넥스 에어셀 점보롤</span></p>
 					<div class="info">
 						<a href="#">
 							<p>막힘없이 풀리는<br>국민안심 화장지</p>
@@ -40,8 +40,8 @@
 						</a>
 					</div>
 				</div>
-				<div class="swiper-slide">
-					<p class="figure"><img src="/fo/assets/images/common/reom_bnr03.png" alt="크리넥스 드라이셀"></p>
+				<div class="swiper-slide slide03">
+					<p class="figure"><span class="a11y">크리넥스 드라이셀</span></p>
 					<div class="info">
 						<a href="#">
 							<p>건강을 지키는<br>위생습관</p>
@@ -49,8 +49,8 @@
 						</a>
 					</div>
 				</div>
-				<div class="swiper-slide">
-					<p class="figure"><img src="/fo/assets/images/common/reom_bnr04.png" alt="와이프올 에어포켓"></p>
+				<div class="swiper-slide slide04">
+					<p class="figure"><span class="a11y">와이프올 에어포켓</span></p>
 					<div class="info">
 						<a href="#">
 							<p>와이퍼의<br>새로운 기준</p>

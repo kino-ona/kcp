@@ -302,3 +302,21 @@ function vodLink(url) {
 	$('.vodpop').find('iframe')[0].src = 'https://www.youtube.com/embed/'+$url+'?rel=0';
 }
 
+if($('#recombnrswipe').length > 0){ // gnb 추천브랜드
+	var headerBnrswipe = new Swiper('#recombnrswipe', {
+		loop:true,
+		slidesPerView: 1,
+		observer: true,
+		observeParents: true,
+		centeredSlides: true,
+		spaceBetween: 0,
+		pagination: {
+			el: '.swiper-pagination',
+		},
+		autoplay: {
+			delay: 2200,
+			disableOnInteraction: true,
+		},
+	});
+}
+
