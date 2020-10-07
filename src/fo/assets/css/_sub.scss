@@ -1329,6 +1329,7 @@
 		margin-top:30px;
 		padding-bottom:15px;
 		font-size:0;
+		white-space: nowrap;
 		li {
 			display:inline-block;
 			margin:0 .75rem .75rem 0;
@@ -1489,6 +1490,19 @@
 				content: '';
 				display: block;
 				clear:both;
+			}
+		}
+	}
+	&.sub {
+		.brand_info {
+			.desc {
+				margin-bottom: 18px;
+			}
+		}
+		.tab_cont p {
+			max-width: 1200px;
+			img {
+				width: 100%;
 			}
 		}
 	}

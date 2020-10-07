@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	@@include('../inc/pagehead.inc',{
+		"webroot":".."
+	})
+</head>
+<body>
+<div class="skipnavigation"><a href="#container">본문 바로가기</a></div>
+<!-- header -->
+@@include('../inc/header.inc',{
+	"headtype":"subhead _view",
+	"pagetitle":"브랜드"
+})
+<!-- //header -->
+
+<div class="wrap">
+	<!-- container -->
+	<div class="container full brand sub">
+		<div class="breadcrumb">
+			<a href="#" class="b_home"><i></i><span class="a11y">home</span></a>
+			<a href="#" class="b_lnk">브랜드</a>
+			<span class="b_now">크리넥스에어셀</span>
+		</div>
+		<!-- 브랜드 소개 -->	
+		<div class="bnr_bg">
+			<section class="brand_info row">		
+				<div class="bnr_cont _left">
+					<p class="desc">낭비없이 뽑아쓰는 국민절약 화장지</p>
+					<h2 class="logo"><img src="../../mo/assets/images/brand/logo_kleenex-s02.png" alt="크리넥스에어셀"></h2>
+				</div>
+				<ul class="item_link">
+					<li><a href="#">제품 바로가기</a></li>
+				</ul>
+			</section>
+		</div>
+
+		<!-- tab -->
+		<div class="tab_wrap row">
+			<div class="tab_navi">
+				<ul>
+					<li class="active"><a href="#" data-tab="tabcont01">에어셀 물풀림성이란?</a></li>
+					<li><a href="#" data-tab="tabcont02">막힘없이 풀리는 에어셀</a></li>
+					<li><a href="#" data-tab="tabcont03">동영상 라이브러리</a></li>
+				</ul>
+			</div>
+			<div class="tab_cont">
+				<div data-conts="tabcont01" class="content active"> <!-- 활성화 .active -->
+					<p><img src="../../mo/assets/images/brand/kleenexair_cont01_1.jpg" alt="막힘없이 풀리는 에어셀"></p>
+					<p><img src="../../mo/assets/images/brand/kleenexair_cont01_2.jpg" alt="1 - 에어셀 공법 (셀룰로오스 사이의 결합이 매우 신속하게 해제되므로 더욱 빨리 물에 풀리게 됩니다.)"></p>
+					<p><img src="../../mo/assets/images/brand/kleenexair_cont01_3.jpg" alt="2 - 시험성적서"></p>
+					<p><img src="../../mo/assets/images/brand/kleenexair_cont01_4.jpg" alt="3 - 크리넥스 에어셀 점보롤 물풀림성 동영상"></p>
+					<p><img src="../../mo/assets/images/brand/kleenexair_cont01_5.jpg" alt="4 - 크리넥스 에어셀 점보롤 특장점 1. 우수한 물풀림성, 2. 탁월한 흡수력"></p>
+					<p><img src="../../mo/assets/images/brand/kleenexair_cont01_6.jpg" alt="4 - 크리넥스 에어셀 점보롤 특장점 3. 도톰한 두께, 4. 우수한 닦임성"></p>
+					<p><img src="../../mo/assets/images/brand/kleenexair_cont01_7.jpg" alt="크리넥스 에어셀 점보롤 제품제원 및 소개"></p>
+				</div>
+				<div data-conts="tabcont02" class="content">
+					<p><img src="../../mo/assets/images/brand/kleenexair_cont02_1.jpg" alt="물풀림성이란 뭘까요?"></p>
+					<p><img src="../../mo/assets/images/brand/kleenexair_cont02_2.jpg" alt="1 - 풀림성에 대한 기준: 품질 성능 기준은 100초 이내 입니다. 2 - 측정 방법: 다음과 같습니다."></p>
+					<p><img src="../../mo/assets/images/brand/kleenexair_cont02_3.jpg" alt="실험 방법 및 흡수력 비교"></p>
+					<p><img src="../../mo/assets/images/brand/kleenexair_cont02_4.jpg" alt="물풀림성이 중요해진 이유"></p>
+				</div>
+				<div data-conts="tabcont03" class="content">
+					<p><img src="../../mo/assets/images/brand/kleenexair_cont03_1.jpg" alt="에어셀 동영상 라이브러리"></p>
+					<p><img src="../../mo/assets/images/brand/kleenexair_cont03_2.jpg" alt="행정안전부 캠페인 1차, 2차"></p>
+					<p><img src="../../mo/assets/images/brand/kleenexair_cont03_3.jpg" alt="크리넥스 에어셀 물풀림 동영상"></p>
+					<p><img src="../../mo/assets/images/brand/kleenexair_cont03_4.jpg" alt="크리넥스 에어셀 안내 동영상"></p>
+					<p><img src="../../mo/assets/images/brand/kleenexair_cont03_5.jpg" alt="크리넥스 에어셀 광고"></p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!--// container -->
+</div>
+<!--// wrap -->
+
+<!-- footer -->
+@@include('../inc/footer.inc',{
+	"webroot2":"..",
+	"etctype":""
+})
+<!-- //footer -->
+</body>
+</html>
