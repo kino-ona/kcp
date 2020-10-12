@@ -509,6 +509,9 @@
 		left:80%;
 		&.open {
 			left:70px;
+			&.hidd {
+				left:70px;
+			}
 		}
 		&.hidd {
 			left:110%;
