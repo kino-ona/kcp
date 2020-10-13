@@ -680,3 +680,15 @@
 		background-image:url(../images/common/swipe_prev.png)
 	}
 }
+
+// tab
+.tab {
+	&_cont {
+		.content {
+			display:none;
+			&.active {
+				display:block;
+			}
+		}
+	}
+}
