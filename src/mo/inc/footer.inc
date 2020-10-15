@@ -236,7 +236,7 @@
 						</div>
 						<div class="acco_panel">
 							<ul>
-								<li><a href="#">와이퍼</a></li>
+								<li><a href="#">개인안전 보호구</a></li> <!-- 10.15 //-->
 							</ul>
 						</div>
 					</div>
