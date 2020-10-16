@@ -2507,6 +2507,16 @@
 		padding-bottom:100%;
 		background-color:#eee;
 	}
+	.mapinfo_tx {
+		position: absolute;
+		display: inline-block;
+		border:1px solid #0053a7;
+		padding:2px 5px;
+		color:#0053a7;
+		font-size:18px;
+		background-color: rgba(255,255,255, .85);
+		z-index: 10;
+	}
 }
 
 // brand
