@@ -833,14 +833,27 @@
 
 		// 상품 상세
 		&_info {
-			padding-bottom:30px;
+			padding-bottom:25px;
 			.tit {
 				font-size:20px;
-				font-weight:400;
+				line-height:1.5;
+				font-weight:500;
+				margin-bottom:12px;
+				&_brand {
+					font-size:17px;
+					font-weight:300;
+				}
 			}
 			.code {
+				display:inline-block;
 				font-size:13px;
-				color:#0053a7;
+				font-weight:400;
+				line-height: 1;
+				color: #0053a7;
+				border:1px solid #0053a7;
+				border-radius: 10px;
+				padding: 2.5px 7.5px 3.5px;
+				margin: 0 7.5px 7.5px 0;
 			}
 		}
 
@@ -848,7 +861,7 @@
 		&_spec {
 			display:flex;
 			flex-wrap:wrap;
-			padding:30px 30px 15px;
+			padding:25px 30px;
 			border-top:1px solid #eee;
 			dt {
 				width:110px;
@@ -936,7 +949,7 @@
 						font-size:inherit;
 						text-indent:-10px;
 						&:before {
-							content:'- ';
+							content:'·';
 						}
 					}
 				}
