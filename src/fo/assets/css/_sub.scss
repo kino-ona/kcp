@@ -1458,7 +1458,7 @@
 		}
 	}
 	.tab_navi {
-		margin-top: -42px;
+		transform: translateY(-42px);
 		background-color: #fff;		
 		box-shadow:0 0 10px 15px rgba(0, 0, 0, 0.05);  
 		@include transition(.1s, ease);
