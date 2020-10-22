@@ -1211,6 +1211,15 @@
 						color:#999999;
 					}
 				}
+				&.temp {
+					.btn_wrap {
+						margin-top:-10px;
+					}
+				}
+				.btn_temp {
+					background-color:#888888;
+					color:#fff;
+				}
 				.btn_docdown {
 					padding:2px 8px 3px;
 					border-radius: 18px;
@@ -1222,16 +1231,6 @@
 			} // &.write {
 			// &.contract_row {
 			// }
-			&.temp {
-				margin-bottom:40px;
-				.btn_wrap {
-					margin-top:-10px;
-				}
-				.btn_temp {
-					background-color:#888888;
-					color:#fff;
-				}
-			}
 			.item_list {
 				margin-top:3.3rem;
 				.item {
