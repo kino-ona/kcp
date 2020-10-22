@@ -1200,10 +1200,6 @@
 						vertical-align: middle;
 					}
 				}
-				.btn_temp {
-					background-color:#888888;
-					color:#fff;
-				}
 				&.re_row {
 					.reason {
 						min-height:100px;
@@ -1226,6 +1222,15 @@
 			} // &.write {
 			// &.contract_row {
 			// }
+			&.temp {
+				.btn_wrap {
+					margin-top:-10px;
+				}
+				.btn_temp {
+					background-color:#888888;
+					color:#fff;
+				}
+			}
 			.item_list {
 				margin-top:3.3rem;
 				.item {
