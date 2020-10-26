@@ -2271,31 +2271,6 @@
 				color:#00a8e2;
 			}
 		}
-		.attach {
-			margin-bottom:10px;
-			text-align:right;
-			a {
-				display: inline-block;
-				color:#000;
-				font-size:12px;
-				font-weight:500;
-			}
-			[class^="ico"] {
-				display:inline-block;
-				width:1.35rem;
-				height:1.35rem;
-				margin:-4px 5px 0;
-				background: {
-					size:100% auto;
-					position:50% 50%;
-					repeat:no-repeat;
-				}
-				vertical-align:middle;
-			}
-			.ico_pdf {background-image:url(../images/icon/ico_pdf.png)}
-			.ico_jpg {background-image:url(../images/icon/ico_jpg.png)}
-			.ico_gif {background-image:url(../images/icon/ico_gif.png)}
-		}
 		.acco {
 			&_head {
 				padding:2.1rem 3rem;
@@ -2325,11 +2300,16 @@
 				}
 			}
 			&_panel {
-				padding:2rem 3rem;
+				padding:3rem;
 				background-color:#f2f4f6;
-				color:#666;
-				* {
-					color:inherit;
+				.view {
+					color:#666;
+					> * {
+						color:inherit;
+					}
+					& + .attach {
+						margin-top:20px;
+					}
 				}
 			}
 		}

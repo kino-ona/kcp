@@ -308,6 +308,34 @@
 					font-weight: 300;
 					line-height: 1.5;
 				}
+				.date {
+					display:inline-block;
+				}
+				.util {
+					display:inline-block;
+					margin-top:2px;
+					&:before {
+						content: '';
+						display: inline-block;
+						margin:0 8px 0 4px;
+						width: 1px;
+						height: 7px;
+						background-color: #eeeeee;
+						vertical-align: middle;
+					}
+					.ico_download {
+						display: inline-block;
+						width:11px;
+						height:10px;
+						background: {
+							image:url(../images/icon/icon_download.png);
+							size:11px;
+							repeat:no-repeat;
+							position: 0 0;
+						}
+						vertical-align: middle;
+					}
+				}
 			}
 			.item {
 				margin-bottom:0;
@@ -332,6 +360,9 @@
 			padding-bottom:15px;
 			font-size: 14px;
 			font-weight: 300;
+			&:last-of-type {
+				padding-bottom:0;
+			}
 		}
 	}
 	& + .borad_wrap {
@@ -606,6 +637,24 @@
 			&.active {
 				display:block;
 			}
+		}
+	}
+}
+// attachment
+.attach {
+	text-align:right;
+	a {
+		display: inline-block;
+		color:#0053a7;
+		font-size:12px;
+		&:after {
+			content:'';
+			display:inline-block;
+			width:1.25rem;
+			height:1.2rem;
+			margin:-4px 0 0 10px;
+			background:url(../images/icon/icon_download-bl.png) no-repeat 50% 50%;
+			background-size:cover;
 		}
 	}
 }

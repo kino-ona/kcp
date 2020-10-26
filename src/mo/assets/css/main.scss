@@ -928,6 +928,20 @@
 			.date {
 				color:#999999;
 			}
+			.util {
+				.ico_download {
+					display: inline-block;
+					width:11px;
+					height:10px;
+					background: {
+						image:url(../images/icon/icon_download.png);
+						size:11px;
+						repeat:no-repeat;
+						position: 0 0;
+					}
+					vertical-align: middle;
+				}
+			}
 		}
 	}
 	.layer_wrap{
@@ -938,30 +952,7 @@
 		padding-bottom:60px;
 	}
 	.attach {
-		margin-top:5px;
-		margin-bottom:15px;
-		text-align:right;
-		a {
-			display: inline-block;
-			color:#000;
-			font-size:12px;
-			font-weight:500;
-		}
-		[class^="ico"] {
-			display:inline-block;
-			width:1.35rem;
-			height:1.35rem;
-			margin:-4px 5px 0;
-			background: {
-				size:100% auto;
-				position:50% 50%;
-				repeat:no-repeat;
-			}
-			vertical-align:middle;
-		}
-		.ico_pdf {background-image:url(../images/icon/ico_pdf.png)}
-		.ico_jpg {background-image:url(../images/icon/ico_jpg.png)}
-		.ico_gif {background-image:url(../images/icon/ico_gif.png)}
+		margin-top:20px;
 	}
 	.conts {
 		color:#666666;
