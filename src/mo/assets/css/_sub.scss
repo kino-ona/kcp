@@ -2800,3 +2800,57 @@
 		height:100%;
 	}
 }
+
+// solution
+.solution_view {
+	margin:0 auto;
+	.sol_title {
+		display: block;
+		margin-bottom:65px;
+		font-size:40px;
+		font-weight:500;
+	}
+	.sub_block {
+		margin-bottom:50px;
+		dt {
+			position:relative;
+			width:100%;
+			padding-top:40%;
+			margin-bottom:25px;
+			overflow: hidden;
+			img {
+				position: absolute;
+				top:0;
+				left:0;
+				right:0;
+				max-width:inherit;
+				height:100%;
+			}
+		}
+		dd {
+			padding-left:30px;
+			padding-right:30px;
+		}
+		h2 {
+			position:relative;
+			margin-bottom:40px;
+			font-size: 14px;
+			font-weight: 700;
+			> span {
+				display: block;
+				margin-top:10px;
+				font-size:13px;
+				font-weight: 400;
+				vertical-align: middle;
+			}
+		}
+	}
+	.tab_navi {
+		li {
+			width:auto;
+			a {
+				padding: 15px 20px 10px;
+			}
+		}
+	}
+}

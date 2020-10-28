@@ -1587,3 +1587,32 @@
 		height:100%;
 	}
 }
+
+// solution
+.solution_view {
+	max-width:1200px;
+	margin:0 auto;
+	.sol_title {
+		display: block;
+		margin-bottom:65px;
+		font-size:40px;
+		font-weight:500;
+	}
+	.sub_block {
+		margin-bottom:50px;
+		dt {margin-bottom:45px;}
+		h2 {
+			position:relative;
+			margin-bottom:40px;
+			font-size: 26px;
+			font-weight: 700;
+			> span {
+				display: inline-block;
+				margin-left:5.625rem;
+				font-size:16px;
+				font-weight: 400;
+				vertical-align: middle;
+			}
+		}
+	}
+}

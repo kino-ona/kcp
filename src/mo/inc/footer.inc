@@ -275,57 +275,62 @@
 				<div class="accord_wrap" role="submenu">
 					<div class="item" data-status="hidden">
 						<div class="acco_head">
-							<a href="#" class="acco_target" tabindex="0">푸드 프로세싱&amp;서비스</a>
-						</div>
-					</div>
-					<div class="item" data-status="hidden">
-						<div class="acco_head">
 							<a href="#" class="acco_target" tabindex="0">공중화장실</a>
 						</div>
 					</div>
 					<div class="item" data-status="hidden">
 						<div class="acco_head">
-							<a href="#" class="acco_target" tabindex="0">오피스의 위생</a>
+							<a href="#" class="acco_target" tabindex="0">산업체생산공정</a>
 						</div>
 					</div>
 					<div class="item" data-status="hidden">
 						<div class="acco_head">
-							<a href="#" class="acco_target" tabindex="0">크린룸</a>
+							<a href="#" class="acco_target" tabindex="0">푸드 프로세싱&amp;서비스</a>
 						</div>
 					</div>
 					<div class="item" data-status="hidden">
 						<div class="acco_head">
-							<a href="#" class="acco_target" tabindex="0">실험실</a>
+							<a href="#" class="acco_target" tabindex="0">병의원 및 요양시설</a>
 						</div>
 					</div>
 					<div class="item" data-status="hidden">
 						<div class="acco_head">
-							<a href="#" class="acco_target" tabindex="0">개인보호구</a>
+							<a href="#" class="acco_target" tabindex="0">클린룸 &amp; 실험실</a>
+						</div>
+					</div>
+					<div class="item" data-status="hidden">
+						<div class="acco_head">
+							<a href="#" class="acco_target" tabindex="0">방역현장</a>
 						</div>
 					</div>
 				</div>
 			</div>
-			<!-- 현장 혁신 정보 -->
+			<!-- 현장인사이트 -->
 			<div id="gnb-5" class="tab-cont">
 				<div class="accord_wrap" role="submenu">
 					<div class="item" data-status="hidden">
 						<div class="acco_head">
-							<a href="#" class="acco_target" tabindex="0">건강과 안전</a>
+							<a href="#" class="acco_target" tabindex="0">위생과 건강</a>
 						</div>
 					</div>
 					<div class="item" data-status="hidden">
 						<div class="acco_head">
-							<a href="#" class="acco_target" tabindex="0">고객경험</a>
+							<a href="#" class="acco_target" tabindex="0">작업자와 공정 보호</a>
 						</div>
 					</div>
 					<div class="item" data-status="hidden">
 						<div class="acco_head">
-							<a href="#" class="acco_target" tabindex="0">생산효율성</a>
+							<a href="#" class="acco_target" tabindex="0">생산효율성 증대</a>
 						</div>
 					</div>
 					<div class="item" data-status="hidden">
 						<div class="acco_head">
-							<a href="#" class="acco_target" tabindex="0">우리의 환경</a>
+							<a href="#" class="acco_target" tabindex="0">친환경 가치실현</a>
+						</div>
+					</div>
+					<div class="item" data-status="hidden">
+						<div class="acco_head">
+							<a href="#" class="acco_target" tabindex="0">제품과 적용사례</a>
 						</div>
 					</div>
 				</div>

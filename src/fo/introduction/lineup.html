@@ -8,23 +8,19 @@
 <body>
 <div class="skipnavigation"><a href="#container">본문 바로가기</a></div>
 <!-- header -->
-<!-- 09.17 제품상세 헤더 수정 : _logo 클래스 삭제, 로고노출 아닌 이전제품depth명 출력 //-->
 @@include('../inc/header.inc',{
 	"headtype":"subhead",
-	"pagetitle":"이전 제품 Depth명"
+	"pagetitle":""
 })
 <!-- //header -->
 
 <div class="wrap">
-	<!-- container -->
-	<div class="container introduction">
-		<!-- breadcrumb -->
+	<div class="container">
 		<div class="breadcrumb">
-			<ul>
-				<li>핸드타올</li>
-				<li>평판형</li>
-				<li>프리미엄</li>
-			</ul>
+			<a href="#" class="b_home"><i></i><span class="a11y">home</span></a>
+			<a href="#" class="b_lnk">제품</a>
+			<a href="#" class="b_lnk">위생케어</a>
+			<span class="b_now">두루마리화장지</span>
 		</div>
 
 		<!-- 제품 이미지 -->
@@ -796,17 +792,14 @@
 			</div>
 		</div>
 		<!--// 10.27 : 제품 라인업 팝업(화장실위생 > 보호복) -->
-
-
+	
 	</div>
-	<!--// container -->
 </div>
 <!--// wrap -->
 
 <!-- footer -->
 @@include('../inc/footer.inc',{
-	"webroot2":"..",
-	"etctype":"_etc"
+	"webroot2":".."
 })
 <!-- //footer -->
 

@@ -8,7 +8,7 @@
 				<li><a href="#">브랜드</a></li>
 				<li><a href="#">제품</a></li>
 				<li><a href="#">솔루션</a></li>
-				<li><a href="#">현장혁신정보</a></li>
+				<li><a href="#">현장인사이트</a></li> <!-- 10.27 명 변경 //-->
 				<li><a href="#">고객서비스</a></li>
 			</ul>
 			<div class="etc">
@@ -122,20 +122,23 @@
 					</ul>
 				</li>
 			</ul>
-			<ul class="submenu" data-sub="4">
-				<li><a href="#">푸드 프로세싱&amp;서비스</a></li>
+			<!-- 10.27 명 변경 -->
+			<ul class="submenu" data-sub="4"> <!-- 솔루션 //-->
 				<li><a href="#">공중화장실</a></li>
-				<li><a href="#">오피스와 위생</a></li>
-				<li><a href="#">크린룸</a></li>
-				<li><a href="#">실험실</a></li>
-				<li><a href="#">개인보호구</a></li>
+				<li><a href="#">산업체생산공정</a></li>
+				<li><a href="#">푸드서비스 &amp; 프로세싱</a></li>
+				<li><a href="#">병의원 및 요양시설</a></li>
+				<li><a href="#">클린룸 &amp; 실험실</a></li>
+				<li><a href="#">방역현장</a></li>
 			</ul>
-			<ul class="submenu" data-sub="5">
-				<li><a href="#">건강과 안전</a></li>
-				<li><a href="#">고객경험</a></li>
-				<li><a href="#">생산효율성</a></li>
-				<li><a href="#">우리의 환경</a></li>
+			<ul class="submenu" data-sub="5"> <!-- 현장인사이트 //-->
+				<li><a href="#">위생과 건강</a></li>
+				<li><a href="#">작업자와 공정 보호</a></li>
+				<li><a href="#">생산효율성 증대</a></li>
+				<li><a href="#">친환경 가치실현</a></li>
+				<li><a href="#">제품과 적용사례</a></li>
 			</ul>
+			<!--// 10.27 명 변경 -->
 			<ul class="submenu" data-sub="6">
 				<li><a href="#">제품구매 상담</a></li>
 				<li><a href="#">고객상담</a></li>
