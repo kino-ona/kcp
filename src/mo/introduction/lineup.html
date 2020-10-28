@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	@@include('../inc/pagehead.inc',{
+		"webroot":".."
+	})
+</head>
+<body>
+<div class="skipnavigation"><a href="#container">본문 바로가기</a></div>
+<!-- header -->
+<!-- 09.17 제품상세 헤더 수정 : _logo 클래스 삭제, 로고노출 아닌 이전제품depth명 출력 //-->
+@@include('../inc/header.inc',{
+	"headtype":"subhead",
+	"pagetitle":"이전 제품 Depth명"
+})
+<!-- //header -->
+
+<div class="wrap">
+	<!-- container -->
+	<div class="container introduction">
+		<!-- breadcrumb -->
+		<div class="breadcrumb">
+			<ul>
+				<li>핸드타올</li>
+				<li>평판형</li>
+				<li>프리미엄</li>
+			</ul>
+		</div>
+
+		<!-- 제품 이미지 -->
+		<div class="prd_slide">
+			<div id="prd_swipe" class="swiper-container">
+				<div class="swiper-wrapper">
+					<!-- slide -->
+					<div class="swiper-slide">
+						<a href="#">
+							<div class="figure">
+								<img src="../assets/images/dummy/@product720_01.jpg">
+							</div>
+						</a>
+					</div>
+					<!--// slide -->
+					<div class="swiper-slide">
+						<a href="#">
+							<div class="figure">
+								<img src="../assets/images/dummy/@product720_02.jpg">
+							</div>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#">
+							<div class="figure">
+								<!-- 09.14 video 타입추가 -->
+								<video muted="muted" loop onloadedmetadata="this.muted = true" poster="../assets/images/common/default_image.png">
+									<source src="../../../vod/yk.mp4" type="video/mp4" autostart="false">
+								</video>
+								<div class="video_util">
+									<button class="btn_play" aria-label="재생/일시정지" title="재생/일시정지"><span></span></button>
+								</div>
+								<!-- 09.14 video 타입추가 -->
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+		<!--// 제품 이미지 -->
+
+		<!-- 상품 상세 -->
+		<hr>
+		<!-- 제품라인업 / 화장실위생 > 핸드워시 -->
+		<div class="prd_lineup">
+			<div class="row">
+				<h4>제품라인업</h4>
+				<p class="desc">이미지를 선택시 제품라인업을 자세히 볼수 있습니다.</p>
+				<a href="#" onclick="layerOpen('lineup-handwash')">
+					<img src="../assets/images/dummy/.jpg" alt="화장실위생 > 핸드워시">
+				</a>
+			</div>
+		</div>
+		<!--// 제품라인업 / 화장실위생 > 핸드워시  -->
+
+		<!-- 제품라인업 / 화장실위생 > 화장실용 화장지 -->
+		<div class="prd_lineup">
+			<div class="row">
+				<h4>제품라인업</h4>
+				<p class="desc">이미지를 선택시 제품라인업을 자세히 볼수 있습니다.</p>
+				<a href="#" onclick="layerOpen('lineup-toiletpaper')">
+					<img src="../assets/images/dummy/.jpg" alt="화장실위생 > 화장실용 화장지">
+				</a>
+			</div>
+		</div>
+		<!--// 제품라인업 / 화장실위생 > 화장실용 화장지  -->
+
+		<!-- 제품라인업 / 화장실위생 > 핸드타올 -->
+		<div class="prd_lineup">
+			<div class="row">
+				<h4>제품라인업</h4>
+				<p class="desc">이미지를 선택시 제품라인업을 자세히 볼수 있습니다.</p>
+				<a href="#" onclick="layerOpen('lineup-handtowel')">
+					<img src="../assets/images/dummy/.jpg" alt="화장실위생 > 핸드타올">
+				</a>
+			</div>
+		</div>
+		<!--// 제품라인업 / 화장실위생 > 핸드타올  -->
+
+		<!-- 제품라인업 / 화장실위생 > 글러브 -->
+		<div class="prd_lineup">
+			<div class="row">
+				<h4>제품라인업</h4>
+				<p class="desc">이미지를 선택시 제품라인업을 자세히 볼수 있습니다.</p>
+				<a href="#" onclick="layerOpen('lineup-glove')">
+					<img src="../assets/images/dummy/.jpg" alt="화장실위생 > 글러브">
+				</a>
+			</div>
+		</div>
+		<!--// 제품라인업 / 화장실위생 > 글러브  -->
+
+		<!-- 제품라인업 / 화장실위생 > 와이핑&클리닝 -->
+		<div class="prd_lineup">
+			<div class="row">
+				<h4>제품라인업</h4>
+				<p class="desc">이미지를 선택시 제품라인업을 자세히 볼수 있습니다.</p>
+				<a href="#" onclick="layerOpen('lineup-wipingnclean')">
+					<img src="../assets/images/dummy/.jpg" alt="화장실위생 > 와이핑&클리닝">
+				</a>
+			</div>
+		</div>
+		<!--// 제품라인업 / 화장실위생 > 와이핑&클리닝  -->
+
+		<!-- 제품라인업 / 화장실위생 > 마스크 -->
+		<div class="prd_lineup">
+			<div class="row">
+				<h4>제품라인업</h4>
+				<p class="desc">이미지를 선택시 제품라인업을 자세히 볼수 있습니다.</p>
+				<a href="#" onclick="layerOpen('lineup-mask')">
+					<img src="../assets/images/dummy/.jpg" alt="화장실위생 > 마스크">
+				</a>
+			</div>
+		</div>
+		<!--// 제품라인업 / 화장실위생 > 마스크  -->
+
+
+		<!-- 10.27 : 제품 라인업 팝업(화장실위생 > 핸드워시) -->
+		<div class="layer_body layer_full lineuppopup" id="lineup-handwash" aria-hidden="true" role="dialog">
+			<div class="layer_wrap">
+				<div class="layer_cont">
+					<button onclick="layerClose('lineup-handwash')" class="layer_close manualfn">닫기</button>
+					<div class="head">
+						<h3>제품 라인업</h3>
+						<ul class="breadcr">
+							<li>화장실 &amp; 위생</li>
+							<li>핸드워시</li>
+						</ul>
+					</div>
+					<p class="img"><img src="../assets/images/introduction/lineup_handwash-cut.jpg" alt="제품 라인업 : 화장실위생 > 핸드워시"></p>
+				</div>
+			</div>
+		</div>
+		<!--// 10.27 : 제품 라인업 팝업(화장실위생 > 핸드워시) -->
+		
+		<!-- 10.27 : 제품 라인업 팝업(화장실위생 > 화장실용 화장지) -->
+		<div class="layer_body layer_full lineuppopup" id="lineup-toiletpaper" aria-hidden="true" role="dialog">
+			<div class="layer_wrap">
+				<div class="layer_cont">
+					<button onclick="layerClose('lineup-toiletpaper')" class="layer_close manualfn">닫기</button>
+					<div class="head">
+						<h3>제품 라인업</h3>
+						<ul class="breadcr">
+							<li>화장실 &amp; 위생</li>
+							<li>화장실용 화장지</li>
+						</ul>
+					</div>
+					<div class="poptable">
+						<table>
+						<thead>
+							<tr>
+								<th class="th150">구분</th>
+								<th class="th150n">종류</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="type last" rowspan="3">
+									<strong>두루마리화장지</strong>
+									<p>일반 가정에서 사용하는 '화장실용 화장지'와 동일한 형태의 두루마리 화장지로 호텔, 빌딩, 콘도 등의 다중 이용시설에 주로 납품되는 화장실용 화장지</p>
+								</td>
+								<td class="col">
+									<div class="in">
+										<span class="logo"><img src="../assets/images/introduction/logo_kleenex.png" alt="크리넥스"></span>
+										<a href="#" class="link">제품보기<i></i></a>
+									</div>
+									<p>펄프는 100% 천연펄프의 프리미엄 화장지</p>
+								</td>
+							</tr>
+							<tr>
+								<td class="col">
+									<div class="in">
+										<span class="logo"><img src="../assets/images/introduction/logo_kleenex-s02.png" alt="크리넥스에어셀점보롤"></span>
+										<a href="#" class="link">제품보기<i></i></a>
+									</div>
+									<p>물풀림성이 3배 빠른 화장지 (뽀삐 점보롤  500 대비)</p>
+								</td>
+							</tr>
+							<tr>
+								<td class="col last">
+									<div class="in">
+										<span class="logo _popee"><img src="../assets/images/introduction/logo_popee.png" alt="뽀삐"></span>
+										<a href="#" class="link">제품보기<i></i></a>
+									</div>
+									<p>믿고 사용할 수 있는 가성비가 뛰어난 화장지</p>
+								</td>
+							</tr>
+							<tr>
+								<td class="type last" rowspan="2">
+									<strong>벌크팩 화장지</strong>
+									<p>한 번에 한 장씩 뽑아 쓸 수 있는 평판형 타입의 화장실용 화장지</p>
+								</td>
+								<td class="col">
+									<div class="in">
+										<span class="logo"><img src="../assets/images/introduction/logo_kleenex.png" alt="크리넥스"></span>
+										<a href="#" class="link">제품보기<i></i></a>
+									</div>
+									<p>펄프는 100% 천연펄프의 프리미엄 화장지</p>
+								</td>
+							</tr>
+							<tr>
+								<td class="col last">
+									<div class="in">
+										<span class="logo _popee"><img src="../assets/images/introduction/logo_popee.png" alt="뽀삐"></span>
+										<a href="#" class="link">제품보기<i></i></a>
+									</div>
+									<p>믿고 사용할 수 있는 가성비가 뛰어난 화장지</p>
+								</td>
+							</tr>
+							<tr>
+								<td class="type last" rowspan="4">
+									<strong>점보롤화장지</strong>
+									<p>많은 사람들이 방문하는 다중이용시설에서 사용하기 편리한 대용량의 화장실용 화장지로 자주 교체하지 않아도 되므로 관리하기가 편리</p>
+								</td>
+								<td class="col">
+									<div class="in">
+										<span class="logo"><img src="../assets/images/introduction/logo_kleenex-s02v1.png" alt="크리넥스에어셀점보롤"><i class="v1">프리미엄</i></span>
+										<a href="#" class="link">제품보기<i></i></a>
+									</div>
+									<p>물풀림성이 뛰어난 펄프는 100% 천연펄프 화장지</p>
+								</td>
+							</tr>
+							<tr>
+								<td class="col">
+									<div class="in">
+										<span class="logo"><img src="../assets/images/introduction/logo_kleenex-s02v2.png" alt="크리넥스에어셀점보롤"><i class="v2">스탠다드</i></span>
+										<a href="#" class="link">제품보기<i></i></a>
+									</div>
+									<p>물풀림성이 3배 빠른 화장지 (뽀삐 점보롤 500 대비)</p>
+								</td>
+							</tr>
+							<tr>
+								<td class="col">
+									<div class="in">
+										<span class="logo"><img src="../assets/images/introduction/logo_kleenex.png" alt="크리넥스"></span>
+										<a href="#" class="link">제품보기<i></i></a>
+									</div>
+									<p>부드러운 펄프는 100% 천연펄프 화장지</p>
+								</td>
+							</tr>
+							<tr>
+								<td class="col last">
+									<div class="in">
+										<span class="logo _popee"><img src="../assets/images/introduction/logo_popee.png" alt="뽀삐"></span>
+										<a href="#" class="link">제품보기<i></i></a>
+									</div>
+									<p>믿고 사용할 수 있는 가성비가 뛰어난 화장지</p>
+								</td>
+							</tr>
+							<tr>
+								<td class="type last">
+									<strong>센터풀화장지</strong>
+									<p>밀폐된 전용용기에 들어있어 위생적으로 사용할 수 있는 화장실용 화장지</p>
+								</td>
+								<td class="col last">
+									<div class="in">
+										<span class="logo"><img src="../assets/images/introduction/logo_kleenex-s01.png" alt="크리넥스센터풀"></span>
+										<a href="#" class="link">제품보기<i></i></a>
+									</div>
+									<p>위생적으로 한번에 한 장씩 필요한 만큼만 사용하는 화장지</p>
+								</td>
+							</tr>
+						</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--// 10.27 : 제품 라인업 팝업(화장실위생 > 화장실용 화장지) -->
+		
+		<!-- 10.27 : 제품 라인업 팝업(화장실위생 > 핸드타올) -->
+		<div class="layer_body layer_full lineuppopup" id="lineup-handtowel" aria-hidden="true" role="dialog">
+			<div class="layer_wrap">
+				<div class="layer_cont">
+					<button onclick="layerClose('lineup-handtowel')" class="layer_close manualfn">닫기</button>
+					<div class="head">
+						<h3>제품 라인업</h3>
+						<ul class="breadcr">
+							<li>화장실 &amp; 위생</li>
+							<li>핸드타올</li>
+						</ul>
+					</div>
+					<div class="poptable">
+						<table>
+						<thead>
+							<tr>
+								<th class="th150">구분</th>
+								<th class="th150n">종류</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="type last" rowspan="2">
+									<strong>평판형 핸드타올</strong>
+									<p>다중이용시설, 오피스 빌딩, 병원, 푸드서비스, 제조업체 등 장소를 가리지 않고 널리 쓰이며, 공기충전기술로 흡수력과 습윤인장강도가 뛰어난 유한킴벌리의 고급 핸드타올</p>
+									<a href="#" class="link">제품보기<i></i></a>
+								</td>
+								<td class="col">
+									<div class="in">
+										<span class="logo"><img src="../assets/images/introduction/logo_kleenex-s03.png" alt="크리넥스 드라이셀"></span>
+									</div>
+									<p>흡수속도가 3배 빠르고 습윤인장강도가 뛰어난 고급 핸드타올</p>
+								</td>
+							</tr>
+							<tr>
+								<td class="col last">
+									<div class="in">
+										<span class="logo"><img src="../assets/images/introduction/logo_scout.png" alt="스카트"><i>콤펙트 타올</i></span>
+									</div>
+									<p>콤팩트한 사이즈로 협소한 공간에서 사용하기 가장 알맞은 평판형 핸드타올</p>
+								</td>
+							</tr>
+							<tr>
+								<td class="type last" rowspan="2">
+									<strong>롤 핸드타올</strong>
+									<p>한번에 한장씩 반자동 커팅 방식으로 토출되는 롤 형태의 핸드타올로 관리 보관이 편리하고 사용량을 줄여주는 유한킴벌리 고급 핸드타올</p>
+									<a href="#" class="link">제품보기<i></i></a>
+								</td>
+								<td class="col">
+									<div class="in">
+										<span class="logo"><img src="../assets/images/introduction/logo_kleenex-s03.png" alt="크리넥스 드라이셀"><i>슬림롤</i></span>
+									</div>
+									<p>알맞은 전용용기 크기로 상대적으로 협소한 공간에서도 사용하기 편리한 롤 핸드타올</p>
+								</td>
+							</tr>
+							<tr>
+								<td class="col last">
+									<div class="in">
+										<span class="logo"><img src="../assets/images/introduction/logo_kleenex-s03.png" alt="크리넥스 드라이셀"><i>빅롤</i></span>
+									</div>
+									<p>사용인원 또는 방문객이 많은 장소에 주로 납품되는 대용량 롤타입 핸드타올</p>
+								</td>
+							</tr>
+						</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--// 10.27 : 제품 라인업 팝업(화장실위생 > 핸드타올) -->
+
+		<!-- 10.27 : 제품 라인업 팝업(화장실위생 > 글러브) -->
+		<div class="layer_body layer_full lineuppopup" id="lineup-glove" aria-hidden="true" role="dialog">
+			<div class="layer_wrap">
+				<div class="layer_cont">
+					<button onclick="layerClose('lineup-glove')" class="layer_close manualfn">닫기</button>
+					<div class="head">
+						<h3>제품 라인업</h3>
+						<ul class="breadcr">
+							<li>화장실 &amp; 위생</li>
+							<li>글러브</li>
+						</ul>
+					</div>
+					<div class="poptable">
+						<table>
+						<thead>
+							<tr>
+								<th class="th95">횟수</th>
+								<th class="th95n">사용처</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="type last" rowspan="3">
+									<strong class="center">일회용</strong>
+								</td>
+								<td class="col">
+									<p class="normal">크린룸 <a href="#" class="link">바로가기<i></i></a></p>
+								</td>
+							</tr>
+							<tr>
+								<td class="col">
+									<p class="normal">실험실/일반 <a href="#" class="link">바로가기<i></i></a></p>
+								</td>
+							</tr>
+							<tr>
+								<td class="col last">
+									<p class="normal">식품용/일반 <a href="#" class="link">바로가기<i></i></a></p>
+								</td>
+							</tr>
+							<tr>
+								<td class="type last" rowspan="3">
+									<strong class="center">다회용</strong>
+								</td>
+								<td class="col">
+									<p class="normal">일반작업 <a href="#" class="link">바로가기<i></i></a></p>
+								</td>
+							</tr>
+							<tr>
+								<td class="col">
+									<p class="normal">방한작업 <a href="#" class="link">바로가기<i></i></a></p>
+								</td>
+							</tr>
+							<tr>
+								<td class="col last">
+									<p class="normal">절단방어작업 <a href="#" class="link">바로가기<i></i></a></p>
+								</td>
+							</tr>
+						</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--// 10.27 : 제품 라인업 팝업(화장실위생 > 글러브) -->
+
+		<!-- 10.27 : 제품 라인업 팝업(화장실위생 > 와이핑&클리닝) -->
+		<div class="layer_body layer_full lineuppopup" id="lineup-wipingnclean" aria-hidden="true" role="dialog">
+			<div class="layer_wrap">
+				<div class="layer_cont">
+					<button onclick="layerClose('lineup-wipingnclean')" class="layer_close manualfn">닫기</button>
+					<div class="head">
+						<h3>제품 라인업</h3>
+						<ul class="breadcr">
+							<li>화장실 &amp; 위생</li>
+							<li>와이핑&amp;클리닝</li>
+						</ul>
+					</div>
+					<div class="poptable">
+						<table>
+						<thead>
+							<tr>
+								<th class="th100">구분</th>
+								<th class="th70">종류</th>
+								<th class="th0">설명</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="type last" rowspan="4">
+									<strong class="center">산업용 <a href="#" class="link">바로가기<i></i></a></strong>
+								</td>
+								<td class="col" colspan="2">
+									<div class="in">
+										<p class="normal">L 와이퍼</p>
+									</div>
+									<p>경작업용 와이퍼로 에어포켓 원단의 우수한 흡착력</p>
+								</td>
+							</tr>
+							<tr>
+								<td class="col" colspan="2">
+									<div class="in">
+										<p class="normal">X 와이퍼</p>
+									</div>
+									<p>중작업용 하이드로니트 와이퍼</p>
+								</td>
+							</tr>
+							<tr>
+								<td class="col" colspan="2">
+									<div class="in">
+										<p class="normal">특수목적</p>
+									</div>
+									<p>정밀작업용 MB 와이퍼</p>
+								</td>
+							</tr>
+							<tr>
+								<td class="col last" colspan="2">
+									<div class="in">
+										<p class="normal">유흡착제</p>
+									</div>
+									<p>오일 방청유 제거용 와이퍼</p>
+								</td>
+							</tr>
+							<tr>
+								<td class="type last" rowspan="2">
+									<strong class="center">푸드 <a href="#" class="link">바로가기<i></i></a></strong>
+								</td>
+								<td class="col" colspan="2">
+									<div class="in">
+										<p class="normal">키친타월</p>
+									</div>
+									<p>푸드컨텍이 가능한 위생용품<span>위생용품(키친타월)</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td class="col last" colspan="2">
+									<div class="in">
+										<p class="normal">행주&amp;<br>수세미</p>
+									</div>
+									<p>위생용품 행주 및 수세미<span>위생용품(일회용 행주)</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td class="type last">
+									<strong class="center">실험실 <a href="#" class="link">바로가기<i></i></a></strong>
+								</td>
+								<td class="col last" colspan="2">
+									<div class="in">
+										<p class="normal">실험실</p>
+									</div>
+									<p>린트가 적게 발생하는 실험실용 와이퍼</p>
+								</td>
+							</tr>
+							<tr>
+								<td class="type last" rowspan="2">
+									<strong class="center">클리닝 <a href="#" class="link">바로가기<i></i></a></strong>
+								</td>
+								<td class="col" colspan="2">
+									<div class="in">
+										<p class="normal">건식</p>
+									</div>
+									<p>클리닝 용도로 사용하는  건식와이퍼</p>
+								</td>
+							</tr>
+							<tr>
+								<td class="col last" colspan="2">
+									<div class="in">
+										<p class="normal">습식</p>
+									</div>
+									<p>클리닝 용도의 습식와이퍼<span>화장품 관리법 - 물티슈</span></p>
+								</td>
+							</tr>
+						</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--// 10.27 : 제품 라인업 팝업(화장실위생 > 와이핑&클리닝) -->
+
+		<!-- 10.27 : 제품 라인업 팝업(화장실위생 > 마스크) -->
+		<div class="layer_body layer_full lineuppopup" id="lineup-mask" aria-hidden="true" role="dialog">
+			<div class="layer_wrap">
+				<div class="layer_cont">
+					<button onclick="layerClose('lineup-mask')" class="layer_close manualfn">닫기</button>
+					<div class="head">
+						<h3>제품 라인업</h3>
+						<ul class="breadcr">
+							<li>화장실 &amp; 위생</li>
+							<li>마스크</li>
+						</ul>
+					</div>
+					<div class="poptable">
+						<table>
+						<thead>
+							<tr>
+								<th class="th100">구분</th>
+								<th class="th70">종류</th>
+								<th class="th0">설명</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="type last" rowspan="4">
+									<strong class="center">방진<br>마스크 <a href="#" class="link">바로가기<i></i></a></strong>
+								</td>
+								<td class="col" colspan="2" style="width:calc(100% - 100px)">
+									<div class="in">
+										<p class="normal">접이식</p>
+									</div>
+									<p>접이식 형태의 안면부여과식 방진마스크<span>KOSHA 1급, 2급</span></p>
+								</td>
+							</tr>
+						</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--// 10.27 : 제품 라인업 팝업(화장실위생 > 마스크) -->
+
+
+	</div>
+	<!--// container -->
+</div>
+<!--// wrap -->
+
+<!-- footer -->
+@@include('../inc/footer.inc',{
+	"webroot2":"..",
+	"etctype":"_etc"
+})
+<!-- //footer -->
+
+<script>
+	layerOpen('lineup-mask');
+</script>
+
+</body>
+</html>
