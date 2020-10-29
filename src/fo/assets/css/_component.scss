@@ -539,6 +539,9 @@
 			font-size:0;
 			figure {
 				display:inline-block;
+				img {
+					max-width:283px;
+				}
 				&:last-child {
 					margin-left:84px;
 				}
