@@ -442,6 +442,7 @@
 		.container-top {
 			padding-bottom:125px;
 			.swiper-slide {
+				height:740px;
 				background: {
 					size:cover;
 					position:center 0;
@@ -455,12 +456,13 @@
 					width:100%;
 					height:100%;
 					background-color:rgba(0,0,0, .4);
-				}
+				} 
 			}
 		}
 		.row {
 			position: relative;
 			max-width:1280px;
+			height:100%;
 			margin:0 auto;
 			padding:110px 0 0;
 			z-index:1;
@@ -484,13 +486,17 @@
 				color:#fff;
 				p:not(.eng) {
 					line-height:2;
-					@include ellipse(4);
+					// @include ellipse(4);
 					font-weight: 300;
 				}
 			}
 			.img {
+				position: absolute;
+				bottom:-130px;
+				left:50%;
+				@include transform(translate(-50%, 0));
 				max-width:490px;
-				margin:0 auto -120px;
+				// margin:0 auto -120px;
 			}
 			.btn_more {
 				margin-left:0;

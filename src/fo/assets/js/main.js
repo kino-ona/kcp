@@ -38,7 +38,7 @@ if($('#kvswipe').length > 0){
 
 if($('#solutionswipe').length > 0){ // 솔루션
 	var soluswipe = new Swiper('#solutionswipe', {
-		slidesPerView: 1.4,
+		slidesPerView: 'auto',
 		centeredSlides: true,
 		observer: true,
 		observeParents: true,
