@@ -10,6 +10,13 @@ if($('#kvswipe').length > 0){
 		pagination: {
 			el: '.kvpage .swiper-pagination',
 			type: 'progressbar',
+			clickable : true,
+		},
+		observer: true,
+		observeParents: true,
+		autoplay: {
+			delay: 2500,
+			disableOnInteraction: false,
 		},
 	});
 

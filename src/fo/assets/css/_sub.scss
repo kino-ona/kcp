@@ -1327,6 +1327,7 @@
 				font-weight: 500;
 			}
 			ul {
+				margin-bottom:40px;
 				&:after {
 					@extend %clearer;
 				}
@@ -1334,7 +1335,7 @@
 			li {
 				float:left;
 				width:calc(100%/3);
-				padding-bottom:20%;
+				padding-bottom:19%;
 				&:nth-child(odd) {
 					background-color:#eef6ff;
 				}
@@ -1351,23 +1352,25 @@
 						}
 					}
 				}
+				div {
+					height:100px;
+					align-items:center;
+					padding-left:25px;
+					padding-top:40px;
+					font-size:22px;
+					font-weight:500;
+					vertical-align: top;
+				}
+				span {
+					display:block;
+					font-size:16px;
+					font-weight:300;
+				}
 				a {
 					display:flex;
 					height:100px;
 					align-items:center;
 					padding-left:25px;
-					div {
-						height:100%;
-						padding-top:40px;
-						font-size:22px;
-						font-weight:500;
-						vertical-align: top;
-					}
-					span {
-						display:block;
-						font-size:16px;
-						font-weight:300;
-					}
 					i {
 						display:inline-block;
 						width:10px;
@@ -1380,7 +1383,8 @@
 				}
 			}
 			.desc {
-				padding-top:50px;
+				// padding-top:50px;
+				margin-bottom:40px;
 				font-size: 22px;
 			}
 		}
@@ -1424,7 +1428,7 @@
 				margin-top:10px;
 				text-align: center;
 				@for $i from 1 through 7 {
-					&:nth-of-type(#{$i}) a:before {
+					&:nth-of-type(#{$i}) span:before {
 						content:'';
 						display:block;
 						width:55px;
@@ -1438,7 +1442,7 @@
 						}
 					}
 				}
-				a {
+				span {
 					display:block;
 					padding:15px 15px 10px;
 					font-size:14px;
@@ -1816,6 +1820,12 @@
 				max-width: 1200px;
 				img {
 					width: 100%;
+				}
+				&._gif {
+					text-align: center;
+					img {
+						max-width: 800px;
+					}
 				}
 			}
 		}

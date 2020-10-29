@@ -2514,20 +2514,25 @@
 						}
 					}
 				}
+				div {
+					height:100px;
+					align-items:center;
+					padding-top:25px;
+					padding-left:25px;
+					font-size:14px;
+					font-weight:500;
+				}
+				span {
+					display:block;
+					font-size:12px;
+					font-weight:300;
+				}
 				a {
 					display:flex;
 					height:100px;
 					align-items:center;
 					padding-left:25px;
-					div {
-						font-size:14px;
-						font-weight:500;
-					}
-					span {
-						display:block;
-						font-size:12px;
-						font-weight:300;
-					}
+					
 					i {
 						display:inline-block;
 						width:6px;
@@ -2572,7 +2577,7 @@
 					margin-left:10px;
 				}
 				@for $i from 1 through 7 {
-					&:nth-of-type(#{$i}) a:before {
+					&:nth-of-type(#{$i}) span:before {
 						content:'';
 						display:block;
 						width:30px;
@@ -2586,7 +2591,7 @@
 						}
 					}
 				}
-				a {
+				span {
 					display:block;
 					padding:15px 15px 10px;
 					font-size:14px;
@@ -2779,6 +2784,14 @@
 		position: relative;
 		border-top:1px solid #eee;
 		margin-top:-18px;
+		p {
+			&._gif {
+				text-align: center;
+				img {
+					max-width: 310px;
+				}
+			}
+		}
 	}
 }
 .layer_body.vodpop {
