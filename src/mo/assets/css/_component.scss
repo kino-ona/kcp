@@ -366,6 +366,65 @@
 				padding-bottom:0;
 			}
 		}
+		dl {
+			margin-bottom:30px;
+			dt {
+				margin-bottom:10px;
+				font-size:14px;
+				font-weight:700;
+			}
+			dd {
+				font-size:14px;
+				font-weight:300;
+				em {
+					font-size:inherit;
+					font-weight:400;
+					vertical-align:baseline;
+				}
+				& + dt {
+					margin-top:20px;
+				}
+			}
+			&.type_ico {
+				dd {
+					position:relative;
+					margin-bottom:10px;
+					padding-left:42px;
+					text-indent:0;
+					&:last-child {
+						margin-bottom:0;
+					}
+				}
+				[class^="ico_"] {
+					position:absolute;
+					top:4px;
+					left:0;
+					width:30px;
+					height:30px;
+					vertical-align:middle;
+				}
+				.ico_dryer01 { background:url(../images/workplace/icon_health_01.jpg) no-repeat 50% 50% / cover; }
+				.ico_dryer02 { background:url(../images/workplace/icon_health_02.jpg) no-repeat 50% 50% / cover; }
+				.ico_dryer03 { background:url(../images/workplace/icon_health_03.jpg) no-repeat 50% 50% / cover; }
+				.ico_dryer04 { background:url(../images/workplace/icon_health_04.jpg) no-repeat 50% 50% / cover; }
+				.ico_dryer05 { background:url(../images/workplace/icon_health_05.jpg) no-repeat 50% 50% / cover; }
+				.ico_handtowel01 { background:url(../images/workplace/icon_health_06.jpg) no-repeat 50% 50% / cover; }
+				.ico_handtowel02 { background:url(../images/workplace/icon_health_07.jpg) no-repeat 50% 50% / cover; }
+				.ico_handtowel03 { background:url(../images/workplace/icon_health_08.jpg) no-repeat 50% 50% / cover; }
+				.ico_handtowel04 { background:url(../images/workplace/icon_health_09.jpg) no-repeat 50% 50% / cover; }
+				.ico_handtowel05 { background:url(../images/workplace/icon_health_10.jpg) no-repeat 50% 50% / cover; }
+			}
+		}
+		&.type_indent {
+			dd {
+				padding-left:10px;
+				text-indent:-10px;
+			}
+		}
+		sup {
+			vertical-align:super;
+			font-size:10px;
+		}
 		.keyvisual {
 			position:relative;
 			.img {
@@ -410,6 +469,52 @@
 			}
 			&:last-child {
 				margin-bottom:0;
+			}
+		}
+		.subtit {
+			margin-bottom:10px;
+			font-size:15px;
+			&:before {
+				content:'';
+				display:block;
+				width:25px;
+				height:1px;
+				margin-bottom:20px;
+				background-color:#000;
+			}
+			strong {
+				font-size:inherit;
+				font-weight:700;
+			}
+			& + .img {
+				margin-top:50px;
+			}
+		}
+		.footnote {
+			border-top:1px solid #eee;
+			padding-top:20px;
+			li {
+				font-size:12px;
+				font-weight:300;
+				color:#666;
+				padding-left:12px;
+				text-indent:-12px;
+			}
+		}
+
+		// 위생과 건강, 친환경 가치실현
+		.health,
+		.eco {
+			.keyvisual {
+				.summary {
+					padding-bottom:28px;
+				}
+				.img {
+					margin-bottom:40px;
+					&:before {
+						display:none;
+					}
+				}
 			}
 		}
 	}
