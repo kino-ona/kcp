@@ -340,7 +340,7 @@
 				<div class="accord_wrap" role="submenu">
 					<div class="item" data-status="hidden">
 						<div class="acco_head">
-							<a href="#" class="acco_target" tabindex="0">제품구매 상담</a>
+							<a href="#" class="acco_target" tabindex="0">제품구매 문의</a>
 						</div>
 					</div>
 					<div class="item" data-status="hidden">

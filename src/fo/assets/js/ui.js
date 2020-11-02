@@ -220,7 +220,6 @@ $('.headgnb .menu:not(".submenu")').find('>li').each(function(i, e) {
 		$('.subgnb').removeClass('show');
 		$('.reomm_bnr').removeClass('show');
 	});
-
 });
 
 var videoControl = function(){

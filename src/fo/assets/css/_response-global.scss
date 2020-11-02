@@ -61,9 +61,9 @@
 @media screen and (min-width: 1024px) and (max-width: 1640px) {
 	.headgnb {
 		max-width:900px;
-		margin:0;
+		// margin:0;
 		.menu {
-			max-width:70%;
+			// max-width:70%;
 			li {
 				a {
 					padding:0 10px;
@@ -81,6 +81,30 @@
 			}
 		}
 	}
+
+	.reomm_bnr.swiper-container {
+		// top:90px;
+		left:0;
+		width:190px;
+		height:auto;
+		padding-bottom:20px;
+		.figure {
+			width:45px;
+		}
+		.slide01, .slide02, .slide03, .slide04 {
+			.figure {
+				background-size:45px;
+			}
+		}
+		.info {
+			padding-top:0;	
+			padding-left:60px;
+			p {
+				font-size:12px;
+			}
+		}
+	}
+
 }
 
 @media screen and (max-width: 1320px) {
