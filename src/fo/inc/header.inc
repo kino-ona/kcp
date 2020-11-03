@@ -140,7 +140,7 @@
 			</ul>
 			<!--// 10.27 명 변경 -->
 			<ul class="submenu" data-sub="6">
-				<li><a href="#">제품구매 문의</a></li>
+				<li><a href="#">제품구매 문의</a></li> <!-- 11.03 //-->
 				<li><a href="#">고객상담</a></li>
 			</ul>
 		</div>
