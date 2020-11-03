@@ -2833,11 +2833,13 @@
 			overflow: hidden;
 			img {
 				position: absolute;
-				top:0;
+				top:50%;
 				left:0;
 				right:0;
-				max-width:inherit;
+				max-width:100%;
+				width:100%;
 				height:100%;
+				@include transform(translate(0, -50%));
 			}
 		}
 		dd {

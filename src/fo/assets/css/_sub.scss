@@ -1866,7 +1866,7 @@
 		dt {margin-bottom:45px;}
 		h2 {
 			position:relative;
-			margin-bottom:40px;
+			margin-bottom:60px;
 			font-size: 26px;
 			font-weight: 700;
 			> span {
@@ -1877,5 +1877,53 @@
 				vertical-align: middle;
 			}
 		}
+		.product_list {
+			margin-bottom:50px;
+			ul { 
+				> li {
+					width:calc((100% / 4) - 68px);
+					padding-left:0;
+					padding-right:0;
+					margin-right:90px;
+					&:nth-child(4n) {margin-right:0;}
+				}
+			}
+			.tit {
+				padding-bottom:30px;
+				font-size:24px;
+				font-weight: 700;
+			}
+			._half {
+				float:left;
+				width:50%;
+				padding-right:45px;
+				ul { 
+					> li {
+						width:calc((100% / 2) - 45px);
+						padding-left:0;
+						padding-right:0;
+						margin-right:90px;
+						&:nth-child(2n) {margin-right:0;}
+						&:nth-child(2n + 1) { 
+							clear:both;
+						}
+					}
+				}
+				&._right {
+					float:right;
+					padding-left:45px;
+					padding-right:0;
+					ul { 
+						> li {
+							// width:calc((100% / 2) - 90px);
+							margin-right:0;
+							margin-left:90px;
+							&:nth-child(2n - 1) {margin-left:0;}
+						}
+					}
+				}
+			}
+		}
 	}
+
 }

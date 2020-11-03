@@ -97,6 +97,7 @@
 	}
 }
 .product_list {
+	clear:both;
 	height:100%;
 	min-height:100%;
 	.img {
@@ -104,6 +105,12 @@
 		width:100%;
 		padding-top:100%;
 		overflow: hidden;
+		background:{
+			image:url(../images/common/default_image.png);
+			size: cover;
+			position:center center;
+			repeat:no-repeat;
+		}
 		img {
 			position: absolute;
 			top:50%;
@@ -201,7 +208,9 @@
 				color:#999999;
 			}
 		}
-
+	}
+	&:after {
+		@extend %clearer;
 	}
 } //.product_list
 .paging {
