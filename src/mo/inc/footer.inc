@@ -420,7 +420,7 @@
 				<a href="tel:1588-5332" class="tel">1588-5332</a>
 			</div>
 			<div>
-				<a href="#" class="btn-cust">구매상담</a>
+				<a href="#" class="btn-cust">구매문의</a>
 			</div>
 		</div>
 

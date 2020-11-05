@@ -2,33 +2,38 @@ $(document).ready(function() {
 });
 if($('#kvswipe').length > 0){
 	var mainswipe = new Swiper('#kvswipe', {
-		effect: 'fade',
-		loop: true,
+		direction: 'vertical',
+		autoHeight: true,
 		parallax: true,
 		observer: true,
 		observeParents: true,
 		pagination: {
 			el: '.kvpage .swiper-pagination',
 			type: 'progressbar',
-			clickable : true,
 		},
-		observer: true,
-		observeParents: true,
+    speed: 1600,
 		autoplay: {
-			delay: 2500,
-			disableOnInteraction: false,
-		},
+      delay: 2200,
+      disableOnInteraction: false,
+    },
 	});
 
 	var cur = mainswipe.realIndex + 1,
-			total = mainswipe.slides.length - 2;
+			total = mainswipe.slides.length;
 	var cur = (cur < 10) ? '0' + cur : cur;
 	var total = (total < 10) ? '0' + total : total;
-	$('#kvswipe').find('.swiper-counter').append('<span class=cur>' + cur + '</span> <span class=total> / ' + total + '</span>')
+	$('.keyvisual').find('.swiper-counter').append('<span class=cur>' + cur + '</span> <span class=total> / ' + total + '</span>')
 	mainswipe.on('slideChange', function () {
 		var cur = mainswipe.realIndex + 1,
 				cur = (cur < 10) ? '0' + cur : cur;
-		$('#kvswipe').find('.swiper-counter .cur').html(cur)
+		$('.keyvisual').find('.swiper-counter .cur').html(cur);
+
+		$('.keyvisual .kvdesc_area .info').removeClass('show');
+		$('.keyvisual .kvdesc_area').find('.info').each(function(i){
+			if($(this).attr('data-slide-txt') == cur) {
+				$(this).addClass('show');
+			}
+		});
 	});
 
 	$(window).resize(function (){

@@ -41,17 +41,12 @@
 			</p>
 		</div>
 		<hr>
+		<!-- 11.06 : 입력필드 순서변경 및 날짜선택 수정 -->
 		<div class="counsel_wrap">
 			<dl class="frm_group">
 				<dt><label for="cs1">문의제품 <span class="required"><span class="a11y">필수</span></span></label></dt>
 				<dd class="inpwrap">
 					<input type="text" id="cs1" value="" placeholder="문의하실 제품명 또는 제품군을 입력해주세요.">
-				</dd>
-			</dl>
-			<dl class="frm_group">
-				<dt><label for="cs2">기업정보 <span class="required"><span class="a11y">필수</span></span></label></dt>
-				<dd class="inpwrap">
-					<input type="text" id="cs2" value="" placeholder="기업정보를 입력해주세요.">
 				</dd>
 			</dl>
 			<dl class="frm_group">
@@ -61,25 +56,9 @@
 				</dd>
 			</dl>
 			<dl class="frm_group">
-				<dt><label for="cs4">이메일 <span class="required"><span class="a11y">필수</span></span></label></dt>
-				<dd class="mix_half">
-					<div class="inpwrap email">
-						<p><input type="text" id="cs4" value="" placeholder=""></p>
-						<p><input type="text" placeholder="직접입력"></p>
-						<select class="sel_email">
-							<option>이메일 선택</option>
-							<option>naver.com</option>
-							<option>hanmail.net</option>
-							<option>nate.com</option>
-							<option>gmail.com</option>
-						</select>
-					</div>
-				</dd>
-			</dl>
-			<dl class="frm_group">
-				<dt><label for="cs5">휴대폰번호 <span class="required"><span class="a11y">필수</span></span></label></dt>
+				<dt><label for="cs2">기업정보 <span class="required"><span class="a11y">필수</span></span></label></dt>
 				<dd class="inpwrap">
-					<input type="text" id="cs5" value="" placeholder="-를 제외한 숫자만 입력해주세요.">
+					<input type="text" id="cs2" value="" placeholder="기업정보를 입력해주세요.">
 				</dd>
 			</dl>
 			<dl class="frm_group">
@@ -115,25 +94,42 @@
 					<input type="radio" id="rd02" name="radio"><label for="rd02">이메일답변</label>
 				</dd>
 			</dl>
+
+			<!-- 이메일답변 선택한 경우 -->
+			<dl class="frm_group">
+				<dt><label for="cs4">이메일 <span class="required"><span class="a11y">필수</span></span></label></dt>
+				<dd class="mix_half">
+					<div class="inpwrap email">
+						<p><input type="text" id="cs4" value="" placeholder=""></p>
+						<p><input type="text" placeholder="직접입력"></p>
+						<select class="sel_email">
+							<option>이메일 선택</option>
+							<option>naver.com</option>
+							<option>hanmail.net</option>
+							<option>nate.com</option>
+							<option>gmail.com</option>
+						</select>
+					</div>
+				</dd>
+			</dl>
+			<!--// 이메일답변 선택한 경우 -->
+
+			<!-- 전화답변 선택한 경우 -->
+			<dl class="frm_group">
+				<dt><label for="cs5">휴대폰번호 <span class="required"><span class="a11y">필수</span></span></label></dt>
+				<dd class="inpwrap">
+					<input type="text" id="cs5" value="" placeholder="-를 제외한 숫자만 입력해주세요.">
+				</dd>
+			</dl>
 			<dl class="frm_group">
 				<dt><label>희망답변일시 <span class="required"><span class="a11y">필수</span></span></label></dt>
 				<dd class="mix_half">
 					<div class="inpwrap">
-						<!-- <p><input type="text" class="datepicker" value="" readonly></p> -->
-						<select class="sel_month">
+						<input type="text" class="datepicker" placeholder="날짜를 선택해주세요." readonly>
+						<!-- <select class="sel_month">
 							<option>월 선택</option>
 							<option>1월</option>
 							<option>2월</option>
-							<option>3월</option>
-							<option>4월</option>
-							<option>5월</option>
-							<option>6월</option>
-							<option>7월</option>
-							<option>8월</option>
-							<option>9월</option>
-							<option>10월</option>
-							<option>11월</option>
-							<option>12월</option>
 						</select>
 						<select class="sel_day">
 							<option>일 선택</option>
@@ -141,49 +137,18 @@
 							<option>2일</option>
 							<option>3일</option>
 							<option>4일</option>
-							<option>5일</option>
-							<option>6일</option>
-							<option>7일</option>
-							<option>8일</option>
-							<option>9일</option>
-							<option>10일</option>
-							<option>11일</option>
-							<option>12일</option>
-							<option>13일</option>
-							<option>14일</option>
-							<option>15일</option>
-							<option>16일</option>
-							<option>17일</option>
-							<option>18일</option>
-							<option>19일</option>
-							<option>20일</option>
-							<option>21일</option>
-							<option>22일</option>
-							<option>23일</option>
-							<option>24일</option>
-							<option>25일</option>
-							<option>26일</option>
-							<option>27일</option>
-							<option>28일</option>
-							<option>29일</option>
-							<option>30일</option>
-							<option>31일</option>
-						</select>
+						</select> -->
 						<select class="sel_time">
 							<option>시간 선택</option>
 							<option>9:00 - 10:00</option>
 							<option>10:00 - 11:00</option>
 							<option>11:00 - 12:00</option>
-							<option>12:00 - 13:00</option>
-							<option>13:00 - 14:00</option>
-							<option>14:00 - 15:00</option>
-							<option>15:00 - 16:00</option>
-							<option>16:00 - 17:00</option>
-							<option>17:00 - 18:00</option>
 						</select>
 					</div>
 				</dd>
 			</dl>
+			<!--// 전화답변 선택한 경우 -->
+
 			<dl class="frm_group">
 				<dt><label>내용 <span class="required"><span class="a11y">필수</span></span></label></dt>
 				<dd>
@@ -191,6 +156,7 @@
 				</dd>
 			</dl>
 		</div>
+		<!--// 11.06 : 입력필드 순서변경 및 날짜선택 수정 -->
 		<!--// counsel_wrap -->
 
 		<div class="btn_wrap user">

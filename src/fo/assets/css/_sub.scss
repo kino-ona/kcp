@@ -506,7 +506,11 @@
 		.title {
 			font-size: 22px;
 			font-weight: 500;
-			padding-bottom: 8px;
+			padding-bottom: 5px;
+			a {
+				font-size: inherit;
+				font-weight: inherit;
+			}
 		}
 		.desc {
 			font-weight: 500;
@@ -1898,7 +1902,12 @@
 	}
 	.sub_block {
 		margin-bottom:50px;
-		dt {margin-bottom:45px;}
+		dt {
+			margin-bottom:45px;
+			h2 {
+				margin-bottom:25px;
+			}
+		}
 		h2 {
 			position:relative;
 			margin-bottom:60px;
@@ -1924,9 +1933,18 @@
 				}
 			}
 			.tit {
+				min-height:100px;
 				padding-bottom:30px;
 				font-size:24px;
 				font-weight: 700;
+				> span {
+					display: block;
+					font-size:16px;
+					font-weight:300;
+				}
+			}
+			.img {
+				img {width: auto;max-height:100%;}
 			}
 			._half {
 				float:left;

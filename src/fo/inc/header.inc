@@ -77,15 +77,6 @@
 				<li><a href="#" class="logo logo_cleanguard"><span class="a11y">크린가드</span></a></li>
 			</ul>
 			<ul class="submenu _more" data-sub="3">
-				<li><a href="#" class="ti">전용용기</a>
-					<ul>
-						<li><a href="#">냅킨</a></li>
-						<li><a href="#">와이퍼</a></li>
-						<li><a href="#">위생케어</a></li>
-						<li><a href="#">핸드워시</a></li>
-						<li><a href="#">화장실용 화장지</a></li>
-					</ul>
-				</li>
 				<li><a href="#" class="ti">화장실&amp;위생</a>
 					<ul>
 						<li><a href="#">핸드타올</a></li>
@@ -97,20 +88,6 @@
 						<li><a href="#">냅킨</a></li>
 					</ul>
 				</li>
-				<li><a href="#" class="ti">와이핑&amp;세척</a>
-					<ul>
-						<li><a href="#">와이퍼</a></li>
-					</ul>
-				</li>
-				<li><a href="#" class="ti">와이퍼</a>
-					<ul>
-						<li><a href="#">마스크</a></li>
-						<li><a href="#">글로브</a></li>
-						<li><a href="#">보호복</a></li>
-						<li><a href="#">위생화</a></li>
-						<li><a href="#">산업용</a></li>
-					</ul>
-				</li>
 				<li><a href="#" class="ti">사이언티픽&amp;연구개발</a>
 					<ul>
 						<li><a href="#">사이언티픽 글로브</a></li>
@@ -119,6 +96,29 @@
 						<li><a href="#">와이퍼</a></li>
 						<li><a href="#">위생케어</a></li>
 						<li><a href="#">핸드워시</a></li>
+					</ul>
+				</li>
+				<li><a href="#" class="ti">개인안전보호구</a>
+					<ul>
+						<li><a href="#">마스크</a></li>
+						<li><a href="#">글로브</a></li>
+						<li><a href="#">보호복</a></li>
+						<li><a href="#">위생화</a></li>
+						<li><a href="#">산업용</a></li>
+					</ul>
+				</li>
+				<li><a href="#" class="ti">와이핑&amp;세척</a>
+					<ul>
+						<li><a href="#">와이퍼</a></li>
+					</ul>
+				</li>
+				<li><a href="#" class="ti">전용용기</a>
+					<ul>
+						<li><a href="#">냅킨</a></li>
+						<li><a href="#">와이퍼</a></li>
+						<li><a href="#">위생케어</a></li>
+						<li><a href="#">핸드워시</a></li>
+						<li><a href="#">화장실용 화장지</a></li>
 					</ul>
 				</li>
 			</ul>

@@ -8,6 +8,7 @@
 		</div>
 	</div>
 
+	<!-- 11.06 : 입력필드 순서변경 및 날짜선택 수정 -->
 	<div class="mid">
 		<h4>구매 문의</h4>
 		<p class="title">유한킴벌리 프로페셔널 제품구매를 원하시는 고객님은 구매문의를 해주시면<br>담당자가 연락하여 상세하게 안내해 드립니다.</p>
@@ -22,33 +23,15 @@
 			</dd>
 		</dl>
 		<dl class="frm_group">
-			<dt><label for="frm2">기업정보 <span class="required"><span class="a11y">필수</span></span></label></dt>
-			<dd>
-				<input type="text" id="frm2" value="" placeholder="기업명을 입력해주세요.">
-			</dd>
-		</dl>
-		<dl class="frm_group">
 			<dt><label for="frm3">담당자명 <span class="required"><span class="a11y">필수</span></span></label></dt>
 			<dd>
 				<input type="text" id="frm3" value="" >
 			</dd>
 		</dl>
 		<dl class="frm_group">
-			<dt><label for="frm4">이메일 <span class="required"><span class="a11y">필수</span></span></label></dt>
-			<dd class="mix">
-				<input type="text" id="frm4" value="" placeholder="이메일입력" required>
-				<span>@</span>
-				<input type="text" placeholder="" required>
-				<select>
-					<option value="">이메일 선택</option>
-					<option value="">gmail.com</option>
-				</select>
-			</dd>
-		</dl>
-		<dl class="frm_group">
-			<dt><label for="frm5">휴대폰번호 <span class="required"><span class="a11y">필수</span></span></label></dt>
+			<dt><label for="frm2">기업정보 <span class="required"><span class="a11y">필수</span></span></label></dt>
 			<dd>
-				<input type="text" id="frm5" value="" placeholder="-를 제외한 숫자만 입력해주세요." required>
+				<input type="text" id="frm2" value="" placeholder="기업명을 입력해주세요.">
 			</dd>
 		</dl>
 		<dl class="frm_group">
@@ -68,23 +51,49 @@
 				<input type="radio" id="rd02" name="radio"><label for="rd02">이메일답변</label>
 			</dd>
 		</dl>
+		
+		<!-- 이메일 답변 선택할 경우 -->
+		<dl class="frm_group">
+			<dt><label for="frm4">이메일 <span class="required"><span class="a11y">필수</span></span></label></dt>
+			<dd class="mix">
+				<input type="text" id="frm4" value="" placeholder="이메일입력" required>
+				<span>@</span>
+				<input type="text" placeholder="" required>
+				<select>
+					<option value="">이메일 선택</option>
+					<option value="">gmail.com</option>
+				</select>
+			</dd>
+		</dl>
+		<!--// 이메일 답변 선택할 경우 -->
+
+		<!-- 전화답변 선택할 경우 -->
+		<dl class="frm_group">
+			<dt><label for="frm5">휴대폰번호 <span class="required"><span class="a11y">필수</span></span></label></dt>
+			<dd>
+				<input type="text" id="frm5" value="" placeholder="-를 제외한 숫자만 입력해주세요." required>
+			</dd>
+		</dl>
 		<dl class="frm_group">
 			<dt><label for="frm7">희망답변일시 <span class="required"><span class="a11y">필수</span></span></label></dt>
 			<dd class="mix">
-				<select>
+				<input type="text" class="datepicker" placeholder="날짜를 선택해주세요." readonly>
+				<!-- <select>
 					<option value="">월 선택</option>
 					<option value="">12월</option>
 				</select>
 				<select>
 					<option value="">일 선택</option>
 					<option value="">12일</option>
-				</select>
+				</select> -->
 				<select>
 					<option value="">시간 선택</option>
 					<option value="">09~10</option>
 				</select>
 			</dd>
 		</dl>
+		<!--// 전화답변 선택할 경우 -->
+		
 		<dl class="frm_group">
 			<dt><label for="frm8">내용 <span class="required"><span class="a11y">필수</span></span></label></dt>
 			<dd>
@@ -96,6 +105,7 @@
 			<a href="#" class="btn max primary">구매문의하기</a>
 		</div>
 	</div> 
+	<!--// 11.06 : 입력필드 순서변경 및 날짜선택 수정 -->
 
 	<div class="etc">
 		<div class="top_util">
@@ -201,7 +211,7 @@
 				<a href="tel:1588-5332" class="tel">1588-5332</a>
 			</div>
 			<div>
-				<a href="#" class="btn-cust">구매상담</a>
+				<a href="#" class="btn-cust">구매문의</a>
 			</div>
 		</div>
 

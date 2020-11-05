@@ -22,26 +22,22 @@
 		}
 	}
 	.keyvisual {
+		position:relative;
 		margin:0 100px;
+		height:calc(100vh - 100px);
 		.figure {
-			padding-top:42.778%;
+			// padding-top:42.778%;
+			width:100%;
+			height:100%;
 			background: {
 				size:cover;
 				position: center 0;
 				repeat:no-repeat;				
-			};
+			}
+			overflow: hidden;
 		}
-		.info {
-			width:50%;
-			padding:40px 50px 24px;
-			background-color:#fff;
-			.title {
-				font-size: 26px;
-				font-weight: 700;
-			}
-			.desc {
-				font-weight: 300;
-			}
+		.swiper-container {
+			height:calc(100vh - 250px);	
 		}
 	}
 	.section {
@@ -77,12 +73,37 @@
 			}
 		}
 	}
+	.kvdesc_area {
+		position: absolute;
+		left:0;
+		bottom:0;
+		width:55%;
+		.info {
+			display: none;
+			width:100%;
+			padding:0 0 24px 50px;
+			background-color:#fff;
+			vertical-align: top;
+			.title {
+				font-size: 26px;
+				font-weight: 700;
+			}
+			.desc {
+				min-height:56px;
+				font-weight: 300;
+			}
+			&.show {
+				display: block;
+			}
+		}
+	}
 	.swiper-pagination-progressbar {
 		width:150px;
 		height:1px;
 	}
 	.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
 		background:#000;
+		height:1.5px;
 	}
 
 	.section {

@@ -43,6 +43,7 @@
 			</div>
 
 			<hr>
+			<!-- 11.06 : 입력필드 순서변경 -->
 			<div class="row">
 				<dl class="frm_group">
 					<dt><label for="frm2">기업정보 <span class="required"><span class="a11y">필수</span></span></label></dt>
@@ -54,25 +55,6 @@
 					<dt><label for="frm3">담당자 <span class="required"><span class="a11y">필수</span></span></label></dt>
 					<dd class="inpwrap">
 						<input type="text" id="frm3" value="" placeholder="담당자 성함을 입력해주세요.">
-					</dd>
-				</dl>
-				<dl class="frm_group">
-					<dt><label for="frm4">이메일 <span class="required"><span class="a11y">필수</span></span></label></dt>
-					<dd class="mix_half">
-						<div class="inpwrap email">
-							<p><input type="text" id="frm4" value="" placeholder=""></p>
-							<p><input type="text" id="" placeholder="직접입력"></p>
-						</div>
-						<select>
-							<option>이메일 선택</option>
-							<option>naver.com</option>
-						</select>
-					</dd>
-				</dl>
-				<dl class="frm_group">
-					<dt><label for="frm5">휴대폰번호 <span class="required"><span class="a11y">필수</span></span></label></dt>
-					<dd class="inpwrap">
-						<input type="text" id="frm5" value="" placeholder="-를 제외한 숫자만 입력해주세요.">
 					</dd>
 				</dl>
 				<dl class="frm_group">
@@ -115,6 +97,29 @@
 						</div>
 					</dd>
 				</dl>
+
+				<!-- 이메일답변 선택한 경우 -->
+				<dl class="frm_group">
+					<dt><label for="frm4">이메일 <span class="required"><span class="a11y">필수</span></span></label></dt>
+					<dd class="mix_half">
+						<div class="inpwrap email">
+							<p><input type="text" id="frm4" value="" placeholder=""></p>
+							<p><input type="text" id="" placeholder="직접입력"></p>
+						</div>
+						<select>
+							<option>이메일 선택</option>
+							<option>naver.com</option>
+						</select>
+					</dd>
+				</dl>
+				<!--// 이메일답변 선택한 경우 -->
+				<!-- 전화답변 선택한 경우 -->
+				<dl class="frm_group">
+					<dt><label for="frm5">휴대폰번호 <span class="required"><span class="a11y">필수</span></span></label></dt>
+					<dd class="inpwrap">
+						<input type="text" id="frm5" value="" placeholder="-를 제외한 숫자만 입력해주세요.">
+					</dd>
+				</dl>
 				<dl class="frm_group">
 					<dt><label>희망답변일시 <span class="required"><span class="a11y">필수</span></span></label></dt>
 					<dd class="mix_half">
@@ -129,6 +134,8 @@
 						</div>
 					</dd>
 				</dl>
+				<!--// 전화답변 선택한 경우 -->
+
 				<dl class="frm_group">
 					<dt><label>내용 <span class="required"><span class="a11y">필수</span></span></label></dt>
 					<dd>
@@ -136,6 +143,7 @@
 					</dd>
 				</dl>
 			</div>
+			<!--// 11.06 : 입력필드 순서변경 -->
 		</div>
 
 		<!-- sticky button -->
