@@ -3,6 +3,7 @@ $(document).ready(function() {
 if($('#kvswipe').length > 0){
 	var mainswipe = new Swiper('#kvswipe', {
 		direction: 'vertical',
+		loop: true,
 		autoHeight: true,
 		parallax: true,
 		observer: true,
@@ -11,7 +12,11 @@ if($('#kvswipe').length > 0){
 			el: '.kvpage .swiper-pagination',
 			type: 'progressbar',
 		},
-    speed: 1600,
+		navigation: {
+			nextEl: '.kvnavi .swiper-button-next',
+			prevEl: '.kvnavi .swiper-button-prev',
+		},
+    speed: 800,
 		autoplay: {
       delay: 2200,
       disableOnInteraction: false,
@@ -19,7 +24,9 @@ if($('#kvswipe').length > 0){
 	});
 
 	var cur = mainswipe.realIndex + 1,
-			total = mainswipe.slides.length;
+		// total = mainswipe.slides.length;
+	total = $('#kvswipe').find('.swiper-slide').not('.swiper-slide-duplicate').length;
+
 	var cur = (cur < 10) ? '0' + cur : cur;
 	var total = (total < 10) ? '0' + total : total;
 	$('.keyvisual').find('.swiper-counter').append('<span class=cur>' + cur + '</span> <span class=total> / ' + total + '</span>')

@@ -980,7 +980,7 @@
 		margin-right:2px;
 		margin-bottom:2px;
 		padding:20px 20px 26.83%;
-		background-color: #f2f4f6;
+		background-color: #eef8fe;
 		&:nth-child(2n) {
 			margin-right:0;
 		}
@@ -1005,12 +1005,12 @@
 		}
 		.figure {
 			position: absolute;
-			right:20px;
-			bottom:20px;
+			right:0;
+			bottom:0;
 			// width:100%;
 			text-align: right;
 			img {
-				max-width:40px;
+				max-width:50%;
 			}
 		}
 	}
