@@ -441,14 +441,15 @@
 		<div class="addr">
 			<p><span>대표자 : 최규복</span><span>사업자번호 : 120-81-11436</span></p>
 			<p><span>이메일 :  official@yk-proffesional.com</span></p>
-			<p><span>팩스 : 02-528-3467</span></p>
-			<p><span>주소 : 서울특별시 강남구 테헤란로 504</span></p>
+			<p><span>팩스 : 02-3213-7971</span></p>  <!-- 11.06 //-->
+			<p><span>주소 : 05551 서울시 송파구 올림픽로 300 롯데월드타워 29층</span></p>  <!-- 11.06 //-->
 		</div>
 	</div>
+	<!-- 11.06 -->
 	<div class="copyr">
-		<p>ⓡ/* 표는 미국 킴벌리-크라크 월드와이드의 세계적인 등록상표 및 상표입니다.</p>
-		<p>ⓡ/* Trademarks of Limberly-Clark Worldwide, Inc.</p>
-		<p>©2013 Kimberly-Clark Worldwide Inc.<br>All Right Reserved.</p>
+		<p>ⓡ/TM 표는 미국 킴벌리 클라크 월드와이드 또는 계열사의 세계적인 상표입니다.</p>
+		<p>ⓡ/TM Trademarks of Kimberly-Clark Worldwide, Inc. or its affiliates. © KCWW</p>
 	</div>
+	<!--// 11.06 -->
 </footer>
 <script type="text/javascript" src="@@webroot2/assets/js/ui.js"></script>
