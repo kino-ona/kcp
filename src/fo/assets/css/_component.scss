@@ -764,6 +764,46 @@
 				}
 			}
 		}
+
+		// 작업자와 공정 보호
+		.protect {						
+			// view_protect12.html
+			&.view12 {
+				ol {
+					display:flex;
+					flex-wrap:wrap;
+					margin-top:40px;
+					li {
+						width:590px;
+						padding: {
+							top:240px;
+							left:16px;
+						}
+						text-indent:-16px;
+					}
+					&.guide_1 {
+						margin-bottom: 50px;
+						li {
+							@for $i from 1 through 6 {
+								&:nth-of-type(#{$i}) {
+									background:url(../images/workplace/protect12_#{$i + 1}.png) no-repeat 0 0;
+								}
+							}
+						}
+					}
+					&.guide_2 {
+							li {
+							@for $i from 1 through 5 {
+								&:nth-of-type(#{$i}) {
+									background:url(../images/workplace/protect12_#{$i + 6}.png) no-repeat 0 0;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
 	}
 	.attach {
 		margin-top:40px;
