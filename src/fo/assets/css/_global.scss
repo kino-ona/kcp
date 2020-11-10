@@ -1022,9 +1022,10 @@ h1.logo {
 				width:100%;
 				// font-weight: 300;
 				letter-spacing: -1px;
-				&:hover {
-					color:#0053a7;
-				}
+				cursor: inherit;
+				// &:hover {
+				// 	color:#0053a7;
+				// }
 				&.ti {
 					font-weight: 450;
 				}
@@ -1035,6 +1036,10 @@ h1.logo {
 					padding-top:5px;
 					a {
 						font-weight: 300;
+						cursor: pointer;
+						&:hover {
+							color:#0053a7;
+						}
 					}
 				}
 			}

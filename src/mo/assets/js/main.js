@@ -8,13 +8,14 @@ if($('#kvswipe').length > 0){
 		observeParents: true,
 		pagination: {
 			el: '.kvpage .swiper-pagination',
+			type: 'progressbar',
 		},
 		observer: true,
 		observeParents: true,
-		// autoplay: {
-		// 	delay: 2500,
-		// 	disableOnInteraction: false,
-		// },
+		autoplay: {
+			delay: 2500,
+			disableOnInteraction: false,
+		},
 	});
 
 	var cur = mainswipe.realIndex + 1,

@@ -16,16 +16,15 @@ if($('#kvswipe').length > 0){
 			nextEl: '.kvnavi .swiper-button-next',
 			prevEl: '.kvnavi .swiper-button-prev',
 		},
-    speed: 800,
+		speed: 800,
 		autoplay: {
-      delay: 2200,
-      disableOnInteraction: false,
-    },
+			delay: 2200,
+			disableOnInteraction: false,
+		},
 	});
 
 	var cur = mainswipe.realIndex + 1,
-		// total = mainswipe.slides.length;
-	total = $('#kvswipe').find('.swiper-slide').not('.swiper-slide-duplicate').length;
+			total = $('#kvswipe').find('.swiper-slide').not('.swiper-slide-duplicate').length;
 
 	var cur = (cur < 10) ? '0' + cur : cur;
 	var total = (total < 10) ? '0' + total : total;

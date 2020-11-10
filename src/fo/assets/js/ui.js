@@ -344,6 +344,19 @@ var slideMenuSet = function(){
 }
 $(document).ready(function () {
 	if($('.tab_navi').length > 0) slideMenuSet();
+
+	if($('.layer_body.is-visible[role="dialog"]').length > 0) {
+		var layID = $('.layer_body.is-visible').attr('id');
+		$('.layer_body.is-visible').click(function(){
+			layerClose(layID);
+		});
+		$(window).keydown(function(e){
+			if (e.keyCode == 27) { // esc
+				e.preventDefault();
+				layerClose(layID);
+			}
+		});
+	}
 });
 
 // brand > youtube iframe
