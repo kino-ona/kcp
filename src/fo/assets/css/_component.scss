@@ -764,7 +764,7 @@
 					}
 				}
 			}
-			// view_protect3.html
+			// view_protect03.html
 			&.view3 {
 				.guide {
 					li {
@@ -772,6 +772,50 @@
 					}
 					& + h4 {
 						margin-top:120px;
+					}
+				}
+			}
+			// view_protect09.html
+			&.view9 {
+				table {
+					width: 100%;
+					border-collapse: collapse;
+					text-align: left;
+					margin-bottom: 60px;
+					colgroup{
+						display: flex;
+						col { 
+							flex: 1;
+						}
+					}
+					caption {
+						text-align: left;
+						line-height: 40px;
+					}
+					tr {
+						height: 55px;
+						th, td {
+							text-align: center;
+							line-height: 55px;
+						}
+					}
+					thead {
+						border-top: 2px solid #000;
+						border-bottom: 1px solid #000;
+						th {							
+							font-weight: 500;
+						}
+					}
+					tbody{
+						tr {
+							border-bottom: 1px solid #e4e7ec;
+						}
+					}
+					&.T1 {
+						tbody *{
+							text-align: left;
+							padding-left: 80px;
+						}
 					}
 				}
 			}
