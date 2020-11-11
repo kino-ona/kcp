@@ -790,6 +790,27 @@
 						text-align: left;
 						line-height: 40px;
 					}
+					[scope="col"] {
+						position: relative;
+						&:after {
+							content: '';
+							display: block;
+							position: absolute;
+							top: 50%;
+							right: 0;
+							margin-top: -9px;
+							width: 1px;
+							height: 18px;
+							background-image: url(../images/workplace/table_th-bar.png);
+							background-position: 0 0;
+							background-repeat: no-repeat;
+						}
+						&:last-of-type {
+							&:after {
+								background-image: none;
+							}
+						}
+					}
 					tr {
 						height: 55px;
 						th, td {
