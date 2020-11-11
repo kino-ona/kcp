@@ -397,32 +397,6 @@
 					display:block;
 				}
 			}
-			&.type_ico {
-				dd {
-					position:relative;
-					margin-bottom:10px;
-					padding-left:42px;
-					text-indent:0;
-					min-height:30px;
-					&:last-child {
-						margin-bottom:0;
-					}
-				}
-			}
-			&.type_dot {
-				dd {
-					padding-left:10px;
-					text-indent:-10px;
-				}
-			}
-			&.type_indent {
-				dt {
-					font-weight:500;
-				}
-				dd {
-					padding-left:8px;
-				}
-			}
 		}
 		sup {
 			vertical-align:super;
@@ -435,14 +409,6 @@
 				text-indent:-10px;
 				font-weight:300;
 			}
-		}
-		[class^="ico_"] {
-			position:absolute;
-			top:4px;
-			left:0;
-			width:30px;
-			height:30px;
-			vertical-align:middle;
 		}
 		.keyvisual {
 			position:relative;
@@ -517,6 +483,41 @@
 				margin-top:50px;
 			}
 		}
+		.type_ico {
+			dd {
+				position:relative;
+				margin-bottom:10px;
+				padding-left:42px;
+				text-indent:0;
+				min-height:34px;
+				&:last-child {
+					margin-bottom:0;
+				}
+			}
+			img {
+				float:left;
+				margin-left:-42px;
+				width:30px;
+				height:30px;
+				vertical-align:middle;
+			}
+		}
+		.type_dot {
+			dd {
+				padding-left:10px;
+				text-indent:-10px;
+			}
+		}
+		.type_indent {
+			dt {
+				padding-left:8px;
+				text-indent:-8px;
+				font-weight:500;
+			}
+			dd {
+				padding-left:8px;
+			}
+		}
 		.footnote {
 			border-top:1px solid #eee;
 			padding-top:20px;
@@ -558,6 +559,7 @@
 		.hide_mo {
 			display:none;
 		}
+<<<<<<< HEAD
 		// 위생과 건강
 		.health {
 			// view_health01.html
@@ -578,28 +580,22 @@
 					[class^="ico_"] {
 						top:0;
 					}
+=======
+		.guide {
+			li {
+				span {
+					display:block;
+					margin-top:15px;
+					padding-left:14px;
+					text-indent:-14px;
+					font-size:14px;
+>>>>>>> 63898d697222141717ba73c885a7186bd44b88ed
 				}
 			}
-			.ico_object01 { background:url(../images/workplace/icon_health_11.png) no-repeat 50% 50% / cover; }
-			.ico_object02 { background:url(../images/workplace/icon_health_12.png) no-repeat 50% 50% / cover; }
-			.ico_object03 { background:url(../images/workplace/icon_health_13.png) no-repeat 50% 50% / cover; }
-			.ico_object04 { background:url(../images/workplace/icon_health_14.png) no-repeat 50% 50% / cover; }
-			.ico_object05 { background:url(../images/workplace/icon_health_15.png) no-repeat 50% 50% / cover; }
-			.ico_object06 { background:url(../images/workplace/icon_health_16.png) no-repeat 50% 50% / cover; }
-			.ico_object07 { background:url(../images/workplace/icon_health_17.png) no-repeat 50% 50% / cover; }
-			.ico_object08 { background:url(../images/workplace/icon_health_18.png) no-repeat 50% 50% / cover; }
-			.ico_object09 { background:url(../images/workplace/icon_health_19.png) no-repeat 50% 50% / cover; }
-			.ico_object10 { background:url(../images/workplace/icon_health_20.png) no-repeat 50% 50% / cover; }
-			.ico_object11 { background:url(../images/workplace/icon_health_21.png) no-repeat 50% 50% / cover; }
-			.ico_object12 { background:url(../images/workplace/icon_health_22.png) no-repeat 50% 50% / cover; }
-			.ico_object13 { background:url(../images/workplace/icon_health_23.png) no-repeat 50% 50% / cover; }
-			.ico_object14 { background:url(../images/workplace/icon_health_24.png) no-repeat 50% 50% / cover; }
-			.ico_object15 { background:url(../images/workplace/icon_health_25.png) no-repeat 50% 50% / cover; }
-			.ico_object16 { background:url(../images/workplace/icon_health_26.png) no-repeat 50% 50% / cover; }
-			.ico_object17 { background:url(../images/workplace/icon_health_27.png) no-repeat 50% 50% / cover; }
-			.ico_object18 { background:url(../images/workplace/icon_health_28.png) no-repeat 50% 50% / cover; }
-			.ico_object19 { background:url(../images/workplace/icon_health_29.png) no-repeat 50% 50% / cover; }
+		}
 
+		// 위생과 건강
+		.health {
 			// view_health06.html
 			&.view6 {
 				.img.col_2 {
@@ -637,18 +633,6 @@
 					margin-top:-10px;
 					li {
 						margin-top:30px;
-						font-size:14px;
-						padding: {
-							top:calc(50% + 15px);
-							left:14px;
-						}
-						text-indent:-14px;
-						@for $i from 1 through 8 {
-							&:nth-of-type(#{$i}) {
-								background:url(../images/workplace/health07_#{$i + 1}.jpg) no-repeat 0 0;
-								background-size:contain;
-							}
-						}
 					}
 				}
 			}
@@ -688,11 +672,8 @@
 				}
 				.type_ico {
 					margin-bottom:20px;
-					[class^="ico_"] {
-						margin: {
-							top:5px;
-							bottom:5px;
-						}
+					dt {
+						height:0;
 					}
 				}
 				.footnote {
@@ -725,6 +706,22 @@
 					}
 				}
 			}
+			
+			// view_protect03.html
+			&.view3 {
+				h4 {
+					font-weight:700;
+				}
+				.guide {
+					li {
+						margin-top:30px;
+					}
+					& + h4 {
+						margin-top:60px;
+					}
+				}
+			}
+
 			// view_protect12.html
 			&.view12 {
 				ol {
