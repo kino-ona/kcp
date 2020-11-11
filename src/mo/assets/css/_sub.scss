@@ -2928,10 +2928,17 @@
 				width:calc(100% / 2);
 			}
 		}
+		.col3 {
+			li {
+				width:calc(100% / 3);
+			}
+		}
 		li {
 			width:auto;
 			a {
+				width:100%;
 				padding: 15px 20px 10px;
+				text-align: center;
 			}
 		}
 	}
@@ -2943,7 +2950,7 @@
 		}
 		.inn {
 			position:relative;
-			width:100%;
+			width:255px;
 			max-width:280px;
 			min-height:320px;
 			margin:0 auto;
