@@ -105,7 +105,7 @@
 		width:100%;
 		padding-top:100%;
 		overflow: hidden;
-		background:{
+		background: {
 			image:url(../images/common/default_image.png);
 			size: cover;
 			position:center center;
@@ -933,7 +933,7 @@
 		width:calc((100% / 4) - 5px);
 		margin-right:6px;
 		margin-bottom:6px;
-		background:{
+		background: {
 			image: url(../images/common/photo_bg.png);
 			size:cover;
 			repeat:no-repeat;
@@ -951,7 +951,7 @@
 			top:.75rem;
 			width:15px;
 			height:15px;
-			background:{
+			background: {
 				image: url(../images/common/btn_wdel.png);
 				size:15px;
 				repeat:no-repeat;
@@ -980,7 +980,7 @@
 		width:100%;
 		padding-top:calc(100% - 2px);
 		border:1px solid #0053a7;
-		background:{
+		background: {
 			color:#fff;
 			image: url(../images/common/btn_plus.png);
 			size:15px;
