@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	@@include('../inc/pagehead.inc',{
+		"webroot":".."
+	})
+</head>
+<body>
+<div class="skipnavigation"><a href="#container">본문 바로가기</a></div>
+<!-- header -->
+@@include('../inc/header.inc',{
+	"headtype":"subhead",
+	"pagetitle":"병의원 및 요양시설"
+})
+<!-- //header -->
+
+<div class="wrap">
+	<!-- container -->
+	<div class="container">
+		
+		<!-- solution contents area -->
+		<div class="solution_view">
+			<dl class="sub_block">
+				<dt>
+					<img src="../assets/images/solution/solution_view04_kv01.jpg" alt="병의원 및 요양시설">
+				</dt>
+				<dd>
+					<h1 class="sol_title"><span>병원/의원/요양시설에서 중요시하는 위생적인 사용과 관리에 최적화된 유한킴벌리의 위생용품</span></h1>
+					<div class="product_list">
+						<ul>
+							<li>
+								<a href="/Product/Detail/1115">
+									<div class="img"><img src="../assets/images/solution/solution03_brnd18.jpg" alt=""></div>
+									<div class="info">
+										<p class="pname">[크리넥스] 센터풀 화장지 1000매</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="/Product/Detail/1094">
+									<div class="img"><img src="../assets/images/solution/solution03_brnd19.jpg" alt=""></div>
+									<div class="info">
+										<p class="pname">[크리넥스] 드라이셀 천연펄프 롤 핸드타올 170m</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="/Product/Detail/1119">
+									<div class="img"><img src="../assets/images/solution/solution03_brnd02.jpg" alt=""></div>
+									<div class="info">
+										<p class="pname">[크리넥스] 손소독제 500ml</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="/Product/Detail/1101">
+									<div class="img"><img src="../assets/images/solution/solution03_brnd02.jpg" alt=""></div>
+									<div class="info">
+										<p class="pname">[크리넥스] 럭셔리 폼 솝 무향 1000ml</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="/Product/Detail/1111">
+									<div class="img"><img src="../assets/images/solution/solution03_brnd20.jpg" alt=""></div>
+									<div class="info">
+										<p class="pname">[크리넥스] 변기시트 크리너</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="/Product/Detail/1116">
+									<div class="img"><img src="../assets/images/solution/solution03_brnd05.png" alt=""></div>
+									<div class="info">
+										<p class="pname">[크리넥스] 셀 방향제</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</dd>
+			</dl>
+		</div>
+		<!--// solution contents area -->
+
+		<!-- 함께 보면 좋은 글 -->
+		<div class="borad_wrap relation_swipe">
+			<div id="innovation_swipe" class="row swiper-container">
+				<h3>함께 보면 좋은 글</h3>
+				<div class="swiper-wrapper">
+					<!-- slide -->
+					<div class="swiper-slide">
+						<a href="#">
+							<div class="figure">
+								<img src="../assets/images/dummy/@thunm01.png">
+							</div>
+							<div class="info">
+								<p class="title">건강한 일터 만들기를 위한 유한킴벌리의 노력!</p>
+								<p class="date">2020.07.09</p>  
+							</div>
+						</a>
+					</div>
+					<!--// slide -->
+					<div class="swiper-slide">
+						<a href="#">
+							<div class="figure">
+								<img src="../assets/images/dummy/@thunm02.png">
+							</div>
+							<div class="info">
+								<p class="title">유한킴벌리의 노력!</p>
+								<p class="date">2020.07.09</p>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--// 함께 보면 좋은 글 -->
+
+	</div>
+	<!--// container -->
+</div>
+<!--// wrap -->
+
+<!-- footer -->
+@@include('../inc/footer.inc',{
+	"webroot2":"..",
+	"etctype":""
+})
+<!-- //footer -->
+<script>
+	// 연관솔루션 swipe
+	if($('#innovation_swipe').length > 0){
+		var rtsolutionswipe = new Swiper('#innovation_swipe', {
+			loop: false,
+			slidesPerView: 1.5,
+			parallax: true,
+			observer: true,
+			observeParents: true,
+		});
+	}
+</script>
+
+</body>
+</html>
