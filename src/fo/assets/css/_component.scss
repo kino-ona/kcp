@@ -105,7 +105,7 @@
 		width:100%;
 		padding-top:100%;
 		overflow: hidden;
-		background:{
+		background: {
 			image:url(../images/common/default_image.png);
 			size: cover;
 			position:center center;
@@ -628,50 +628,6 @@
 				margin-top:60px;
 			}
 		}
-<<<<<<< HEAD
-=======
-		.type_indent {
-			dt {
-				font-weight:400;
-			}
-			dd {
-				padding-left:12px;
-			}
-		}
-		.type_ico {
-			img {
-				display:inline-block;
-				width:36px;
-				height:36px;
-				margin:10px 18px 10px 0;
-				vertical-align:middle;
-			}
-		}
-		.type_dot {
-			li {
-				padding-left:16px;
-				text-indent:-16px;
-			}
-		}
-		.guide {
-			display:flex;
-			flex-wrap:wrap;
-			li {
-				width:590px;
-				&:nth-child(even) {
-					margin-left:20px;
-				}
-				span {
-					display:block;
-					margin-top:20px;
-					padding-left:16px;
-					text-indent:-16px;
-					font-weight:300;
-				}
-			}
-		}
-
->>>>>>> 63898d697222141717ba73c885a7186bd44b88ed
 		// 위생과 건강
 		.health {
 			// view_health06.html
@@ -792,7 +748,8 @@
 					}
 					&.guide_1 {
 						margin-bottom: 50px;
-				}					
+					}			
+				}				
 			}
 		}//.protect
 	}
@@ -976,7 +933,7 @@
 		width:calc((100% / 4) - 5px);
 		margin-right:6px;
 		margin-bottom:6px;
-		background:{
+		background: {
 			image: url(../images/common/photo_bg.png);
 			size:cover;
 			repeat:no-repeat;
@@ -994,7 +951,7 @@
 			top:.75rem;
 			width:15px;
 			height:15px;
-			background:{
+			background: {
 				image: url(../images/common/btn_wdel.png);
 				size:15px;
 				repeat:no-repeat;
@@ -1023,7 +980,7 @@
 		width:100%;
 		padding-top:calc(100% - 2px);
 		border:1px solid #0053a7;
-		background:{
+		background: {
 			color:#fff;
 			image: url(../images/common/btn_plus.png);
 			size:15px;
