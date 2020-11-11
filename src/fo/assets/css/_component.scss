@@ -781,13 +781,7 @@
 					width: 100%;
 					border-collapse: collapse;
 					text-align: left;
-					margin-bottom: 60px;
-					colgroup{
-						display: flex;
-						col { 
-							flex: 1;
-						}
-					}
+					margin-bottom: 50px;
 					caption {
 						text-align: left;
 						line-height: 40px;
@@ -797,6 +791,7 @@
 						th, td {
 							text-align: center;
 							line-height: 55px;
+							font-weight: 300;
 						}
 					}
 					thead {
@@ -806,15 +801,44 @@
 							font-weight: 500;
 						}
 					}
-					tbody{
+					tbody {
+						th {
+							font-weight: 500;
+						}
 						tr {
 							border-bottom: 1px solid #e4e7ec;
 						}
 					}
+					tfoot {
+						td {
+							text-align: left;
+							font-size: 14px;
+							color: #666;
+						}
+					}
 					&.T1 {
-						tbody *{
+						col { 
+							width: 50%;
+						}
+						tbody * {
 							text-align: left;
 							padding-left: 80px;
+							th {
+								font-weight: 300;
+							}
+						}
+					}
+					&.T2 {
+						col { 
+							width: 33.333%;
+						}
+					}
+					&.T3 {
+						caption {
+							font-weight: 700;
+						}
+						col { 
+							width: 25%;
 						}
 					}
 				}
