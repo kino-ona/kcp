@@ -1139,3 +1139,75 @@
 		}
 	}
 }
+
+
+@media screen and (max-width: 1440px) {
+	.main {
+		.keyvisual {
+			margin:0 40px;
+			.info {
+				.title {
+					font-size:34px;
+				}
+				.desc {
+					font-size:16px;
+				}
+			}
+		}
+		.section {
+			h3 {
+				font-size:34px;
+			}
+		}
+		.solution_sec {
+			.swiper-slide {
+				.info {
+					p {
+						margin-left:7rem;
+					}
+					> h4 {
+						font-size:34px;
+					}
+				}
+				.figure {
+					width:53.5%;
+				}
+			}
+			.swipe_navi {
+				> div {
+					right:10%;
+				}
+			}
+		}
+		.innov_sec {
+			.info {
+				.desc {
+					font-size: 16px;
+					line-height: 1.4;
+				}
+			}
+		}
+		.brand_sec {
+			&:before {
+				height:6px;
+			}
+			.swiper-wrapper {
+				margin-top:76px;
+			}
+			.swiper-pagination span {
+				font-size: 18px;
+			}
+			.row {
+				.name {
+					font-size:50px;
+				}
+				.desc {
+				}
+				.img {
+					max-width:360px;
+				}
+			}
+		}
+	}
+}
+

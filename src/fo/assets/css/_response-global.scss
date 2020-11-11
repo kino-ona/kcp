@@ -61,9 +61,7 @@
 @media screen and (min-width: 1024px) and (max-width: 1640px) {
 	.headgnb {
 		max-width:900px;
-		// margin:0;
 		.menu {
-			// max-width:70%;
 			li {
 				a {
 					padding:0 10px;
@@ -173,14 +171,15 @@
 	.cust_inquiry {display: none;}
 }
 
-@media screen and (max-width: 1025px) {
-	html, body {
-		min-width:100%;
+@media screen and (max-width: 1280px) {
+	.headgnb .menu li a {
+    padding: 0 10px;
+    line-height: 80px;
 	}
 	.reomm_bnr.swiper-container {
 		top:100px;
 		left:0;
-		width:190px;
+		width:140px;
 		height:auto;
 		padding-bottom:20px;
 		border-right:0;
@@ -194,11 +193,36 @@
 		}
 		.info {
 			padding-top:0;	
-			padding-left:60px;
+			padding-left:55px;
 			p {
-				font-size:12px;
+				font-size:11px;
 			}
 		}
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.subgnb  {
+		.submenu {
+			> li {
+				a {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+	.footer {
+		.util {
+			a {
+				font-size: 18px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1025px) {
+	html, body {
+		min-width:100%;
 	}
 	.header.fixed {
 		.row {
