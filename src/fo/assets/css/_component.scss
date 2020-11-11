@@ -777,12 +777,16 @@
 			}
 			// view_protect09.html
 			&.view9 {
+				.imgbox {
+					margin-top: 55px;
+				}
 				table {
 					width: 100%;
 					border-collapse: collapse;
 					text-align: left;
 					margin-bottom: 50px;
 					caption {
+						font-weight: 400;
 						text-align: left;
 						line-height: 40px;
 					}
