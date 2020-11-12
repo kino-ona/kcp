@@ -566,6 +566,126 @@
 		}
 		.hide_mo {
 			display:none;
+		}		
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			text-align: left;
+			margin-top: 25px;
+			margin-bottom: 25px;
+			caption {
+				font-size: 14px;
+				font-weight: 400;
+				text-align: left;
+				margin-bottom: 5px;
+				span {
+					font-weight: 300;
+				}
+			}
+			[scope="col"] {
+				height: 50px;
+				position: relative;
+				&:after {
+					content: '';
+					display: block;
+					position: absolute;
+					top: 50%;
+					right: 0;
+					margin-top: -9px;
+					width: 1px;
+					height: 18px;
+					background-image: url(../images/workplace/table_th-bar.png);
+					background-position: 0 0;
+					background-repeat: no-repeat;
+				}
+				&:last-of-type {
+					&:after {
+						background-image: none;
+					}
+				}
+			}
+			tr {
+				th, td {						
+					padding: 11px;
+					text-align: center;
+					vertical-align: middle;
+					font-weight: 300;
+				}
+			}
+			thead {
+				border-top: 2px solid #000;
+				border-bottom: 1px solid #000;
+				th {							
+					font-weight: 500;
+					&:first-of-type {
+						// padding-left: 30px;
+					}
+					&:last-of-type {
+						// padding-right: 30px;
+					}
+				}
+			}
+			tbody {
+				th {
+					font-weight: 500;
+					// padding-left: 30px;
+				}
+				tr {
+					border-bottom: 1px solid #e4e7ec;
+					td:last-of-type {
+						// padding-right: 30px;
+					}
+				}
+			}
+			tfoot {
+				td {
+					text-align: left;
+					font-size: 11px;
+					color: #666;
+					padding-left: 30px;
+				}
+			}
+			&.colstyle {
+				tbody {
+					tr {
+						border-bottom: none;
+					}
+				}
+				ul {
+					position: relative;
+					&:after {
+						content: '';
+						display: block;
+						position: absolute;
+						top: 50%;
+						right: 0;
+						margin-top: -9px;
+						width: 1px;
+						height: 18px;
+						background-image: url(../images/workplace/table_th-bar.png);
+						background-position: 0 0;
+						background-repeat: no-repeat;
+					}
+					&:last-of-type {
+						&:after {
+							background-image: none;
+						}
+					}
+				}
+				&.block {
+					tr {
+						td {
+							display: block;
+							width: 100%;
+							border-bottom: 1px solid #e4e7ec;
+							ul {
+								padding-left: 30px;
+								padding-right: 30px;
+							}
+						}
+					}
+				}
+			}
 		}
 		// 위생과 건강
 		.health {
@@ -662,7 +782,7 @@
 					}
 				}
 			}
-		}//.health
+		}
 		//생산성 증대
 		.efficiency {
 			h4 {				
@@ -675,7 +795,7 @@
 					margin-bottom: 40px;
 				}
 			}
-		}//.efficiency
+		}
 		// 작업자와 공정 보호
 		.protect {						
 			.text_box {
@@ -699,96 +819,119 @@
 					}
 				}
 			}
-			// view_protect09.html
-			&.view9 {
+			// view_protect08.html
+			&.view8 {
 				.imgbox {
-					margin-top: 30px;
+					width: 100%;
+					margin: 0 0 35px;
+				}
+				.info_behind {
+					margin: 10px 0;
 				}
 				table {
-					width: 100%;
-					border-collapse: collapse;
-					text-align: left;
-					margin-top: 25px;
-					margin-bottom: 25px;
-					caption {
-						font-size: 14px;
-						font-weight: 400;
-						text-align: left;
-						margin-bottom: 5px;
-					}
-					[scope="col"] {
-						height: 50px;
-						position: relative;
-						&:after {
-							content: '';
-							display: block;
-							position: absolute;
-							top: 50%;
-							right: 0;
-							margin-top: -9px;
-							width: 1px;
-							height: 18px;
-							background-image: url(../images/workplace/table_th-bar.png);
-							background-position: 0 0;
-							background-repeat: no-repeat;
-						}
-						&:last-of-type {
-							&:after {
-								background-image: none;
-							}
-						}
-					}
-					tr {
-						th, td {						
-							padding: 11px;
-							text-align: center;
-							vertical-align: middle;
-							font-weight: 300;
-						}
-					}
-					thead {
-						border-top: 2px solid #000;
-						border-bottom: 1px solid #000;
-						th {							
-							font-weight: 500;
-							&:first-of-type {
-								padding-left: 30px;
-							}
-							&:last-of-type {
-								padding-right: 30px;
-							}
-						}
-					}
 					tbody {
-						th {
-							font-weight: 500;
-							padding-left: 30px;
-						}
-						tr {
-							border-bottom: 1px solid #e4e7ec;
-							&:last-of-type {
-								padding-right: 30px;
-							}
-						}
-					}
-					tfoot {
-						td {
+						th, td {
 							text-align: left;
-							font-size: 11px;
-							color: #666;
-							padding-left: 30px;
+							font-weight: 300;
 						}
 					}
 					&.T1 {
 						col { 
 							width: 50%;
 						}
-						tbody * {
-							text-align: left;
-							th {
-								font-weight: 300;
+						thead {
+							th {							
+								&:first-of-type {
+									padding-left: 30px;
+								}
+								&:last-of-type {
+									padding-right: 30px;
+								}
 							}
 						}
+						tbody {
+							tr {
+								td:last-of-type {
+									padding-right: 30px;
+								}
+							}
+							th {
+								padding-left: 30px;
+							}
+							th, td {
+								height: 95px;
+							}
+						}
+					}
+					&.T4 {
+						thead {
+							th {							
+								&:first-of-type {
+									padding-left: 30px;
+								}
+								&:last-of-type {
+									padding-right: 30px;
+								}
+							}
+						}
+						tbody {
+							tr {
+								height: 40px;
+								td:last-of-type {
+									padding-right: 30px;
+								}
+							}
+							th {
+								padding-left: 30px;
+							}
+						}
+					}
+					&.T5 {						
+						tbody {
+							td {								
+								width: 50%;
+								padding-left: 30px;
+								padding-right: 30px;
+								border-bottom: 1px solid #e4e7ec;
+							}
+						}
+					}
+				}
+			}
+			// view_protect09.html
+			&.view9 {
+				.imgbox {
+					margin-top: 30px;
+				}
+				table {
+					&.T1 {
+						col { 
+							width: 50%;
+						}
+						thead {
+							th {							
+								&:first-of-type {
+									padding-left: 30px;
+								}
+								&:last-of-type {
+									padding-right: 30px;
+								}
+							}
+						}
+						tbody {
+							tr {
+								td:last-of-type {
+									padding-right: 30px;
+								}
+							}
+							th, td {	
+								text-align: left;
+							}
+							th {
+								font-weight: 300;
+								padding-left: 30px;
+							}							
+						}					
 					}
 					&.T2 {
 						col { 
@@ -796,14 +939,13 @@
 						}
 					}
 					&.T3 {
+						width: 100%;
+						.t1 {width: 13.33%;}
+						.t2 {width: 27.53%;}
+						.t3 {width: 26.63%;}
+						.t4 {width: 32.51%;}
 						caption {
 							font-weight: 700;
-						}
-						colgroup {
-							display: flex;
-							col { 
-								flex: 1;
-							}
 						}
 					}
 				}
@@ -825,7 +967,7 @@
 					}
 				}					
 			}
-		}//.protect
+		}
 	}//.board_cont
 	& + .borad_wrap {
 		border-top:10px solid #f2f4f6;
