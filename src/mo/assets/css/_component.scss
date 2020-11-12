@@ -359,6 +359,13 @@
 		padding:10px 30px 60px;
 		font-size: 14px;
 		font-weight: 300;
+		&.full {
+			padding:10px 0px 60px;
+			._row {
+				padding-left:30px;
+				padding-right:30px;
+			}
+		}
 		p {
 			font-size:14px;
 			margin-bottom:30px;
@@ -570,10 +577,6 @@
 					}
 				}
 			}
-		}
-
-		// 위생과 건강
-		.health {
 			// view_health06.html
 			&.view6 {
 				.img.col_2 {
@@ -604,7 +607,6 @@
 					}
 				}
 			}
-
 			// view_health07.html
 			&.view7 {
 				.guide {
@@ -614,7 +616,6 @@
 					}
 				}
 			}
-
 			// view_health08.html
 			&.view8 {
 				dt {
@@ -707,11 +708,13 @@
 					width: 100%;
 					border-collapse: collapse;
 					text-align: left;
-					margin-bottom: 50px;
+					margin-top: 25px;
+					margin-bottom: 25px;
 					caption {
+						font-size: 14px;
 						font-weight: 400;
 						text-align: left;
-						line-height: 40px;
+						margin-bottom: 5px;
 					}
 					[scope="col"] {
 						height: 50px;
@@ -748,21 +751,32 @@
 						border-bottom: 1px solid #000;
 						th {							
 							font-weight: 500;
+							&:first-of-type {
+								padding-left: 30px;
+							}
+							&:last-of-type {
+								padding-right: 30px;
+							}
 						}
 					}
 					tbody {
 						th {
 							font-weight: 500;
+							padding-left: 30px;
 						}
 						tr {
 							border-bottom: 1px solid #e4e7ec;
+							&:last-of-type {
+								padding-right: 30px;
+							}
 						}
 					}
 					tfoot {
 						td {
 							text-align: left;
-							font-size: 14px;
+							font-size: 11px;
 							color: #666;
+							padding-left: 30px;
 						}
 					}
 					&.T1 {
@@ -812,7 +826,7 @@
 				}					
 			}
 		}//.protect
-	}
+	}//.board_cont
 	& + .borad_wrap {
 		border-top:10px solid #f2f4f6;
 	}
