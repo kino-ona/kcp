@@ -1978,3 +1978,46 @@ input.calendar {
 		}
 	}
 }
+
+
+.error_mssg {
+	position: absolute;
+	left:50%;
+	top:40%;
+	@include transform(translate(-50%, -50%));
+	width:100%;
+	max-width:320px;
+	padding-left:20px;
+	padding-right:20px;
+	.err_img {
+		img {width:45px;}
+	}
+	div {
+		padding-left:10px;
+		p {
+			font-size:1.2rem;
+			font-weight: 300;
+		}
+		.btn_link {
+			padding-right:25px;
+			margin-top:20px;
+			margin-right:20px;
+			font-size: 1.1rem;
+			font-weight: 500;
+			background: {
+				image: url(../images/icon/icon_depth.png);
+				repeat:no-repeat;
+				position:right top 7px;
+				size: 6px;
+			}
+		}
+	}
+	strong {
+		display: block;
+		margin-top:10px;
+		margin-bottom:10px;
+		font-size:1.6rem;
+		font-weight: 700;
+		color:#0053a7;
+	}
+}

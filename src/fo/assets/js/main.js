@@ -89,14 +89,17 @@ if($('#recommswipe').length > 0){ // 추천제품
 
 if($('#innovswipe').length > 0){ // 현장 혁신정보
 	var innovswipe = new Swiper('#innovswipe', {
-		// slidesPerView: 1.945,
 		loop:true,
 		slidesPerView: 4.65,
 		parallax: true,
 		observer: true,
 		observeParents: true,
 		centeredSlides: true,
-		spaceBetween: 72
+		spaceBetween: 72,
+		navigation: {
+			nextEl: '.innov_sec .swiper-button-next',
+			prevEl: '.innov_sec .swiper-button-prev',
+		},
 	});
 }
 
