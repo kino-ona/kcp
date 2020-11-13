@@ -1310,6 +1310,28 @@ h1.logo {
     }
   }
 } // .fixed_menu
+
+.back-top { 
+	// bottom: 90px;
+	cursor: pointer; 
+	right: 13px; 
+	position: fixed; 
+	width: 41px; 
+	height: 41px; 
+	display: inline-block; 
+	text-decoration: none; 
+	z-index: 900; 
+	opacity: 0; 
+	transition: 0.5s ease-in-out;
+	background-image: url(../images/common/btn_top.png); 
+	background-size: 41px; 
+	background-repeat: no-repeat; 
+	background-position: center center; 
+}
+.back-top.show { 
+	opacity: 1; 
+} //.back-top
+
 .search_frm-input {
 	> div {
 		position: relative;
