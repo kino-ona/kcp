@@ -641,24 +641,14 @@
 				border-bottom: 1px solid #000;
 				th {							
 					font-weight: 500;
-					&:first-of-type {
-						// padding-left: 30px;
-					}
-					&:last-of-type {
-						// padding-right: 30px;
-					}
 				}
 			}
 			tbody {
 				th {
 					font-weight: 500;
-					// padding-left: 30px;
 				}
 				tr {
 					border-bottom: 1px solid #e4e7ec;
-					td:last-of-type {
-						// padding-right: 30px;
-					}
 				}
 			}
 			tfoot {
@@ -851,6 +841,71 @@
 					}
 					& + h4 {
 						margin-top:60px;
+					}
+				}
+			}
+			// view_protect07.html
+			&.view7 {
+				.imgbox {
+					width: 100%;
+					margin: 10px 0 35px;
+					text-align: left;
+				}
+				table {
+					&.T1 {
+						col { 
+							width: 50%;
+						}
+						thead {
+							th {							
+								&:first-of-type {
+									padding-left: 30px;
+								}
+								&:last-of-type {
+									padding-right: 30px;
+								}
+							}
+						}
+						tbody {
+							tr {
+								td:last-of-type {
+									padding-right: 30px;
+								}
+							}
+							th, td {	
+								text-align: left;
+							}
+							th {
+								font-weight: 300;
+								padding-left: 30px;
+							}							
+						}					
+					}
+					&.T2 {
+						col { 
+							width: 33.333%;
+						}
+					}
+					&.T3 {
+						width: 100%;
+						.t1 {width: 13.33%;}
+						.t2 {width: 27.53%;}
+						.t3 {width: 26.63%;}
+						.t4 {width: 32.51%;}
+						caption {
+							font-weight: 700;
+						}
+					}
+				}
+				.footnote {
+					margin-top: 45px;
+					em {
+						font-size: 14px;
+						font-weight: 500;
+					}
+					li {
+						padding-left: 10px;
+						text-indent: 0px;
 					}
 				}
 			}
