@@ -417,6 +417,12 @@
 				text-indent:-10px;
 				font-weight:300;
 			}
+			em {
+				font-weight:500;
+			}
+		}
+		h4:not(.subtit) {
+			font-weight:700;
 		}
 		.keyvisual {
 			position:relative;
@@ -567,6 +573,18 @@
 		.hide_mo {
 			display:none;
 		}		
+		.guide {
+			li {
+				span {
+					display:block;
+					margin-top:15px;
+					padding-left:14px;
+					text-indent:-14px;
+					font-size:14px;
+					font-weight:300;
+				}
+			}
+		}
 		table {
 			width: 100%;
 			border-collapse: collapse;
@@ -774,6 +792,38 @@
 					}
 				}
 			}			
+			// view_protect02.html
+			&.view2 {
+				ol + h4 {
+					margin-top:40px;
+				}
+				.guide {
+					li {
+						display:flex;
+						align-items:center;
+						margin-bottom:40px;
+						.txt {
+							width:62.3%;
+							font-size:14px;
+							font-weight:400;
+						}
+						.img {
+							width:37.7%;
+							padding-left:15px;
+						}
+						&:last-of-type {
+							.txt {
+								padding:0;
+							}
+						}
+					}
+					span {
+						margin:0;
+						padding:0;
+						text-indent:0;
+					}
+				}
+			}
 			// view_protect03.html
 			&.view3 {
 				h4 {
