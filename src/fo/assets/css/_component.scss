@@ -864,6 +864,51 @@
 					}
 				}
 			}
+			// view_protect07.html
+			&.view7 {
+				.imgbox {
+					width: 100%;
+					margin: 10px 0 35px;
+					text-align: left;
+				}
+				table {
+					tbody {
+						th, td {
+							text-align: left;
+							font-weight: 300;				
+							padding-left: 80px;
+						}
+					}
+					&.T1 {
+						col { 
+							width: 50%;
+						}
+					}
+					&.T2 {
+						tbody {
+							td {
+								width: 33.333%;
+								padding-left: 50px;
+							}
+						}
+					}
+					&.T3 {
+						tbody {
+							td {
+								width: 33.333%;
+								padding-left: 50px;
+							}
+						}
+					}
+				}
+				.footnote {
+					margin-top: 45px;
+					em {
+						font-size: 16px;
+						font-weight: 500;
+					}
+				}
+			}
 			// view_protect08.html
 			&.view8 {
 				.imgbox {
