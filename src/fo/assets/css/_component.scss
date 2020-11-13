@@ -554,6 +554,7 @@
 			width:650px;
 			margin:0 auto 60px;
 			font-size:0;
+			text-align:center;
 			figure {
 				display:inline-block;
 				max-width:283px;
@@ -649,6 +650,10 @@
 			li {
 				padding-left:16px;
 				text-indent:-16px;
+			}
+			.img {
+				margin-top:30px;
+				margin-bottom:60px;
 			}
 		}
 		.guide {
