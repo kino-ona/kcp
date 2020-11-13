@@ -554,7 +554,6 @@
 			width:650px;
 			margin:0 auto 60px;
 			font-size:0;
-			text-align:center;
 			figure {
 				display:inline-block;
 				max-width:283px;
@@ -651,10 +650,6 @@
 				padding-left:16px;
 				text-indent:-16px;
 			}
-			.img {
-				margin-top:30px;
-				margin-bottom:60px;
-			}
 		}
 		.guide {
 			display:flex;
@@ -741,40 +736,24 @@
 				tbody {
 					tr {
 						border-bottom: none;
-					}
-					td {
-						vertical-align:top;
-						p {
-							margin-top: 25px;
-							margin-bottom: 10px;
-						}
-						ul {
-							margin-top: 25px;
-							li {
-								padding: 7.5px 0;
+						td {
+							vertical-align:top;
+							p {
+								margin-bottom: 10px;
 							}
-						}
-					}
-				}
-				ul {
-					position: relative;
-					&:after {
-						content: '';
-						display: block;
-						position: absolute;
-						top: 50%;
-						right: 0;
-						// margin-top: -9px;
-						// width: 1px;
-						// height: 18px;
-						// background-image: url(../images/workplace/table_th-bar.png);
-						background-position: 0 0;
-						background-repeat: no-repeat;
-					}
-					&:last-of-type {
-						&:after {
-							background-image: none;
-						}
+							ul {
+								margin-top: 25px;
+								border-right: 1px #e0e0e0 solid;
+								li {
+									padding: 7.5px 0;
+								}
+							}
+							&:last-of-type {
+								ul {
+									border-right: none;
+								}
+							}
+						}						
 					}
 				}
 			}
@@ -970,9 +949,9 @@
 						tbody {
 							td {
 								width: 50%;
-								padding: 7.5px 50px 7.5px 50px;
+								padding: 7.5px 0px 7.5px 50px;
 								ul {
-									margin-top: 0;
+									padding-right: 50px;
 								}
 							}
 						}
