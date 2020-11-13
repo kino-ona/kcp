@@ -361,33 +361,36 @@
 		}
 		.swipe_navi {
 			position: absolute;
-			top:calc(50% / 1.65);
-			width:calc(100% - 70px);
+			left:50%;
+			top:calc(50% / 1.2);
+			width:calc((100% / 4) + 120px);
 			z-index: 11;
-			@include transform(translate(0, -50%));
+			@include transform(translate(-50%, -50%));
 			> div {
 				position: relative;
 				width:100%;
 				z-index: 11;
 			}
 			.swiper-button-next {
-				right:-18px;
-				width:20px;
-				height:20px;
+				right:-13px;
+				right:0;
+				width:30px;
+				height:30px;
 				background: {
-					image:url(../images/common/slide_next2.png);
-					size:12px;
+					image:url(../images/common/slide_next3.png);
+					size:23px;
 					repeat:no-repeat;
 					position:0 center;
 				}
 			}
 			.swiper-button-prev {
-				left:-13px;
-				width:20px;
-				height:20px;
+				left:-10px;
+				left:0;
+				width:30px;
+				height:30px;
 				background: {
-					image:url(../images/common/slide_prev2.png);
-					size:12px;
+					image:url(../images/common/slide_prev3.png);
+					size:23px;
 					repeat:no-repeat;
 					position:0 center;
 				}
@@ -395,6 +398,7 @@
 		}
 	} //.recommand_sec 
 	.innov_sec {
+		position:relative;
 		margin-top:140px;
 		padding-top:120px;
 		padding-bottom:100px;
@@ -419,6 +423,42 @@
 			.desc {
 				width:calc(100% - 10px);
 				font-size:18px;
+			}
+		}
+		.swipe_navi {
+			position: absolute;
+			left:50%;
+			bottom: 40px;
+			@include transform(translate(-50%, 0));
+			width: 80px;
+			text-align: center;
+			z-index: 1;
+			> div {
+				position:relative;
+				width:100%;
+				margin:0 auto;
+			}
+			.swiper-button-next {
+				right:0;
+				width:32px;
+				height:32px;
+				background: {
+					image:url(../images/common/swipe_next2.png);
+					size:32px;
+					repeat:no-repeat;
+					position:0 center;
+				}
+			}
+			.swiper-button-prev {
+				left:0;
+				width:32px;
+				height:32px;
+				background: {
+					image:url(../images/common/swipe_prev2.png);
+					size:32px;
+					repeat:no-repeat;
+					position:0 center;
+				}
 			}
 		}
 	} //.innov_sec
@@ -1139,3 +1179,75 @@
 		}
 	}
 }
+
+
+@media screen and (max-width: 1440px) {
+	.main {
+		.keyvisual {
+			margin:0 40px;
+			.info {
+				.title {
+					font-size:34px;
+				}
+				.desc {
+					font-size:16px;
+				}
+			}
+		}
+		.section {
+			h3 {
+				font-size:34px;
+			}
+		}
+		.solution_sec {
+			.swiper-slide {
+				.info {
+					p {
+						margin-left:7rem;
+					}
+					> h4 {
+						font-size:34px;
+					}
+				}
+				.figure {
+					width:53.5%;
+				}
+			}
+			.swipe_navi {
+				> div {
+					right:10%;
+				}
+			}
+		}
+		.innov_sec {
+			.info {
+				.desc {
+					font-size: 16px;
+					line-height: 1.4;
+				}
+			}
+		}
+		.brand_sec {
+			&:before {
+				height:6px;
+			}
+			.swiper-wrapper {
+				margin-top:76px;
+			}
+			.swiper-pagination span {
+				font-size: 18px;
+			}
+			.row {
+				.name {
+					font-size:50px;
+				}
+				.desc {
+				}
+				.img {
+					max-width:360px;
+				}
+			}
+		}
+	}
+}
+

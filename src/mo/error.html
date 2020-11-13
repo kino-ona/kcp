@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	@@include('./inc/pagehead.inc',{
+		"webroot":"."
+	})
+</head>
+<body class="error_page">
+<div class="skipnavigation"><a href="#container">본문 바로가기</a></div>
+<!-- header -->
+@@include('./inc/header.inc',{
+	"headtype":"",
+	"pagetitle":""
+})
+<!-- //header -->
+<div class="wrap">
+	<div class="error_mssg">
+		<p class="err_img"><img src="./assets/images/common/bg_error.gif"></p>
+		<div>
+			<strong>불편을 드려 죄송합니다.</strong>
+			<p>이 페이지를 표시할 수 없습니다.</p>
+			<p>새로고침(F5) 하시거나 URL 을 확인해주세요.</p>
+			<p>감사합니다.</p>
+			<a href="/" class="btn_link">이전 페이지</a>
+			<a href="/" class="btn_link">홈으로 가기</a>
+		</div>
+	</div>
+</div>
+
+<!-- footer -->
+@@include('./inc/footer.inc',{
+	"webroot2":"."
+})
+<!-- //footer -->
+
+</body>
+</html>

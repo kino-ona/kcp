@@ -1022,7 +1022,6 @@ h1.logo {
 				width:100%;
 				// font-weight: 300;
 				letter-spacing: -1px;
-				cursor: inherit;
 				// &:hover {
 				// 	color:#0053a7;
 				// }
@@ -1044,6 +1043,7 @@ h1.logo {
 				}
 			}
 		}
+
 		&:after {
 			@extend %clearer;
 		}
@@ -1074,6 +1074,13 @@ h1.logo {
 		&[data-sub='2'] {
 			> li {
 				border-left:0;
+			}
+		}
+		&[data-sub='3'] {
+			> li {
+				> a {
+					cursor: inherit;
+				}
 			}
 		}
 	}
@@ -2359,5 +2366,52 @@ input.calendar {
 			border-bottom:1px solid #e0e0e0;
 			background-color:#f1fbff;
 		}
+	}
+}
+
+.error_page {
+	background-color: #f5f5f5;
+	.skybanner {
+		display: none;
+	}
+}
+.error_mssg {
+	position: absolute;
+	left:50%;
+	top:43%;
+	@include transform(translate(-50%, -50%));
+	min-width:300px;
+	background-color: #fff;
+	padding:100px;
+	.err_img {
+		padding-left:0;
+	}
+	div {
+		padding-left:15px;
+		p {
+			font-weight: 300;
+		}
+		.btn_link {
+			padding-right:30px;
+			padding-bottom:5px;
+			margin-top:20px;
+			margin-right:50px;
+			font-size: 1.4rem;
+			font-weight: 500;
+			background: {
+				image: url(../images/icon/icon_depth.png);
+				repeat:no-repeat;
+				position:right top 7px;
+				size: 6px;
+			}
+		}
+	}
+	strong {
+		display: block;
+		margin-top:20px;
+		margin-bottom:30px;
+		font-size:2.3rem;
+		font-weight: 700;
+		color:#0053a7;
 	}
 }

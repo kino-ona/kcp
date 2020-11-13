@@ -1923,6 +1923,7 @@
 			vertical-align: top;
 			> span {
 				display: inline-block;
+				margin-top:5px;
 				margin-left:5.625rem;
 				font-size:16px;
 				font-weight: 400;
@@ -2022,7 +2023,7 @@
 		}
 		p {
 			position: absolute;
-			// width:100%;
+			text-align: left;
 			&.p01 {left:100px;top:40px;}
 			&.p02 {left:145px;top:140px;}
 			&.p03 {left:135px;bottom:190px;}

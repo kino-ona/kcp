@@ -287,7 +287,7 @@ if($('#recombnrswipe').length > 0){ // gnb 추천브랜드
 			el: '.swiper-pagination',
 		},
 		autoplay: {
-			delay: 1500,
+			delay: 2500,
 			disableOnInteraction: true,
 		},
 	});
