@@ -511,14 +511,9 @@
 			}
 		}
 		.type_dot {
-			dd, li {
+			dd {
 				padding-left:10px;
 				text-indent:-10px;
-				font-size:14px;
-			}
-			.img {
-				margin-top:10px;
-				margin-bottom:30px;
 			}
 		}
 		.type_indent {
@@ -532,9 +527,8 @@
 			}
 		}
 		.footnote {
-			margin-top:40px;
-			padding-top:20px;
 			border-top:1px solid #eee;
+			padding-top:20px;
 			li {
 				font-size:12px;
 				font-weight:300;
@@ -655,27 +649,6 @@
 				tbody {
 					tr {
 						border-bottom: none;
-					}
-				}
-				ul {
-					position: relative;
-					&:after {
-						content: '';
-						display: block;
-						position: absolute;
-						top: 50%;
-						right: 0;
-						margin-top: -9px;
-						width: 1px;
-						height: 18px;
-						background-image: url(../images/workplace/table_th-bar.png);
-						background-position: 0 0;
-						background-repeat: no-repeat;
-					}
-					&:last-of-type {
-						&:after {
-							background-image: none;
-						}
 					}
 				}
 				&.block {
