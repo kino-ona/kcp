@@ -874,6 +874,42 @@
 					}
 				}
 			}
+			// view_protect02.html
+			&.view2 {
+				ol + h4 {
+					margin-top:60px;
+				}
+				p {
+					margin-bottom:30px;
+				}
+				.guide {
+					li {
+						display:flex;
+						align-items:center;
+						margin-bottom:40px;
+						.txt {
+							width:260px;
+							padding-left:20px;
+						}
+						.img {
+							width:calc(100% - 260px);
+							padding:0 50px 0 40px;
+						}
+						&:last-of-type {
+							.txt {
+								padding:0;
+							}
+						}
+					}
+					div {
+						font-weight:500;
+					}
+					span {
+						padding:0;
+						text-indent:0;
+					}
+				}
+			}
 			// view_protect03.html
 			&.view3 {
 				.guide {
