@@ -2370,6 +2370,7 @@ input.calendar {
 }
 
 .error_page {
+	background-color: #f5f5f5;
 	.skybanner {
 		display: none;
 	}
@@ -2377,9 +2378,11 @@ input.calendar {
 .error_mssg {
 	position: absolute;
 	left:50%;
-	top:40%;
+	top:43%;
 	@include transform(translate(-50%, -50%));
-	width:380px;
+	min-width:300px;
+	background-color: #fff;
+	padding:100px;
 	.err_img {
 		padding-left:0;
 	}
