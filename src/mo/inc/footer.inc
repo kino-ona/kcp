@@ -459,44 +459,5 @@
 <script type="text/javascript" src="@@webroot2/assets/js/ui.js"></script>
 <script>
 
-var lastSt = 0;
-$(window).scroll(function (e) {
-	var st = $(this).scrollTop();
-
-	if($('.back-top').length > 0) {
-
-		// if ($('._fixed').length > 0) {$( '.back-top' ).css({bottom:'130px'});
-		// } else {$( '.back-top' ).css({bottom:'90px'});}
-
-		if ($('._fixed').length > 0) {
-			$('.back-top').css({bottom:'130px'});
-			if ($('.fixed_menu').hasClass('show')) {
-				$('.back-top').css({bottom:'180px'});
-			} else {
-				$('.back-top').css({bottom:'130px'});
-			}
-		} else {
-			$('.back-top').css({bottom:'90px'});
-			if ($('.fixed_menu').hasClass('show')) {
-				$('.back-top').css({bottom:'140px'});
-			} else {
-				$('.back-top').css({bottom:'90px'});
-			}
-		}
-
-		$('.back-top').click( function(e) {
-			e.preventDefault()
-			$('html, body').animate({scrollTop:0}, 300);
-		});
-
-		$(window).scroll( function() {
-			if ($(this).scrollTop() > 280) {$('.back-top').addClass('show')
-			} else {$('.back-top').removeClass('show')}
-		});
-		
-	}
-
-lastSt = st;
-});
 
 </script>

@@ -66,9 +66,24 @@ $(window).scroll(function (e) {
 			}
 		}
 	}
+	if($('.back-top').length > 0) {
+		if ($('._fixed').length > 0) {$('.back-top').css({bottom:'85px'});
+			if ($('.fixed_menu').hasClass('show')) {$('.back-top').css({bottom:'135px'});
+			} else {$('.back-top').css({bottom:'85px'});}
+		} else {$('.back-top').css({bottom:'45px'});
+			if ($('.fixed_menu').hasClass('show')) {$('.back-top').css({bottom:'95px'});
+			} else {$('.back-top').css({bottom:'45px'});}
+		}
+		if ($(window).scrollTop() > 280) {$('.back-top').addClass('show');
+		} else {$('.back-top').removeClass('show');}
+	}
 	lastSt = st;
 });
-
+//back-top
+$('.back-top').click( function(e) {
+	e.preventDefault()
+	$('html, body').animate({scrollTop:0}, 300);
+});
 // accordion fn
 $('.accord_wrap').each(function () { // default
 	if (!$(this).hasClass('manualfn')) {
