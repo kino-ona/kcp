@@ -417,6 +417,12 @@
 				text-indent:-10px;
 				font-weight:300;
 			}
+			em {
+				font-weight:500;
+			}
+		}
+		h4:not(.subtit) {
+			font-weight:700;
 		}
 		.keyvisual {
 			position:relative;
@@ -511,14 +517,9 @@
 			}
 		}
 		.type_dot {
-			dd, li {
+			dd {
 				padding-left:10px;
 				text-indent:-10px;
-				font-size:14px;
-			}
-			.img {
-				margin-top:10px;
-				margin-bottom:30px;
 			}
 		}
 		.type_indent {
@@ -532,9 +533,8 @@
 			}
 		}
 		.footnote {
-			margin-top:40px;
-			padding-top:20px;
 			border-top:1px solid #eee;
+			padding-top:20px;
 			li {
 				font-size:12px;
 				font-weight:300;
@@ -573,6 +573,18 @@
 		.hide_mo {
 			display:none;
 		}		
+		.guide {
+			li {
+				span {
+					display:block;
+					margin-top:15px;
+					padding-left:14px;
+					text-indent:-14px;
+					font-size:14px;
+					font-weight:300;
+				}
+			}
+		}
 		table {
 			width: 100%;
 			border-collapse: collapse;
@@ -623,24 +635,14 @@
 				border-bottom: 1px solid #000;
 				th {							
 					font-weight: 500;
-					&:first-of-type {
-						// padding-left: 30px;
-					}
-					&:last-of-type {
-						// padding-right: 30px;
-					}
 				}
 			}
 			tbody {
 				th {
 					font-weight: 500;
-					// padding-left: 30px;
 				}
 				tr {
 					border-bottom: 1px solid #e4e7ec;
-					td:last-of-type {
-						// padding-right: 30px;
-					}
 				}
 			}
 			tfoot {
@@ -655,27 +657,6 @@
 				tbody {
 					tr {
 						border-bottom: none;
-					}
-				}
-				ul {
-					position: relative;
-					&:after {
-						content: '';
-						display: block;
-						position: absolute;
-						top: 50%;
-						right: 0;
-						margin-top: -9px;
-						width: 1px;
-						height: 18px;
-						background-image: url(../images/workplace/table_th-bar.png);
-						background-position: 0 0;
-						background-repeat: no-repeat;
-					}
-					&:last-of-type {
-						&:after {
-							background-image: none;
-						}
 					}
 				}
 				&.block {
@@ -811,6 +792,38 @@
 					}
 				}
 			}			
+			// view_protect02.html
+			&.view2 {
+				ol + h4 {
+					margin-top:40px;
+				}
+				.guide {
+					li {
+						display:flex;
+						align-items:center;
+						margin-bottom:40px;
+						.txt {
+							width:62.3%;
+							font-size:14px;
+							font-weight:400;
+						}
+						.img {
+							width:37.7%;
+							padding-left:15px;
+						}
+						&:last-of-type {
+							.txt {
+								padding:0;
+							}
+						}
+					}
+					span {
+						margin:0;
+						padding:0;
+						text-indent:0;
+					}
+				}
+			}
 			// view_protect03.html
 			&.view3 {
 				h4 {
@@ -822,6 +835,71 @@
 					}
 					& + h4 {
 						margin-top:60px;
+					}
+				}
+			}
+			// view_protect07.html
+			&.view7 {
+				.imgbox {
+					width: 100%;
+					margin: 10px 0 35px;
+					text-align: left;
+				}
+				table {
+					&.T1 {
+						col { 
+							width: 50%;
+						}
+						thead {
+							th {							
+								&:first-of-type {
+									padding-left: 30px;
+								}
+								&:last-of-type {
+									padding-right: 30px;
+								}
+							}
+						}
+						tbody {
+							tr {
+								td:last-of-type {
+									padding-right: 30px;
+								}
+							}
+							th, td {	
+								text-align: left;
+							}
+							th {
+								font-weight: 300;
+								padding-left: 30px;
+							}							
+						}					
+					}
+					&.T2 {
+						col { 
+							width: 33.333%;
+						}
+					}
+					&.T3 {
+						width: 100%;
+						.t1 {width: 13.33%;}
+						.t2 {width: 27.53%;}
+						.t3 {width: 26.63%;}
+						.t4 {width: 32.51%;}
+						caption {
+							font-weight: 700;
+						}
+					}
+				}
+				.footnote {
+					margin-top: 45px;
+					em {
+						font-size: 14px;
+						font-weight: 500;
+					}
+					li {
+						padding-left: 10px;
+						text-indent: 0px;
 					}
 				}
 			}
