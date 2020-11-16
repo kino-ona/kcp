@@ -2415,3 +2415,121 @@ input.calendar {
 		color:#0053a7;
 	}
 }
+
+/** dropdown list **/
+.dropdown_list {
+	display: inline-block;
+	position: relative;
+	input[type="checkbox"], input[type="radio"] {
+		position: absolute;
+		overflow: hidden;
+		width: 1px;
+		height: 1px;
+		padding: 0;
+		margin: -1px;
+		clip: rect(0, 0, 0, 0);
+		border: 0;
+		border-radius: 0;
+		background: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		cursor: pointer;
+		opacity: 0;
+		color:#000;
+	}
+	.dropdown_value {
+		position: relative;
+		input[type="text"] {
+			width: 100%;
+			padding:10px 20px 9px 20px;
+			font-size: 12px;
+			border:0;
+			background-color: transparent;
+			color:#000;
+		}
+		.btn_opener {
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			border: 0;
+			background-color: rgba(255, 255, 255, 0);
+			cursor: pointer;
+			i {
+				position: absolute;
+				right:10px;
+				top:45%;
+				@include transform(translate(0, -50%));
+				display: inline-block;
+				&:before {
+					content: "";
+					display: inline-block;
+					width:5px;
+ 					height:5px;
+					border-top:2px solid #333;
+					border-right:2px solid #333;
+					-webkit-transform: rotate(135deg);
+					transform: rotate(135deg);
+				}
+			}
+			&[aria-expanded="true"] i {
+				top:47%;
+				&:before {
+					content: "";
+					display: inline-block;
+					width:5px;
+ 					height:5px;
+					border-top:2px solid #333;
+					border-right:2px solid #333;
+					-webkit-transform: rotate(-45deg);
+					transform: rotate(-45deg);
+				}
+			}
+		}
+	}
+	.item_list {
+		display: none;
+		position: absolute;
+		top: 40px;
+		left: -1px;
+		z-index: 10;
+		width: calc(100% + 2px);
+		border: 1px solid #e6e6e6;
+		background-color: #F7F7F7;
+		border-top:0;
+		padding:5px 0;
+		a, button, input[type="radio"]+label {
+			display: block;
+			width: 100%;
+			padding: 10px 20px;
+			border: 0;
+			background: transparent;
+			font-size: 12px;
+			text-align: left;
+			cursor: pointer;
+		}
+		a, button, input[type="radio"]+label {
+			&:hover, &:active, &:focus {
+				font-weight: 500;
+			}
+		}
+	}
+}
+.dropdown_list .item_list input[type="radio"]:focus+label {
+	background: #aaa
+}
+.dropdown_list .item_list input[type="radio"]+label:before {
+	display: none
+}
+.dropdown_list .item_list input[type="radio"]:disabled+label {
+	background: #FAFAFA;
+	color: #999
+}
+.dropdown_list.active .item_list {
+	display: block
+}
+//.dropdown_list 
