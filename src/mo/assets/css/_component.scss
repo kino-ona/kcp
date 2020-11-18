@@ -1144,14 +1144,15 @@
 	&.relation_swipe {
 		border-top:0px;
 		.swiper-container {
+			margin-right:-2.25rem;
 			.swiper-slide {
-				margin-right:2.25rem;
+				padding-right:2.25rem;
 				&:last-child {margin-right:0;}
 			}
 			.figure {
 				position: relative;
 				width:100%;
-				padding-top:75%;
+				padding-top:100%;
 				background: {
 					image: url(../images/common/default_image.png);
 					size:cover;
@@ -1165,6 +1166,7 @@
 					left:50%;
 					// width:100%;
 					max-width:120%;
+					max-height:100%;
 					@include transform(translate(-50%, -50%));
 				}
 			}
