@@ -757,12 +757,12 @@
 				position:relative;
 				padding-bottom:100%;
 				overflow:hidden;
-				background: {
-					image: url(../images/common/default_image.png);
-					size:cover;
-					position: center 0;
-					repeat:no-repeat;				
-				};
+				// background: {
+				// 	image: url(../images/common/default_image.png);
+				// 	size:cover;
+				// 	position: center 0;
+				// 	repeat:no-repeat;				
+				// };
 				img {
 					position:absolute;
 					top:50%;

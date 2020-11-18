@@ -105,12 +105,12 @@
 		width:100%;
 		padding-top:100%;
 		overflow: hidden;
-		background: {
-			image:url(../images/common/default_image.png);
-			size: cover;
-			position:center center;
-			repeat:no-repeat;
-		}
+		// background: {
+		// 	image:url(../images/common/default_image.png);
+		// 	size: cover;
+		// 	position:center center;
+		// 	repeat:no-repeat;
+		// }
 		img {
 			position: absolute;
 			top:50%;
