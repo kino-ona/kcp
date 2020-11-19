@@ -250,7 +250,6 @@ var slideMenuSet = function(){
 
 			var myScrollPos = hashOffset + (hashWidth / 2) + menuScrollLeft - (menuWidth / 2);
 			$slidemenu.stop().animate({
-				// scrollLeft: myScrollPos - (menuWidth / 2.7)
 				scrollLeft: myScrollPos - (menuWidth / 9)
 			}, 0);
 		}
@@ -275,7 +274,7 @@ var slideMenuSet = function(){
 		$('[data-conts='+ tab_id).addClass('active');
 
 		$( 'html, body' ).animate( { scrollTop : 0 }, 400 );
-		return false;
+		// return false;
 	});
 
 	$(window).scroll(function (e) {
