@@ -1621,6 +1621,59 @@ h1.logo {
 		z-index:101;
 	}
 }
+.layer_body.termspop {
+	.layer_head {
+		.layer_close {
+			top:15px;
+			right:15px;
+		}
+		.layer_title {
+			padding:15px 15px 15px;
+			font-size:16px;
+			font-weight: 700;
+			text-align: left;
+		}
+	}
+	.layer_wrap {
+		width:calc(100% - 30px);
+	}
+	.layer_cont {
+		padding:0 15px 30px;
+	}
+	.terms_area {
+		max-height:500px;
+		padding:15px;
+		overflow: hidden;
+		overflow-y: auto;
+		background-color: #eee;
+		dl {
+			margin-bottom:30px;
+		}
+		dt {
+			padding-bottom:10px;
+			font-size:12px;
+			font-weight: 700;
+		}
+		dd {
+			font-size:12px;
+			font-weight: 350;
+			p {
+				margin-bottom:6px;
+				font-size:inherit;
+				font-weight: inherit;
+			}
+			ul {
+				margin-bottom:10px;
+				margin-left:10px;
+			}
+			li {
+				padding-bottom:5px;
+				font-size:12px;
+				font-weight: 350;
+			}
+		}
+	}
+}
 .tablist {
 	display: table;
 	width: 100%;

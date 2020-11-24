@@ -2001,6 +2001,58 @@ h1.logo {
 		z-index:101;
 	}
 }
+.layer_body.termspop {
+	.layer_head {
+		.layer_close {
+			top:30px;
+			right:30px;
+		}
+		.layer_title {
+			padding:30px 30px 20px;
+			font-weight: 700;
+			text-align: left;
+		}
+	}
+	.layer_wrap {
+		width:600px;
+	}
+	.layer_cont {
+		padding:0 30px 30px;
+	}
+	.terms_area {
+		max-height:500px;
+		padding:30px;
+		overflow: hidden;
+		overflow-y: auto;
+		background-color: #eee;
+		dl {
+			margin-bottom:40px;
+		}
+		dt {
+			padding-bottom:10px;
+			font-size:14px;
+			font-weight: 700;
+		}
+		dd {
+			font-size:13px;
+			font-weight: 350;
+			p {
+				margin-bottom:10px;
+				font-size:inherit;
+				font-weight: inherit;
+			}
+			ul {
+				margin-bottom:10px;
+				margin-left:10px;
+			}
+			li {
+				padding-bottom:5px;
+				font-size:13px;
+				font-weight: 350;
+			}
+		}
+	}
+}
 .tablist {
 	display: table;
 	width: 100%;
