@@ -165,7 +165,7 @@
 </div>
 <!--// 공통 : 구매문의/검색 플로팅 버튼  -->
 
-<!-- 11.24 사이트이용약관 -->
+<!-- 11.25 사이트이용약관 -->
 <div class="layer_body termspop" id="termspop" aria-hidden="true" role="dialog">
 	<div class="layer_wrap">
 		<div class="layer_head">
@@ -379,9 +379,9 @@
 		</div>
 	</div>
 </div>
-<!--// 11.24 사이트이용약관 -->
+<!--// 11.25 사이트이용약관 -->
 
-<!-- 11.24 개안정보처리방침 -->
+<!-- 11.25 개안정보처리방침 -->
 <div class="layer_body termspop" id="privacypop" aria-hidden="true" role="dialog">
 	<div class="layer_wrap">
 		<div class="layer_head">
@@ -392,7 +392,7 @@
 		</div>
 	</div>
 </div>
-<!--// 11.24 개안정보처리방침 -->
+<!--// 11.25 개안정보처리방침 -->
 
 
 <footer class="footer">
@@ -448,7 +448,7 @@
 		<div class="col familysite">
 			<select onchange="goFamilySite(this);">
 				<option>Familysite</option>
-				<option value="http://www.goldenfriends.yuhan-kimberly.co.kr/">골든프렌즈</option>
+				<!-- <option value="http://www.goldenfriends.yuhan-kimberly.co.kr/">골든프렌즈</option> 11.24 삭제 //-->
 				<option value="http://www.yuhan-kimberly.co.kr/">유한킴벌리</option>
 				<option value="https://www.momq.co.kr/">하기스</option>
 				<option value="http://www.ykbrand.co.kr/white">화이트</option>

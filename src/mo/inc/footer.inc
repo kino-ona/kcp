@@ -406,7 +406,7 @@
 </div>
 <!--// fixed menu -->
 
-<!-- 11.24 사이트이용약관 -->
+<!-- 11.25 사이트이용약관 -->
 <div class="layer_body termspop" id="termspop" aria-hidden="true" role="dialog">
 	<div class="layer_wrap">
 		<div class="layer_head">
@@ -620,9 +620,9 @@
 		</div>
 	</div>
 </div>
-<!--// 11.24 사이트이용약관 -->
+<!--// 11.25 사이트이용약관 -->
 
-<!-- 11.24 개안정보처리방침 -->
+<!-- 11.25 개안정보처리방침 -->
 <div class="layer_body termspop" id="privacypop" aria-hidden="true" role="dialog">
 	<div class="layer_wrap">
 		<div class="layer_head">
@@ -633,7 +633,7 @@
 		</div>
 	</div>
 </div>
-<!--// 11.24 개안정보처리방침 -->
+<!--// 11.25 개안정보처리방침 -->
 
 <!-- 09.16 제품상세 클래스(_etc) 추가 //-->
 <footer class="footer @@etctype">
@@ -660,7 +660,7 @@
 		<div class="familysite">
 			<select onchange="goFamilySite(this);">
 				<option>Familysite</option>
-				<option value="http://www.goldenfriends.yuhan-kimberly.co.kr/">골든프렌즈</option>
+				<!-- <option value="http://www.goldenfriends.yuhan-kimberly.co.kr/">골든프렌즈</option> 11.24 삭제 //-->
 				<option value="http://www.yuhan-kimberly.co.kr/">유한킴벌리</option>
 				<option value="https://www.momq.co.kr/">하기스</option>
 				<option value="http://www.ykbrand.co.kr/white">화이트</option>
