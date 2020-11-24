@@ -406,7 +406,7 @@
 </div>
 <!--// fixed menu -->
 
-<!-- 11.25 사이트이용약관 -->
+<!-- 11.24 풋터 사이트이용약관 -->
 <div class="layer_body termspop" id="termspop" aria-hidden="true" role="dialog">
 	<div class="layer_wrap">
 		<div class="layer_head">
@@ -620,9 +620,9 @@
 		</div>
 	</div>
 </div>
-<!--// 11.25 사이트이용약관 -->
+<!--// 11.24 풋터 사이트이용약관 -->
 
-<!-- 11.25 개안정보처리방침 -->
+<!-- 11.24 개안정보처리방침 -->
 <div class="layer_body termspop" id="privacypop" aria-hidden="true" role="dialog">
 	<div class="layer_wrap">
 		<div class="layer_head">
@@ -630,10 +630,11 @@
 			<h2 class="layer_title">개안정보처리방침</h2>
 		</div>
 		<div class="layer_cont">
+		내용미정
 		</div>
 	</div>
 </div>
-<!--// 11.25 개안정보처리방침 -->
+<!--// 11.24 개안정보처리방침 -->
 
 <!-- 09.16 제품상세 클래스(_etc) 추가 //-->
 <footer class="footer @@etctype">

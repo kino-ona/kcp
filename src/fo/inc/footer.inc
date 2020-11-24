@@ -165,7 +165,7 @@
 </div>
 <!--// 공통 : 구매문의/검색 플로팅 버튼  -->
 
-<!-- 11.25 사이트이용약관 -->
+<!-- 11.24 사이트이용약관 -->
 <div class="layer_body termspop" id="termspop" aria-hidden="true" role="dialog">
 	<div class="layer_wrap">
 		<div class="layer_head">
@@ -379,9 +379,9 @@
 		</div>
 	</div>
 </div>
-<!--// 11.25 사이트이용약관 -->
+<!--// 11.24 사이트이용약관 -->
 
-<!-- 11.25 개안정보처리방침 -->
+<!-- 11.24 개안정보처리방침 -->
 <div class="layer_body termspop" id="privacypop" aria-hidden="true" role="dialog">
 	<div class="layer_wrap">
 		<div class="layer_head">
@@ -389,10 +389,11 @@
 			<h2 class="layer_title">개안정보처리방침</h2>
 		</div>
 		<div class="layer_cont">
+		내용미정
 		</div>
 	</div>
 </div>
-<!--// 11.25 개안정보처리방침 -->
+<!--// 11.24 개안정보처리방침 -->
 
 
 <footer class="footer">
@@ -424,7 +425,7 @@
 		<ul class="col util">
 			<li><a href="#" onclick="layerOpen('termspop');return false;">사이트이용약관</a></li>  <!-- 11.24 //-->
 			<li><a href="#" onclick="layerOpen('privacypop');return false;" class="point">개인정보처리방침</a></li> <!-- 11.24 //-->
-			<li><a href="@@webroot2/html/custom/sitemap.html">사이트맵</a></li>
+			<li><a href="@@webroot2/custom/sitemap.html">사이트맵</a></li>
 		</ul>
 
 		<div class="col addr">

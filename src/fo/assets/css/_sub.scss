@@ -2146,19 +2146,25 @@
 			>li {
 				min-width: 240px;
 				margin-bottom: 40px;
-				>a {
+				.ti, > a {
 				font-size: 20px;
-				font-weight: 400;
 				display: inline-block;
 				margin-bottom: 20px;
 				}
 				ul>li {
 					margin-bottom: 15px;
 					>a {
-						font-size: 20px;
-						font-weight: 400;
+						font-weight: 300;
 						&:before {
-							content: '・';
+							content: '';
+							display: inline-block;
+							width:4px;
+							height:4px;
+							background-color: #000;
+							border-radius: 50%;
+							margin-top:-3px;
+							margin-right:6px;
+							vertical-align: middle;
 						}
 					}
 				}

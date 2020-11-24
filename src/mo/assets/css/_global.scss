@@ -1624,24 +1624,41 @@ h1.logo {
 .layer_body.termspop {
 	.layer_head {
 		.layer_close {
-			top:15px;
+			top:20px;
 			right:15px;
 		}
 		.layer_title {
-			padding:15px 15px 15px;
+			padding:20px 15px 15px;
 			font-size:16px;
 			font-weight: 700;
 			text-align: left;
+		}
+		p {
+			padding: 0 15px 15px;
+			font-size:12px;
+			line-height: 1.5;
 		}
 	}
 	.layer_wrap {
 		width:calc(100% - 30px);
 	}
 	.layer_cont {
-		padding:0 15px 30px;
+		height:auto;
+		padding:0 15px 0;
+		margin-bottom:30px;
+	}
+	.chkwrap {
+		margin-bottom:10px;
+		input[type=checkbox] + label{
+			span {
+				font-size:13px;
+				font-weight: 500;
+				color:#000;
+			}
+		}
 	}
 	.terms_area {
-		max-height:500px;
+		max-height:55vh;
 		padding:15px;
 		overflow: hidden;
 		overflow-y: auto;
