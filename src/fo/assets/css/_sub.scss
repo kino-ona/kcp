@@ -2118,3 +2118,51 @@
 		z-index:1;
 	}
 }
+
+.sitemap {
+	.page_head {
+		margin-bottom: 40px;
+	}
+	.section {
+		* {
+			line-height: 1;
+		}
+		margin-bottom: 60px;
+		border-bottom: 1px solid #e2e2e2;
+		&.sec2 {
+			padding-bottom: 20px;
+		}
+		&.sec6 {
+			border-bottom: none;
+		}
+		h3 {
+			font-size: 26px;
+			font-weight: 500;
+		}
+		.nav {
+			display: flex;
+			flex-wrap: wrap;
+			margin-top: 40px;
+			>li {
+				min-width: 240px;
+				margin-bottom: 40px;
+				>a {
+				font-size: 20px;
+				font-weight: 400;
+				display: inline-block;
+				margin-bottom: 20px;
+				}
+				ul>li {
+					margin-bottom: 15px;
+					>a {
+						font-size: 20px;
+						font-weight: 400;
+						&:before {
+							content: '・';
+						}
+					}
+				}
+			}
+		}
+	}
+}
