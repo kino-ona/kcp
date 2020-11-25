@@ -1224,10 +1224,15 @@
 	}
 	.bnr_figure {
 		position:relative;
-		width: 100%;
+		min-height:530px;
 		margin-bottom: 105px;
+		overflow: hidden;
 		img {
-			width: 100%;
+			position: absolute;
+			top:0;
+			left:50%;
+			max-width:inherit;
+			@include transform(translate(-50%, 0));
 		}
 		._box {
 			position: absolute;
@@ -1973,6 +1978,7 @@
 			vertical-align: top;
 			> span {
 				display: inline-block;
+				max-width: 70%;
 				margin-top:5px;
 				margin-left:5.625rem;
 				font-size:16px;
