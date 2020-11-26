@@ -2384,7 +2384,7 @@
 				bottom:60px;
 			}
 			&:last-child { padding-bottom:0; }
-			&:nth-child(even) { background-color:#f2f4f6; }
+			// &:nth-child(even) { background-color:#f2f4f6; }
 		}
 		.tit {
 			font-size:20px;
@@ -2412,6 +2412,28 @@
 					margin-top:20px;
 					font-size:inherit;
 					font-weight:500;
+				}
+			}
+		}
+		&_vod {
+			.row {
+				padding-top:0;
+			}
+			.vod {
+				width:100%;
+				max-width:640px;
+				position:relative;
+				padding-bottom:60%;
+				margin:0 auto;
+				overflow: hidden;
+				iframe {
+					position: absolute;
+					top:0;
+					left: 50%;
+					width:100%;
+					height:100%;
+					@include transform(translate(-50%, 0));
+
 				}
 			}
 		}
@@ -2551,6 +2573,7 @@
 			}
 		}
 		&_sec4 {
+			background-color:#f2f4f6;
 			ul {
 				margin-top:20px;
 				&:after {

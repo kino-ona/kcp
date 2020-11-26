@@ -1268,7 +1268,7 @@
 				bottom:60px;
 			}
 			&:last-child { padding-bottom:0; }
-			&:nth-child(even) { background-color:#f2f4f6; }
+			// &:nth-child(even) { background-color:#f2f4f6; }
 		}
 		.tit {
 			font-size:40px;
@@ -1545,7 +1545,6 @@
 			}
 		}
 		&_vod {
-			background-color: #fff !important;
 			.row {
 				padding-top:0;
 				margin-top:-60px;
