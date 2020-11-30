@@ -2729,8 +2729,12 @@
 		}
 		&.wypall {
 			background-image:linear-gradient(to bottom, #006fba, #0053a7 calc(100% - 42px), #fff calc(100% - 42px));
+			.logo {
+				height:30px;
+			}
 		}
-		&.scott .logo { height:27px; }
+		&.scott .logo { height:36px; }
+		&.kimtech .logo { height:24px; }
 		
 		// sub
 		&.sub {
@@ -2747,6 +2751,12 @@
 			}
 			.item_link {
 				margin-top:20px;
+			}
+			.logo { 
+				max-width:180px;height:auto;max-height:52px; 
+				img {
+					height:auto;
+				}
 			}
 		}
 	}

@@ -126,7 +126,7 @@ $('ul.tablist li button').click(function(){
 function goFamilySite(select) {
 	if (select.value != 'none') {
 		window.open(select.value);
-		select.value = 'none';
+		select.value = 'Familysite'; // 11.30v4
 	} else {
 		return;
 	}
