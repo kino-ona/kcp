@@ -619,6 +619,13 @@
 				border-bottom-color:#666666;
 			}
 		}
+		.nodata {
+			padding:100px 0;
+			> p {
+				font-size:12px;
+				color:#999;
+			}
+		}
 		.board_wrap {
 			margin-left:30px;
 			border-top:1px solid #eeeeee;

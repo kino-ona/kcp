@@ -1690,6 +1690,56 @@ h1.logo {
 			}
 		}
 	}
+	.inscroll {
+		padding:15px 0 15px 10px;
+		height:70vh;
+		background-color: #f4f6f8;
+		overflow-y: scroll;
+		.inframe {
+			width:100%;
+			height:100%;
+			border:0;
+		}
+	}
+}
+.termsbox {
+	padding-right:10px;
+	.popCont {
+		font-size:12px;
+		div, p, strong, span, button {
+			font-size:12px;
+		}
+		div {
+			margin-top:20px;
+		}
+		caption {
+			font-size: 0;
+			text-indent: -9999px;
+		}
+		table {
+			border: 1px solid #dddddd;
+    	margin-top: 5px;
+			th, td {
+				font-size:11px;
+			}
+			th {
+				padding: 15px;
+				border-bottom: 1px solid #dddddd;
+				border-left: 1px solid #dddddd;
+			}
+			td {
+				padding: 15px;
+				border-bottom: 1px solid #dddddd;
+				border-left: 1px solid #dddddd;
+				background-color: #fff;
+			}
+		}
+	}
+}
+select.terms_select {
+	margin:20px 0;
+	width:auto;
+	padding-right:25px;
 }
 .tablist {
 	display: table;

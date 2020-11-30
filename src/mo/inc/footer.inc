@@ -622,19 +622,23 @@
 </div>
 <!--// 11.24 풋터 사이트이용약관 -->
 
-<!-- 11.24 개안정보처리방침 -->
+<!-- 11.24 통합 개인정보처리방침 -->
 <div class="layer_body termspop" id="privacypop" aria-hidden="true" role="dialog">
 	<div class="layer_wrap">
+		<!-- 11.30 -->
 		<div class="layer_head">
 			<button onclick="layerClose('privacypop')" class="layer_close manualfn">닫기</button>
-			<h2 class="layer_title">개안정보처리방침</h2>
+			<h2 class="layer_title">통합 개인정보처리방침</h2>
 		</div>
 		<div class="layer_cont">
-		내용미정
+			<div class="inscroll">
+				<iframe src="/privacy.html" class="inframe"></iframe>
+			</div>
 		</div>
+		<!--// 11.30 -->
 	</div>
 </div>
-<!--// 11.24 개안정보처리방침 -->
+<!--// 11.24 통합 개인정보처리방침 -->
 
 <!-- 09.16 제품상세 클래스(_etc) 추가 //-->
 <footer class="footer @@etctype">

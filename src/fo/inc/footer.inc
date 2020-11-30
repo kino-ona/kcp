@@ -165,6 +165,50 @@
 </div>
 <!--// 공통 : 구매문의/검색 플로팅 버튼  -->
 
+<!--  개인정보 수집 및 이용 동의 popup -->
+<div class="layer_body layer_full agreepopup" id="agreepopup" aria-hidden="true" role="dialog">
+		<div class="layer_wrap">
+			<div class="layer_head">
+				<button onclick="layerClose('agreepopup')" class="layer_close manualfn">닫기</button>
+				<h2 class="layer_title">개인정보 수집 및 이용 동의</h2>
+			</div>
+			<div class="layer_cont">
+				<div class="agr_text">
+					<dl>
+						<dt>개인정보의 수집 및 이용 목적</dt>
+						<dd class="light">회사는 제품 상담, 서비스 신청 등등을 위해 아래와 같은 개인정보를 수집하고 있습니다.</dd>
+						<dd>
+							- 수집항목 : 성명, 전화번호(유선/핸드폰 고객 선택), 주소, 이메일, 회사명, 접속 IP 정보<br>
+							- 개인정보 수집방법 : 홈페이지(응신엽서, 구매상담)
+						</dd>
+					</dl>
+					<dl>
+						<dt>개인정보의 수집 및 이용 목적</dt>
+						<dd class="light">회사는 수집한 개인정보를 다음의 목적을 위해 활용합니다.</dd>
+						<dd>
+							- 고객 상담 및 원활한 의사 소통을 위한 경로 확보<br>
+							- 자료 제공 및 상품 배송등의 서비스 이행을 위한 정보 수집<br>
+							- Target Marketing 및 무료 샘플링 등 개인 맞춤 서비스 제공
+						</dd>
+					</dl>
+					<dl>
+						<dt>개인정보의 보유 및 이용 기간</dt>
+						<dd class="light">원칙적으로, 개인정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체 없이 파기합니다.</dd>
+						<dd>
+							귀하께서 제공한 정보는 내부 규정에 따라 그 보존기간을 5년으로 하고 있으며, 이용자의 요청에 의해 삭제될 수 있습니다.<br><br>
+							자세한 내용은 개인정보 취급방침을 확인해 보시기 바랍니다.<br><br>
+							- 보존항목 : 성명, 전화번호(유선/핸드폰 고객 선택), 주소, 이메일, 회사명, 접속 IP 정보<br>
+							- 보존근거 : 회사 자료보존 방침에 의거<br>
+							그리고 관계법령의 규정에 의하여 보존할 필요가 있는 경우 회사는 아래와 같이 관계법령에서 정한 일정한 기간 동안 회원정보를 보관합니다.<br>
+							소비자의 불만 또는 분쟁처리에 관한 기록 : 3년 (전자상거래등에서의소비자보호에 관한 법률)
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--//  개인정보 수집 및 이용 동의 popup -->
+
 <!-- 11.24 사이트이용약관 -->
 <div class="layer_body termspop" id="termspop" aria-hidden="true" role="dialog">
 	<div class="layer_wrap">
@@ -381,19 +425,23 @@
 </div>
 <!--// 11.24 사이트이용약관 -->
 
-<!-- 11.24 개안정보처리방침 -->
+<!-- 11.24 통합 개인정보처리방침 -->
 <div class="layer_body termspop" id="privacypop" aria-hidden="true" role="dialog">
 	<div class="layer_wrap">
+		<!-- 11.30 -->
 		<div class="layer_head">
 			<button onclick="layerClose('privacypop')" class="layer_close manualfn">닫기</button>
-			<h2 class="layer_title">개안정보처리방침</h2>
+			<h2 class="layer_title">통합 개인정보처리방침</h2>
 		</div>
 		<div class="layer_cont">
-		내용미정
+			<div class="inscroll">
+				<iframe src="privacy.html" class="inframe"></iframe>
+			</div>
 		</div>
+		 <!--// 11.30 -->
 	</div>
 </div>
-<!--// 11.24 개안정보처리방침 -->
+<!--// 11.24 통합 개인정보처리방침 -->
 
 
 <footer class="footer">

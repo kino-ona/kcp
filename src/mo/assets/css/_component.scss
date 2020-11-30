@@ -1144,7 +1144,7 @@
 	&.relation_swipe {
 		border-top:0px;
 		.swiper-container {
-			margin-right:-2.25rem;
+			// margin-right:-2.25rem;
 			.swiper-slide {
 				padding-right:2.25rem;
 				&:last-child {margin-right:0;}
@@ -1191,6 +1191,13 @@
 	}
 }
 .order_list {
+	.nodata {
+		padding:100px 0;
+		> p {
+			font-size:12px;
+			color: #999;
+		}
+	}
 	.item {
 		margin-top:20px;
 		padding:25px 20px;
