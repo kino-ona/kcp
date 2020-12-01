@@ -624,23 +624,24 @@
 </div>
 <!--// 11.24 풋터 사이트이용약관 -->
 
+<!-- 12.01 삭제 -->
 <!-- 11.24 통합 개인정보처리방침 -->
-<div class="layer_body termspop" id="privacypop" aria-hidden="true" role="dialog">
+<!-- <div class="layer_body termspop" id="privacypop" aria-hidden="true" role="dialog">
 	<div class="layer_wrap">
-		<!-- 11.30 -->
 		<div class="layer_head">
 			<button onclick="layerClose('privacypop')" class="layer_close manualfn">닫기</button>
 			<h2 class="layer_title">통합 개인정보처리방침</h2>
 		</div>
 		<div class="layer_cont">
 			<div class="inscroll">
-				<iframe src="/privacy.html" class="inframe"></iframe>
+				<iframe src="privacy.html" class="inframe"></iframe>
 			</div>
 		</div>
-		<!--// 11.30 -->
 	</div>
-</div>
+</div> -->
 <!--// 11.24 통합 개인정보처리방침 -->
+<!--// 12.01 삭제 -->
+
 
 <!-- 09.16 제품상세 클래스(_etc) 추가 //-->
 <footer class="footer @@etctype">
@@ -650,7 +651,7 @@
 	<div class="row">
 		<ul class="util">
 			<li><a href="#" onclick="layerOpen('termspop');return false;">사이트이용약관</a></li>
-			<li><a href="#" onclick="layerOpen('privacypop');return false;" class="point">개인정보처리방침</a></li>
+			<li><a href="https://www.yksso.co.kr/terms/brand" target="_blank" class="point">개인정보처리방침</a></li> <!-- 12.01 수정 //-->
 			<li><a href="#">사이트맵</a></li>
 		</ul>
 
