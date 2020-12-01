@@ -498,7 +498,7 @@
 
 		<div class="col familysite">
 			<select onchange="goFamilySite(this);">
-				<option>Familysite</option>
+				<option value="">Familysite</option> <!-- 12.02 수정 //-->
 				<!-- <option value="http://www.goldenfriends.yuhan-kimberly.co.kr/">골든프렌즈</option> 11.24 삭제 //-->
 				<option value="http://www.yuhan-kimberly.co.kr/">유한킴벌리</option>
 				<option value="https://www.momq.co.kr/">하기스</option>

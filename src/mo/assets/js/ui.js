@@ -123,13 +123,12 @@ $('ul.tablist li button').click(function(){
 	$("#"+tab_id).addClass('current');
 });
 // family site
-function goFamilySite(select) {
-	if (select.value != 'none') {
-		window.open(select.value);
-		// select.value = 'Familysite'; // 12.02 삭제
-	} else {
-		return;
+function goFamilySite(select) { // function 12.02 수정
+	var goUrl = $(select).find('option:selected').val();
+	if (goUrl != "") {
+			window.open(goUrl);
 	}
+	$(select).find('option').removeAttr('selected');
 }
 
 ////// ui function
