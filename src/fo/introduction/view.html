@@ -188,7 +188,7 @@
 
 			<div class="row">
 				<h4>제품라인업<p>이미지를 선택시 제품라인업을 자세히 볼 수 있습니다.</p></h4>
-				<p><button onclick="layerOpen('lineuppopup')"><img src="../assets/images/introduction/lineup_food.jpg" alt=""></button></p>
+				<p><button onclick="layerOpen('lineup-handwash')"><img src="../assets/images/introduction/lineup_bnr_handwash.jpg" alt=""></button></p>
 			</div>
 
 			<!-- 전용용기: 해당 제품이 전용용기를 필요로 하는 제품일 경우 노출 -->
@@ -419,12 +419,18 @@
 		<!--// conts introduction -->
 
 		<!-- lineup popup -->
-		<div class="layer_body lineuppopup" id="lineuppopup" aria-hidden="false" role="dialog" open="open" tabindex="0">
+		<div class="layer_body lineuppopup" id="lineup-handwash" aria-hidden="true" role="dialog">
 			<div class="layer_wrap">
+				<div class="head">
+					<button onclick="layerClose('lineup-handwash')" class="layer_close manualfn">닫기</button>
+					<h3>제품 라인업</h3>
+					<ul class="breadcr">
+						<li>화장실 &amp; 위생</li>
+						<li>핸드워시</li>
+					</ul>
+				</div>
 				<div class="layer_cont">
-					<button onclick="layerClose('lineuppopup')" class="layer_close manualfn">닫기</button>
-
-					<p class="img"><img src="../assets/images/introduction/lineup_pop-food.jpg" alt="제품 라인업 : 푸드"></p>
+					<p class="img"><img src="../assets/images/introduction/lineup_handwash-cut.jpg" alt="제품 라인업 : 화장실위생 > 핸드워시"></p>
 				</div>
 			</div>
 		</div>

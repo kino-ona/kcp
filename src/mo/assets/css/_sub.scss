@@ -146,6 +146,33 @@
 	span {
 		font-weight:400;
 	}
+
+	.btn_allv {
+		display: block;
+		vertical-align: bottom;
+		span {
+			display: inline-block;
+			margin-top:5px;
+			color:#666666;
+			font-size:13px;
+			line-height: 1;
+			vertical-align: middle;
+			i {
+				display: inline-block;
+				width:5px;
+				height:8px;
+				background: {
+					image: url(../images/icon/ico_arr-bk.png);
+					size:5px;
+					repeat:no-repeat;
+					position:center center;
+				}
+				margin-top:-2px;
+				margin-left:4px;
+				vertical-align: middle;
+			}
+		}
+	}
 }
 .tab_navi {
 	width:100%;
@@ -1038,8 +1065,13 @@
 	}
 }
 .layer_body.lineuppopup {
+	.layer_wrap {
+		overflow-y: hidden;
+	}
 	.layer_cont {
+		height: calc(100% - 150px);
 		padding:0;
+		overflow-y: auto;
 		.img {
 			margin-top:-22px;
 		}
