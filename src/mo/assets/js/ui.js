@@ -67,7 +67,7 @@ $(window).scroll(function (e) {
 		}
 	}
 	// if($('.back-top').length > 0) {
-	// 	if ($('._fixed').length > 0) {$('.back-top').css({bottom:'85px'});
+	// 	if ($('._fixed').length > 0) {$('.back-top').css({bottom:'90px'});
 	// 		if ($('.fixed_menu').hasClass('show')) {$('.back-top').css({bottom:'135px'});
 	// 		} else {$('.back-top').css({bottom:'85px'});}
 	// 	} else {$('.back-top').css({bottom:'45px'});
@@ -79,6 +79,19 @@ $(window).scroll(function (e) {
 	// }
 	lastSt = st;
 });
+$.fn.scrollStopped = function(callback) {
+  var that = this, $this = $(that);
+  $this.scroll(function(ev) {
+    clearTimeout($this.data('scrollTimeout'));
+    $this.data('scrollTimeout', setTimeout(callback.bind(that), 250, ev));
+  });
+};
+$(window).scrollStopped(function(ev){
+	if ($('.fixed_menu').length > 0) {
+		$('.fixed_menu').removeClass('hide').addClass('show')
+	}
+});
+
 //back-top
 // $('.back-top').click( function(e) {
 // 	e.preventDefault()
@@ -237,6 +250,9 @@ var videoControl = function(){
 var $slidemenu = $('.tab_navi');
 var slideMenuSet = function(){
 	$('.tab_navi ul li').each(function() {
+		$slidemenu.stop().animate({
+			scrollLeft: 0
+		}, 0);
 		if($(this).hasClass('active')){
 			var $element = $(this);
 			$slidemenu.find('li').removeClass('active');
@@ -246,11 +262,10 @@ var slideMenuSet = function(){
 			var hashWidth = $element.outerWidth(true);
 			var menuScrollLeft = $slidemenu.scrollLeft();
 			var menuWidth = $slidemenu.width();
-
 			var myScrollPos = hashOffset + (hashWidth / 2) + menuScrollLeft - (menuWidth / 2);
 			$slidemenu.stop().animate({
 				scrollLeft: myScrollPos - (menuWidth / 9)
-			}, 0);
+			}, 1);
 		}
 	});
 

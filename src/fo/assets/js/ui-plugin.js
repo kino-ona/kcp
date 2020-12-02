@@ -76,46 +76,68 @@ function layerClose(layerId){
 	}
 }
 
-
 function datepickerControl() {
+	/*20201201 이전날짜 선택 방지 s */
+	var minDate = new Date();
+	/*20201201 이전날짜 선택 방지 e */
 	var defaultOpt = {
-		monthNames: ['년 &nbsp; 1월','년 &nbsp; 2월','년 &nbsp; 3월','년 &nbsp; 4월','년 &nbsp; 5월','년 &nbsp; 6월','년 &nbsp; 7월','년 &nbsp; 8월','년 &nbsp; 9월','년 &nbsp; 10월','년 &nbsp; 11월','년 12월'],
-		monthNamesShort: ['1','2','3','4','5','6','7','8','9','10','11','12'],
-		dayNames: ['일','월','화','수','목','금','토'],
-		dayNamesShort: ['일','월','화','수','목','금','토'],
-		dayNamesMin: ['일','월','화','수','목','금','토'],
-		showMonthAfterYear: true,
-		dateFormat: "yy.mm.dd",
-		showOtherMonths: true,
-  	selectOtherMonths: true,
+			monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+			monthNamesShort: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+			dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+			dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+			dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+			showMonthAfterYear: true,
+			dateFormat: "yy.mm.dd",
+			showOtherMonths: true,
+			selectOtherMonths: true,
+
 	}
 	var defaultOptShort = {
-		monthNames: ['년 &nbsp; 1월','년 &nbsp; 2월','년 &nbsp; 3월','년 &nbsp; 4월','년 &nbsp; 5월','년 &nbsp; 6월','년 &nbsp; 7월','년 &nbsp; 8월','년 &nbsp; 9월','년 &nbsp; 10월','년 &nbsp; 11월','년 12월'],
-		monthNamesShort: ['1','2','3','4','5','6','7','8','9','10','11','12'],
-		dayNames: ['일','월','화','수','목','금','토'],
-		dayNamesShort: ['일','월','화','수','목','금','토'],
-		dayNamesMin: ['일','월','화','수','목','금','토'],
-		showMonthAfterYear: true,
-		dateFormat: "yy.mm",
-		showOtherMonths: true,
-  	selectOtherMonths: true,
+			monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+			monthNamesShort: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+			dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+			dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+			dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+			showMonthAfterYear: true,
+			dateFormat: "yy.mm",
+			showOtherMonths: true,
+			selectOtherMonths: true,
 	}
+	/*20201201 이전날짜 선택 방지 s */
+	var defaultOptMinDate = {
+			monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+			monthNamesShort: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+			dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+			dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+			dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+			showMonthAfterYear: true,
+			dateFormat: "yy.mm",
+			showOtherMonths: true,
+			selectOtherMonths: true,
+			minDate: minDate,
+	}
+	/*20201201 이전날짜 선택 방지 e */
+	$(".datepicker").each(function () {
+			var $this = $(this),
+					defaultValue = $this.val() ? $this.val() : null;
+			var option = $.extend({}, defaultOpt, $this.data());
+			var optionS = $.extend({}, defaultOptShort, $this.data());
 
-	$(".datepicker").each(function() {
-		var $this = $(this),
-			defaultValue = $this.val() ? $this.val() : null;
-		var option = $.extend({}, defaultOpt, $this.data());
-		var optionS = $.extend({}, defaultOptShort, $this.data());
-		
-		if($this.hasClass('short')) {
-			$this.datepicker(optionS);
-		}else{
-			$this.datepicker(option);
-		}
-		defaultValue && $this.datepicker('setDate', new Date(defaultValue));
-		if(!$(this).val == '') {
-			console.log($(this).val)
-		}
+			if ($this.hasClass('short')) {
+					$this.datepicker(optionS);
+			}
+			/*20201201 이전날짜 선택 방지 s */
+			else if ($this.hasClass('mindate')) {
+					$this.datepicker(defaultOptMinDate);
+			}
+			/*20201201 이전날짜 선택 방지 e */
+			else {
+					$this.datepicker(option);
+			}
+			defaultValue && $this.datepicker('setDate', new Date(defaultValue));
+			if (!$(this).val == '') {
+					console.log($(this).val)
+			}
 	});
 
 }
