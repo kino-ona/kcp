@@ -124,6 +124,7 @@
 			</ul>
 			<!-- 10.27 명 변경 -->
 			<ul class="submenu" data-sub="4"> <!-- 솔루션 //-->
+				<li><a href="#" class="ti _all">솔루션 전체보기<i></i></a></li> <!-- 12.02 수정 //-->
 				<li><a href="#">공중화장실</a></li>
 				<li><a href="#">산업체생산공정</a></li>
 				<li><a href="#">푸드서비스 &amp; 프로세싱</a></li>
@@ -132,6 +133,7 @@
 				<li><a href="#">방역현장</a></li>
 			</ul>
 			<ul class="submenu" data-sub="5"> <!-- 현장인사이트 //-->
+				<li><a href="#" class="ti _all">현장인사이트 전체보기<i></i></a></li> <!-- 12.02 수정 //-->
 				<li><a href="#">위생과 건강</a></li>
 				<li><a href="#">작업자와 공정 보호</a></li>
 				<li><a href="#">생산효율성 증대</a></li>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	@@include('../inc/pagehead.inc',{
+		"webroot":".."
+	})
+</head>
+<body>
+<div class="skipnavigation"><a href="#container">본문 바로가기</a></div>
+<!-- header -->
+@@include('../inc/header.inc',{
+	"headtype":"subhead",
+	"pagetitle":"현장인사이트"
+})
+<!-- //header -->
+
+<div class="wrap">
+	<!-- container -->
+	<div class="container">
+    <div class="tab_wrap">
+      <div class="tab_navi">
+        <ul class="">
+          <li class="active"><a href="#">전체</a></li>
+					<li><a href="/Contents/List/400">위생과<br>건강</a></li>
+					<li><a href="/Contents/List/410">작업자와<br>공정보호</a></li>
+					<li><a href="/Contents/List/420">생산효율성<br>증대</a></li>
+					<li><a href="/Contents/List/430">친환경<br>가치실현</a></li>
+					<li><a href="/Contents/List/440">제품과<br>적용사례</a></li>
+        </ul>
+      </div>
+    </div>
+
+		<div class="borad_wrap">
+			<!-- sort -->
+			<div class="sort">
+				<select class="dropdown">
+					<option>최신순</option>
+					<option>가나다순</option>
+					<option>가나다 역순</option>
+				</select>
+			</div>
+			<!--// sort -->
+			
+			<!-- board_list -->
+			<div class="board_list type2">
+				<ul>
+					<li class="item">
+						<a href="#">
+							<p class="img"><img src="../assets/images/dummy/@thunm01.png" alt=""></p>
+							<div class="info">
+								<p class="title">코로나 바이러스로부터 안전한 수칙7 가지</p>
+								<p class="date">2020.07.09</p>
+								<p class="util"><i class="ico_download"></i></p> <!-- 10.26 첨부파일이 있는 경우 노출 //-->
+							</div>
+						</a>
+					</li>
+					<li class="item">
+						<a href="#">
+							<p class="img"><img src="../assets/images/dummy/@thunm02.png" alt=""></p>
+							<div class="info">
+								<p class="title">건강한 일터 만들기를 위한 유한킴벌리의 노력!</p>
+								<p class="date">2020.07.09</p>
+							</div>
+						</a>
+					</li>
+					<li class="item">
+						<a href="#">
+							<p class="img"><img src="../assets/images/dummy/@thunm03.png" alt=""></p>
+							<div class="info">
+								<p class="title">건강한 일터 만들기를 위한 유한킴벌리의 노력!</p>
+								<p class="date">2020.07.09</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+
+				<div class="more_view">
+					<a href="#">더보기 (10/106) <i></i></a>
+				</div>
+			</div>
+			<!--// board_list -->
+		</div>
+
+	</div>
+
+	<!--// container -->
+</div>
+<!--// wrap -->
+
+<!-- footer -->
+@@include('../inc/footer.inc',{
+	"webroot2":"..",
+	"etctype":""
+})
+<!-- //footer -->
+
+</body>
+</html>

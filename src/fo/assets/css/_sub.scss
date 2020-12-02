@@ -554,19 +554,37 @@
 			a {
 				font-size: inherit;
 				font-weight: inherit;
+				span {
+					display: inline-block;
+					margin-left:5px;
+					margin-top:4px;
+					color:#666666;
+					font-size:14px;
+					i {
+						display: inline-block;
+						width:5px;
+						height:8px;
+						background: {
+							image: url(../images/icon/ico_arr-bk.png);
+							size:5px;
+							repeat:no-repeat;
+							position:center center;
+						}
+						margin-top:-2px;
+						margin-left:4px;
+						vertical-align: middle;
+					}
+				}
 			}
 		}
 		.desc {
 			font-size:16px;
-			font-weight: 500;
 			color: #666666;
+			line-height: 1.6;
 		}
 	}
 }
 .item_link {
-	// display: -webkit-box;
-	// display: -ms-flexbox;
-	// display: flex;
 	li {
 		float:left;
 		margin-right:20px;
@@ -1114,6 +1132,7 @@
 	}
 	.radiowrap input[type=radio] + label {
 		background-position: 0 11px;
+		margin-right:15px;
 	}
 	hr {
 		width: 100%;

@@ -25,7 +25,7 @@
 			<li><button class="" data-tab="gnb-2">브랜드</button></li>
 			<li><button class="" data-tab="gnb-3">제품</button></li>
 			<li><button class="" data-tab="gnb-4">솔루션</button></li>
-			<li><button class="" data-tab="gnb-5">현장혁신정보</button></li>
+			<li><button class="" data-tab="gnb-5">현장인사이트</button></li>
 			<li><button class="" data-tab="gnb-6">고객서비스</button></li>
 		</ul>
 		<div class="tab_contents submenu">
@@ -232,6 +232,13 @@
 			<!-- 솔루션 -->
 			<div id="gnb-4" class="tab-cont">
 				<div class="accord_wrap" role="submenu">
+					<!-- 12.02 추가 -->
+					<div class="item" data-status="hidden">
+						<div class="acco_head">
+							<a href="#" class="acco_target" tabindex="0">솔루션 전체보기</a>
+						</div>
+					</div>
+					<!--// 12.02 추가 -->
 					<div class="item" data-status="hidden">
 						<div class="acco_head">
 							<a href="#" class="acco_target" tabindex="0">푸드 프로세싱&amp;서비스</a>
@@ -267,6 +274,13 @@
 			<!-- 현장 혁신 정보 -->
 			<div id="gnb-5" class="tab-cont">
 				<div class="accord_wrap" role="submenu">
+					<!-- 12.02 추가 -->
+					<div class="item" data-status="hidden">
+						<div class="acco_head">
+							<a href="#" class="acco_target" tabindex="0">현장인사이트 전체보기</a>
+						</div>
+					</div>
+					<!--// 12.02 추가 -->
 					<div class="item" data-status="hidden">
 						<div class="acco_head">
 							<a href="#" class="acco_target" tabindex="0">건강과 안전</a>
