@@ -1345,10 +1345,21 @@ h1.logo {
 			background-color:#4b4b4b;
 		}
 		p {
+			position: relative;
+			padding-left:12px;
 			padding-bottom:8px;
 			line-height:24px;
 			color:#eee;
 			font-weight: 300;
+			span {
+				position: absolute;
+				left:0;
+				top:-7px;
+				display: inline-block;
+				color:#eee;
+				font-size:26px;
+				font-weight: 300;
+			}
 		}
 		.btm {
 			position: relative;

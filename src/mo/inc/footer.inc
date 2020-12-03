@@ -700,15 +700,11 @@
 			<p><span>주소 : 05551 서울시 송파구 올림픽로 300 롯데월드타워 29층</span></p>  <!-- 11.06 //-->
 		</div>
 	</div>
-	<!-- 11.06 -->
+	<!-- 12.03v2 수정 -->
 	<div class="copyr">
-		<p>ⓡ/TM 표는 미국 킴벌리 클라크 월드와이드 또는 계열사의 세계적인 상표입니다.</p>
-		<p>ⓡ/TM Trademarks of Kimberly-Clark Worldwide, Inc. or its affiliates. © KCWW</p>
+		<p><span>®</span>/™ 표는 미국 킴벌리 클라크 월드와이드 또는 계열사의 세계적인 상표입니다.</p>
+		<p><span>®</span>/™ Trademarks of Kimberly-Clark Worldwide, Inc. or its affiliates. © KCWW</p>
 	</div>
-	<!--// 11.06 -->
+	<!--// 12.03v2 수정 -->
 </footer>
 <script type="text/javascript" src="@@webroot2/assets/js/ui.js"></script>
-<script>
-
-
-</script>

@@ -467,18 +467,23 @@
 			vertical-align: bottom;
 			span {
 				display: inline-block;
+				width:90px;
+				height:25px;
 				margin-left:5px;
-				margin-top:5px;
-				color:#666666;
-				font-size:14px;
-				line-height: 1;
+				border-radius: 25px;
+				color:#fff;
+				font-size:13px;
+				font-weight: 500;
+				line-height: 24px;
 				vertical-align: middle;
+				background-color: #0053a7;
+				text-align: center;
 				i {
 					display: inline-block;
 					width:5px;
 					height:8px;
 					background: {
-						image: url(../images/icon/ico_arr-bk.png);
+						image: url(../images/icon/ico_arr-wh.png);
 						size:5px;
 						repeat:no-repeat;
 						position:center center;
@@ -866,6 +871,35 @@
 			.btn {
 				flex:none;
 				width:380px;
+			}
+		}
+		.etc {
+			margin-top:20px;
+			p {
+				margin-bottom:5px;
+				font-weight: 300;
+				color:#666666;
+			}
+			.btn {
+				width:120px;
+				height:24px;
+				border-radius: 25px;
+				line-height: 23px;
+				background-color: #7b7b7b;
+				color:#fff;
+				text-align: center;
+				i {
+					display: inline-block;
+					width: 5px;
+					height: 8px;
+					background-image: url(../images/icon/ico_arr-wh.png);
+					background-size: 5px;
+					background-repeat: no-repeat;
+					background-position: center center;
+					margin-top: -2px;
+					margin-left: 4px;
+					vertical-align: middle;
+				}
 			}
 		}
 	}
@@ -2051,13 +2085,40 @@
 			}
 			.tit {
 				min-height:100px;
-				padding-bottom:30px;
+				padding-bottom:40px;
 				font-size:24px;
 				font-weight: 700;
 				> span {
 					display: block;
 					font-size:16px;
 					font-weight:300;
+					&.etc {
+						color:#666;
+						.btn {
+							margin-top:-2px;
+							margin-left:10px;
+							width: 120px;
+							height: 24px;
+							border-radius: 25px;
+							line-height: 23px;
+							background-color: #7b7b7b;
+							color: #fff;
+							text-align: center;
+							vertical-align: middle;
+						}
+						i {
+							display: inline-block;
+							width: 5px;
+							height: 8px;
+							background-image: url(../images/icon/ico_arr-wh.png);
+							background-size: 5px;
+							background-repeat: no-repeat;
+							background-position: center center;
+							margin-top: -2px;
+							margin-left: 4px;
+							vertical-align: middle;
+						}
+					}
 				}
 			}
 			.img {
