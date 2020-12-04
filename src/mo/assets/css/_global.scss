@@ -383,7 +383,7 @@ hr {
 			margin-bottom:0;
 			@include transition(.5s, ease-in-out);
 			&.up {
-				bottom:51px;
+				bottom:60px;
 			}
 		}
 		& + .info {
@@ -590,8 +590,6 @@ hr {
 		color:#000;
 	}
 	select {
-		// line-height: 19px;
-		// padding: 9px 15px 10px 10px;
 		line-height: 38px;
 		padding: 0 25px 0 10px;
 		border:1px solid #000;
@@ -600,12 +598,10 @@ hr {
 	.mix {
 		display:flex;
 		select {
-			// width:auto;
 			flex:.4;
 			margin-right:10px;
 		}
 		input {
-			// width:auto;
 			flex:.6;
 		}
 		&_unit {
@@ -739,7 +735,7 @@ hr {
 	.sel_wrap {
 		clear:both;
 		overflow: hidden;
-		display: flex;
+		// display: flex;
 		& + .sel_wrap {
 			padding-top:15px;
 			margin-top:15px;
@@ -748,10 +744,15 @@ hr {
 		.sel {
 			position: relative;
 			cursor: pointer;
-			flex:1;
+			// flex:1;
+			float:left;
+			width:calc((100% / 2) - 3px);
 			margin-right:6px;
+			margin-bottom:6px;
 			padding-left:0;
-			&:nth-child(4n), &:last-child {
+			&:nth-child(2n) {margin-right:0;}
+			&:nth-child(2n+1) {clear:left;}
+			&:last-child {
 				margin-right:0;
 			}
 			input[type=radio], input[type=checkbox] {
@@ -761,6 +762,18 @@ hr {
 				visibility: hidden;
 				&:checked + p {
 					background-color:#0053a7;
+					&:before {
+						content: '';
+						display: inline-block;
+						width: 11px;
+						height: 10px;
+						margin-right: 5px;
+						background-image: url(../images/common/btn_check.png);
+						background-size: 11px;
+						background-repeat: no-repeat;
+						background-position: 0 0;
+						vertical-align: middle;
+					}
 				}
 			}
 			p {
@@ -770,6 +783,9 @@ hr {
 				background-color:#c0cfde;
 				color:#fff;
 			}
+		}
+		&:after {
+			@extend %clearer;
 		}
 	}
 }

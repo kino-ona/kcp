@@ -1411,22 +1411,40 @@
 			}
 		}
 		.sel_tab {
-			display:flex;
+			// display:flex;
 			.tabs {
-				flex:1;
+				// flex:1;
+				float:left;
+				width:calc((100% / 2) - 3px);
 				position:relative;
 				margin:0;
 				margin-right:6px;
+				margin-bottom:6px;
 				text-align:center;
-				padding-top:18%;
+				// padding-top:18%;
+				padding-top:13%;
 				background-color:#c0cfde;
 				border-left:0;
 				color:#000;
+				&:nth-child(2n) {margin-right:0;}
+				&:nth-child(2n+1) {clear:left;}
 				&:last-child {margin-right:0;}
 				&.active {
 					background-color:#0053a7;
 					a {
 						color:#fff;
+						&:before {
+							content: '';
+							display: inline-block;
+							width: 11px;
+							height: 10px;
+							margin-right: 5px;
+							background-image: url(../images/common/btn_check.png);
+							background-size: 11px;
+							background-repeat: no-repeat;
+							background-position: 0 0;
+							vertical-align: middle;
+						}
 					}
 				}
 				a {
@@ -1438,6 +1456,12 @@
 					color:#fff;
 					line-height: 1.4;
 				}
+				br {
+					display:none;
+				}
+			}
+			&:after {
+				@extend %clearer;
 			}
 		}
 		.total {
@@ -1448,16 +1472,11 @@
 				}
 			}
 			.tit {
-				// float:left;
-				// width:30%;
 				display: inline-block;
 				margin-top:3px;
 				vertical-align: middle;
 			}
 			.price {
-				// float:left;
-				// width:70%;
-				// text-align:right;
 				display: inline-block;
 				margin-left:5px;
 				font-weight: 700;
@@ -2174,6 +2193,14 @@
 				visibility: hidden;
 				&:checked + p {
 					background-color:#0053a7;
+					&:before {
+						content:'';
+						display:inline-block;
+						width:11px;
+						height:8px;
+						margin:-2px 8px 0 0;
+						background:url(../images/common/btn_check.png) no-repeat 0 0 / cover;
+					}
 				}
 			}
 			p {
@@ -2182,14 +2209,6 @@
 				text-align: center;
 				background-color:#d1d1d1;
 				color:#fff;
-				&:before {
-					content:'';
-					display:inline-block;
-					width:11px;
-					height:8px;
-					margin:-2px 8px 0 0;
-					background:url(../images/common/btn_check.png) no-repeat 0 0 / cover;
-				}
 			}
 		}
 	}
