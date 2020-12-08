@@ -2295,9 +2295,9 @@
     margin: 0 auto;
     background-color: #fff;
 		h1.logo {
-			margin: 25px auto;
-			background-size: 184px;
-			width: 184px;
+			margin: 25px auto 0;
+			background-size: 110px;
+			width: 110px;
 			height: 70px;
 		}
 		.conts {
@@ -2305,17 +2305,26 @@
 		}
 	}
 	.img {
-		width: 100%;
+		position: absolute;
+		left:50%;
+		top:50%;
+		max-width: inherit;
+		@include transform(translate(-50%, -50%));
+	}
+	[class*='event_'] {
+		position: relative;
+		width:100%;
+		height:0;
+		overflow: hidden;
 	}
 	.event_bg1 {
-		position: relative;
+		padding-top:1149px;
 		.conts {
-			top: 39.167%;
-			// top: 470px;
+			top: 470px;
 			left: 50%;
 			transform: translateX(-50%);
 			.btn {
-				width: 250px;
+				width:250px;
 				height: 80px;
 				background-color: #fae900;
 				border-radius: 40px;
@@ -2329,9 +2338,9 @@
 		}
 	}
 	.event_bg2 {
-		position: relative;
+		padding-top:930px;
 		.conts {
-			bottom: 25.749%;
+			bottom: 220px;
 			left: 52.083%;
 			width: 520px;
 			.info {
@@ -2348,7 +2357,21 @@
 			}
 		}
 	}
-	&.footer {
+	.event_bg3 {
+		padding-top:1060px;
+	}
+	.event_bg4 {
+		height:auto;
+		text-align: center;
+		padding:120px 0;
+		img {
+			position:relative;
+			top:inherit;
+			left:inherit;
+			@include transform(translate(0,0));
+		}
+	}
+	.evnt_foo {
 		padding: 75px 0;
 		background-color: #f9f9f9;
 		.title {
@@ -2361,17 +2384,22 @@
 			margin: 0 auto;
 		}
 		li {
+			position: relative;
+			padding-left: 12px;
 			font-size: 20px;
 			line-height: 1.5;
 			font-weight: 350;
-			position: relative;
-			padding-left: 12px;
+			color:#333333;
 			&:before {
 				content: '-';
 				position: absolute;
 				left: 0;
-				top: 0;
+				top: -2px;
 				width: 12px;
+			}
+			a {
+				font-size:inherit;
+				font-weight: inherit;
 			}
 		}
 	}
