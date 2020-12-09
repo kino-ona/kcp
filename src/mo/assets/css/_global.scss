@@ -1728,6 +1728,19 @@ h1.logo {
 		}
 	}
 }
+.layer_body.eventpop {
+	.layer_wrap {
+		max-width:560px;
+	}
+	.layer_close {
+		right:10px;
+		top:10px;
+		background-image: url(../images/common/btn_wdel.png);
+	}
+	.layer_cont {
+		padding:0;
+	}
+}
 .termsbox {
 	padding-right:10px;
 	.popCont {
