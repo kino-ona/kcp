@@ -498,6 +498,43 @@
 	.desc *{
 		font-weight: 300;
 	}
+	.etc {
+		border-top:1px solid #e0e0e0;
+		padding-top:20px;
+		margin-top:20px;
+		p {
+			margin-bottom:5px;
+			font-weight: 300;
+			color:#666666;
+			vertical-align: middle;
+		}
+		.btn {
+			display: inline-block;
+			margin-top:-2px;
+			margin-left:10px;
+			width:120px;
+			height:24px;
+			border-radius: 25px;
+			line-height: 23px;
+			background-color: #7b7b7b;
+			color:#fff;
+			font-size:14px;
+			text-align: center;
+			i {
+				display: inline-block;
+				width: 5px;
+				height: 8px;
+				background-image: url(../images/icon/ico_arr-wh.png);
+				background-size: 5px;
+				background-repeat: no-repeat;
+				background-position: center center;
+				margin-top: -2px;
+				margin-left: 4px;
+				vertical-align: middle;
+			}
+			vertical-align: middle;
+		}
+	}
 }
 .sol-innov_sec {
 	margin-bottom: 165px;
