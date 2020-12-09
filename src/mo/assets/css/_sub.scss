@@ -3270,6 +3270,10 @@
 		width:100%;
 		overflow: hidden;
 		text-align: center;
+		img {
+			position: relative;
+			display: block;
+		}
 	}
 	.event_bg1 {
 		.conts {

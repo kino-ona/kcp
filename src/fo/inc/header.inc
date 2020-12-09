@@ -107,9 +107,12 @@
 						<li><a href="#">산업용</a></li>
 					</ul>
 				</li>
-				<li><a href="#" class="ti">와이핑&amp;세척</a>
+				<li><a href="#" class="ti">와이핑&amp;크리닝</a>
 					<ul>
-						<li><a href="#">와이퍼</a></li>
+						<li><a href="#">산업용</a></li>
+						<li><a href="#">크리닝</a></li>
+						<li><a href="#">실험실용</a></li>
+						<li><a href="#">푸드용</a></li>
 					</ul>
 				</li>
 				<li><a href="#" class="ti">전용용기</a>

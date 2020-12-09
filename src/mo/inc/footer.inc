@@ -201,22 +201,7 @@
 			<!-- 제품 -->
 			<div id="gnb-3" class="tab-cont">
 				<div class="accord_wrap" role="submenu">
-				<div class="item" data-status="expanded">
-						<div class="acco_head">
-							<a href="#" class="acco_target" tabindex="0">전용용기 <i></i></a>
-						</div>
-						<div class="acco_panel">
-							<ul>
-								<li><a href="#">냅킨</a></li>
-								<li><a href="#">와이퍼</a></li>
-								<li><a href="#">위생케어</a></li>
-								<li><a href="#">핸드워시</a></li>
-								<li><a href="#">핸드타올</a></li>
-								<li><a href="#">화장실용 화장지</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="item" data-status="hidden">
+					<div class="item" data-status="expanded">
 						<div class="acco_head">
 							<a href="#" class="acco_target" tabindex="0">화장실 &amp; 위생 <i></i></a>
 						</div>
@@ -232,29 +217,6 @@
 					</div>
 					<div class="item" data-status="hidden">
 						<div class="acco_head">
-							<a href="#" class="acco_target" tabindex="0">와이핑 &amp; 세척 <i></i></a>
-						</div>
-						<div class="acco_panel">
-							<ul>
-								<li><a href="#">개인안전 보호구</a></li> <!-- 10.15 //-->
-							</ul>
-						</div>
-					</div>
-					<div class="item" data-status="hidden">
-						<div class="acco_head">
-							<a href="#" class="acco_target" tabindex="0">와이퍼 <i></i></a>
-						</div>
-						<div class="acco_panel">
-							<ul>
-								<li><a href="#">마스크</a></li>
-								<li><a href="#">글로브</a></li>
-								<li><a href="#">보호복</a></li>
-								<li><a href="#">위생화</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="item" data-status="hidden">
-						<div class="acco_head">
 							<a href="#" class="acco_target" tabindex="0">사이언티픽 &amp; 연구개발 <i></i></a>
 						</div>
 						<div class="acco_panel">
@@ -265,6 +227,48 @@
 								<li><a href="#">와이퍼</a></li>
 								<li><a href="#">위생케어</a></li>
 								<li><a href="#">핸드워시</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="item" data-status="hidden">
+						<div class="acco_head">
+							<a href="#" class="acco_target" tabindex="0">개인안전보호구 <i></i></a>
+						</div>
+						<div class="acco_panel">
+							<ul>
+								<li><a href="#">마스크</a></li>
+								<li><a href="#">글로브</a></li>
+								<li><a href="#">보호복</a></li>
+								<li><a href="#">위생화</a></li>
+								<li><a href="#">산업용</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="item" data-status="hidden">
+						<div class="acco_head">
+							<a href="#" class="acco_target" tabindex="0">와이핑&amp;크리닝 <i></i></a>
+						</div>
+						<div class="acco_panel">
+							<ul>
+								<li><a href="#">산업용</a></li>
+								<li><a href="#">크리닝</a></li>
+								<li><a href="#">실험실용</a></li>
+								<li><a href="#">푸드용</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="item" data-status="hidden">
+						<div class="acco_head">
+							<a href="#" class="acco_target" tabindex="0">전용용기 <i></i></a>
+						</div>
+						<div class="acco_panel">
+							<ul>
+								<li><a href="#">냅킨</a></li>
+								<li><a href="#">와이퍼</a></li>
+								<li><a href="#">위생케어</a></li>
+								<li><a href="#">핸드워시</a></li>
+								<li><a href="#">핸드타올</a></li>
+								<li><a href="#">화장실용 화장지</a></li>
 							</ul>
 						</div>
 					</div>
