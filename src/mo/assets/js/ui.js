@@ -37,6 +37,7 @@ var globalMenuClose = function() {
 	}
 }
 ////// global common 
+// 12.10 메뉴바 동작 관련 s
 var lastSt = 0;
 $(window).scroll(function (e) {
 	var st = $(this).scrollTop();
@@ -81,6 +82,7 @@ $(window).scrollStopped(function(ev){
 		$('.fixed_menu').removeClass('hide').addClass('show')
 	}
 });
+// 12.10 메뉴바 동작 관련 e
 
 // accordion fn
 $('.accord_wrap').each(function () { // default
