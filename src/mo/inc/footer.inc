@@ -246,7 +246,7 @@
 					</div>
 					<div class="item" data-status="hidden">
 						<div class="acco_head">
-							<a href="#" class="acco_target" tabindex="0">와이핑&amp;크리닝 <i></i></a>
+							<a href="#" class="acco_target" tabindex="0">와이핑&amp;크리닝 <i></i></a>  <!-- 12.21 //-->
 						</div>
 						<div class="acco_panel">
 							<ul>
