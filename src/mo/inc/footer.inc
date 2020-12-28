@@ -699,7 +699,7 @@
 
 		<div class="addr">
 			<p><span>대표자 : 최규복</span><span>사업자번호 : 120-81-11436</span></p>
-			<p><span>이메일 :  official@yk-proffesional.com</span></p>
+			<p><a href="https://www.yuhan-kimberly.co.kr/Customer/Company" target="_blank"><span>회사대표 이메일 <i class="ic_mail"></i></span></a></p> <!-- 12.28 //-->
 			<p><span>팩스 : 02-3213-7971</span></p>  <!-- 11.06 //-->
 			<p><span>주소 : 05551 서울시 송파구 올림픽로 300 롯데월드타워 29층</span></p>  <!-- 11.06 //-->
 		</div>

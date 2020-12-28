@@ -1329,6 +1329,20 @@ h1.logo {
 				}
 			}
 		}
+		.ic_mail {
+			display: inline-block;
+			margin-left:3px;
+			margin-top:-2px;
+			width:15px;
+			height:15px;
+			background: {
+				image: url(../images/icon/icon_footer_mail.png);
+				repeat:no-repeat;
+				size:cover;
+				position:center center;
+			}
+			vertical-align: middle;
+		}
 	}
 	.copyr {
 		position:relative;
